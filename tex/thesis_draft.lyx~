@@ -272,10 +272,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2.2cm
-\rightmargin 2.5cm
-\bottommargin 2.5cm
+\leftmargin 1.5in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -305,37 +305,21 @@ Tomomi Sunayama
 Introduction
 \end_layout
 
+\begin_layout Section
+correlation functions and power spectra
+\end_layout
+
 \begin_layout Chapter
 Reconstruction of Real-space Density from Redshift-space density
 \end_layout
 
 \begin_layout Section
-
-\size normal
 Introduction
 \end_layout
 
 \begin_layout Standard
-The large-scale structure of galaxies provides us important cosmological
- information.
- The growth of the structure is driven by the competing effects of gravitational
- instability and the expansion of the universe.
- For this reason, the clustering of galaxies and their peculiar velocities
- carry information about the expansion rate of the universe which allows
- us to probe Dark Energy(
-\begin_inset CommandInset citation
-LatexCommand cite
-key "2008Natur.451..541G,2008PhRvD..77b3504N,2008PhRvD..78f3503J,2009JCAP...10..004S,2012arXiv1201.2434W,almeida08"
-
-\end_inset
-
-).
- 
-\end_layout
-
-\begin_layout Standard
 Redshift-space distortions (hereafter RSDs) are a systematic anisotropy
- in galaxy distribution caused by peculiar velocities of galaxies.
+ in galaxy distribution and are used as a dynamical probe of Cosmic Acceleration.
  By the cosmological principle, the distribution of galaxies is statistically
  isotropic (on large scales).
  The positions of galaxies are, however, measured through redshifts, which
@@ -363,66 +347,19 @@ key "1992ApJ...385L...5H"
 
 \end_inset
 
- in configuration-space) using linear perturbation theory:
-\begin_inset Formula 
-\begin{equation}
-\delta_{s}=(1+\beta\mu^{2})\delta_{r}\label{eq:Kaiser}
-\end{equation}
-
+ in configuration-space) using linear perturbation theory and called the
+ Kaiser approximation.
+ It provides a way to measure the growth rate 
+\begin_inset Formula $f\approx\Omega_{m}^{\gamma}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $\delta_{s}$
-\end_inset
-
- and 
-\begin_inset Formula $\delta_{r}$
-\end_inset
-
- are redshift-space and real-space density contrasts of dark matter (hereafter
- DM) particles, halos or galaxies, 
-\begin_inset Formula $\beta\equiv f/b$
-\end_inset
-
- (
-\begin_inset Formula $f\equiv d\ln D/d\ln a\thickapprox\Omega_{m}^{\gamma}$
-\end_inset
-
- where 
-\begin_inset Formula $D(a)$
-\end_inset
-
- is the linear growth factor and 
-\begin_inset Formula $b$
-\end_inset
-
- is a scale-independent linear bias between DM particles and halos/galaxies
- depending on what density we measure) and 
-\begin_inset Formula $\mu$
-\end_inset
-
- is the cosine of the angle between 
-\begin_inset Formula $\vec{k}$
-\end_inset
-
- and the line of sight.
- The Kaiser approximation is valid only on very large scales at low redshift
- due to lack of modeling small-scale non-linear fluctuations and it is an
- observational challenge to precisely measure 
-\begin_inset Formula $f$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
-.
- There have been many attempts to model RSDs beyond linear theory both in
- configuration-space and Fourier-space by using the 
+ to test the model of gravity as well as the expansion history of the Universe.
+ The challenge in the measurement of the growth rate is that the Kaiser
+ approximation is valid only on very large scales and therefore suffers
+ from sample variance.
+ In order to avoid this problem, there have been many attempts to model
+ RSDs beyond linear theory both in configuration-space and Fourier-space
+ by using the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -457,8 +394,8 @@ key "2004PhRvD..70h3007S,2008Natur.451..541G,2010PhRvD..82f3522T,2011JCAP...11..
 
 \begin_layout Standard
 On the other hand, there have been many studies attempting to recover real-space
- density field or primordial density fluctuation from velocity fields/redshift-s
-pace density field (
+ density field or primordial density fluctuation from the redshift-space
+ density field (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "1989ApJ...344L..53P,1991ApJ...379....6N,1993ApJ...405L..47G,1994ApJ...421L...1N,1997MNRAS.285..793C,1998ApJ...508..440N,1999ApJ...515..471N,2012arXiv1203.5785T"
@@ -468,64 +405,108 @@ key "1989ApJ...344L..53P,1991ApJ...379....6N,1993ApJ...405L..47G,1994ApJ...421L.
 ).
 
 \color black
- Nusser & Davis 1994 (
+ Ref.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "1994ApJ...421L...1N"
 
 \end_inset
 
-) proposed a way to recover real-space density from redshift-space density
- through Lagrangian perturbation theory.
+ proposed a way to recover real-space density from redshift-space density
+ through Lagrangian perturbation theory (LPT).
  They estimated peculiar velocity fields of particles and shifted back the
  particles in redshift-space by their velocities to reconstruct a real-space
  density field.
- Recently, this technique was used in Padmanabhan et al.
- 2012 (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "2012arXiv1202.0090P"
-
-\end_inset
-
-) as part of a method to sharpen Baryon Acoustic Oscillation features.
- This group estimated 
-\begin_inset Formula $\beta$
-\end_inset
-
- based on previous observations of CMB and 
-\begin_inset Formula $\Lambda$
-\end_inset
-
-CDM model to estimate the velocity fields for the galaxies.
 
 \color blue
  
 \color inherit
-In this paper, we discuss how this technique itself can also provide a method
- to measure 
-\begin_inset Formula $\beta$
+In this project, we measured 
+\begin_inset Formula $f$
 \end_inset
 
- and can recover real-space density field from redshift-space on large scales.
+ using LPT by reconstructing the density field in real-space from the one
+ in redshift-space.
+ While 
+\color black
+Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1994ApJ...421L...1N"
+
+\end_inset
+
+ 
+\color inherit
+used a fixed value for 
+\begin_inset Formula $f$
+\end_inset
+
+ to model the velocity field, we treated 
+\begin_inset Formula $f$
+\end_inset
+
+ as a free parameter and varied it to find what 
+\begin_inset Formula $f$
+\end_inset
+
+ value appropriately removes the anisotropy in redshift-space.
+ he motivation behind the project is that LPT can model the non-linear density
+ field on smaller scales compared to Eulerian perturbation theory (EPT)
  (
 \color red
-more motivation!!!
+citation
 \color inherit
-)
+).
+ So, using LPT gives us the advantage that the method is possible valid
+ on smaller scales and can utilize mode number of modes to measure 
+\begin_inset Formula $f$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-We begin this paper with a derivation of Kaiser approximation and an algorithm
- for reconstruction of RSD in Section 2.
- Following that, we show how reconstruction of RSD recovers real-space density
- field and describe how this method enables us to measure 
+We begin this section with a derivation of Kaiser approximation and an algorithm
+ for reconstruction of RSD in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Background"
+
+\end_inset
+
+.
+ Following that, we show how the reconstruction method recovers velocity
+ fields/real-space density field from the redshift-space density field in
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Reconstructing_field"
+
+\end_inset
+
+ and describe how this method enables us to measure 
 \begin_inset Formula $\beta$
 \end_inset
 
- for the case of DM particles in Section 3 and for DM halos in Section 4.
- In Section 5, we discuss the implication of these results for measurements
- of 
+ for the case of DM particles and DM halos in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:measure_f"
+
+\end_inset
+
+.
+ In Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:discussion_rsd"
+
+\end_inset
+
+, we discuss the implication of these results for measurements of 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -533,32 +514,94 @@ We begin this paper with a derivation of Kaiser approximation and an algorithm
 \end_layout
 
 \begin_layout Section
+Background 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Background"
 
-\size normal
-Method 
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-In this section, we describe our algorithm used in reconstruction of real-space
- density from redshift-space density.
- We start by describing the Kaiser approximation in Lagrangian Perturbation
- Theory (hereafter, LPT) and then we outline the reconstruction algorithm
- and its implication in LPT.
+In this section, we present the Kaiser approximation, the relation between
+ EPT and LPT, and the algorithm to reconstruct the real-space density field
+ from the redshift-space density field.
+ We begin Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:kaiser"
+
+\end_inset
+
+ by deriving the Kaiser approximation in EPT.
+ In Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:LPT"
+
+\end_inset
+
+, we demonstrate why the first-order LPT can model smaller scales than the
+ first-order EPT.
+ In Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Algorithm"
+
+\end_inset
+
+, we outline the reconstruction algorithm and show how to measure 
+\begin_inset Formula $\beta$
+\end_inset
+
+ through the reconstruction.
 \end_layout
 
 \begin_layout Subsection
-The Kaiser Approximation in LPT
+The Kaiser Approximation 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:kaiser"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The (Eulerian) position of particles in redshift-space, 
-\begin_inset Formula $\vec{s}$
+The Kaiser approximation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1987MNRAS.227....1K"
+
 \end_inset
 
-, is defined as
+ models the redshift-space distortions in linear regimes and provides a
+ way to measure the growth rate 
+\begin_inset Formula $f\approx\Omega_{m}^{\gamma}$
+\end_inset
+
+ to constrain 
+\begin_inset Formula $\Omega_{m}$
+\end_inset
+
+ as well as to test GR/modified gravity.
+ In this section, we derive the Kaiser approximation and compare its prediction
+ to non-linear power spectra.
+\end_layout
+
+\begin_layout Standard
+When positions of galaxies are measured through redshift, the measured positions
+ are slightly shifted from their actual positions due to the peculiar velocities
+ of galaxies such as
 \begin_inset Formula 
 \begin{equation}
-\vec{s}\equiv\vec{r}-\frac{v_{z}}{H_{o}}\hat{z},\label{eq:redshift space position}
+\vec{s}\equiv\vec{r}+\frac{v_{z}}{H_{o}}\hat{z},\label{eq:redshift space position-1}
 \end{equation}
 
 \end_inset
@@ -585,7 +628,565 @@ plane-parallel
 \end_inset
 
  approximation, in which the line-of-sight directions for all particles
- are assumed to be the z-axis.
+ are assumed to be the z-axis (i.e., assuming that an observer is at infinity).
+\end_layout
+
+\begin_layout Standard
+Conservation of mass provides 
+\begin_inset Formula $\rho(\vec{s})d^{3}s=\rho_{r}(\vec{r})d^{3}r$
+\end_inset
+
+, where 
+\begin_inset Formula $\rho_{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{r}$
+\end_inset
+
+ are the densities in redshift-space and real-space.
+ Then, we can expand the terms in the following way.
+\begin_inset Formula 
+\begin{eqnarray*}
+\rho_{s}(\vec{s}) & = & \rho_{r}(\vec{r})\left|\frac{d^{3}r}{d^{3}s}\right|\\
+ & = & \rho_{r}(\vec{r})(1+\frac{u_{z}}{z})^{-2}(1+\frac{du_{z}}{dz})^{-1}\\
+ & \simeq & \rho_{r}(\vec{r})(1-\frac{du_{z}}{dz})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that going from the second to the last step is a valid approximation
+ in the limit that 
+\begin_inset Formula $u_{z}/z$
+\end_inset
+
+ is small, which holds in linear approximation.
+ Now, take Fourier transformation of the last equation.
+ The last term of the above equation becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\frac{du_{z}}{dz}\right)_{fourier}=\mu^{2}\theta(k)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta(k)\equiv(\nabla\cdot\vec{u})_{fourier}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu\equiv k_{z}/k$
+\end_inset
+
+.
+ In order to obtain the above relation, we assume no vorticity (i.e, the
+ velocity field is irrotational) to write 
+\begin_inset Formula $v_{z}=-\frac{\partial}{\partial z}\nabla^{-2}\theta$
+\end_inset
+
+, which gives 
+\begin_inset Formula $(\frac{\partial}{\partial z})^{2}\nabla^{-2})_{fourier}=(k_{z}/k)^{2}=\mu^{2}$
+\end_inset
+
+.
+ Then, the first order terms for the density field in redshift-space are
+ described in terms of the density field in real-space 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ and the velocity divergence 
+\begin_inset Formula $\theta$
+\end_inset
+
+ such as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta_{s}(\vec{k})=\delta_{r}(\vec{k})-\mu^{2}\theta(\vec{k}).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In linear perturbation theory, we can relate a density field and a velocity
+ field such as 
+\begin_inset Formula 
+\begin{equation}
+\theta(\vec{k})=-f\delta_{matter}(\vec{k})\label{eq:vel-den}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $f\equiv d{\rm ln}D/d{\rm ln}a\approx\Omega_{m}^{\gamma}$
+\end_inset
+
+ (Peebles 1980).
+ Therefore, in the linear regime, we can relate redshift-space and real-space
+ such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta_{s}(\vec{k})=(1+f\mu^{2})\delta_{r}(\vec{k}).\label{eq:redshift-real}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The power spectrum in redshift-space can be related to the power spectrum
+ in real-space through the growth rate 
+\begin_inset Formula $f$
+\end_inset
+
+ such as 
+\color black
+
+\begin_inset Formula 
+\begin{equation}
+P_{s}(\vec{k})\equiv<\delta_{s}^{*}\delta_{s}>=(1+\mu^{2}f)^{2}P_{r}(k),\label{eq:Kaiser_power}
+\end{equation}
+
+\end_inset
+
+where the relationship between redshift-space and real-space power spectra
+ is derived from Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:redshift-real"
+
+\end_inset
+
+.
+ Note that the Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Kaiser_power"
+
+\end_inset
+
+ is valid for matter power spectra.
+ Since a redshift-space density field has an angular dependence, we can
+ expand the power spectrum by convolving with Legendre polynomials, 
+\begin_inset Formula $L_{l}(\mu)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+P_{s}(k,\mu)=\underset{l}{\sum}P^{(l)}(k)L_{l}(\mu),
+\end{equation}
+
+\end_inset
+
+where
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Formula 
+\begin{equation}
+P_{s}^{(l)}(k)\equiv\frac{2l+1}{2}\int_{-1}^{+1}P_{s}(k,\mu)L_{l}(\mu)d\mu.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to measure 
+\begin_inset Formula $f$
+\end_inset
+
+ through the Kaiser approximation, we first take a ratio of quadrupole and
+ monople moments of a redshift-space power spectrum:
+\begin_inset Formula 
+\begin{equation}
+P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}f+\frac{4}{7}f^{2})/(1+\frac{2}{3}f+\frac{1}{5}f^{2}),\label{eq:kaiser_ratio}
+\end{equation}
+
+\end_inset
+
+and measure the ratio to obtain the value for 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Kaiser"
+
+\end_inset
+
+ shows the ratio 
+\begin_inset Formula $P_{s}^{(2)}/P_{s}^{(0)}$
+\end_inset
+
+ for the DM particles at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ The detail of the samples used to compute the power spectra is in Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Reconstructing_field"
+
+\end_inset
+
+.
+ The result tells us that the Kaiser approximation is valid only on 
+\begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+ From Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Kaiser"
+
+\end_inset
+
+, measured 
+\begin_inset Formula $f$
+\end_inset
+
+s are 
+\begin_inset Formula $f=0.417$
+\end_inset
+
+ with the error of the mean of 0.01 at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $f=0.765$
+\end_inset
+
+ with the error of the mean of 0.01 at 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ In order to measure the value of 
+\begin_inset Formula $f$
+\end_inset
+
+, we used the ratios on the range of 
+\begin_inset Formula $k\in[0.01,0.02][h{\rm Mpc^{-1}]}$
+\end_inset
+
+.
+ Both measured 
+\begin_inset Formula $f$
+\end_inset
+
+ values are underestimated compared to expected 
+\begin_inset Formula $f$
+\end_inset
+
+ values from the cosmology used in the simulations, which are 
+\begin_inset Formula $f$
+\end_inset
+
+=0.466 and 
+\begin_inset Formula $f$
+\end_inset
+
+=0.84 at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+ respectively.
+ The main cause of this underestimation is due to the fact that the ratio
+ of non-linear matter power spectrum already deviates from the Kaiser approximat
+ion at 
+\begin_inset Formula $k=0.02h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_RSD/Kaiser_dm.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The ratio of monopole and quadrupole moments of redshift-space matter power
+ spectrum at z=0.0 and z=1.0.
+ Solid lines represent the ratio of non-linear matter power spectra and
+ the corresponding dashed lines show their predicted values using the Kaiser
+ approximation.
+ Error bars are the error of the mean over ten simulations.
+ The Kaiser approximation is valid only on 
+\begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Kaiser"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, we repeat the same exercise for DM halos whose masses are greater than
+ 
+\begin_inset Formula $10^{13}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ DM halos and galaxies are biased tracer of DM particles, which means that
+ the density for those biased tracers are defined as 
+\begin_inset Formula $\delta_{halo/gal}=b\delta_{DM}$
+\end_inset
+
+ where 
+\begin_inset Formula $b$
+\end_inset
+
+ is a bias parameter.
+ On large scales, this bias parameter is scale-independent and therefore
+ can be treated as the constant parameter.
+ Measuring the Kaiser approximation through such biased tracers, the ratio
+ in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:kaiser_ratio"
+
+\end_inset
+
+ becomes
+\begin_inset Formula 
+\[
+P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}\beta+\frac{4}{7}\beta^{2})/(1+\frac{2}{3}\beta+\frac{1}{5}\beta^{2})
+\]
+
+\end_inset
+
+where we define 
+\begin_inset Formula $\beta=f/b$
+\end_inset
+
+.
+ This comes from 
+\begin_inset Formula $\delta_{s}^{(hao/gal)}(\vec{k})=(b+f\mu^{2})\delta_{r}^{(DM)}(\vec{k})=b(1+\frac{f}{b}\mu^{2})\delta_{r}^{(DM)}=(1+\beta\mu^{2})\delta_{r}^{(halo/gal)}$
+\end_inset
+
+.
+ Note that the bias parameter is scale-dependent on small scales, and therefore
+ it adds one more complication in the measurement of the value of 
+\begin_inset Formula $f$
+\end_inset
+
+ and constraining GR/modified gravity, which often uses the scale-dependence
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Kaiser-halo"
+
+\end_inset
+
+ shows the ratio 
+\begin_inset Formula $P_{s}^{(2)}/P_{s}^{(0)}$
+\end_inset
+
+ of DM halos whose masses are greater than 
+\begin_inset Formula $10^{13}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ The wiggle appearing in those ratios on a very sma
+\color black
+ll 
+\begin_inset Formula $k$
+\end_inset
+
+ is due to the limited size of the simulation box.
+ Because of that, measured 
+\begin_inset Formula $\beta$
+\end_inset
+
+ values are sensitive to the change of the range in 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Using 
+\begin_inset Formula $k<k_{{\rm max}}\approx0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+, measured 
+\begin_inset Formula $\beta$
+\end_inset
+
+ values are 
+\begin_inset Formula $\beta$
+\end_inset
+
+ = 0.316 with the error of the mean of 0.02 at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 0.285 with the error of the mean of 0.02 at 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_RSD/Kaiser_halo13.0.pdf
+	lyxscale 60
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Kaiser-halo"
+
+\end_inset
+
+Ratios of monopole and quadrupole moments of redshift-space matter power
+ spectrum for DM halos at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Solid lines represent the ratio of non-linear matter power spectra and
+ the corresponding dashed lines show their predicted values using the Kaiser
+ approximation.
+ Error bars are calculated from the error of the mean over ten simulations.
+ Here we only used halos whose mass is above 
+\begin_inset Formula $10^{13}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ The Kaiser approximation is valid only on 
+\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+EPT/LPT: The Kaiser Approximation in LPT
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:LPT"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -652,11 +1253,28 @@ where
 
 \end_inset
 
+Note that this integration over 
+\begin_inset Formula $\vec{q}$
+\end_inset
 
+ is equivalent to summing all the particles whose initial coordinates are
+ denoted as 
+\begin_inset Formula $\vec{q}_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $i=1,...,N$
+\end_inset
+
+ (
+\begin_inset Formula $N$
+\end_inset
+
+ is the total number of particles.
 \end_layout
 
 \begin_layout Standard
-So, redshift-space density (
+Using the above description, redshift-space density (
 \begin_inset Formula $\vec{s}\equiv\vec{r}+\frac{v_{z}}{H_{0}}\hat{z}$
 \end_inset
 
@@ -690,7 +1308,7 @@ where
 \end_layout
 
 \begin_layout Standard
-Now, we Taylor-expand the term 
+By expanding the term 
 \begin_inset Formula $e^{-ik_{z}v_{z}}$
 \end_inset
 
@@ -702,7 +1320,7 @@ reference "eq:redshift_in_fourier"
 
 \end_inset
 
- as follows:
+ as a Taylor series, we obtain
 \end_layout
 
 \begin_layout Standard
@@ -711,8 +1329,52 @@ reference "eq:redshift_in_fourier"
 \delta_{s}(\vec{k}) & = & \int d^{3}\vec{q}e^{-i\vec{k}\cdot\vec{q}}\{e^{-i\vec{k}\cdot\vec{\Psi}}(1-ik_{z}v_{z}/H_{0}+\cdots)-1\}\\
  & = & \int d^{3}\vec{q}e^{-i\vec{k}\cdot\vec{q}}(e^{-i\vec{k}\cdot\vec{\Psi}}-1)+\int d^{3}\vec{q}e^{-i\vec{k}\cdot\vec{q}}e^{-i\vec{k}\cdot\vec{\Psi}}(-ik_{z}v_{z}/H_{0})+\cdots\\
  & \approx & \delta_{r}(\vec{k})+\int d^{3}\vec{r}e^{-i\vec{k}\cdot\vec{r}}(-ik_{z}v_{z}/H_{0})\\
- & = & \delta_{r}(\vec{k})+\mu^{2}\theta(\vec{k}).
+ & = & \delta_{r}(\vec{k})+\mu^{2}\theta(\vec{k}),
 \end{eqnarray*}
+
+\end_inset
+
+which is the same as Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Kaiser2-1"
+
+\end_inset
+
+.
+ In the perturbation theorem, we assume 
+\begin_inset Formula $\left|\delta\right|\ll1$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $\left|v_{z}\right|\ll1$
+\end_inset
+
+.
+ By taking the first-order term of 
+\begin_inset Formula $e^{-ik_{z}v_{z}}$
+\end_inset
+
+ , we obtain the Kaiser approximation (i.e., the first order EPT).
+ The reason the first-order LPT works better than EPT is because LPT naturally
+ takes care of higher-order terms, which is consistent with the fact that
+ the Zeldovich approximation works better than the first-order EPT (e.g.,
+ 
+\color red
+XXX
+\color inherit
+).
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+Algorithm
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Algorithm"
 
 \end_inset
 
@@ -720,21 +1382,14 @@ reference "eq:redshift_in_fourier"
 \end_layout
 
 \begin_layout Standard
-This is the same as Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Kaiser"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-
-\size normal
-Algorithm
+In this section, we present the algorithm to reconstruct the real-space
+ density field from redshift-space through shifting the particle positions
+ back by the distance due to their velocities.
+ This reconstruction naturally provides a description in terms of LPT.
+ The motivation behind of this method is that LPT takes care of higher-order
+ terms as shown in the previous section, and therefore the reconstruction
+ can remove anisotropy in redshift-space beyond the regime the Kaiser approximat
+ion is valid.
 \end_layout
 
 \begin_layout Standard
@@ -748,7 +1403,7 @@ In order to reconstruct real-space density, we need to remove anisotropy
 
 \begin_layout Itemize
 Take a redshift-space density field and divide it by 
-\begin_inset Formula $(1+\beta\mu^{2})$
+\begin_inset Formula $(1+f\mu^{2})$
 \end_inset
 
  (
@@ -761,7 +1416,7 @@ key "1987MNRAS.227....1K"
 ) to obtain real-space density approximated from linear perturbation:
 \begin_inset Formula 
 \begin{equation}
-\delta_{{\rm Kaiser}}(\vec{k})=\frac{\delta_{s}}{1+\beta\mu^{2}}.\label{eq:Kaiser2}
+\delta_{{\rm Kaiser}}(\vec{k})=\frac{\delta_{s}}{1+f\mu^{2}}.\label{eq:Kaiser2}
 \end{equation}
 
 \end_inset
@@ -802,24 +1457,12 @@ S(k)={\rm e}^{-(kR)^{2}/2}.
 Compute the velocity field from linear perturbation theory:
 \begin_inset Formula 
 \begin{equation}
-\nabla\cdot\vec{v}_{{\rm lin}}=-\beta\delta_{{\rm Kaiser}}(\vec{x)}\Longleftrightarrow\vec{v}_{{\rm lin}}(\vec{k})=\frac{i\vec{k}\beta}{k^{2}}\delta_{{\rm Kaiser}}(\vec{k}),\label{eq:linear_velocity}
+\nabla\cdot\vec{v}_{{\rm lin}}=-f\delta_{{\rm Kaiser}}(\vec{x)}\Longleftrightarrow\vec{v}_{{\rm lin}}(\vec{k})=\frac{i\vec{k}f}{k^{2}}\delta_{{\rm Kaiser}}(\vec{k}).\label{eq:linear_velocity}
 \end{equation}
 
 \end_inset
 
-where 
-\begin_inset Formula $\beta\equiv f/b$
-\end_inset
 
-, where 
-\begin_inset Formula $f\equiv d(ln(D(a)))/d(ln(a))$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
- is a bias.
 \end_layout
 
 \begin_layout Itemize
@@ -862,72 +1505,75 @@ reference "eq:redshift_in_fourier"
 \end_layout
 
 \begin_layout Standard
-We take advantage of periodicity of the simulations to perform all of these
- steps using fast Fourier transforms.
+Note that we take advantage of periodicity of the simulations to perform
+ all of these steps using fast Fourier transforms.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
 
 \color black
- For the non-periodic case, see Padmanabhan et al.
- 2012(
+For the non-periodic case, see Ref.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "2012arXiv1202.0090P"
 
 \end_inset
 
-).
+.
+\end_layout
 
-\color inherit
- The density fields are constructed from the particle positions using a
- CIC assignment (
+\end_inset
+
+ We define the density field through the CIC assignment 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "1981csup.book.....H"
 
 \end_inset
 
-) and linear velocity fields calculated from the density fields are reassigned
- to each particle.
+ and allocate the linear velocities to particles through the inverse CIC
+ assignment.
+ 
 \end_layout
 
 \begin_layout Standard
-To measure 
-\begin_inset Formula $\beta$
+In order to measure 
+\begin_inset Formula $f$
 \end_inset
 
 , we treat 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
- as a free parameter and calculate the quadrupole moment of reconstructed-densit
-y power spectrum with various 
-\begin_inset Formula $\beta$
+ as a free parameter.
+ Since there is no anisotropy in real-space, the quadrupole moment of the
+ power spectrum in real-space must be zero.
+ Using the quadrupole moments measure the residual anisotropu, we test what
+ value of 
+\begin_inset Formula $f$
 \end_inset
 
-.
- Since a quadrupole moment of real-space density power spectrum is zero
- for all scales, correct 
-\begin_inset Formula $\beta$
-\end_inset
-
- must make the quadrupole moment of the reconstructed power spectrum zero
- at large scale since we remove the effect of linear velocity fields from
- redshift-space.
+ properly removes the anisotropy from the redshift-space density field.
  
+\color black
+The assumption here is that the 
+\begin_inset Formula $f$
+\end_inset
+
+ value which removes anisotropy is the 
+\begin_inset Formula $f$
+\end_inset
+
+ value from the cosmology measured.
 \end_layout
 
 \begin_layout Standard
-Note that we are not exactly calculating linear velocity, because we are
- non-linear density instead of linear density.
- Furthermore, instead of using non-linear, real-space density to calculate
- a velocity using Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:linear_velocity"
-
-\end_inset
-
-, we use the Kaiser density given in Eq.
+Note that we are not exactly computing linear velocity, because we use the
+ non-linear density field smoothed by the Gaussian filter as well as the
+ redhistf-space density field divided by the Kaiser approximation (hereafter,
+ the Kaiser density) as shown in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -936,9 +1582,9 @@ reference "eq:Kaiser2"
 \end_inset
 
 .
- We checked that there is little difference between velocities calculated
- from non-linear, real-space density and the Kaiser density (See Figure
- 
+ In the next section, we test the effect of smoothing scales to estimate
+ velocity fields and compare the velocity fields estimated from the real-space
+ density field and the Kaiser density (See Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:histogram_vel_dm"
@@ -948,12 +1594,8 @@ reference "fig:histogram_vel_dm"
 ).
 \end_layout
 
-\begin_layout Subsection
-Reconstruction in LPT
-\end_layout
-
 \begin_layout Standard
-In Section 2.2, we described the reconstructed density in terms of LPT (Eqn.
+We described the reconstructed density in terms of LPT (Eqn.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -965,17 +1607,6 @@ reference "eq:recon_LPT1"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\\
-\\
-\\
-\\
-\end{eqnarray*}
-
-\end_inset
-
-
 \begin_inset Formula 
 \begin{equation}
 \delta_{{\rm recon}}(\vec{k})=\int d^{3}q{\rm e}^{-i\vec{k}\cdot\vec{q}}\{\exp(-i\vec{k}\cdot\vec{\Psi}(\vec{q})+ik_{z}v_{z,{\rm NL}}/H_{0}+ik_{z}v_{z,{\rm lin}}/H_{0})-1\},
@@ -1006,9 +1637,6 @@ where
 \begin_layout Standard
 On very large scales where the Kaiser approximation is valid, the reconstructed
  density can be approximated as
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 \delta_{{\rm recon}} & = & \int d^{3}\vec{q}{\rm e}^{-i\vec{k}\cdot\vec{q}}\{\exp(-i\vec{k}\cdot\vec{\Psi}-ik_{z}v_{z,{\rm NL}}/H_{0}+ik_{z}v_{z,{\rm lin}}/H_{0})-1\}\\
@@ -1018,49 +1646,34 @@ On very large scales where the Kaiser approximation is valid, the reconstructed
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-The reason that reconstruction works better than the Kaiser approximation
- is because the method naturally takes care of higher-order terms of (Taylor-exp
-anded) 
-\begin_inset Formula $e^{-ik_{z}v_{z}}$
+Note that if 
+\begin_inset Formula $\theta_{{\rm NL}}\approx\theta_{{\rm lin}}$
 \end_inset
 
- by shifting particles back by their peculiar velocities.
+, then we obtain 
+\begin_inset Formula $\delta_{{\rm recon}}\approx\delta_{r}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
+Reconstructing the Real-Space Density Fields
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Reconstructing_field"
 
-\size normal
-Reconstruction 1: DM particles
-\end_layout
-
-\begin_layout Standard
-In order to evaluate our reconstruction method, we first tested our algorithm
- on DM particles.
- 
-\end_layout
-
-\begin_layout Standard
-In the following, we first demonstrate the Kaiser approximation and then
- show how reconstruction with an expected 
-\begin_inset Formula $\beta$
 \end_inset
 
- value recovers real-space density.
- Finally we present a method for measuring the proper 
-\begin_inset Formula $\beta$
-\end_inset
 
- value through reconstruction.
- 
 \end_layout
 
 \begin_layout Standard
-Here we used 10 samples each with 10732952 particles in a cubical box whose
- side length is 2000 
+In this section, we examine how well the reconstruction technique can recover
+ the velocity fields and the real-space density fields as well as aggregate
+ statistics such as power spectra.
+ We run a set of comparisons with the 10 boxes each with 10732952 particles
+ in a cubical box whose side length is 2000 
 \begin_inset Formula $h^{-1}{\rm Mpc}$
 \end_inset
 
@@ -1088,287 +1701,25 @@ CDM cosmology with
 \end_inset
 
 =0.55.
- To compute power spectra, we used 
-\begin_inset Formula $512^{3}$
+ The non-linear velocity fields and the real-space density fields from the
+ simulations are the baseline against to the velocity/density fields reconstruct
+ed from the redshift-space density fields.
+ Note that we use the growth rate 
+\begin_inset Formula $f$
 \end_inset
 
- grids for CIC assignment and power spectra are averages of 10 simulations.
- To compute the Kaiser approximation and reconstruction, we used 
-\begin_inset Formula $\beta=0.466$
-\end_inset
-
- and 
-\begin_inset Formula $\beta=0.84$
-\end_inset
-
- at z=0.0 and z=1.0 respectively a
-\color black
-s the correct 
-\begin_inset Formula $\beta$
-\end_inset
-
- values based on the cosmology for the simulations a
-\color inherit
-nd 10
-\begin_inset Formula $h^{-1}{\rm Mpc}$
-\end_inset
-
- as a smoothing scale.
+ computed from the cosmology used in the simulations.
 \end_layout
 
 \begin_layout Subsection
-The Kaiser Approximation
-\end_layout
-
-\begin_layout Standard
-In order to evaluate an effective scale for which the Kaiser approximation
- and non-linear matter density are in agreement, and to measure 
-\begin_inset Formula $\beta$
-\end_inset
-
- value through the Kaiser approximation, we use redshift-space matter power
- spectra:
-\color black
-
-\begin_inset Formula 
-\begin{equation}
-P_{s}(\vec{k})\equiv<\delta_{s}\delta_{s}>=(1+\mu^{2}\beta)^{2}P_{r}(k),\label{eq:Kaiser_power}
-\end{equation}
-
-\end_inset
-
-where the relationship between redshift-space and real-space power spectra
- is derived from Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Kaiser"
-
-\end_inset
-
-.
- Since a redshift-space density field has an angular dependence, we can
- expand the power spectrum by convolving with Legendre polynomials, 
-\begin_inset Formula $L_{l}(\mu)$
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{equation}
-P_{s}(k,\mu)=\underset{l}{\sum}P^{(l)}(k)L_{l}(\mu),
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\color black
-where
-\end_layout
-
-\begin_layout Standard
-
-\color black
-\begin_inset Formula 
-\begin{equation}
-P_{s}^{(l)}(k)\equiv\frac{2l+1}{2}\int_{-1}^{+1}P_{s}(k,\mu)L_{l}(\mu)d\mu.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To measure 
-\begin_inset Formula $\beta$
-\end_inset
-
- through the Kaiser approximation, we first take a ratio of quadrupole and
- monople moments of a redshift-space power spectrum:
-\begin_inset Formula 
-\begin{equation}
-P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}\beta+\frac{4}{7}\beta^{2})/(1+\frac{2}{3}\beta+\frac{1}{5}\beta^{2}),
-\end{equation}
-
-\end_inset
-
-and solve the above equation to obtain 
-\begin_inset Formula $\beta$
-\end_inset
-
-.
- To compute monopole and quadrupole moments of a redshift-power spectrum,
- we first constructed a redshift-space density field from particle positions
- using a CIC assignment and Fourier tranform the density field.
- After the Fourier transformation, we computed a power spectrum, 
-\begin_inset Formula $P_{s}(\vec{k})\equiv<\delta_{s}^{*}(\vec{k})\delta_{s}(\vec{k})>$
-\end_inset
-
- .
- 
-\end_layout
-
-\begin_layout Standard
-
-\color black
-The ratios shown in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Kaiser"
-
-\end_inset
-
- are averages of the ten samples.
- The result tells us that Kaiser approximation is valid only on 
-\begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
-\end_inset
-
-.
- From Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Kaiser"
-
-\end_inset
-
-, measured 
-\begin_inset Formula $\beta$
-\end_inset
-
-s are 
-\begin_inset Formula $\beta$
-\end_inset
-
-=0.417 with the error of the mean of 0.01 at z=0.0 and 
-\begin_inset Formula $\beta$
-\end_inset
-
-=0.765 with the error of the mean of 0.01 at z=1.0.
- We used the ratios on the range of 
-\begin_inset Formula $k\in[0.01,0.02][h{\rm Mpc^{-1}]}$
-\end_inset
-
-.
- Both measured 
-\begin_inset Formula $\beta$
-\end_inset
-
- values are underestimated compared to expected 
-\begin_inset Formula $\beta$
-\end_inset
-
- values from the cosmology used in the simulations, which are 
-\begin_inset Formula $\beta$
-\end_inset
-
-=0.466 and 
-\begin_inset Formula $\beta$
-\end_inset
-
-=0.84 at z=0.0 and z=1.0 respectively.
- The main cause of this underestimation is due to the fact that the ratio
- of non-linear matter power spectrum already deviates from Kaiser approximation
- at 
-\begin_inset Formula $k=0.02h{\rm Mpc^{-1}}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/Kaiser_dm.pdf
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-The ratio of monopole and quadrupole moments of redshift-space matter power
- spectrum at z=0.0 and z=1.0.
- Solid lines represent the ratio of non-linear matter power spectra and
- the corresponding dashed lines show their predicted values using the Kaiser
- approximation.
- Error bars are the error of the mean over ten simulations.
- The Kaiser approximation is valid only on 
-\begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Kaiser"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\size normal
-How well can we recover a real-space density field with a known 
-\begin_inset Formula $\beta$
-\end_inset
-
- value?
-\end_layout
-
-\begin_layout Standard
-Here we demonstrate the accuracy with which our reconstruction recovers
- real-space density by using a known 
-\begin_inset Formula $\beta$
-\end_inset
-
- value from the cosmology used in our samples.
-\end_layout
-
-\begin_layout Subsubsection
 Estimating velocity fields
 \end_layout
 
 \begin_layout Standard
-In order to demonstrate that linear perturbation theory approximates non-linear
- particle velocities, we compare volume-weighted velocities with linear
- velocities calculated from real-space, redshift-space and the Kaiser densities,
- as defined in Eqn.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Kaiser2"
-
-\end_inset
-
-.
- We calculated the volume-weighted velocities by dividing momentum by mass
- on each grid.
+In this section, we present how well linear perturbation theory can estimate
+ the velocity fields.
+ To do that, we first compute velocity fields using the volume-weighted
+ method, which defines velocities by dividing momentum by mass on each grid.
  Note that the volume-weighted velocities are sensitive to grid sizes, because
  large number of grids make a majority of grids empty and therefore the
  velocities on those grids are zero even though the velocity field is not.
@@ -1381,95 +1732,87 @@ reference "eq:Kaiser2"
 \end_layout
 
 \begin_layout Standard
-Figure 
+Next, we estimate linear velocities using the density fields from Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:histogram_vel_dm"
+reference "eq:linear_velocity"
 
-\end_inset
-
- bins differences between volume-weighted non-linear velocities, 
-\begin_inset Formula $V_{{\rm NL}}$
-\end_inset
-
-, and linear velocities, 
-\begin_inset Formula $V_{{\rm lin}}$
-\end_inset
-
-, from real-space, redshift-space and the Kaiser densities at z=0.0.
- From the plot, linear velocities from real-space and the Kaiser densities
- show little differences and those linear velocities adequately approximate
- non-linear velocities (also, see Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:dm_vel"
-
-\end_inset
-
- for quantitative evaluations).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/histogram_lin_vel_sm10_z0.pdf
-	lyxscale 50
-	width 50col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\color black
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\color black
-A histogram of particles' non-linear velocity and linear velocities calculated
- from real-space and the Kaiser densities for particles at z=0.0 with smoothing
- of 10
-\begin_inset Formula $h^{-1}{\rm Mpc}$
 \end_inset
 
 .
-
-\color red
+ Here, we decide to use two different density fields -- the real-space density
  
-\size large
+\begin_inset Formula $\delta_{r}$
+\end_inset
 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:histogram_vel_dm"
+ and the Kaiser density 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+ defined as Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Kaiser2"
 
 \end_inset
 
-
+.
+ The reason we use those two density fields to compute linear velocities
+ is because we cannot observe the real-space density field and need to use
+ the Kaiser density in actual observations, but we also want to know how
+ the estimated velocity fields differ by using those different density fields.
 \end_layout
 
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:vel_diff"
+
 \end_inset
 
-
-\end_layout
-
+ compares the LOS velocities 
+\begin_inset Formula $v_{z}$
 \end_inset
 
+ linearly estimated from 
+\begin_inset Formula $\delta_{r}$
+\end_inset
 
+ and 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+ to the non-linear velocities 
+\begin_inset Formula $v_{{\rm NL}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ The linear velocities are reassigned to DM particles through the inverse
+ CIC assignment after the velocity fields are computed.
+ The figure shows that using 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+ make little difference in the estimation of linear velocities.
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1488,9 +1831,34 @@ status open
 \begin_layout Plain Layout
 
 \color black
-Histograms of particles' velocity differences between non-linear velocity
- and linear velocities calculated from real-space and the Kaiser densities
- for particles at z=0.0 with smoothing of 10
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:vel_diff"
+
+\end_inset
+
+Comparison of the LOS velocities 
+\begin_inset Formula $v_{z}$
+\end_inset
+
+ of DM particles at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ We compute the linear velocities using the real-space density 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ and the Kaiser density 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+.
+ The difference between the linear velocities estimeted from two different
+ density fields is XXX.
+ Note that the linear velocities are reassigned to particles through the
+ inverse CIC assignment with smoothing of 10
 \begin_inset Formula $h^{-1}{\rm Mpc}$
 \end_inset
 
@@ -1507,384 +1875,75 @@ Histograms of particles' velocity differences between non-linear velocity
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-placement t
-wide true
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<v_{z}>$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{v_{z}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{{\rm NL}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.18\times10^{-3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.12
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{{\rm lin}}(\delta_{r})$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.52\times10^{-7}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.65
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{{\rm lin}}(\delta_{{\rm Kaiser}})$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-2.45\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4.01
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<v_{z}>$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{v_{z}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{{\rm NL}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-1.92\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6.82
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{{\rm lin}}(\delta_{r})$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-2.96\times10^{-10}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6.73
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{{\rm lin}}(\delta_{{\rm Kaiser}})$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.22\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5.56
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\color black
-Averages and standard deviations of particles' non-linear velocity and linear
- velocities calculated from real-space density (
-\begin_inset Formula $\delta_{r}$
-\end_inset
-
-) and the Kaiser density (
-\begin_inset Formula $\delta_{{\rm Kaiser}}$
-\end_inset
-
-) at z=0.0 and z=1.0.
- We used 10 
-\begin_inset Formula $h^{-1}{\rm Mpc}$
-\end_inset
-
- as a smoothing scale.
- 
-\color inherit
-
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:dm_vel"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
+\begin_layout Subsection
 Reconstructed density field
 \end_layout
 
 \begin_layout Standard
-We next test how well the method recovers the real-space density fie
-\color black
-ld with the correct 
-\begin_inset Formula $\beta$
+We next test how well the reconstruction method can recover the real-space
+ density field with the correct value for 
+\begin_inset Formula $f$
 \end_inset
 
- value.
- In ord
-\color inherit
-er to accomplish this, we compare real-space density with redshift-space
- and reconstructed densities at z=0.0 and z=1.0, as shown in Figure 
+.
+ We first compute the reconstructed density field from Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:recon_LPT1"
+
+\end_inset
+
+.
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Scatter-dm-z0"
 
 \end_inset
 
- and Table 
+ compares the redshift-space and reconstructed density fields, 
+\begin_inset Formula $\delta_{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
+, to the real-space density field 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ using 
+\begin_inset Formula $128^{3}$
+\end_inset
+
+ grids.
+ The scatter between 
+\begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ is reduced to 
+\begin_inset Formula $26.9\%$
+\end_inset
+
+ compared to the scatter between 
+\begin_inset Formula $\delta_{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ as shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:dm_den_grid128"
@@ -1892,12 +1951,35 @@ reference "tab:dm_den_grid128"
 \end_inset
 
 .
- The results show that the scatter between real-space density and reconstructed
- density decreases relative to redshift-space density.
- In addition to the decrease in scatter, the slope between real-space and
- reconstructed densities is closer to 1.
- Here we show the result for one representative sample.
- 
+ (
+\color red
+talk about the slope...
+\color inherit
+) We also compared the scatter between 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:dm_den_grid128"
+
+\end_inset
+
+.
+ Even for the case of 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+, the scatter is reduced to 
+\begin_inset Formula $69.2\%$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1961,7 +2043,7 @@ name "fig:Scatter-dm-z0"
 \begin_inset Float table
 wide true
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -2287,18 +2369,21 @@ z=1.0
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Expectation values and standard deviations of density differences between
- redshift-space/ the Kaiser/ reconstructed densities and real-space density
- at z=0.0 and z=1.0, using 
+Mean and standard deviation of density differences between redshift-space/
+ the Kaiser/ reconstructed densities and real-space density at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+, using 
 \begin_inset Formula $N_{grid}=128^{3}$
 \end_inset
 
 .
  
-\color red
-Do I still need to show the result of the Kaiser density here?
-\color inherit
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:dm_den_grid128"
@@ -2318,49 +2403,114 @@ name "tab:dm_den_grid128"
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Power spectra with reconstruction
 \end_layout
 
 \begin_layout Standard
-In order to determine the scale on which reconstruction with the correct
+By comparing the velocity/density fields in the previous sections, we show
+ that the reconstruction method can recover the real-space density field
+ better than the Kaiser approximation.
+ Now, we present at what scales the power spectrum computed from the reconstruct
+ed density field agrees with the power spectrum in real space.
+ To this end, we applied the reconstruction method to the redshift-space
+ density field and then computed the power spectrum.
  
-\begin_inset Formula $\beta$
-\end_inset
-
- value can recover the real-space density field, we calculated the power
- spectrum of reconstructed density.
- To this end, we applied the reconstruction algorithm to redshift-space
- density and then calculated the power spectrum as described in Section
- 3.1.
-
 \color black
- As shown in Figure 
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:recon-mono"
 
 \end_inset
 
-, the amplitude of reconstructed power spectra matches the one for real-space
- power spectra up to 
-\begin_inset Formula $k\sim0.05h{\rm Mpc^{-1}}$
+ compares the reconstructed power spectrum and the Kaiser approximation,
+ 
+\begin_inset Formula $P_{{\rm Kaiser}}=(1+\frac{2}{3}f+\frac{1}{5}f^{2})P_{r}$
+\end_inset
+
+, to the real/redshift-space power spectra at 
+\begin_inset Formula $z=0$
 \end_inset
 
 .
- Figure 
+ While the Kaiser approximation agrees with the power spectrum in redshift-space
+ up to 
+\begin_inset Formula $k_{{\rm max}}\sim0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+, the reconstructed power spectrum agrees with the real-space power spectrum
+ up to 
+\begin_inset Formula $k_{{\rm max}}\sim0.1h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Cross-dm"
 
 \end_inset
 
- shows cross correlation coefficients between 
-\begin_inset Formula $\delta_{r}$
+ shows cross correlation coefficients of 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
 \end_inset
 
  and 
 \begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
+ to 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ We computed the cross correlation coefficient 
+\begin_inset Formula $r$
+\end_inset
+
+ using the power spectra such that
+\begin_inset Formula 
+\begin{equation}
+r=\frac{<\delta_{{\rm recon}}^{*}\delta_{r}>}{<\delta_{{\rm recon}}^{*}\delta_{{\rm recon}}><\delta_{r}^{*}\delta_{r}>}=\frac{P_{{\rm recon},r}^{(cross)}}{P_{{\rm recon}}^{(auto)}P_{r}^{(auto)}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $P^{(auto)}$
+\end_inset
+
+ is an auto power spectrum and 
+\begin_inset Formula $P^{(cross)}$
+\end_inset
+
+ is a cross poewr spectrum.
+ Having 1 for cross correlation coefficients means that those two density
+ fields are perfectly correlated each other.
+ The cross correlation coefficient for 
+\begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
+ is closer to 1 on smaller scale than that for 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+, which is consistent with Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:recon-mono"
+
 \end_inset
 
 .
@@ -2379,7 +2529,7 @@ reference "fig:Cross-dm"
 \end_inset
 
  indicate that our reconstruction with the proper 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  value can recover real-space density at the scale that the Kaiser approximation
@@ -2391,7 +2541,7 @@ reference "fig:Cross-dm"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2411,20 +2561,24 @@ status open
 
 \color black
 Solid lines represent real-space density power spectrum (blue) and redshift-spac
-e power spectrum (green) at z=0.0.
+e power spectrum (green) at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
  Blue circles represent the reconstructed power spectrum and green circles
  are the monopole term of the Kaiser approximation.
  Here we used 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  = 0.466.
  The reconstructed density power spectrum with the expected 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  recovers real-space matter power spectrum up to 
-\begin_inset Formula $k\sim0.05h{\rm Mpc^{-1}}$
+\begin_inset Formula $k\sim0.1h{\rm Mpc^{-1}}$
 \end_inset
 
 , while the Kaiser approximation deviates from the redshift-space power
@@ -2456,7 +2610,7 @@ name "fig:recon-mono"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2496,37 +2650,45 @@ name "fig:Cross-dm"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
+Measuring the growth rate through reconstruction 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:measure_f"
 
-\size normal
-Measuring 
-\begin_inset Formula $\beta$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-In Section 3.2, we demonstrate that reconstruction can recover real-space
- density from redshift-space on large scales.
- In Section 3.3, we treat 
-\begin_inset Formula $\beta$
+In Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Reconstructing_field"
+
+\end_inset
+
+, we demonstrate that reconstruction can recover real-space density from
+ redshift-space on large scales.
+ In this section, we treat 
+\begin_inset Formula $f$
 \end_inset
 
  as a free parameter and demonstrate the accuracy with which we can measure
  
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  value through reconstruction.
  We hypothesize that the proper 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  value will permit our reconstruction to successfully remove all of the
  anisotropy from redshift-space.
  In order to identify the proper 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  value, we assess residual anisotropy by calculating the quadrupole moment.
@@ -2534,33 +2696,46 @@ In Section 3.2, we demonstrate that reconstruction can recover real-space
 \end_layout
 
 \begin_layout Standard
-In the following, we demonstrate that we can accurately measure 
-\begin_inset Formula $\beta$
+In the following, we demonstrate the measurement of 
+\begin_inset Formula $f/\beta$
 \end_inset
 
- value through reconstructed quadrupole moments and briefly discuss the
- effect of smoothing scales on reconstruction.
+ value through reconstruction for DM particles and DM halos.
 \end_layout
 
-\begin_layout Subsubsection
-Measurement of 
-\begin_inset Formula $\beta$
+\begin_layout Subsection
+DM particles 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:recon_dm"
+
 \end_inset
 
- through reconstruction
+
 \end_layout
 
 \begin_layout Standard
-To measure 
-\begin_inset Formula $\beta$
+Using the algorithm described in Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Algorithm"
+
 \end_inset
 
- value through reconstruction, we first calculate quadrupole moments of
- reconstructed power spectra with various 
-\begin_inset Formula $\beta$
+, we first reconstruct the density field with various values of 
+\begin_inset Formula $f$
 \end_inset
 
- values, and then calculate 
+.
+ Then, we computed the quadrupole moments from those reconstructed density
+ fields.
+ Here, we want to find the value of 
+\begin_inset Formula $f$
+\end_inset
+
+, which removes anisotropy on large scales.
+ In order to find such a value, we calculate 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -2593,84 +2768,109 @@ where
 \end_layout
 
 \begin_layout Standard
-Figures 
+We computed the quadrupole moments for the reconstructed densifty fields
+ with various values of 
+\begin_inset Formula $f$
+\end_inset
+
+ and their corresponding 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ values at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ as shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:recon-ratio-quad-1"
 
 \end_inset
 
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chisq-dm"
-
-\end_inset
-
- show reconstructed quadrupole moments and their 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- values at z=0.0 and z=1.0.
- In Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:recon-ratio-quad-1"
-
-\end_inset
-
-, our reconstructed quadrupole with the proper 
-\begin_inset Formula $\beta$
-\end_inset
-
- value matches the real-space power spectrum up to 
-\begin_inset Formula $k\sim0.05h{\rm Mpc^{-1}}$
-\end_inset
-
-, which agrees with the result presented in Section 3.2.
- On the other hand, other 
-\begin_inset Formula $\beta$
-\end_inset
-
- values make the amplitudes of the quadrupole smaller/larger than the observed
- for real-space.
- This implies that inappropriate 
-\begin_inset Formula $\beta$
-\end_inset
-
- values underestimate/overestimate velocities, and therefore there exists
- some residual/additional anisotropy.
- To calculate 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- of those quadrupole moments with respect to zero, we used the values up
- to 
-\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
-\end_inset
-
-, as shown in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chisq-dm"
-
+ .
+ The smoothing scales used here is 
+\begin_inset Formula $10h{\rm Mpc^{-1}}$
 \end_inset
 
 .
- The best fit 
-\begin_inset Formula $\beta$
+ In the left panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:recon-ratio-quad-1"
+
 \end_inset
 
- values are 
-\begin_inset Formula $\beta$
+ , the solid lines are the quadrupole moments for 
+\begin_inset Formula $\delta_{{\rm recon}}$
 \end_inset
 
-=0.455 and 
-\begin_inset Formula $\beta$
+ with various 
+\begin_inset Formula $f$
 \end_inset
 
-=0.83 at z=0.0 and z=1.0 respectively.
- 
+.
+ The 
+\begin_inset Formula $f$
+\end_inset
+
+ value corresponding to the cosmology used for the simulation is shown as
+ the red solid line, while the quadrupole moment of the real-space density
+ field is shown as a red dashed line.
+ This figure tells us two things.
+ One is that the reconstruction method removes anisotropy up to 
+\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+ which is better than the Kaiser approximation.
+ The other thing is that the proper 
+\begin_inset Formula $f$
+\end_inset
+
+ value overestimates the velocity field and therefore over-removes the anisotrop
+y.
+ This is consistent with the right panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:recon-ratio-quad-1"
+
+\end_inset
+
+ , which shows the 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ values for various 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ The corresponding 
+\begin_inset Formula $f$
+\end_inset
+
+ value for the minimum 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ is 
+\begin_inset Formula $f=0.455$
+\end_inset
+
+.
+ This yields a 
+\begin_inset Formula $1.1\%$
+\end_inset
+
+ measurement of 
+\begin_inset Formula $f$
+\end_inset
+
+, but with a residual bias of 
+\begin_inset Formula $2.4\%$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2678,7 +2878,7 @@ reference "fig:Chisq-dm"
 placement t
 wide true
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2688,11 +2888,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename ../plots_RSD/Chisq_Az0_dm_z0_kcut0.05.pdf
+	width 60col%
+
+\end_inset
+
+
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Quadrupole moments of the reconstructed-density power spectra divided by
- a real-space matter power spectrum at z=0.0.
+Left: Quadrupole moments of the reconstructed-density power spectra divided
+ by a real-space matter power spectrum at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
  The dotted line is the real-space quadrupole moment.
  Solid lines show the reconstructed densities with 
 \begin_inset Formula $\beta$
@@ -2700,7 +2911,7 @@ Quadrupole moments of the reconstructed-density power spectra divided by
 
  as shown in the legend.
  The reconstructed power spectrum with correct 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
  agrees with the real-space power spectrum up to 
@@ -2714,54 +2925,22 @@ Quadrupole moments of the reconstructed-density power spectra divided by
 
 .
  Error bars are calculated from the error of the mean over ten simulations.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:recon-ratio-quad-1"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/Chisq_Az0_dm_z0_kcut0.05.pdf
-	width 60col%
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
+ 
 \color red
+Right: 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
  of the reconstructed quadrupole moments with respect to zero, as a function
  of 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
- at z=0.0.
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
  
 \begin_inset Formula $\chi^{2}$
 \end_inset
@@ -2775,628 +2954,13 @@ status open
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- has 5 degrees of freedom.->Need to fix to one sample.
+ has 5 degrees of freedom.
 
 \color inherit
  
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Chisq-dm"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.025
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.461
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.466
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.22\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.60\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.05
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.456
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.460
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.90\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $6.85\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.075
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.493
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.492
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.51\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.45\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.516
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.523
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.30\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.81\times10^{-7}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.025
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.815
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.820
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $5.01\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $4.15\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.05
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.832
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.834
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.70\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.11\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.075
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.885
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.892
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.75\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $5.26\times10^{-9}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
---
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
---
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
---
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
---
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-and 
-\begin_inset Formula $<(\beta-<\beta>)^{2}>$
-\end_inset
-
- at z=0.0 and z=1.0.
- 
-\color red
-What kind of explanation and conclusion should I put here?Also, need to
- show how I calculate 
-\begin_inset Formula $<\beta>$
-\end_inset
-
- and 
-\begin_inset Formula $<\beta^{2}>$
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:mean_beta_dm"
+name "fig:recon-ratio-quad-1"
 
 \end_inset
 
@@ -3418,32 +2982,67 @@ In light of our findings that the reconstructed quadrupoles largely deviate
  from the real-space quadrupole moment on small scales, we wondered whether
  this is due to failing to model the FoG effect or due to a choice of smoothing
  scales.
-\end_layout
+ We therefore apply the reconstruction method with various smoothing scales
+ and the fixed value of 
+\begin_inset Formula $f$
+\end_inset
 
-\begin_layout Standard
-
+, and compute the quadrupole moments as shown in Figure 
 \color black
-Figure 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:power-smoothing1"
 
 \end_inset
 
- shows that reconstruction is sensitive to the choice of smoothing scales.
- Specifically, smoothing scales affect the shape of quadrupole moments.
- As a chosen smoothing scale increases, the reconstructed quadrupole moment
- starts deviating from zero at smaller 
+ .
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:power-smoothing1"
+
+\end_inset
+
+ tells us that the reconstruction method is sensitive to the choice of smoothing
+ scales.
+ For the case of the smoothing scale of 
+\begin_inset Formula $20h^{-1}{\rm Mpc}$
+\end_inset
+
+, the effect of RSDs on small scales remain and the anisotropy is not completely
+ removed even on large scales.
+ This is because large smoothing scales kill the high-
 \begin_inset Formula $k$
 \end_inset
 
-, because large smoothing scales underestimate velocities on small scales,
- while small smoothing scale overestimates velocities on all scales.
- Although modeling the FoG effect may be also important to recover real-space
- density on small scales, we confirmed that the same deviation is happened
- for the case of halos, which are not affected by the FoG effect, in Section
- 4, and therefore we conclude that the deviation of the reconstructed quadrupole
-s on small scales is mainly due to the choice of smoothing scales.
+ modes and therefore cannot model small scale velocities.
+ On the other hand, for the case of smoothing scales of 
+\begin_inset Formula $5h^{-1}{\rm Mpc}$
+\end_inset
+
+, the velocities are over-estimated on all scales and the quadrupole moment
+ goes to negative; however, the amplitude is almost flat up to 
+\begin_inset Formula $k<0.1h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+ This implies that using the smoothing scale of 
+\begin_inset Formula $5h^{-1}{\rm Mpc}$
+\end_inset
+
+ will introduce larger bias on the measurement of 
+\begin_inset Formula $f$
+\end_inset
+
+, but we can use more modes (i.e., going to smaller 
+\begin_inset Formula $k$
+\end_inset
+
+) in the measurement.
+ Due to the sensitivity of the reconstruction on smoothing scales, we conclude
+ that the deviation of the reconstructed quadrupoles on small scales is
+ mainly due to the choice of smoothing scales.
  
 \end_layout
 
@@ -3452,7 +3051,7 @@ s on small scales is mainly due to the choice of smoothing scales.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3471,7 +3070,7 @@ status open
 \begin_layout Plain Layout
 Quadrupole moments of the reconstructed power spectra with various smoothing
  scales with fixed 
-\begin_inset Formula $\beta=0.466$
+\begin_inset Formula $f=0.466$
 \end_inset
 
 .
@@ -3485,7 +3084,7 @@ reference "fig:histogram_vel_dm"
 
 \end_inset
 
-), while large smoothing scales don't recover real-space.
+), while large smoothing scales do not recover real-space.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -3506,18 +3105,15 @@ name "fig:power-smoothing1"
 
 \end_layout
 
-\begin_layout Section
-
-\size normal
-Reconstruction 2: DM Halos
+\begin_layout Subsection
+DM Halos
 \end_layout
 
 \begin_layout Standard
+We now consider possible observational consequences of the reconstruction
+ method by applying to DM halos.
 
 \color black
-In this section, we apply our reconstruction method to halos.
- Halos are biased tracers of matter.
- Here we investigate how reconstruction works on biased tracers.
  Rather than attempting to reconstruct galaxy models, we concentrate on
  mass limited samples of halos.
  Note that none of the crucial aspects are lost with this simplification.
@@ -3555,143 +3151,41 @@ The simulations for DM halos are of a
 \end_layout
 
 \begin_layout Standard
-In the following, we first show the result from the Kaiser approximation
- and then measurement of 
-\begin_inset Formula $\beta$
-\end_inset
 
- through reconstruction.
- We also briefly discuss whether the measured bias from the reconstructed
- density differs from the one observed for real-space density.
-\end_layout
-
-\begin_layout Subsection
-Kaiser Approximation
-\end_layout
-
-\begin_layout Standard
-To compare the scales for which the Kaiser approximation and our reconstruction
- method are valid, we first measure 
-\begin_inset Formula $\beta$
-\end_inset
-
- through the Kaiser approximation using the ratio of 
-\begin_inset Formula $P_{s}^{(2)}/P_{s}^{(0)}$
-\end_inset
-
-, as described in Section 3.1.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Kaiser-halo"
-
-\end_inset
-
- shows the ratio of DM halos at z=0.0 and z=1.0.
- The wiggle appearing in those ratios on a very sma
-\color black
-ll 
-\begin_inset Formula $k$
-\end_inset
-
- is due to the limited size of the simulation box.
- Because of that, measured 
-\begin_inset Formula $\beta$
-\end_inset
-
- values are sensitive to the change of the range in 
-\begin_inset Formula $k$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\color black
-In Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Kaiser-halo"
-
-\end_inset
-
-, we compare ratios of power spectra in real-space and redshift-space for
- DM halos.
- Measured 
-\begin_inset Formula $\beta$
-\end_inset
-
- from Kaiser approximations are 
-\begin_inset Formula $\beta$
-\end_inset
-
- = 0.316 with the error of the mean of 0.02 at z=0.0 and 0.285 with the error
- of the mean of 0.02 at z=1.0.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/Kaiser_halo13.0.pdf
-	lyxscale 60
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Kaiser-halo"
-
-\end_inset
-
-A ratio of monopole and quadrupole moments of redshift-space matter power
- spectrum for DM halos at z=0.0 and z=1.0.
- Solid lines represent the ratio of non-linear matter power spectra and
- the corresponding dashed lines show their predicted values using the Kaiser
- approximation.
- Error bars are calculated from the error of the mean over ten simulations.
- Here we only used halos whose mass is above 
-\begin_inset Formula $10^{13}{\rm M}$
-\end_inset
-
- (Need to fins a solar mass symbol!).
- The Kaiser approximation is valid only on 
-\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
-\end_inset
-
-.
+\color red
+We go through the same procedure as in Sec.
  
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:recon_dm"
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Measurement of 
+.
+ The only difference is now we measure the value of 
 \begin_inset Formula $\beta$
 \end_inset
 
- through reconstruction
+.
+ In order to estimate the value of 
+\begin_inset Formula $\beta$
+\end_inset
+
+, we first measure halo bias using the template power spectrum 
+\begin_inset Formula $xxx$
+\end_inset
+
+ and taking the ratio with the real-space power spectrum.
+ We confirmed that we can measure the bias from the reconstructed power
+ spectrum.
+\end_layout
+
+\begin_layout Subsubsection
+Measuring 
+\begin_inset Formula $\beta$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4871,7 +4365,7 @@ name "tab:mean_beta_halo"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Comparison with DM linear power spectrum (to measure 
 \begin_inset Formula $b$
 \end_inset
@@ -5072,7 +4566,14 @@ name "fig:halo-bias"
 \begin_layout Section
 
 \size normal
-Discussion/Summary
+Discussion/Summary 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:discussion_rsd"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7872,7 +7373,6 @@ key "Heitmann2014"
 
 .
  A recent overview of the HACC framework can be found in Ref.
-
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -7880,8 +7380,6 @@ key "hacc_2014"
 
 \end_inset
 
-
-\lang english
 .
 \end_layout
 
@@ -8186,14 +7684,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/testDB_mass_300_2_z0_15.pdf
+	filename ../plots_HACC/testDB_mass_300_2_z0_15.pdf
 	width 46.5col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/testDB_nonDB_300_2_z0_15.pdf
+	filename ../plots_HACC/testDB_nonDB_300_2_z0_15.pdf
 	width 53.5col%
 
 \end_inset
@@ -8203,14 +7701,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/testDB_DB_numPartCut_300_2_z0_15.pdf
+	filename ../plots_HACC/testDB_DB_numPartCut_300_2_z0_15.pdf
 	width 46.5text%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/testDB_sum_mass_f0_5_300_2_z0_15.pdf
+	filename ../plots_HACC/testDB_sum_mass_f0_5_300_2_z0_15.pdf
 	width 53.5col%
 
 \end_inset
@@ -8344,7 +7842,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/unmatchHalo2_content_300_2_z0_15.pdf
+	filename ../plots_HACC/unmatchHalo2_content_300_2_z0_15.pdf
 	width 50col%
 
 \end_inset
@@ -8502,7 +8000,7 @@ status open
 
 \color black
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/massSlice_z0_15.pdf
+	filename ../plots_HACC/massSlice_z0_15.pdf
 	width 50col%
 
 \end_inset
@@ -8699,14 +8197,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/histogram_x_z0_15.pdf
+	filename ../plots_HACC/histogram_x_z0_15.pdf
 	width 50col%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/histogram_vx_z0_15.pdf
+	filename ../plots_HACC/histogram_vx_z0_15.pdf
 	width 50col%
 
 \end_inset
@@ -9193,14 +8691,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/haloRatioNum256_z0_15.pdf
+	filename ../plots_HACC/haloRatioNum256_z0_15.pdf
 	width 50col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/haloRatioNum256_tweak_z0_15.pdf
+	filename ../plots_HACC/haloRatioNum256_tweak_z0_15.pdf
 	width 50col%
 
 \end_inset
@@ -9334,14 +8832,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/crossMatter_m450_tweak_softMcut13_0_s0_5_z0_15.pdf
+	filename ../plots_HACC/crossMatter_m450_tweak_softMcut13_0_s0_5_z0_15.pdf
 	width 45col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/crossMatter_tweak256_redshift_z0_15.pdf
+	filename ../plots_HACC/crossMatter_tweak256_redshift_z0_15.pdf
 	width 45col%
 
 \end_inset
@@ -9594,14 +9092,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/hist_dist_x_z0_25to0_15.pdf
+	filename ../plots_HACC/hist_dist_x_z0_25to0_15.pdf
 	width 50col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/shifting_r_z0_15.pdf
+	filename ../plots_HACC/shifting_r_z0_15.pdf
 	width 50col%
 
 \end_inset
@@ -9803,14 +9301,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/hist_vx.pdf
+	filename ../plots_HACC/hist_vx.pdf
 	width 50col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/shifting_s_interp_z0_15.pdf
+	filename ../plots_HACC/shifting_s_interp_z0_15.pdf
 	width 50col%
 
 \end_inset
@@ -10173,7 +9671,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/boss_geom.png
+	filename ../plots_HACC/boss_geom.png
 	width 50col%
 
 \end_inset
@@ -10512,7 +10010,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/nz_dr11_N.pdf
+	filename ../plots_HACC/nz_dr11_N.pdf
 	width 50col%
 
 \end_inset
@@ -10567,14 +10065,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/xi0_obs.pdf
+	filename ../plots_HACC/xi0_obs.pdf
 	width 50col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/xi2_obs.pdf
+	filename ../plots_HACC/xi2_obs.pdf
 	width 50col%
 
 \end_inset
@@ -10954,14 +10452,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/xi_hod3.pdf
+	filename ../plots_HACC/xi_hod3.pdf
 	width 50col%
 
 \end_inset
 
  
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/alpha_hist_hod3.pdf
+	filename ../plots_HACC/alpha_hist_hod3.pdf
 	width 50col%
 
 \end_inset
@@ -11118,7 +10616,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/alpha_bias.pdf
+	filename ../plots_HACC/alpha_bias.pdf
 	width 50col%
 
 \end_inset
@@ -11272,7 +10770,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../tomomi_sunayama_jcap_04_11_2015/xi_lightcone.pdf
+	filename ../plots_HACC/xi_lightcone.pdf
+	lyxscale 50
 	width 100col%
 
 \end_inset
