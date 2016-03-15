@@ -555,8 +555,9 @@ reference "sub:Algorithm"
 
 \end_inset
 
-, we outline the reconstruction algorithm and show how to measure 
-\begin_inset Formula $\beta$
+, we outline the reconstruction algorithm and show how to measure the growth
+ rate 
+\begin_inset Formula $f$
 \end_inset
 
  through the reconstruction.
@@ -711,7 +712,7 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\delta_{s}(\vec{k})=\delta_{r}(\vec{k})-\mu^{2}\theta(\vec{k}).
+\delta_{s}(\vec{k})=\delta_{r}(\vec{k})-\mu^{2}\theta(\vec{k}).\label{eq:Kaiser_den}
 \end{equation}
 
 \end_inset
@@ -1338,7 +1339,7 @@ which is the same as Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:Kaiser2-1"
+reference "eq:Kaiser_den"
 
 \end_inset
 
@@ -1582,16 +1583,7 @@ reference "eq:Kaiser2"
 \end_inset
 
 .
- In the next section, we test the effect of smoothing scales to estimate
- velocity fields and compare the velocity fields estimated from the real-space
- density field and the Kaiser density (See Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:histogram_vel_dm"
-
-\end_inset
-
-).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1992,7 +1984,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../plots_RSD/hexbin_dm_den_config_z0_red.pdf
 	lyxscale 70
-	width 50col%
+	width 50text%
 
 \end_inset
 
@@ -2000,7 +1992,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../plots_RSD/hexbin_dm_den_config_z0_recon.pdf
 	lyxscale 70
-	width 50col%
+	width 50text%
 
 \end_inset
 
@@ -2883,14 +2875,14 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../plots_RSD/Recon_dm_quadr_z0.0.pdf
-	width 60col%
+	width 60text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename ../plots_RSD/Chisq_Az0_dm_z0_kcut0.05.pdf
-	width 60col%
+	filename /Users/old_ts485/Desktop/my_thesis/plots_RSD/Chisq_Az9_dm_z0_kcut0.05.pdf
+	width 60text%
 
 \end_inset
 
@@ -3141,8 +3133,9 @@ The simulations for DM halos are of a
 \end_inset
 
 .
- Halos are identified by using the Friend-of-Friend algorithm with a linking
- length of XXX.
+ Halos are identified by using the Friend-of-Friend algorithm
+\color black
+ with a linking length of XXX.
  The samples only contain halos with mass greater than 
 \begin_inset Formula $10^{13}M_{\odot}$
 \end_inset
@@ -3152,7 +3145,7 @@ The simulations for DM halos are of a
 
 \begin_layout Standard
 
-\color red
+\color black
 We go through the same procedure as in Sec.
  
 \begin_inset CommandInset ref
@@ -3162,7 +3155,7 @@ reference "sub:recon_dm"
 \end_inset
 
 .
- The only difference is now we measure the value of 
+ The only difference is that now we measure the value of 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -3171,1228 +3164,10 @@ reference "sub:recon_dm"
 \begin_inset Formula $\beta$
 \end_inset
 
-, we first measure halo bias using the template power spectrum 
-\begin_inset Formula $xxx$
-\end_inset
-
- and taking the ratio with the real-space power spectrum.
- We confirmed that we can measure the bias from the reconstructed power
- spectrum.
-\end_layout
-
-\begin_layout Subsubsection
-Measuring 
-\begin_inset Formula $\beta$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\color black
-To measure 
-\begin_inset Formula $\beta$
-\end_inset
-
- through reconstruction, we first calculated a quadrupole moment of reconstructe
-d densities with various 
-\begin_inset Formula $\beta$
-\end_inset
-
- and then calculated 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
-, as described in Section 3.2.2.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chisq-halo"
-
-\end_inset
-
- shows 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- as a function of 
-\begin_inset Formula $\beta$
-\end_inset
-
-.
- 
-\color inherit
-From Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Chisq-halo"
-
-\end_inset
-
-, the best fit 
-\begin_inset Formula $\beta$
-\end_inset
-
-s are 0.31 at z=0.0 and 0.255 at z=1.0 respectively.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:recon-ratio-halo"
-
-\end_inset
-
- shows monopole and quadrupole moments of reconstructed density with the
- best fit 
-\begin_inset Formula $\beta$
-\end_inset
-
- and Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:den-halo"
-
-\end_inset
-
- shows how well the reconstructed and real-space densities are correlated.
- All of the results shown here agree with the case of DM particles.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide true
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/Chisq_Az0_halo13.0_z0_kcut0.05.pdf
-	lyxscale 60
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\color red
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- with respect to 
-\begin_inset Formula $\beta$
-\end_inset
-
- at z=0.0.
- 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- has 5 degrees of freedom.
- 
-\begin_inset Formula $\beta$
-\end_inset
-
- whose 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- is the minimum is 0.32.
-
+, we first measure halo bias taking the ratio between halo and matter power
+ spectra such as
 \color inherit
  
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Chisq-halo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/Recon_halo13.0_real.pdf
-	lyxscale 50
-	width 50col%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename ../plots_RSD/Recon_halo13.0_quadr.pdf
-	lyxscale 50
-	width 50col%
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Monopole (upper panel) and quadrupole (lower panel) moments of power spectra
- of reconstructed-densities with a best fit 
-\begin_inset Formula $\beta$
-\end_inset
-
- at z=0.0 (blue) and 1.0 (green).
- The dotted line represents a real-space quadrupole moment.
- Solid lines are the reconstructed densities with 
-\begin_inset Formula $\beta$
-\end_inset
-
-=0.31 at z=0.0 and 
-\begin_inset Formula $\beta$
-\end_inset
-
-=0.255 at z=1.0.
- Reconstruction works well up to 
-\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:recon-ratio-halo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide true
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\delta_{i}-\delta_{r}>$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<(\delta_{i}-\delta_{r})^{2}>$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\delta_{i}=\delta_{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-1.05\times10^{-8}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.015$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\delta_{i}=\delta_{{\rm Kaiser}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.67\times10^{-10}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.008$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\delta_{i}=\delta_{recon}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-7.93\times10^{-9}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.004$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\delta_{i}-\delta_{r}>$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<(\delta_{i}-\delta_{r})^{2}>$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\delta_{i}=\delta_{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-3.43\times10^{-10}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.026$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\delta_{i}=\delta_{{\rm Kaiser}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-6.45\times10^{-9}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.017$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\delta_{i}=\delta_{recon}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $-1.08\times10^{-8}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.007$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Averages and standard deviations of density differences between real-space
- and redshift-space, the Kaiser and the reconstructed densities at z=0.0
- and z=1.0.
- The reconstructed density and real-space density are in good agreement.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:den-halo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.025
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.313
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.313
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.92\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.63\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.05
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.310
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.309
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.01\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $7.50\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.075
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.334
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.330
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.57\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.06\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.351
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.356
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.51\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.49\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-z=1.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(mean)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sigma_{\beta}$
-\end_inset
-
-(median)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.025
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.275
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.285
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $5.09\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $3.68\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.05
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.256
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.244
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.84\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $6.93\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.075
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.260
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.251
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.39\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.42\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-k=0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.274
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.274
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $2.35\times10^{-4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1.01\times10^{-5}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset Formula $<\beta>$
-\end_inset
-
-and 
-\begin_inset Formula $<(\beta-<\beta>)^{2}>$
-\end_inset
-
- (Right now, I am using 
-\begin_inset Formula $\chi_{norm}^{2}=\chi^{2}/{\rm d.o.f.}$
-\end_inset
-
- for 
-\begin_inset Formula $P(\beta)\propto{\rm exp(-\chi_{norm}^{2}/2)}$
-\end_inset
-
-.) 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:mean_beta_halo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Comparison with DM linear power spectrum (to measure 
-\begin_inset Formula $b$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-In order to measure growth factor, we need to decouple 
-\begin_inset Formula $f$
-\end_inset
-
- and a linear bias 
-\begin_inset Formula $b$
-\end_inset
-
- from 
-\begin_inset Formula $\beta$
-\end_inset
-
-.
- There are several ways to measure a linear bias 
-\begin_inset Formula $b$
-\end_inset
-
-.
- A halo bias is defined as 
 \begin_inset Formula 
 \begin{equation}
 b_{halo}\equiv\sqrt{P_{halo}/P_{DM}}.\label{eq:bias}
@@ -4401,129 +3176,71 @@ b_{halo}\equiv\sqrt{P_{halo}/P_{DM}}.\label{eq:bias}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Here we use linear DM power spectra of our 
-\begin_inset Formula $\Lambda$
-\end_inset
-
-CDM model and measure 
-\begin_inset Formula $b$
-\end_inset
-
- by using Eqn.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:bias"
-
-\end_inset
-
-.
- The problem of this method is that we need to assume a certain cosmology
- to obtain 
-\begin_inset Formula $b$
-\end_inset
-
-.
- The aim here is, however, not to show that we can decouple 
-\begin_inset Formula $f$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
- from 
-\begin_inset Formula $\beta$
-\end_inset
-
-, but rather to show that 
-\begin_inset Formula $b$
-\end_inset
-
- values measured through 
-\begin_inset Formula $\delta_{r}$
-\end_inset
-
- and 
-\begin_inset Formula $\delta_{recon}$
-\end_inset
-
- are in agreement.
- Figure 
+\color black
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:halo-bias"
 
 \end_inset
 
- shows the ratio of 
-\begin_inset Formula $P_{halo}/P_{DM}$
+ shows the halo bias measured by taking the ratio with the real-space halo
+ power spectrum as well as the reconstructed halo power spectrum.
+ The reason we also show the result using the reconstructed power spectrum
+ is because we cannot use the real-space power spectrum in real observations.
+ People often use the angular correlation functions 
+\begin_inset Formula $\omega_{p}(r_{p})$
 \end_inset
 
-, which is equivalent to 
-\begin_inset Formula $b^{2}$
-\end_inset
+ to measure the bias; however, the angular corrlation function introduces
+ a systematic bias in the measurement (
+\color red
+cite: white et al.
+\color black
+).
+ The figure tells us that we can measure the bias using the reconstructed
+ power spectrum.
 
-.
- Note that 
-\begin_inset Formula $P_{halo}^{(recon)}/P_{DM}$
+\color inherit
+ Quantitatively, the biases measured through the real-space power spectrum
+ are 1.53 (with the error of the mean of 0.02) and 3.18 (with the error of
+ 0.04) at 
+\begin_inset Formula $z=0$
 \end_inset
 
  and 
-\begin_inset Formula $P_{halo}^{(r)}/P_{DM}$
+\begin_inset Formula $z=1$
 \end_inset
 
- matches below 
-\begin_inset Formula $k<0.1h{\rm Mpc^{-1}}$
-\end_inset
-
-.
- Quantitatively, the biases measured from real-space density are 1.53 (with
- the error of the mean of 0.02) and 3.18 (with the error of 0.04), and the
- biases from reconstructed density are 1.53 (with the error of the mean of
- 0.02) and 3.17 (with the error of 0.04) at z=0.0 and z=1.0 respectively.
+ respectively.
  For reconstructed densities, we use a best fit 
 \begin_inset Formula $\beta$
 \end_inset
 
- measure from the above section.
+ value which have the minimum 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ values as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Chisq-halo"
+
+\end_inset
+
+.
  
-\end_layout
-
-\begin_layout Standard
-From measured 
-\begin_inset Formula $b_{halo}$
-\end_inset
-
-, the obtained 
-\begin_inset Formula $f$
-\end_inset
-
-s are 0.474 and 0.808 at z=0.0 and 1.0 respectively.
- From our 
-\begin_inset Formula $\Lambda$
-\end_inset
-
-CDM model, the expected 
-\begin_inset Formula $f$
-\end_inset
-
-s are 0.446 and 0.825 at z=0.0 and 1.0.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../plots_RSD/halo13.0_bias_z0.pdf
-	lyxscale 50
 	width 50col%
 
 \end_inset
@@ -4563,6 +3280,277 @@ name "fig:halo-bias"
 
 \end_layout
 
+\begin_layout Standard
+Since the halo bias is 
+\begin_inset Formula $1.53$
+\end_inset
+
+, the expected value for 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is 
+\begin_inset Formula $0.291$
+\end_inset
+
+
+\color black
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Similarly, the expected value at 
+\begin_inset Formula $z=1$
+\end_inset
+
+ is 
+\begin_inset Formula $\beta=0.222$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Chisq-halo"
+
+\end_inset
+
+ shows the 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ values measured through the quadrupole moments as a function of 
+\begin_inset Formula $\beta$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ 
+\color inherit
+We use 
+\begin_inset Formula $10h^{-1}{\rm Mpc}$
+\end_inset
+
+ as a smoothing scale for the reconstruction method.
+ Through the 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ analysis, the best fit 
+\begin_inset Formula $\beta$
+\end_inset
+
+s are 
+\begin_inset Formula $0.32$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $0.255$
+\end_inset
+
+ at 
+\begin_inset Formula $z=1$
+\end_inset
+
+ respectively.
+ Those values are larger than the expected values, which is an opposite
+ trend compared to the case of DM particles (
+\color red
+want to re-do the analysis
+\color inherit
+).
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:recon-ratio-halo"
+
+\end_inset
+
+ shows monopole and quadrupole moments of reconstructed density with the
+ best fit 
+\begin_inset Formula $\beta$
+\end_inset
+
+ values at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ We successfully recovers the real-space power spectrum up to 
+\begin_inset Formula $k<0.04h{\rm Mpc}^{-1}$
+\end_inset
+
+, but the amplitude of the monopole terms is slightly smaller than the one
+ for the real-space power spectrum.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_RSD/Chisq_Az0_halo13.0_z0_kcut0.05.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $\beta$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ has 5 degrees of freedom.
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ with the minumum 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ value is 0.32.
+ 
+\color inherit
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Chisq-halo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_RSD/Recon_halo13.0_real.pdf
+	width 50col%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../plots_RSD/Recon_halo13.0_quadr.pdf
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Monopole (Left) and quadrupole (Right) moments of power spectra of reconstructed
+-densities with a best fit 
+\begin_inset Formula $\beta$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ (blue) and 
+\begin_inset Formula $z=1$
+\end_inset
+
+(green).
+ The dotted line represents a real-space quadrupole moment.
+ Solid lines are the reconstructed densities with 
+\begin_inset Formula $\beta=0.32$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta=0.255$
+\end_inset
+
+ at 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ Reconstruction works well up to 
+\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:recon-ratio-halo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 
 \size normal
@@ -4577,31 +3565,89 @@ name "sec:discussion_rsd"
 \end_layout
 
 \begin_layout Standard
-RSD is a systematic anisotropy generated by LOS peculiar velocities, and
- therefore it is crucial to model the non-linear velocity to remove the
- anisotropy.
- There have been number of studies to model pairwise velocities for correlation
- functions/power spectra beyond the Kaiser approximation (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "2009JCAP...10..004S,2009MNRAS.393..297P,2011JCAP...11..039S,2011MNRAS.410.2081J,2011MNRAS.417.1913R,2012JCAP...02..010O"
+In this study, we measure the values of 
+\begin_inset Formula $f$
+\end_inset
 
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ using the reconstruction method, which naturally provides a description
+ in terms of LPT.
+ The motivation behind this study is that LPT can model the non-linearity
+ of the density field on smaller scales that EPT (i.e., the reconstruction
+ method enables us to use more modes in 
+\begin_inset Formula $P(k)$
+\end_inset
+
+ to measure the values of 
+\begin_inset Formula $f$
 \end_inset
 
 ).
- Instead of modeling RSD and pairwise velocities in correlation functions,
- we focused on RSD on density fields and tried to remove the anisotropy
- by shifting the particles in redshift-space, using the linear velocities.
- In this paper, we tested how significant the linear velocities estimated
- from non-linear density fields contribute to the actual non-linear velocities
- and how much anisotropy we can remove from redshift-space by using the
- linear velocities.
- Our conclusions are
+\end_layout
+
+\begin_layout Standard
+The method, however, underestimates the value of 
+\begin_inset Formula $f$
+\end_inset
+
+ for the case of DM particles, which yields a 
+\begin_inset Formula $1.1\%$
+\end_inset
+
+ measurement of 
+\begin_inset Formula $f$
+\end_inset
+
+, but with a residual bias of 
+\begin_inset Formula $2.4\%$
+\end_inset
+
+.
+ For the case of DM halos, the method overestimates the value of 
+\begin_inset Formula $\beta$
+\end_inset
+
+ with a residual bias of 
+\begin_inset Formula $10.0\%$
+\end_inset
+
+.
+ This may be because we use the non-linear density field to estimate the
+ linear velocity fields, but we are uncertain about the cause.
+\end_layout
+
+\begin_layout Standard
+There have been several studies trying to reconstruct velocity fields from
+ the density field beyond linear perturbation theories.
+ Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kitaura_2012"
+
+\end_inset
+
+ shows that using the tidal tensors successfully recovers velocity fields
+ on scales greater than 
+\begin_inset Formula $5h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+ Although using higher-order terms require more number of free parameters
+ (unless assuming certain cosmologies), this may be a way to correct the
+ residual bias in the measurement.
+\end_layout
+
+\begin_layout Standard
+We conclude the chapter with an over view of our primary results:
 \end_layout
 
 \begin_layout Standard
 (1) Our reconstruction method recovers real-space density fields from redshift-s
-pace on a large scale, 
+pace up to 
 \begin_inset Formula $k\sim0.05h{\rm Mpc^{-1}}$
 \end_inset
 
@@ -4609,44 +3655,32 @@ pace on a large scale,
 \end_layout
 
 \begin_layout Standard
-(2) Our method works beyond the scale that the Kaiser approximation is valid.
-\end_layout
+(2) The measurement yields a 
+\begin_inset Formula $1.1\%$
+\end_inset
 
-\begin_layout Standard
-(3) The choice of smoothing scales matters.
-\end_layout
+ measurement of 
+\begin_inset Formula $f$
+\end_inset
 
-\begin_layout Standard
-(4) We can measure 
+, but with a residual bias of 
+\begin_inset Formula $2.4\%$
+\end_inset
+
+ for the case of DM particles.
+ For the case of DM halos, the residual bias for the measurement of 
 \begin_inset Formula $\beta$
 \end_inset
 
- through reconstruction with a better accuracy than the Kaiser approximation
- (
-\color red
-any quantitative evaluation for this?
-\color inherit
-).
+ is 
+\begin_inset Formula $10.0\%$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-What we can do further...
-\end_layout
-
-\begin_layout Standard
-(i) Try a smoothing function proposed by Tassev and Zaldarriaga.
-\end_layout
-
-\begin_layout Standard
-(ii) Try Reid & White -> not sure what we can do...
-\end_layout
-
-\begin_layout Standard
-(iii) Try higher-order corrections.
-\end_layout
-
-\begin_layout Standard
-(iv) Measure non-gaussianity with reconstructed density fields.
+(3) The method is sensitive to the choice of smoothing scales.
 \end_layout
 
 \begin_layout Chapter
