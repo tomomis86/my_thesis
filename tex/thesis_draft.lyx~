@@ -333,7 +333,7 @@ Redshift-space distortions (hereafter RSDs) are a systematic anisotropy
 \end_layout
 
 \begin_layout Standard
-The squashing effect was first modelled by Kaiser 1987 (
+The squashing effect was first modeled by Kaiser 1987 (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "1987MNRAS.227....1K"
@@ -820,7 +820,7 @@ In order to measure
 \end_inset
 
  through the Kaiser approximation, we first take a ratio of quadrupole and
- monople moments of a redshift-space power spectrum:
+ monopole moments of a redshift-space power spectrum:
 \begin_inset Formula 
 \begin{equation}
 P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}f+\frac{4}{7}f^{2})/(1+\frac{2}{3}f+\frac{1}{5}f^{2}),\label{eq:kaiser_ratio}
@@ -1551,7 +1551,7 @@ In order to measure
  as a free parameter.
  Since there is no anisotropy in real-space, the quadrupole moment of the
  power spectrum in real-space must be zero.
- Using the quadrupole moments measure the residual anisotropu, we test what
+ Using the quadrupole moments measure the residual anisotropy, we test what
  value of 
 \begin_inset Formula $f$
 \end_inset
@@ -1573,7 +1573,7 @@ The assumption here is that the
 \begin_layout Standard
 Note that we are not exactly computing linear velocity, because we use the
  non-linear density field smoothed by the Gaussian filter as well as the
- redhistf-space density field divided by the Kaiser approximation (hereafter,
+ redshift-space density field divided by the Kaiser approximation (hereafter,
  the Kaiser density) as shown in Eq.
  
 \begin_inset CommandInset ref
@@ -1587,7 +1587,7 @@ reference "eq:Kaiser2"
 \end_layout
 
 \begin_layout Standard
-We described the reconstructed density in terms of LPT (Eqn.
+We described the reconstructed density in terms of LPT (Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1847,7 +1847,7 @@ Comparison of the LOS velocities
 \end_inset
 
 .
- The difference between the linear velocities estimeted from two different
+ The difference between the linear velocities estimated from two different
  density fields is XXX.
  Note that the linear velocities are reassigned to particles through the
  inverse CIC assignment with smoothing of 10
@@ -2487,7 +2487,7 @@ where
 \begin_inset Formula $P^{(cross)}$
 \end_inset
 
- is a cross poewr spectrum.
+ is a cross power spectrum.
  Having 1 for cross correlation coefficients means that those two density
  fields are perfectly correlated each other.
  The cross correlation coefficient for 
@@ -2760,7 +2760,7 @@ where
 \end_layout
 
 \begin_layout Standard
-We computed the quadrupole moments for the reconstructed densifty fields
+We computed the quadrupole moments for the reconstructed density fields
  with various values of 
 \begin_inset Formula $f$
 \end_inset
@@ -3192,7 +3192,7 @@ reference "fig:halo-bias"
 \begin_inset Formula $\omega_{p}(r_{p})$
 \end_inset
 
- to measure the bias; however, the angular corrlation function introduces
+ to measure the bias; however, the angular correlation function introduces
  a systematic bias in the measurement (
 \color red
 cite: white et al.
@@ -3442,7 +3442,7 @@ status open
 \begin_inset Formula $\beta$
 \end_inset
 
- with the minumum 
+ with the minimum 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -10068,6 +10068,627 @@ Large scale suites of simulations are an essential part of current and future
  cosmological analyses.
  This paper helps lay part of the groundwork for how one can optimize the
  computational requirements of such simulations.
+\end_layout
+
+\begin_layout Chapter
+Exploring new diagnostics for the internal structure of clusters
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Tidal stripping in cluster environments - what is expected theoretically
+ and what is seen observationally.
+ ** Tidal stripping of cluster galaxies a la Jeff Kenney ** Tidal stripping
+ of cluster galaxies from lensing studies (PN 2009, comparison with simulations
+ with Springel -- 2 papers) Need to introduce the effect of assembly bias
+ and its role in where galaxies end up radially in the cluster Compare simulatio
+ns with observations of samples and go beyond individual objects
+\end_layout
+
+\begin_layout Standard
+Summary previous work
+\end_layout
+
+\begin_layout Standard
+Paraphrase More et al.
+ papers and their results
+\end_layout
+
+\begin_layout Section
+Methods & Results
+\end_layout
+
+\begin_layout Subsection
+Simulations
+\end_layout
+
+\begin_layout Standard
+We use the Bolshoi 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bolshoi_11"
+
+\end_inset
+
+ which were run with the Adaptive Refinement Tree Code 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kravtsov_etal97,gottloeber_klypin08"
+
+\end_inset
+
+ assuming a flat 
+\begin_inset Formula $\Lambda{\rm CDM}$
+\end_inset
+
+ model with density parameters 
+\begin_inset Formula $\Omega_{m}=0.27$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{\Lambda}=0.73$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{b}=0.0469$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma_{8}=0.82$
+\end_inset
+
+, 
+\begin_inset Formula $n=0.95$
+\end_inset
+
+, 
+\begin_inset Formula $h=0.70$
+\end_inset
+
+.
+ The Bolshoi simulation used 
+\begin_inset Formula $2048^{3}$
+\end_inset
+
+ particles in a 
+\begin_inset Formula $250h^{-1}{\rm Mpc}$
+\end_inset
+
+ box with a force resolution of 
+\begin_inset Formula $1h^{-1}{\rm kpc}$
+\end_inset
+
+, giving a particle mass of 
+\begin_inset Formula $1.35\times10^{8}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ Dark matter halos and subhalos are identified using the 
+\family typewriter
+ROCKSTAR
+\family default
+ phase-space, temporal halo finder 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rockstar"
+
+\end_inset
+
+ and merger trees are constructed using the 
+\family typewriter
+CONSISTENT TREES 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rockstar_trees"
+
+\end_inset
+
+
+\family default
+  procedures
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The catalogues used in this paper are publicly available at 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://hipacc.ucsc.edu/Bolshoi/MergerTrees.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ All of the results we consider here are at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In what follows, we use the virial masses and maximum circular velocities
+ (tagged 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+mvir
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+vmax
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+) directly from the halo catalogues.
+ The 
+\family typewriter
+ROCKSTAR
+\family default
+ halo finder computes halo masses based on spherical overdensities using
+ a threshold of 
+\begin_inset Formula $\Delta_{{\rm h}}=360$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+about host halo and subhalo
+\end_layout
+
+\begin_layout Standard
+The halo mass and velocity functions start to show incompleteness at 
+\begin_inset Formula $10^{10.4}h^{-1}M_{\odot}$
+\end_inset
+
+ (
+\begin_inset Formula $\sim200$
+\end_inset
+
+ particles) for the Bolshoi simulation.
+ Below those masses, the halo mass distributions show unphysical drop-offs
+ indicating incomplete mass resolution.
+\end_layout
+
+\begin_layout Standard
+In addition to the standard classification of halos into host halos (not
+ within the virial radius of a more massive halo) and subhalos (within the
+ virial radius of a more massive halo), we further classify host halos into
+ ejected and non-ejected halos.
+ Ejected halos, also referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+backsplash
+\begin_inset Quotes erd
+\end_inset
+
+ halos, are host halos whose main progenitor was classified, at some point
+ in its merger tree history, as a subhalo.
+ As we discuss below, these ejected halos have very different clustering
+ properties compared to their non-ejected counterparts.
+ The ejected fraction for the Bolshoi simulation is 
+\begin_inset Formula $\sim15.8\%$
+\end_inset
+
+ at 
+\begin_inset Formula $10^{11}h^{-1}M_{\odot}$
+\end_inset
+
+, and drops to 
+\begin_inset Formula $\sim6.3\%$
+\end_inset
+
+ at 
+\begin_inset Formula $10^{13}h^{-1}M_{\odot}$
+\end_inset
+
+.
+ The lower mass resolution of the MultiDark simulation prevents us from
+ making this additional sub-classification.
+ Accordingly, results that rely on this split are restricted to the Bolshoi
+ simulation and mass range.
+\end_layout
+
+\begin_layout Subsection
+Radial distribution of subhalos in real-space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_radial.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_radial2.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Left: Radial distribution of subhalos 
+\begin_inset Formula $r/R_{{\rm vir}}$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M_{acc,sub}/M_{host}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+, where 
+\begin_inset Formula $M_{acc,sub}$
+\end_inset
+
+ is subhalo masses at accretion and 
+\begin_inset Formula $M_{host}$
+\end_inset
+
+ is the host halo masses at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The distributions indicate that more massive subhalos tend to exist closer
+ to the center of the host halo.
+ Right: Radial distribution of subhalos as a function of 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+, where 
+\begin_inset Formula $M_{{\rm vir,sub}}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm acc,sub}}$
+\end_inset
+
+ are the subhalo masses at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+ and at accretion respectively.
+ Having smaller ratio of 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ implies that subhalos lost more masses due to tidal stripping, and those
+ subhalos whose masses are more stripped tend to be closer to the center
+ of the host halo.
+ Note that histograms are normalized.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_subVmax_radial.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Radial distribution of subhalos as a function of 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+, where 
+\begin_inset Formula $V_{{\rm max,sub}}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{{\rm acc,sub}}$
+\end_inset
+
+ are the maximum circular velocities of the subhalos at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+ and at accretion respectively.
+ Having smaller ratio of 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ implies that subhalos lost masses not only from the outer region of the
+ subhalos but also frm the core, and those subhalos tend to be closer to
+ the center of the host halo.
+ Note that histograms are normalized.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_zacc.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Vmax2acc_zacc.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correlation between the accreted redshift 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ (i.e., the redshift when the subhalos are accreted by their host halos) and
+ the ratio of 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ (left) and 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ (right) at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ Those figures indicate that subhalos which are accreted earlier tend to
+ lose more masses, but the effect of tidal stripping on the potential well
+ depth is less.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_Mvir2acc_xir_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_ratio_xir_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Radial distribution of subhalos in redshift-space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_Mvir2acc_xis_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_ratio_xis_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comparison with redMapper clusters
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_photo_Mi_gr.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+M/L ratio comparison in simulations: using filed galaxies (host halos ~
+ 10^12 -> need to use other catalogs for host halos) and subhalos (~10^12)
+ in clusters
+\end_layout
+
+\begin_layout Section
+Conclusions and Future Work
+\end_layout
+
+\begin_layout Standard
+Future lensing surveys from EUCLID, WFIRST will uncover coarse data (not
+ strong lensing features) but will derive cluster ensemble properties from
+ weak shear (in fact detection will be driven by shear) -- these kinds of
+ diagnostics can help us understand internal structure of clusters.
 \end_layout
 
 \begin_layout Standard
