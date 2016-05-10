@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf0 Here is an email I sent to David describing a test case that runs the pair counter computing xi(r_perp, r_parallel).\
+\
+Some notes :\'a0\
+The input files (see test.ini) are very similar to what we use for do_smu.x --- except now you specify number of bins in rperp and rparallel. The options should be quite obvious, ask if something doesn't make sense.\
+\
+The output files are the same kind of format as with do_smu.x, except that the bins are now rperp and rparallel.\
+---------------------------------\
+Nikhil Padmanabhan\
+\pard\pardeftab720
+{\field{\*\fldinst{HYPERLINK "mailto:nikhil.padmanabhan@yale.edu"}}{\fldrslt \cf2 nikhil\ul .padmanabhan@yale.edu}}\
+\
+\
+\
+---------- Forwarded message ----------\
+From: 
+\b Nikhil Padmanabhan
+\b0  \uc0\u8234 <{\field{\*\fldinst{HYPERLINK "mailto:nikhil.padmanabhan@yale.edu"}}{\fldrslt \cf2 nikhil\ul .padmanabhan@yale.edu}}>\uc0\u8236 \
+Date: Sun, Mar 9, 2014 at 10:47 PM\
+Subject: Code\
+To: David Wake <{\field{\*\fldinst{HYPERLINK "mailto:d.a.wake@gmail.com"}}{\fldrslt \cf2 \ul \ulc2 d.a.wake@gmail.com}}>\
+\
+\
+David,\'a0\
+\
+I have a working example for you in :\'a0\
+\'a0 \'a0 \'a0/scratch/fas/padmanabhan/np274/collab/Wake/2014Mar9\
+on omega\
+\
+BTW : for now, you may want to log into "omega1" and not omega --- just change where you ssh in to.\
+\
+In that directory, the files that you need/care about :\
+\'a0-- do_pll.x (the executable)\
+\'a0-- test.sh (submit script --- I've set it up for 2 nodes, that can be changed.)\
+\'a0-- test.ini (the input to the code, where you can set lots of things. It should all be clear, let me know if isn't.).\
+\
+Note that nworkers in the test.ini file is based on number of CPUs per machine and not total requested. No need to change that.\'a0\
+\
+Also, no more bin files --- I just do uniform bins so all is specified in the ini file.\'a0\
+\
+I ran the files you sent me (twice, to demonstrate that you can submit lists of jobs) -- the bins should be identical\'a0\
+to the ones you sent me. The output files are\'a0\
+out001-\{DD,DR,RR\}.dat and out002-\{DD,DR\}.dat (I turned off RR in the last case for fun). The formats of these are identical to what you are used to, so it would be useful if you could check that the correlation function is what you expect. There were only small code changes, but that's enough to introduce bugs!\
+\
+One change in format --- if you use log bins, the code outputs the bins as log10 values. I could change that (and I probably will in time), but I'm going to let you deal with that for now!\
+\
+With RR, your job ran in about 147 seconds, without in 24 seconds. Just to give you a sense of timings.\
+\
+You'll see a test.sh and a test2.sh --- they're the same, except I ran test2.sh in the development queue (just to get it through quickly!).\'a0\
+\
+Cheers,\
+-- Nikhil\
+}

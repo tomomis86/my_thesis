@@ -343,21 +343,18 @@ Paraphrase More et al.
 Clusters of galaxies are the most massive gravitationally bound objects
  in the Universe, which provide extreme environments for galaxies orbiting
  inside of the clusters.
- [connection: extreme environment is due to tidal forces] Tidal forces are
- stronger in cluster environments, because galaxy clusters tend to have
- higher densities than galaxy groups.
- Tidal stripping is an important physical process for halo formation as
- well as galaxy formation.
+ Tidal forces are stronger in cluster environments, because galaxy clusters
+ tend to have higher densities than galaxy groups.
  In simulations, tidal forces cause mass stripping, tidal heating, and disruptio
 n of subhalos inside the host halos of the clusters.
  Because subhalos which lost more masses due to tidal stripping are the
  ones accreted earlier, they tend to exist closer to the center of the clusters
- (vdB: Since subhaloes that were accreted earlier have experienced more
+ (vdB: Since s ubhaloes that were accreted earlier have experienced more
  tidal stripping, subh aloes that have lost a larger fraction of their mass
  at infall are on more bound orbits.).
  [want to say: tidal stripping is secondary effect/probe for assembly history/ag
-e of subhalos->but tidal stripping gives a physical effect to subhalos and
- possibly provide observables...even though age is not...]
+e of subhalos->but it has potential to be detected through age-matching,
+ because age of subhalos is not an observable in observations]
 \end_layout
 
 \begin_layout Standard
@@ -368,7 +365,9 @@ e of subhalos->but tidal stripping gives a physical effect to subhalos and
 \end_layout
 
 \begin_layout Standard
-In observations, one of the evidences of the tidal stripping is the existence
+Tidal stripping is an important physical process for halos as well as galaxies
+ and can affect to structure and dynamics of galaxies.
+ In observations, one of the evidences of the tidal stripping is the existence
  of cD galaxies which have grown massively by accreting material from the
  surrounding satellite galaxies.
 \end_layout
@@ -382,7 +381,7 @@ In observations, one of the evidences of the tidal stripping is the existence
 \end_layout
 
 \begin_layout Standard
-There have been numerous studies about the halo-galaxy connection.
+There have been numerous studies about how to connect DM halos and galaxies.
 \end_layout
 
 \begin_layout Standard
@@ -390,7 +389,7 @@ There have been numerous studies about the halo-galaxy connection.
 \end_layout
 
 \begin_layout Standard
-*those methods preserve assembly bias 
+*which predicts assembly bias 
 \end_layout
 
 \begin_layout Standard

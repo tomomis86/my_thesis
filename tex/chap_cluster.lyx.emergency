@@ -1,0 +1,1101 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass yalephd
+\begin_preamble
+
+
+
+\usepackage{geometry} % you need this for yalephd.cls to work.
+\usepackage{graphicx} % you probably want the rest of these.
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{appendix}
+\usepackage{comment}
+\usepackage{cite}
+\usepackage{notoccite}
+
+
+\newcommand{\mvir}{M_{\rm vir}}
+\newcommand{\mcoll}{M_{\rm coll}}
+\newcommand{\rvir}{R_{\rm vir}}
+\newcommand{\vmax}{V_{\rm max}}
+\newcommand{\meanvmax}{\overline{V}_{\rm max}}
+
+\newcommand{\ximm}{\xi_{\rm mm}}
+\newcommand{\xihm}{\xi_{\rm hm}}
+\newcommand{\bh}{b_{\rm h}}
+\newcommand{\bhlin}{b^{\rm lin}_{\rm h}}
+
+%%% UNITS %%%
+\newcommand{\msun}{M_{\odot}/h}
+\newcommand{\mpch}{{\rm Mpc}/h}
+\newcommand{\kpch}{{\rm kpc}/h}
+
+
+%-------------
+\let\jnl@style=\rmfamily
+\def\ref@jnl#1{{\jnl@style#1}}%
+\newcommand\aj{\ref@jnl{AJ}}%
+          % Astronomical Journal
+\newcommand\actaa{\ref@jnl{Acta Astron.}}%
+  % Acta Astronomica
+\newcommand\araa{\ref@jnl{ARA\&A}}%
+          % Annual Review of Astron and Astrophys
+\newcommand\apj{\ref@jnl{ApJ}}%
+          % Astrophysical Journal
+\newcommand\apjl{\ref@jnl{ApJ}}%
+          % Astrophysical Journal, Letters
+\newcommand\apjs{\ref@jnl{ApJS}}%
+          % Astrophysical Journal, Supplement
+\newcommand\ao{\ref@jnl{Appl.~Opt.}}%
+          % Applied Optics
+\newcommand\apss{\ref@jnl{Ap\&SS}}%
+          % Astrophysics and Space Science
+\newcommand\aap{\ref@jnl{A\&A}}%
+          % Astronomy and Astrophysics
+\newcommand\aapr{\ref@jnl{A\&A~Rev.}}%
+          % Astronomy and Astrophysics Reviews
+\newcommand\aaps{\ref@jnl{A\&AS}}%
+          % Astronomy and Astrophysics, Supplement
+\newcommand\azh{\ref@jnl{AZh}}%
+          % Astronomicheskii Zhurnal
+\newcommand\baas{\ref@jnl{BAAS}}%
+          % Bulletin of the AAS
+\newcommand\caa{\ref@jnl{Chinese Astron. Astrophys.}}%
+  % Chinese Astronomy and Astrophysics
+\newcommand\cjaa{\ref@jnl{Chinese J. Astron. Astrophys.}}%
+  % Chinese Journal of Astronomy and Astrophysics
+\newcommand\icarus{\ref@jnl{Icarus}}%
+  % Icarus
+\newcommand\jcap{\ref@jnl{J. Cosmology Astropart. Phys.}}%
+  % Journal of Cosmology and Astroparticle Physics
+\newcommand\jrasc{\ref@jnl{JRASC}}%
+          % Journal of the RAS of Canada
+\newcommand\memras{\ref@jnl{MmRAS}}%
+          % Memoirs of the RAS
+\newcommand\mnras{\ref@jnl{MNRAS}}%
+          % Monthly Notices of the RAS
+\newcommand\na{\ref@jnl{New A}}%
+  % New Astronomy
+\newcommand\nar{\ref@jnl{New A Rev.}}%
+  % New Astronomy Review
+\newcommand\pra{\ref@jnl{Phys.~Rev.~A}}%
+          % Physical Review A: General Physics
+\newcommand\prb{\ref@jnl{Phys.~Rev.~B}}%
+          % Physical Review B: Solid State
+\newcommand\prc{\ref@jnl{Phys.~Rev.~C}}%
+          % Physical Review C
+\newcommand\prd{\ref@jnl{Phys.~Rev.~D}}%
+          % Physical Review D
+\newcommand\pre{\ref@jnl{Phys.~Rev.~E}}%
+          % Physical Review E
+\newcommand\prl{\ref@jnl{Phys.~Rev.~Lett.}}%
+          % Physical Review Letters
+\newcommand\pasa{\ref@jnl{PASA}}%
+  % Publications of the Astron. Soc. of Australia
+\newcommand\pasp{\ref@jnl{PASP}}%
+          % Publications of the ASP
+\newcommand\pasj{\ref@jnl{PASJ}}%
+          % Publications of the ASJ
+\newcommand\qjras{\ref@jnl{QJRAS}}%
+          % Quarterly Journal of the RAS
+\newcommand\rmxaa{\ref@jnl{Rev. Mexicana Astron. Astrofis.}}%
+  % Revista Mexicana de Astronomia y Astrofisica
+\newcommand\skytel{\ref@jnl{S\&T}}%
+          % Sky and Telescope
+\newcommand\solphys{\ref@jnl{Sol.~Phys.}}%
+          % Solar Physics
+\newcommand\sovast{\ref@jnl{Soviet~Ast.}}%
+          % Soviet Astronomy
+\newcommand\ssr{\ref@jnl{Space~Sci.~Rev.}}%
+          % Space Science Reviews
+\newcommand\zap{\ref@jnl{ZAp}}%
+          % Zeitschrift fuer Astrophysik
+\newcommand\nat{\ref@jnl{Nature}}%
+          % Nature
+\newcommand\iaucirc{\ref@jnl{IAU~Circ.}}%
+          % IAU Cirulars
+\newcommand\aplett{\ref@jnl{Astrophys.~Lett.}}%
+          % Astrophysics Letters and Communications
+\newcommand\apspr{\ref@jnl{Astrophys.~Space~Phys.~Res.}}%
+          % Astrophysics Space Physics Research
+\newcommand\bain{\ref@jnl{Bull.~Astron.~Inst.~Netherlands}}%
+          % Bulletin Astronomical Institute of the Netherlands
+\newcommand\fcp{\ref@jnl{Fund.~Cosmic~Phys.}}%
+          % Fundamental Cosmic Physics
+\newcommand\gca{\ref@jnl{Geochim.~Cosmochim.~Acta}}%
+          % Geochimica Cosmochimica Acta
+\newcommand\grl{\ref@jnl{Geophys.~Res.~Lett.}}%
+          % Geophysics Research Letters
+\newcommand\jcp{\ref@jnl{J.~Chem.~Phys.}}%
+          % Journal of Chemical Physics
+\newcommand\jgr{\ref@jnl{J.~Geophys.~Res.}}%
+          % Journal of Geophysical Research
+\newcommand\jqsrt{\ref@jnl{J.~Quant.~Spec.~Radiat.~Transf.}}%
+          % Journal of Quantitiative Spectroscopy and Radiative Trasfer
+\newcommand\memsai{\ref@jnl{Mem.~Soc.~Astron.~Italiana}}%
+          % Mem. Societa Astronomica Italiana
+\newcommand\nphysa{\ref@jnl{Nucl.~Phys.~A}}%
+          % Nuclear Physics A
+\newcommand\physrep{\ref@jnl{Phys.~Rep.}}%
+          % Physics Reports
+\newcommand\physscr{\ref@jnl{Phys.~Scr}}%
+          % Physica Scripta
+\newcommand\planss{\ref@jnl{Planet.~Space~Sci.}}%
+          % Planetary Space Science
+\newcommand\procspie{\ref@jnl{Proc.~SPIE}}%
+          % Proceedings of the SPIE
+\let\astap=\aap
+\let\apjlett=\apjl
+\let\apjsupp=\apjs
+\let\applopt=\ao
+\newcommand\phn{\phantom{0}}%
+\newcommand\phd{\phantom{.}}%
+\newcommand\phs{\phantom{$-$}}%
+\newcommand\phm[1]{\phantom{#1}}%
+\let\la=\lesssim            % For Springer A&A compliance...
+\let\ga=\gtrsim
+\newcommand\sq{\mbox{\rlap{$\sqcap$}$\sqcup$}}%
+\newcommand\arcdeg{\mbox{$^\circ$}}%
+\newcommand\arcmin{\mbox{$^\prime$}}%
+\newcommand\arcsec{\mbox{$^{\prime\prime}$}}%
+\newcommand\fd{\mbox{$.\!\!^{\mathrm d}$}}%
+\newcommand\fh{\mbox{$.\!\!^{\mathrm h}$}}%
+\newcommand\fm{\mbox{$.\!\!^{\mathrm m}$}}%
+\newcommand\fs{\mbox{$.\!\!^{\mathrm s}$}}%
+\newcommand\fdg{\mbox{$.\!\!^\circ$}}%
+\newcommand\farcm@mss{\mbox{$.\mkern-4mu^\prime$}}%
+\let\farcm\farcm@mss
+\newcommand\farcs@mss{\mbox{$.\!\!^{\prime\prime}$}}%
+\let\farcs\farcs@mss
+\newcommand\fp{\mbox{$.\!\!^{\scriptscriptstyle\mathrm p}$}}%
+\newcommand\micron{\mbox{$\mu$m}}%
+\def\farcm@apj{%
+ \mbox{.\kern -0.7ex\raisebox{.9ex}{\scriptsize$\prime$}}%
+}%
+\def\farcs@apj{%
+ \mbox{%
+  \kern  0.13ex.%
+  \kern -0.95ex\raisebox{.9ex}{\scriptsize$\prime\prime$}%
+  \kern -0.1ex%
+ }%
+}%
+\newcommand\case[2]{\mbox{$\frac{#1}{#2}$}}%
+\newcommand\slantfrac{\case}%
+\newcommand\onehalf{\slantfrac{1}{2}}%
+\newcommand\onethird{\slantfrac{1}{3}}%
+\newcommand\twothirds{\slantfrac{2}{3}}%
+\newcommand\onequarter{\slantfrac{1}{4}}%
+\newcommand\threequarters{\slantfrac{3}{4}}%
+\newcommand\ubvr{\mbox{$U\!BV\!R$}}%% UBVR system
+\newcommand\ub{\mbox{$U\!-\!B$}}%   % U-B
+\newcommand\bv{\mbox{$B\!-\!V$}}%   % B-V
+\newcommand\vr{\mbox{$V\!-\!R$}}%   % V-R
+\newcommand\ur{\mbox{$U\!-\!R$}}%   % U-R
+\newcommand\ion[2]{#1$\;${\small\rmfamily\@Roman{#2}}\relax}%
+\newcommand\nodata{ ~$\cdots$~ }%
+\newcommand\diameter{\ooalign{\hfil/\hfil\crcr\mathhexbox20D}}%
+\newcommand\degr{\arcdeg}%
+\newcommand\Sun{\sun}% Sun symbol, "S"
+\newcommand\Sol{\sun}%
+\newcommand\sun{\odot}%
+\newcommand\Mercury{\astro{\char1}}% Mercury symbol, "1"
+\newcommand\Venus{\astro{\char2}}% Venus symbol, "2"
+\newcommand\Earth{\earth}% Earth symbol, "3"
+\newcommand\Terra{\earth}%
+\newcommand\earth{\oplus}%
+\newcommand\Mars{\astro{\char4}}% Mars symbol, "4"
+\newcommand\Jupiter{\astro{\char5}}% Jupiter symbol, "5"
+\newcommand\Saturn{\astro{\char6}}% Saturn symbol, "6"
+\newcommand\Uranus{\astro{\char7}}% Uranus symbol, "7"
+\newcommand\Neptune{\astro{\char8}}% Neptune symbol, "8"
+\newcommand\Pluto{\astro{\char9}}% Pluo symbol, "9"
+\newcommand\Moon{\astro{\char10}}% Moon symbol, "M"
+\newcommand\Luna{\Moon}%
+\newcommand\Aries{\astro{\char11}}%
+\newcommand\VEq{\Aries}% vernal equinox (Aries)
+\newcommand\Taurus{\astro{\char12}}%
+\newcommand\Gemini{\astro{\char13}}%
+\newcommand\Cancer{\astro{\char14}}%
+\newcommand\Leo{\astro{\char15}}%
+\newcommand\Virgo{\astro{\char16}}%
+\newcommand\Libra{\astro{\char17}}%
+\newcommand\AEq{\Libra}% autumnal equinox (Libra)
+\newcommand\Scorpius{\astro{\char18}}%
+\newcommand\Sagittarius{\astro{\char19}}%
+\newcommand\Capricornus{\astro{\char20}}%
+\newcommand\Aquarius{\astro{\char21}}%
+\newcommand\Pisces{\astro{\char22}}%
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+My Thesis
+\end_layout
+
+\begin_layout Author
+Tomomi Sunayama
+\end_layout
+
+\begin_layout Chapter
+Exploring new diagnostics for the internal structure of clusters
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Tidal stripping in cluster environments - what is expected theoretically
+ and what is seen observationally.
+ ** Tidal stripping of cluster galaxies a la Jeff Kenney ** Tidal stripping
+ of cluster galaxies from lensing studies (PN 2009, comparison with simulations
+ with Springel -- 2 papers) Need to introduce the effect of assembly bias
+ and its role in where galaxies end up radially in the cluster Compare simulatio
+ns with observations of samples and go beyond individual objects
+\end_layout
+
+\begin_layout Standard
+Summary previous work
+\end_layout
+
+\begin_layout Standard
+Paraphrase More et al.
+ papers and their results
+\end_layout
+
+\begin_layout Section
+Methods & Results
+\end_layout
+
+\begin_layout Subsection
+Simulations
+\end_layout
+
+\begin_layout Standard
+We use the Bolshoi 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bolshoi_11"
+
+\end_inset
+
+ which were run with the Adaptive Refinement Tree Code 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kravtsov_etal97,gottloeber_klypin08"
+
+\end_inset
+
+ assuming a flat 
+\begin_inset Formula $\Lambda{\rm CDM}$
+\end_inset
+
+ model with density parameters 
+\begin_inset Formula $\Omega_{m}=0.27$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{\Lambda}=0.73$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{b}=0.0469$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma_{8}=0.82$
+\end_inset
+
+, 
+\begin_inset Formula $n=0.95$
+\end_inset
+
+, 
+\begin_inset Formula $h=0.70$
+\end_inset
+
+.
+ The Bolshoi simulation used 
+\begin_inset Formula $2048^{3}$
+\end_inset
+
+ particles in a 
+\begin_inset Formula $250h^{-1}{\rm Mpc}$
+\end_inset
+
+ box with a force resolution of 
+\begin_inset Formula $1h^{-1}{\rm kpc}$
+\end_inset
+
+, giving a particle mass of 
+\begin_inset Formula $1.35\times10^{8}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ Dark matter halos and subhalos are identified using the 
+\family typewriter
+ROCKSTAR
+\family default
+ phase-space, temporal halo finder 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rockstar"
+
+\end_inset
+
+ and merger trees are constructed using the 
+\family typewriter
+CONSISTENT TREES 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rockstar_trees"
+
+\end_inset
+
+
+\family default
+  procedures
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The catalogues used in this paper are publicly available at 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://hipacc.ucsc.edu/Bolshoi/MergerTrees.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ All of the results we consider here are at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In what follows, we use the virial masses and maximum circular velocities
+ (tagged 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+mvir
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+vmax
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+) directly from the halo catalogues.
+ The 
+\family typewriter
+ROCKSTAR
+\family default
+ halo finder computes halo masses based on spherical overdensities using
+ a threshold of 
+\begin_inset Formula $\Delta_{{\rm h}}=360$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+about host halo and subhalo
+\end_layout
+
+\begin_layout Standard
+The halo mass and velocity functions start to show incompleteness at 
+\begin_inset Formula $10^{10.4}h^{-1}M_{\odot}$
+\end_inset
+
+ (
+\begin_inset Formula $\sim200$
+\end_inset
+
+ particles) for the Bolshoi simulation.
+ Below those masses, the halo mass distributions show unphysical drop-offs
+ indicating incomplete mass resolution.
+\end_layout
+
+\begin_layout Standard
+In addition to the standard classification of halos into host halos (not
+ within the virial radius of a more massive halo) and subhalos (within the
+ virial radius of a more massive halo), we further classify host halos into
+ ejected and non-ejected halos.
+ Ejected halos, also referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+backsplash
+\begin_inset Quotes erd
+\end_inset
+
+ halos, are host halos whose main progenitor was classified, at some point
+ in its merger tree history, as a subhalo.
+ As we discuss below, these ejected halos have very different clustering
+ properties compared to their non-ejected counterparts.
+ The ejected fraction for the Bolshoi simulation is 
+\begin_inset Formula $\sim15.8\%$
+\end_inset
+
+ at 
+\begin_inset Formula $10^{11}h^{-1}M_{\odot}$
+\end_inset
+
+, and drops to 
+\begin_inset Formula $\sim6.3\%$
+\end_inset
+
+ at 
+\begin_inset Formula $10^{13}h^{-1}M_{\odot}$
+\end_inset
+
+.
+ The lower mass resolution of the MultiDark simulation prevents us from
+ making this additional sub-classification.
+ Accordingly, results that rely on this split are restricted to the Bolshoi
+ simulation and mass range.
+\end_layout
+
+\begin_layout Subsection
+Radial distribution of subhalos in real-space
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_radial.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_radial2.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Left: Radial distribution of subhalos 
+\begin_inset Formula $r/R_{{\rm vir}}$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M_{acc,sub}/M_{host}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+, where 
+\begin_inset Formula $M_{acc,sub}$
+\end_inset
+
+ is subhalo masses at accretion and 
+\begin_inset Formula $M_{host}$
+\end_inset
+
+ is the host halo masses at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The distributions indicate that more massive subhalos tend to exist closer
+ to the center of the host halo.
+ Right: Radial distribution of subhalos as a function of 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+, where 
+\begin_inset Formula $M_{{\rm vir,sub}}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm acc,sub}}$
+\end_inset
+
+ are the subhalo masses at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+ and at accretion respectively.
+ Having smaller ratio of 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ implies that subhalos lost more masses due to tidal stripping, and those
+ subhalos whose masses are more stripped tend to be closer to the center
+ of the host halo.
+ Note that histograms are normalized.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_subVmax_radial.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Radial distribution of subhalos as a function of 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+, where 
+\begin_inset Formula $V_{{\rm max,sub}}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{{\rm acc,sub}}$
+\end_inset
+
+ are the maximum circular velocities of the subhalos at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+ and at accretion respectively.
+ Having smaller ratio of 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ implies that subhalos lost masses not only from the outer region of the
+ subhalos but also frm the core, and those subhalos tend to be closer to
+ the center of the host halo.
+ Note that histograms are normalized.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_zacc.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Vmax2acc_zacc.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correlation between the redshift that the subhalos are accreted 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ (i.e., the redshift when the subhalos are accreted by their host halos) and
+ the ratio of 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ (left) and 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ (right) at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ Those figures indicate that subhalos which are accreted earlier tend to
+ lose more masses, but the effect of tidal stripping on the change in potential
+ well depth is less.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_MtoV_correlation.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correlation between the change in the maxmum circular velocity and subhalo
+ masses at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The figure indicates that 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ are tightly correlated (
+\color red
+any quantitative way to evaluate this?
+\color inherit
+), but the subhalos tend to lose more mass than the change in their potential
+ depths.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Small-scale clusterings in real and redshift spaces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_Mvir2acc_xir_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_ratio_xir_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:auto-sub_real"
+
+\end_inset
+
+Left: Auto correlation functions of subhalos in real-space as a function
+ of the change in subhalos masses 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ Right: The ratio of auto correlation functions between subhalos and DM
+ particles in real-space at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The figures indicate that subhalos which lose more masses tend to be more
+ centrally concentrated.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../plots_Cluster/Bolshoi_M14_Mvir2acc_xis_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_xis_quad_auto.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Monopole (left) and Quadrupole (right) term of auto correlation functions
+ of subhalos in redshift-space as a function of the change in subhalos masses
+ 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The mass dependence appeared in the real-space correlation functions in
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:auto-sub_real"
+
+\end_inset
+
+ is smeared out due to random motions of subhalos in the clusters.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comparison with redMapper clusters
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_photo_Mi_gr.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_spec_Mi_gr.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:redmapper_color_mag"
+
+\end_inset
+
+Color-magnitude diagram for the member galaxies in redMapper which only
+ have photometric redshifts (left) and the ones which have spectroscopic
+ redshifts (right).
+ The red dashed lines are the cut to split galaxies into old and young galaxies.
+ For the galaxies which only have photometric redshifts, the red dashed
+ line is fitted to medians in distribution of colors computed for small
+ magnitude bins.
+ The cyan dashed line in the left panel is the medians computed for each
+ magnitude bin.
+ For the galaxies which have spectroscopic redshifts, there is a clear green
+ valley and the red dahsed line corresponds to 
+\begin_inset Formula $g-r$
+\end_inset
+
+ having 1.3.
+ (
+\color red
+Not sure whether this is a reasonable way to split galaxies...
+\color inherit
+) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_photo_R.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_spec_R.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Projected radial distribution of red and blue galaxies split in the way
+ shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:redmapper_color_mag"
+
+\end_inset
+
+ for galaxies which only have photometric redshifts (left) and the galaxies
+ which have spectroscopic redshifts.
+ The figures show little differences between old and young galaxies.
+ (
+\color red
+change the legends in the figures
+\color inherit
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Make one more plot R/R_lambda...
+\end_layout
+
+\begin_layout Subsection
+M/L ratio comparison in simulations: using filed galaxies (host halos ~
+ 10^12 -> need to use other catalogs for host halos) and subhalos (~10^12)
+ in clusters
+\end_layout
+
+\begin_layout Subsection
+Compute the Sparmann rank order correlation for redMapper/DR7
+\end_layout
+
+\begin_layout Section
+Conclusions and Future Work
+\end_layout
+
+\begin_layout Standard
+Future lensing surveys from EUCLID, WFIRST will uncover coarse data (not
+ strong lensing features) but will derive cluster ensemble properties from
+ weak shear (in fact detection will be driven by shear) -- these kinds of
+ diagnostics can help us understand internal structure of clusters.
+\end_layout
+
+\end_body
+\end_document

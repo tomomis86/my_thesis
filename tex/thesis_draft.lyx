@@ -10420,7 +10420,7 @@ Left: Radial distribution of subhalos
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -10485,7 +10485,7 @@ Radial distribution of subhalos as a function of
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -10508,7 +10508,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Correlation between the accreted redshift 
+Correlation between the redshift that the subhalos are accreted 
 \begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
@@ -10527,8 +10527,8 @@ Correlation between the accreted redshift
 
 .
  Those figures indicate that subhalos which are accreted earlier tend to
- lose more masses, but the effect of tidal stripping on the potential well
- depth is less.
+ lose more masses, but the effect of tidal stripping on the change in potential
+ well depth is less.
 \end_layout
 
 \end_inset
@@ -10543,6 +10543,66 @@ Correlation between the accreted redshift
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_MtoV_correlation.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correlation between the change in the maxmum circular velocity and subhalo
+ masses at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The figure indicates that 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ are tightly correlated (
+\color red
+any quantitative way to evaluate this?
+\color inherit
+), but the subhalos tend to lose more mass than the change in their potential
+ depths.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Small-scale clusterings in real and redshift spaces
 \end_layout
 
 \begin_layout Standard
@@ -10580,24 +10640,16 @@ xxx
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Radial distribution of subhalos in redshift-space
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -10641,7 +10693,7 @@ Comparison with redMapper clusters
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -10681,10 +10733,62 @@ xxx
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_photo_R.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_spec_R.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*Make one more plot R/R_lambda...
+\end_layout
+
 \begin_layout Subsection
 M/L ratio comparison in simulations: using filed galaxies (host halos ~
  10^12 -> need to use other catalogs for host halos) and subhalos (~10^12)
  in clusters
+\end_layout
+
+\begin_layout Subsection
+Compute the Sparmann rank order correlation for redMapper/DR7
 \end_layout
 
 \begin_layout Section

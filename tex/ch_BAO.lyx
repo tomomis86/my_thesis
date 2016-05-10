@@ -1,0 +1,2685 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass yalephd
+\begin_preamble
+
+
+
+\usepackage{geometry} % you need this for yalephd.cls to work.
+\usepackage{graphicx} % you probably want the rest of these.
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{appendix}
+\usepackage{comment}
+\usepackage{cite}
+\usepackage{notoccite}
+
+
+\newcommand{\mvir}{M_{\rm vir}}
+\newcommand{\mcoll}{M_{\rm coll}}
+\newcommand{\rvir}{R_{\rm vir}}
+\newcommand{\vmax}{V_{\rm max}}
+\newcommand{\meanvmax}{\overline{V}_{\rm max}}
+
+\newcommand{\ximm}{\xi_{\rm mm}}
+\newcommand{\xihm}{\xi_{\rm hm}}
+\newcommand{\bh}{b_{\rm h}}
+\newcommand{\bhlin}{b^{\rm lin}_{\rm h}}
+
+%%% UNITS %%%
+\newcommand{\msun}{M_{\odot}/h}
+\newcommand{\mpch}{{\rm Mpc}/h}
+\newcommand{\kpch}{{\rm kpc}/h}
+
+
+%-------------
+\let\jnl@style=\rmfamily
+\def\ref@jnl#1{{\jnl@style#1}}%
+\newcommand\aj{\ref@jnl{AJ}}%
+          % Astronomical Journal
+\newcommand\actaa{\ref@jnl{Acta Astron.}}%
+  % Acta Astronomica
+\newcommand\araa{\ref@jnl{ARA\&A}}%
+          % Annual Review of Astron and Astrophys
+\newcommand\apj{\ref@jnl{ApJ}}%
+          % Astrophysical Journal
+\newcommand\apjl{\ref@jnl{ApJ}}%
+          % Astrophysical Journal, Letters
+\newcommand\apjs{\ref@jnl{ApJS}}%
+          % Astrophysical Journal, Supplement
+\newcommand\ao{\ref@jnl{Appl.~Opt.}}%
+          % Applied Optics
+\newcommand\apss{\ref@jnl{Ap\&SS}}%
+          % Astrophysics and Space Science
+\newcommand\aap{\ref@jnl{A\&A}}%
+          % Astronomy and Astrophysics
+\newcommand\aapr{\ref@jnl{A\&A~Rev.}}%
+          % Astronomy and Astrophysics Reviews
+\newcommand\aaps{\ref@jnl{A\&AS}}%
+          % Astronomy and Astrophysics, Supplement
+\newcommand\azh{\ref@jnl{AZh}}%
+          % Astronomicheskii Zhurnal
+\newcommand\baas{\ref@jnl{BAAS}}%
+          % Bulletin of the AAS
+\newcommand\caa{\ref@jnl{Chinese Astron. Astrophys.}}%
+  % Chinese Astronomy and Astrophysics
+\newcommand\cjaa{\ref@jnl{Chinese J. Astron. Astrophys.}}%
+  % Chinese Journal of Astronomy and Astrophysics
+\newcommand\icarus{\ref@jnl{Icarus}}%
+  % Icarus
+\newcommand\jcap{\ref@jnl{J. Cosmology Astropart. Phys.}}%
+  % Journal of Cosmology and Astroparticle Physics
+\newcommand\jrasc{\ref@jnl{JRASC}}%
+          % Journal of the RAS of Canada
+\newcommand\memras{\ref@jnl{MmRAS}}%
+          % Memoirs of the RAS
+\newcommand\mnras{\ref@jnl{MNRAS}}%
+          % Monthly Notices of the RAS
+\newcommand\na{\ref@jnl{New A}}%
+  % New Astronomy
+\newcommand\nar{\ref@jnl{New A Rev.}}%
+  % New Astronomy Review
+\newcommand\pra{\ref@jnl{Phys.~Rev.~A}}%
+          % Physical Review A: General Physics
+\newcommand\prb{\ref@jnl{Phys.~Rev.~B}}%
+          % Physical Review B: Solid State
+\newcommand\prc{\ref@jnl{Phys.~Rev.~C}}%
+          % Physical Review C
+\newcommand\prd{\ref@jnl{Phys.~Rev.~D}}%
+          % Physical Review D
+\newcommand\pre{\ref@jnl{Phys.~Rev.~E}}%
+          % Physical Review E
+\newcommand\prl{\ref@jnl{Phys.~Rev.~Lett.}}%
+          % Physical Review Letters
+\newcommand\pasa{\ref@jnl{PASA}}%
+  % Publications of the Astron. Soc. of Australia
+\newcommand\pasp{\ref@jnl{PASP}}%
+          % Publications of the ASP
+\newcommand\pasj{\ref@jnl{PASJ}}%
+          % Publications of the ASJ
+\newcommand\qjras{\ref@jnl{QJRAS}}%
+          % Quarterly Journal of the RAS
+\newcommand\rmxaa{\ref@jnl{Rev. Mexicana Astron. Astrofis.}}%
+  % Revista Mexicana de Astronomia y Astrofisica
+\newcommand\skytel{\ref@jnl{S\&T}}%
+          % Sky and Telescope
+\newcommand\solphys{\ref@jnl{Sol.~Phys.}}%
+          % Solar Physics
+\newcommand\sovast{\ref@jnl{Soviet~Ast.}}%
+          % Soviet Astronomy
+\newcommand\ssr{\ref@jnl{Space~Sci.~Rev.}}%
+          % Space Science Reviews
+\newcommand\zap{\ref@jnl{ZAp}}%
+          % Zeitschrift fuer Astrophysik
+\newcommand\nat{\ref@jnl{Nature}}%
+          % Nature
+\newcommand\iaucirc{\ref@jnl{IAU~Circ.}}%
+          % IAU Cirulars
+\newcommand\aplett{\ref@jnl{Astrophys.~Lett.}}%
+          % Astrophysics Letters and Communications
+\newcommand\apspr{\ref@jnl{Astrophys.~Space~Phys.~Res.}}%
+          % Astrophysics Space Physics Research
+\newcommand\bain{\ref@jnl{Bull.~Astron.~Inst.~Netherlands}}%
+          % Bulletin Astronomical Institute of the Netherlands
+\newcommand\fcp{\ref@jnl{Fund.~Cosmic~Phys.}}%
+          % Fundamental Cosmic Physics
+\newcommand\gca{\ref@jnl{Geochim.~Cosmochim.~Acta}}%
+          % Geochimica Cosmochimica Acta
+\newcommand\grl{\ref@jnl{Geophys.~Res.~Lett.}}%
+          % Geophysics Research Letters
+\newcommand\jcp{\ref@jnl{J.~Chem.~Phys.}}%
+          % Journal of Chemical Physics
+\newcommand\jgr{\ref@jnl{J.~Geophys.~Res.}}%
+          % Journal of Geophysical Research
+\newcommand\jqsrt{\ref@jnl{J.~Quant.~Spec.~Radiat.~Transf.}}%
+          % Journal of Quantitiative Spectroscopy and Radiative Trasfer
+\newcommand\memsai{\ref@jnl{Mem.~Soc.~Astron.~Italiana}}%
+          % Mem. Societa Astronomica Italiana
+\newcommand\nphysa{\ref@jnl{Nucl.~Phys.~A}}%
+          % Nuclear Physics A
+\newcommand\physrep{\ref@jnl{Phys.~Rep.}}%
+          % Physics Reports
+\newcommand\physscr{\ref@jnl{Phys.~Scr}}%
+          % Physica Scripta
+\newcommand\planss{\ref@jnl{Planet.~Space~Sci.}}%
+          % Planetary Space Science
+\newcommand\procspie{\ref@jnl{Proc.~SPIE}}%
+          % Proceedings of the SPIE
+\let\astap=\aap
+\let\apjlett=\apjl
+\let\apjsupp=\apjs
+\let\applopt=\ao
+\newcommand\phn{\phantom{0}}%
+\newcommand\phd{\phantom{.}}%
+\newcommand\phs{\phantom{$-$}}%
+\newcommand\phm[1]{\phantom{#1}}%
+\let\la=\lesssim            % For Springer A&A compliance...
+\let\ga=\gtrsim
+\newcommand\sq{\mbox{\rlap{$\sqcap$}$\sqcup$}}%
+\newcommand\arcdeg{\mbox{$^\circ$}}%
+\newcommand\arcmin{\mbox{$^\prime$}}%
+\newcommand\arcsec{\mbox{$^{\prime\prime}$}}%
+\newcommand\fd{\mbox{$.\!\!^{\mathrm d}$}}%
+\newcommand\fh{\mbox{$.\!\!^{\mathrm h}$}}%
+\newcommand\fm{\mbox{$.\!\!^{\mathrm m}$}}%
+\newcommand\fs{\mbox{$.\!\!^{\mathrm s}$}}%
+\newcommand\fdg{\mbox{$.\!\!^\circ$}}%
+\newcommand\farcm@mss{\mbox{$.\mkern-4mu^\prime$}}%
+\let\farcm\farcm@mss
+\newcommand\farcs@mss{\mbox{$.\!\!^{\prime\prime}$}}%
+\let\farcs\farcs@mss
+\newcommand\fp{\mbox{$.\!\!^{\scriptscriptstyle\mathrm p}$}}%
+\newcommand\micron{\mbox{$\mu$m}}%
+\def\farcm@apj{%
+ \mbox{.\kern -0.7ex\raisebox{.9ex}{\scriptsize$\prime$}}%
+}%
+\def\farcs@apj{%
+ \mbox{%
+  \kern  0.13ex.%
+  \kern -0.95ex\raisebox{.9ex}{\scriptsize$\prime\prime$}%
+  \kern -0.1ex%
+ }%
+}%
+\newcommand\case[2]{\mbox{$\frac{#1}{#2}$}}%
+\newcommand\slantfrac{\case}%
+\newcommand\onehalf{\slantfrac{1}{2}}%
+\newcommand\onethird{\slantfrac{1}{3}}%
+\newcommand\twothirds{\slantfrac{2}{3}}%
+\newcommand\onequarter{\slantfrac{1}{4}}%
+\newcommand\threequarters{\slantfrac{3}{4}}%
+\newcommand\ubvr{\mbox{$U\!BV\!R$}}%% UBVR system
+\newcommand\ub{\mbox{$U\!-\!B$}}%   % U-B
+\newcommand\bv{\mbox{$B\!-\!V$}}%   % B-V
+\newcommand\vr{\mbox{$V\!-\!R$}}%   % V-R
+\newcommand\ur{\mbox{$U\!-\!R$}}%   % U-R
+\newcommand\ion[2]{#1$\;${\small\rmfamily\@Roman{#2}}\relax}%
+\newcommand\nodata{ ~$\cdots$~ }%
+\newcommand\diameter{\ooalign{\hfil/\hfil\crcr\mathhexbox20D}}%
+\newcommand\degr{\arcdeg}%
+\newcommand\Sun{\sun}% Sun symbol, "S"
+\newcommand\Sol{\sun}%
+\newcommand\sun{\odot}%
+\newcommand\Mercury{\astro{\char1}}% Mercury symbol, "1"
+\newcommand\Venus{\astro{\char2}}% Venus symbol, "2"
+\newcommand\Earth{\earth}% Earth symbol, "3"
+\newcommand\Terra{\earth}%
+\newcommand\earth{\oplus}%
+\newcommand\Mars{\astro{\char4}}% Mars symbol, "4"
+\newcommand\Jupiter{\astro{\char5}}% Jupiter symbol, "5"
+\newcommand\Saturn{\astro{\char6}}% Saturn symbol, "6"
+\newcommand\Uranus{\astro{\char7}}% Uranus symbol, "7"
+\newcommand\Neptune{\astro{\char8}}% Neptune symbol, "8"
+\newcommand\Pluto{\astro{\char9}}% Pluo symbol, "9"
+\newcommand\Moon{\astro{\char10}}% Moon symbol, "M"
+\newcommand\Luna{\Moon}%
+\newcommand\Aries{\astro{\char11}}%
+\newcommand\VEq{\Aries}% vernal equinox (Aries)
+\newcommand\Taurus{\astro{\char12}}%
+\newcommand\Gemini{\astro{\char13}}%
+\newcommand\Cancer{\astro{\char14}}%
+\newcommand\Leo{\astro{\char15}}%
+\newcommand\Virgo{\astro{\char16}}%
+\newcommand\Libra{\astro{\char17}}%
+\newcommand\AEq{\Libra}% autumnal equinox (Libra)
+\newcommand\Scorpius{\astro{\char18}}%
+\newcommand\Sagittarius{\astro{\char19}}%
+\newcommand\Capricornus{\astro{\char20}}%
+\newcommand\Aquarius{\astro{\char21}}%
+\newcommand\Pisces{\astro{\char22}}%
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Baryon acoustic oscillations are a signature of the early universe imprinted
+ in the distribution of galaxies and dark matters at the present epoch.
+ As the early universe expands and its temperature drops, sound waves propagatin
+g in the baryon-photon plasma freeze into the matter distribution at decoupling.
+ This leaves a characteristic peak in two-point correlation functions where
+ the position of the peak is 
+\begin_inset Formula $\sim150{\rm Mpc}$
+\end_inset
+
+.
+ The BAO method utilizes this characteristic scale of the sound horizon
+ as a standard ruler (e.g., 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "1997PhRvL..79.3806T,1998ApJ...495...29G,1999MNRAS.304...75E"
+
+\end_inset
+
+), which is insensitive to astrophysical processes on small scales.
+\end_layout
+
+\begin_layout Standard
+While the primordial density fluctuation is linear and well understood,
+ dark matter (DM) density field at low redshifts suffers from non-linear
+ growth of structure, which makes the BAO peak broadened and shifted.
+ Furthermore, what we can actually observe is distribution of galaxies,
+ which are biased tracers of DM particles.
+ The galaxy bias and the effect of redshift-space distortions (due to peculiar
+ motion of galaxies) cause the systematic bias on the measurement of the
+ BAO peak.
+ 
+\color black
+In order to reduce the errors, Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "eisenstein2007"
+
+\end_inset
+
+ proposed a method termed “reconstruction” to sharpen the BAO feature by
+ reducing the non-linearities.
+ The assumption behind the reconstruction method is that the major source
+ of degradation of the BAO peak comes from the bulk flows, which can be
+ modeled by Zel'dovich displacement in Lagrangian perturbation theory (LPT).
+ By shifting back the positions of galaxies by the estimated Zel'dovich
+ displacement, the BAO peak is sharpened as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bao_recon1"
+
+\end_inset
+
+.
+ This is because the reconstruction method suppress the damping term appeared
+ in non-linear evolution of density fluctuations and restore the high-
+\begin_inset Formula $k$
+\end_inset
+
+ modes in the power spectrum.
+ There has been many studies both numerically and analytically [cite:xxx]
+ to verify the technique, and it has been widely used to observational studies
+ 
+\color inherit
+(
+\begin_inset CommandInset citation
+LatexCommand citet
+key "2007ApJ...664..660E,2009PhRvD..79f3523P,2009PhRvD..80l3501N"
+
+\end_inset
+
+)
+\color black
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../Dropbox/Tomomi/Prospectus/bao_recon1.png
+	lyxscale 40
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bao_recon1"
+
+\end_inset
+
+The one-dimensional correlation functions for DM with 
+\begin_inset Formula $\Lambda{\rm CDM}$
+\end_inset
+
+ model at z=0.0 before (solid) and after reconstruction with smoothing scales
+ of 5
+\begin_inset Formula $h^{-1}{\rm Mpc}$
+\end_inset
+
+ (dotted) and 10
+\begin_inset Formula $h^{-1}{\rm Mpc}$
+\end_inset
+
+ (short dashed).
+ The long-dashed line shows the peak in the initial conditions.
+ The figure is from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "2009PhRvD..80l3501N"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this work, we investigate how galaxy bias affects on the shift of the
+ BAO peak before and after reconstruction.
+ Because the shift in the BAO peak will cause the systematic bias for the
+ inferred cosmological parameters, it is crucial to understand how much
+ shift is caused by galaxy bias.
+ A similar study is done by Ref.xxx at 
+\begin_inset Formula $z=1$
+\end_inset
+
+, but we are now testing the effect of galaxy bias at 
+\begin_inset Formula $z=0.15$
+\end_inset
+
+ where the non-linear effects are more significant in galaxy samples.
+ 
+\end_layout
+
+\begin_layout Standard
+[structure of the paper]
+\end_layout
+
+\begin_layout Section
+Simulations/Methods
+\end_layout
+
+\begin_layout Subsection
+HACC
+\end_layout
+
+\begin_layout Standard
+We use the HACC simulation [cite:xxx] in this work; HACC uses a hybrid parallel
+ algorithmic structure, splitting the force calculation into a specially
+ designed grid-based long/medium range spectral particle mesh (PM) component
+ and a short-range solver, which uses direct particle-particle interactions,
+ i.e., a P
+\begin_inset Formula $^{3}$
+\end_inset
+
+M algorithm 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1988csup.book.....H"
+
+\end_inset
+
+.
+ The simulation uses 
+\begin_inset Formula $300$
+\end_inset
+
+ long time steps and 
+\begin_inset Formula $2$
+\end_inset
+
+ subcycles.
+ The simulation assumes a 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+CDM cosmology with 
+\begin_inset Formula $\Omega_{m}=0.2648$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{\Lambda}=0.7352$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{b}h^{2}=0.02258$
+\end_inset
+
+, 
+\begin_inset Formula $n_{s}=0.963$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{8}=0.8$
+\end_inset
+
+ and 
+\begin_inset Formula $h=0.71$
+\end_inset
+
+ with 
+\begin_inset Formula $4096^{3}$
+\end_inset
+
+ particles in a 
+\begin_inset Formula $4h^{-1}{\rm Gpc}$
+\end_inset
+
+ box giving a particle mass of about 
+\begin_inset Formula $5.3\times10^{10}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ Dark matter halos are identified using the friends-of-friends (FOF) algorithm
+ with the linking length of 
+\begin_inset Formula $0.168$
+\end_inset
+
+.
+ All of the results we consider here are at 
+\begin_inset Formula $z=0.15$
+\end_inset
+
+.
+ We have four outputs of the simulation and subdivide each of our 
+\begin_inset Formula $4\times(4h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+ volumes into 
+\begin_inset Formula $4\times64=256$
+\end_inset
+
+ subvolumes to estimate the covariance matrix for galaxy correlation functions.
+\end_layout
+
+\begin_layout Standard
+[check force resolution and the meaning of the number of time steps]
+\end_layout
+
+\begin_layout Subsection
+Halo Occupation Distributions (HODs)
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Galaxies are biased tracer of DM particles, and it is important to understand
+ how galaxy biases affect to the peak position of BAO.
+ To test this, we need to generate galaxy mock catalogs with various galaxy
+ biases.
+ We use the Halo Occupation Distribution (HOD) method, w
+\color inherit
+hich specifies the probability 
+\begin_inset Formula $P(N|M)$
+\end_inset
+
+ that a halo with mass 
+\begin_inset Formula $M$
+\end_inset
+
+ hosts 
+\begin_inset Formula $N$
+\end_inset
+
+ galaxies.
+ The underlying assumption of the HOD is that the number of galaxies which
+ live in a halo correlates with its halo mass.
+ The HOD functional form (based on a number of free parameters, 5 in our
+ case) provides probabilities for the number of central and satellite galaxies
+ based on the masses of halos that host those galaxies.
+ A halo hosts a central galaxy with probability 
+\begin_inset Formula $\langle N_{cen}(M)\rangle$
+\end_inset
+
+ and a number of satellite galaxies given by a Poisson distribution with
+ mean 
+\begin_inset Formula $\langle N_{sat}(M)\rangle$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\langle N_{cen}(M)\rangle=\frac{1}{2}{\rm erfc}\left[\frac{{\rm ln}(M_{cut}/M)}{\sqrt{2}\sigma}\right],\label{eq:Ncen}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+\langle N_{sat}(M)\rangle=N_{cen}(M)\left(\frac{M-\kappa M_{cut}}{M_{1}}\right)^{\alpha},\label{eq:Nsat}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $M_{cut}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ are free parameters and 
+\begin_inset Formula $M$
+\end_inset
+
+ is the halo mass.
+ We assume that 
+\begin_inset Formula $N_{sat}(M)$
+\end_inset
+
+ is zero when 
+\begin_inset Formula $M<\kappa M_{cut}$
+\end_inset
+
+ and halos do not host satellite galaxies without a central galaxy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2005ApJ...633..791Z"
+
+\end_inset
+
+.
+ The total number of galaxies hosted by each halo is a sum of the number
+ of central and satellite galaxies.
+ Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Ncen"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Nsat"
+
+\end_inset
+
+ are not the only possible functional form for the HOD, and it is trivial
+ to change this.
+ However, these forms are known to successfully reproduce the clustering
+ of the BOSS galaxies 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2011ApJ...728..126W"
+
+\end_inset
+
+ and are therefore a convenient choice.
+\end_layout
+
+\begin_layout Standard
+In order to construct samples of different galaxy biases, we construct realizati
+ons of HOD models with the fixed parameters (
+\begin_inset Formula ${\rm log}_{10}M_{1}=14.0$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=1.013$
+\end_inset
+
+, 
+\begin_inset Formula $\kappa=1.0$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma=0.85$
+\end_inset
+
+), except for 
+\begin_inset Formula ${\rm log}_{10}M_{cut}$
+\end_inset
+
+ which we vary from 12.5 to 14.1 in steps of 0.2.
+
+\color red
+ The reason we only vary the parameter 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}$
+\end_inset
+
+ is because this parameter determines the overall number of central galaxies
+ which affect to the galaxy bias most effectively.
+
+\color inherit
+ The resulting nine HODs span a range of biases from 1.5 to 3.0 corresponding
+ to the number densities from xxx to xxx.
+\end_layout
+
+\begin_layout Standard
+After assigning a number of galaxies to each halo, we distribute those galaxies
+ within the halo.
+ The central galaxy is always at the center of the halo, while the distribution
+ of satellite galaxies follows a spherically symmetric NFW profile specified
+ by: 
+\begin_inset Formula 
+\begin{equation}
+\rho(r)=\frac{4\rho_{s}}{\frac{cr}{R_{{\rm vir}}}(1+\frac{cr}{R_{{\rm vir}}})^{2}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\rho_{s}$
+\end_inset
+
+ is the density at the characteristic scale 
+\begin_inset Formula $r_{s}=R_{{\rm vir}}/c$
+\end_inset
+
+ , 
+\begin_inset Formula $R_{{\rm vir}}$
+\end_inset
+
+ is the virial radius for the halo and 
+\begin_inset Formula $c$
+\end_inset
+
+ is the concentration parameter.
+ We use the emulator described in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2013ApJ...768..123K"
+
+\end_inset
+
+ to generate a table of concentration-mass relations for halos at each redshift.
+\end_layout
+
+\begin_layout Standard
+We set the velocity of the central galaxy to be equal to the host halo velocity.
+ We assume that satellite galaxies are randomly moving inside the host halos.
+ Therefore, the velocities of the satellite galaxies are the sum of their
+ host halo velocity and a random virial component.
+ For this random component, we draw from a Gaussian distribution with zero
+ mean and variance given by: 
+\begin_inset Formula 
+\begin{equation}
+\langle v_{x}^{2}\rangle=\langle v_{y}^{2}\rangle=\langle v_{z}^{2}\rangle=\frac{1}{3}\frac{GM}{R_{{\rm vir}}}.\label{eq:variance}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There have been several discussions about velocity bias and how to assign/define
+ the velocity for galaxies (e.g., using only inner 10% of particles to define
+ velocities for central galaxies) [citation:xxx]; however, we expect that
+ the velocities only affect on scales smaller than 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ in configuration-space, which is smaller than the scales that we measure
+ the BAO peak.
+ Note that it is not clear how the velocities affect on long-wave modes
+ in Fourier-space.
+\end_layout
+
+\begin_layout Subsection
+Reconstruction
+\end_layout
+
+\begin_layout Standard
+Non-linear growth of structure broadens and shifts the BAO peak.
+ The reconstruction method, originally proposed by Ref.xxx, partially removes
+ the non-linear effect and recovers the linear density field.
+ As a consequence, the reconstruction method sharpens and shifts back the
+ BAO peak, and its mechanism is well explained in terms of LPT.
+\end_layout
+
+\begin_layout Standard
+In LPT, the Eulerian distance 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ is described as 
+\begin_inset Formula 
+\[
+\vec{x}=\vec{q}+\vec{\Psi}(\vec{q}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{q}$
+\end_inset
+
+ is the initial position and 
+\begin_inset Formula $\vec{\Psi}$
+\end_inset
+
+ is the displacement vector field.
+ The density field in configuration-space and Fourier-space are described
+ as
+\begin_inset Formula 
+\[
+\delta(\vec{x})=(int)d^{3}q\delta^{(D)}(\vec{x}-\vec{q}-\vec{\Psi})-1\Leftrightarrow\delta(\vec{k})=(int)d^{3}qe^{-i\vec{k}\cdot\vec{q}}(e^{-i\vec{k}\cdot\vec{\Psi}}-1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The evolution of the displacement field 
+\begin_inset Formula $\vec{\Psi}$
+\end_inset
+
+ follows the Euler equation:
+\begin_inset Formula 
+\[
+\frac{d^{2}\vec{\Psi}}{dt^{2}}+2H\frac{d\vec{\Psi}}{dt}=-\nabla_{x}\phi(\vec{x}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is the gravitational potential.
+ In the first-order LPT, the expression for 
+\begin_inset Formula $\vec{\Psi}^{(1)}$
+\end_inset
+
+, which is often called as Zel'dovich displacement, is given by
+\begin_inset Formula 
+\[
+\vec{\Psi}^{(1)}=i\frac{\vec{k}}{k^{2}}\delta_{0}(\vec{k}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta_{0}(\vec{k})$
+\end_inset
+
+ is the linear density field.
+ What the reconstruction method does is estimating 
+\begin_inset Formula $\vec{\Psi}^{(1)}$
+\end_inset
+
+ by assuming that most of contribution for 
+\begin_inset Formula $\vec{\Psi}$
+\end_inset
+
+ comes from the Zel'dovich displacement and shifting back the position of
+ the particles (called the 
+\begin_inset Quotes eld
+\end_inset
+
+displacement
+\begin_inset Quotes erd
+\end_inset
+
+ field 
+\begin_inset Formula $\delta_{d}$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\delta_{d}(\vec{k})=(int)d^{3}qe^{-i\vec{k}\cdot\vec{q}}(e^{-i\vec{k}\cdot\vec{(\Psi}-\vec{\Psi}^{(1)})}-1),
+\]
+
+\end_inset
+
+and compute the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ density field 
+\begin_inset Formula $\delta_{s}$
+\end_inset
+
+ using the random particles and moving their positions by 
+\begin_inset Formula $-\vec{\Psi}^{(1)}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\delta_{s}(\vec{k})=(int)d^{3}qe^{-i\vec{k}\cdot\vec{q}}e^{-i\vec{k}\cdot\vec{q}}(e^{i\vec{k}\cdot\vec{\Psi}^{(1)}}-1).
+\]
+
+\end_inset
+
+The reconstructed density field is obtained by 
+\begin_inset Formula $\delta_{recon}=\delta_{d}-\delta_{s}$
+\end_inset
+
+.
+ In the linear regime, 
+\begin_inset Formula $\delta_{d}\rightarrow0$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{s}\rightarrow\delta_{0}$
+\end_inset
+
+.The first term in the bracket goes to zero when the displacement field is
+ the Zel'dovich displacement and the second term becomes the linear density
+ field.
+ In reality, we cannot measure the linear density field and have to use
+ the non-linear density field to estimate the Zel'dovich displacement field.
+ Because of this reason, we smooth out the non-linear density field to kill
+ the high-
+\begin_inset Formula $k$
+\end_inset
+
+ modes.
+\end_layout
+
+\begin_layout Standard
+A basic algorithm is given below:
+\end_layout
+
+\begin_layout Itemize
+Smooth the real-space density field 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ to filter out high 
+\begin_inset Formula $k$
+\end_inset
+
+ modes with a Gaussian smoothing of scale 
+\begin_inset Formula $R$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+S(k)={\rm e}^{-(kR)^{2}/2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Compute the Zel'dovich displacement field from linear perturbation theory:
+\begin_inset Formula 
+\[
+{\color{black}\vec{s}}(\vec{k})\equiv i\frac{\vec{k}}{k^{2}}S(k)\delta_{r}(\vec{k}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Shift the particles by 
+\begin_inset Formula $-\vec{s}(\vec{k})$
+\end_inset
+
+ and recompute the displacement density field (denoted as 
+\begin_inset Formula $\delta_{d}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+Generate randomly displaced particles and shift them by 
+\begin_inset Formula $\vec{s}(\vec{k})$
+\end_inset
+
+.
+ Compute the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ density field (denoted as 
+\begin_inset Formula $\delta_{s}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Compute the reconstructed density field 
+\begin_inset Formula $\delta_{{\rm recon}}=\delta_{d}-\delta_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If the density field is in redshift-space, it requires one more additional
+ step to recover the real-space density field from the redshift-space density
+ field prior to applying the reconstruction method.
+ The only difference is that there is an extra growth factor to estimate
+ the linear velocity field and we only shift back the particle positions
+ along the line-of-sight.
+ The detailed steps of recovering the real-space density field is in ch.2.
+\end_layout
+
+\begin_layout Subsection
+Fitting Methods
+\end_layout
+
+\begin_layout Standard
+We construct models of correlation functions with fiducial cosmology to
+ measure the position of the BAO peak.
+ For the case of isotropic BAO measurements, we only use the monopole term
+ of the correlation functions and use the parameter 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to measure the shift of the peak, while we model both monopole and quadrupole
+ terms of the correlation functions for the case of anisotropic measurements
+ using the warping parameter 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ as well as 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Isotropic 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:fit_isotropic"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We measure the BAO scale using the methodology in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2013arXiv1303.4666A"
+
+\end_inset
+
+.
+ Specifically, we describe the observed correlation function by 
+\begin_inset Formula $\xi_{{\rm fit}}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\xi_{{\rm fit}}(r)=B\xi_{t}(\alpha r)+A_{0}+A_{1}/r+A_{2}/r^{2},\label{eq:model1}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\xi_{t}$
+\end_inset
+
+ is a template correlation function, 
+\begin_inset Formula $B$
+\end_inset
+
+ is the galaxy bias squared and 
+\begin_inset Formula $A_{0,1,2}$
+\end_inset
+
+ represent nuisance parameters to account for shot noise, nonlinear evolution
+ of the matter density field and the mapping from matter to galaxies.
+ We give a Gaussian prior on bias parameter 
+\begin_inset Formula $B$
+\end_inset
+
+ such that we measure linear galaxy bias 
+\begin_inset Formula $b$
+\end_inset
+
+ between the template correlation function and data on 
+\begin_inset Formula $r\in[40h^{-1}{\rm Mpc},50h^{-1}{\rm Mpc}]$
+\end_inset
+
+ and give a prior to 
+\begin_inset Formula $B_{0}\sim1$
+\end_inset
+
+ for 
+\begin_inset Formula $B=b^{2}B_{0}$
+\end_inset
+
+.
+ The parameter 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measures the shift in the BAO scale relative to what is assumed for the
+ template function, and is defined by 
+\begin_inset Formula 
+\begin{equation}
+\alpha\equiv\left(\frac{D_{{\rm V}}(z)}{r_{{\rm d}}}\right)\left(\frac{r_{{\rm d,fid}}}{D_{{\rm V}}^{{\rm fid}}(z)}\right),\label{eq:alpha_ratio}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $r_{{\rm d}}$
+\end_inset
+
+ is the sound horizon at the drag epoch and 
+\begin_inset Formula 
+\begin{equation}
+D_{{\rm V}}\equiv\left[cz(1+z)^{2}D_{{\rm A}}(z)^{2}H^{-1}(z)\right]^{1/3}
+\end{equation}
+
+\end_inset
+
+with 
+\begin_inset Formula $D_{{\rm A}}$
+\end_inset
+
+ being the angular diameter distance and 
+\begin_inset Formula $H(z)$
+\end_inset
+
+, the Hubble parameter.
+ In the absence of systematics, we expect 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+; deviations from this represent a systematic bias to the inferred distance-reds
+hift relation.
+\end_layout
+
+\begin_layout Standard
+The template correlation function 
+\begin_inset Formula $\xi_{t}(r)$
+\end_inset
+
+ is given by a Fourier transform of 
+\begin_inset Formula $P_{t}(k)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+P_{t}(r)=(P_{{\rm lin}}(k)-P_{nw}(k))e^{-\frac{k^{2}\Sigma^{2}}{2}}+P_{nw}(k),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $P_{{\rm lin}}(k)$
+\end_inset
+
+ is the linear power spectrum and 
+\begin_inset Formula $P_{nw}(k)$
+\end_inset
+
+ is the no-wiggle power spectrum described in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1998ApJ...496..605E"
+
+\end_inset
+
+, and 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is a nonlinear parameter that accounts for the broadening of the BAO peak
+ due to nonlinear evolution.
+ We set 
+\begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
+\end_inset
+
+ for pre-reconstruction and 
+\begin_inset Formula $\Sigma=2.5h^{-1}{\rm Mpc}$
+\end_inset
+
+ for post-reconstruction, and we will discuss the reason for those choices
+ in the next section.
+ We determine the parameters by minimizing 
+\begin_inset Formula $\chi^{2}=(\xi_{{\rm HOD}}-\xi_{{\rm fit}})^{{\rm T}}C^{-1}(\xi_{{\rm HOD}}-\xi_{{\rm fit}})$
+\end_inset
+
+ where 
+\begin_inset Formula $C^{-1}$
+\end_inset
+
+ is the inverse covariance matrix and 
+\begin_inset Formula $\xi_{{\rm HOD}}$
+\end_inset
+
+ is a correlation function which 
+\begin_inset Formula $\xi_{{\rm fit}}$
+\end_inset
+
+ is fitted to.
+ We consider the measured correlation function from 
+\begin_inset Formula $60h^{-1}{\rm Mpc}$
+\end_inset
+
+ to 
+\begin_inset Formula $160h^{-1}{\rm Mpc}$
+\end_inset
+
+ in bins of 
+\begin_inset Formula $4h^{-1}{\rm Mpc}$
+\end_inset
+
+ for a total of 25 data points.
+ Since all parameters except 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ are linear, we perform the minimization on a grid of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values, computing the minimum value of the other parameters directly.
+ The parameter 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measures the shift of the BAO peak from its original position predicted
+ by linear perturbation theory.
+ Note that 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+ implies that there is no shift of the BAO peak.
+\end_layout
+
+\begin_layout Subsubsection
+Effects of Smoothing Scales
+\end_layout
+
+\begin_layout Standard
+In this section, we discuss how the smoothing parameter 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ in the template correlation function affects to the measurement of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ The expected value for 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is xxx, which is computed from xxx.
+ We use the sample with 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+.
+ For each sample, we change the value of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ and measure the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sigma_prerecon"
+
+\end_inset
+
+ shows the values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ as a function of various values for the smoothing parameter in real-space
+ before reconstruction and the corresponding 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ values.
+ While decreasing the smoothing scale makes the shift of the BAO peak smaller
+ monotonically, the 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ values indicate that 
+\begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
+\end_inset
+
+ gives the smallest value and therefore the best fit.
+ We repeat the same thing for the case of post-reconstruction, as shown
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sigma_post"
+
+\end_inset
+
+.
+ After reconstruction, the smoothing scale which gives the smallest 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ value is 
+\begin_inset Formula $\Sigma=2.5h^{-1}{\rm Mpc}$
+\end_inset
+
+, which is much smaller than what we expected.
+ [explain what we expected and why it's a reasonable thing to expect] While
+ the smoothing scale 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ really changes the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value for the case of pre-reconstruction, the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value does not show significant changes for the case of post-reconstruction.
+ [possible reasons?]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_sigma_hod1_pre_r.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/chiSquare_sigma_hod1_pre_r.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sigma_prerecon"
+
+\end_inset
+
+
+\begin_inset Formula $<\alpha-1>$
+\end_inset
+
+ (left) and 
+\begin_inset Formula $<\chi^{2}>$
+\end_inset
+
+ (right) as a function of smoothing scale 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ In order to measure the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value, we use the sample with 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+ before reconstruction.
+ We computed the mean and error of the mean from 64 samples in total.
+ While the values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ monotonically decreases as the smoothing scale 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ gets smaller, the best fit is when 
+\begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_sigma_hod1_post_r.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/chiSquare_sigma_hod1_post_r.pdf
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sigma_post"
+
+\end_inset
+
+
+\begin_inset Formula $<\alpha-1>$
+\end_inset
+
+ (left) and 
+\begin_inset Formula $<\chi^{2}>$
+\end_inset
+
+ (right) as a function of smoothing scale 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ In order to measure the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value, we use the sample with 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+ after reconstruction.
+ We computed the mean and error of the mean from 64 samples in total.
+ The value of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is not sensitive to the smoothing scale, in particular for small 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+; however, using a larger smoothing scale (
+\begin_inset Formula $\Sigma=x$
+\end_inset
+
+ is expected from linear PT) makes the value of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ larger and can possibly mislead the conclusion.
+ The best fit is when 
+\begin_inset Formula $\Sigma=2.5h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Anisotropic 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:fit_anisotropic"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*talk about AP effect
+\end_layout
+
+\begin_layout Section
+Results for Isotropic BAO: Real-Space
+\end_layout
+
+\begin_layout Standard
+In this section, we show the results of the isotropic BAO analysis with
+ and without reconstruction (i.e., measuring the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values from the real-space correlation functions) discussed in Sec.
+ xxx.
+ Here, we use the samples generated from the 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD method in order to remove the variance on the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values due to subsampling halos, which is particularly large for the samples
+ with high biases.
+ We discuss the effect of subsampling and compare the results between the
+ regular HOD and 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD methods in Sec.
+ xxx.
+ We show the results of the effect of galaxy bias on the BAO measurements
+ without reconstruction in Sec.xxx and with reconstruction in Sec.xxx.
+\end_layout
+
+\begin_layout Subsection
+Weighted HOD
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:weightHOD"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*ask about eq.
+ 7 in Noh et al...
+ how 
+\begin_inset Formula $\Sigma^{2}$
+\end_inset
+
+ is related to the smoothing scales...
+\end_layout
+
+\begin_layout Standard
+While we were measuring the value of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ for each sample, we realized that the size of effects on the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measurements due to the choice of random seeds is not negligible and the
+ exact values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ are very sensitive to the choice of the random seeds; for the case of the
+ samples with 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=14.1$
+\end_inset
+
+, the effect is larger than 
+\begin_inset Formula $1\sigma$
+\end_inset
+
+.
+ This is because large values for 
+\begin_inset Formula $M_{{\rm cut}}$
+\end_inset
+
+ implies more variations in subsampling halos to host galaxies.
+ One way to remove the variation on 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ due to subsampling is generating enough number of realizations; however,
+ we can also avoid this problem by giving halos weights which are the expected
+ number of galaxies, as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weight_hod"
+
+\end_inset
+
+.
+ We call this method the 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD to differentiate with the regular HOD method.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weight_hod"
+
+\end_inset
+
+ shows the expected number of central and satellite galaxies as a function
+ of halo mass.
+ While the expected numbers of central and satellite galaxy are treated
+ as probabilities in the regular HOD method, the sum of the expected number
+ of central and satellite galaxies is treated as weights in the 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD.
+ In this way, the measurement of the BAO peak will not suffer from the variation
+s due to subsampling.
+\end_layout
+
+\begin_layout Standard
+[mention about the shot noise for the weighted case]
+\end_layout
+
+\begin_layout Standard
+Note that we can use this method in real-space but not in redshift-space,
+ because we cannot model the FOG effect properly with weights.
+ So, for the case of anisotropic BAO analysis, we need to generate enough
+ number of samples, which converged to the result from the 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variation_hod"
+
+\end_inset
+
+ shows the comparison between the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values measured from the regular HOD and 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD samples.
+ For the case of the 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD method, we first compute the correlation functions with the given weights
+ and measure the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values for the 64 samples denoted as 
+\begin_inset Formula $\alpha_{weight}$
+\end_inset
+
+.
+ For the regular HOD samples, we generate three different realizations (in
+ total of 192 samples) for 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5$
+\end_inset
+
+ and five (or six?) realizations (in total of 320 samples) for 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=14.1$
+\end_inset
+
+, and measure the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values denoted as 
+\begin_inset Formula $\alpha_{HOD}$
+\end_inset
+
+.
+ Then, we compare the differences in the corresponding 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values between 
+\begin_inset Formula $\alpha_{weight}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{HOD}$
+\end_inset
+
+.
+ For both cases, the mean of the difference 
+\begin_inset Formula $<\alpha_{HOD}-\alpha_{weight}>$
+\end_inset
+
+ is 
+\begin_inset Formula $\pm0.02\%$
+\end_inset
+
+; the error of the mean for the case of 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+ is 
+\begin_inset Formula $0.45\%$
+\end_inset
+
+, while it is 
+\begin_inset Formula $2.44\%$
+\end_inset
+
+ for the case of 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=14.1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+*implication/interpretation?
+\end_layout
+
+\begin_layout Standard
+*convergence limit-> check correlation between average over-densities and
+ alpha values & convergence with averaging out the samples by checking std
+ by varying the number of averaging out...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod_weight.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:weight_hod"
+
+\end_inset
+
+The expected number of galaxies 
+\begin_inset Formula $<N_{g}>$
+\end_inset
+
+ as a function of halo mass 
+\begin_inset Formula $M[h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ for the central galaxies (denoted as Ncen) and satellite galaxies (denoted
+ as Nsat) with 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/comparison_alpha_hod1.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/comparison_alpha_hod9.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:variation_hod"
+
+\end_inset
+
+Distribution of the values 
+\begin_inset Formula $\alpha_{HOD}-\alpha_{weighted}$
+\end_inset
+
+ for the case of 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5$
+\end_inset
+
+ (left) and 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=14.1$
+\end_inset
+
+ (right).
+ The green solid lines are the Gaussian fits, where the values of mean and
+ the standard deviation are shown in the figures.
+ The high biased samples (in this case the samples with 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=14.1$
+\end_inset
+
+) have a larger standard deviation, because the larger 
+\begin_inset Formula $M_{{\rm cut}}$
+\end_inset
+
+ value means more variations in subsampling halos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Effects of Biased Tracers on BAO Peaks in Real-Space before Reconstruction
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:real-prerecon"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this section, we investigate the effect of galaxy bias on the measurement
+ of the BAO peak for the samples without reconstruction using the method
+ described in Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:fit_isotropic"
+
+\end_inset
+
+.
+ It is important to understand how much shift is caused by galaxy bias,
+ because the shift due to the deviation from the fiducial cosmology and
+ the shift due to galaxy bias are indistinguishable and it can be a systematic
+ bias in the cosmological measurement.
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:alpha_prerecon"
+
+\end_inset
+
+ shows the measured shifts in the BAO scale as a function of galaxy bias,
+ for the nine HODs described above.
+ We detect the shift in the BAO scale (
+\begin_inset Formula $\sim3\sigma$
+\end_inset
+
+ for most samples) but do not detect a strong variation with the galaxy
+ bias.
+ Indeed, the shift is consistent with being constant for biases 
+\begin_inset Formula $<$
+\end_inset
+
+ 2.5 and only increases for extremely large biases.
+ These results agree with the trends shown in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2011ApJ...734...94M"
+
+\end_inset
+
+, although note that the absolute values of the shifts differ since Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2011ApJ...734...94M"
+
+\end_inset
+
+ considers samples at 
+\begin_inset Formula $z=1$
+\end_inset
+
+, while the results here are at 
+\begin_inset Formula $z=0.15$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+*[estimate the expected trend for redshift evolution of the shift from Padmanabh
+an & White] We also find that our results are roughly consistent with expectatio
+ns from perturbation theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2008PhRvD..77b3533C,2009PhRvD..80f3508P,2012PhRvD..85j3523S"
+
+\end_inset
+
+, although we find a weaker mass dependence than what was predicted in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2009PhRvD..80f3508P"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+*the increase of the mean and std of alpha as a function of bias: is it
+ consistent with the prediction from Padmanabhan&White?
+\end_layout
+
+\begin_layout Standard
+*the scatter consistent with prediction from shot noise?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_pre_r_priorB_sum4.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:alpha_prerecon"
+
+\end_inset
+
+Shift in the BAO scale for the weighted samples as a function of galaxy
+ bias.
+ Note that 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+ implies no shift in the BAO scale.
+ [add some implications] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to understand the correlation in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values between different galaxy samples, we compare the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values measured from the samples with 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=12.9$
+\end_inset
+
+ and 
+\begin_inset Formula $14.1$
+\end_inset
+
+ (corresponding to the galaxy bias of 
+\begin_inset Formula $1.5$
+\end_inset
+
+ and 
+\begin_inset Formula $2.8$
+\end_inset
+
+ and denoted as HOD3 and HOD9 respectively) to the samples with the lowest
+ galaxy bias (i.e., 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+ denoted as HOD1).
+ In Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scatter_prerecon"
+
+\end_inset
+
+, we plot every 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value measured from each sample.
+ From the figure, we see that there is a correlation between the shifts
+ measured for the HOD1 and HOD3 samples and its cross-correlation coefficient
+ is xxx.
+ On the other hand, there is little correlation for the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values between HOD1 and HOD9 where the cross-correlation coefficient is
+ xxx).
+ There are two possible sources for this uncorrelation; one is due to the
+ large shot noise for the sample of HOD9, and the other is due to reconstruction
+ that the number density of galaxies for HOD9 is small and it can cause
+ an incomplete estimation of the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ density field 
+\begin_inset Formula $\delta_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+*correlation coefficients
+\end_layout
+
+\begin_layout Standard
+*source of uncorrelation: shot noise and also reconstruction (compare delta_s
+ between HOD1 and HOD9) -> if possible, remake the same figure with the
+ reconstruction using the delta_s computed from HOD1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_hod1_hod3_pre_r.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_hod1_hod9_pre_r.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scatter_prerecon"
+
+\end_inset
+
+Comparison of the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values for the samples with 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=12.9$
+\end_inset
+
+ denoted as HOD3 (left) and 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=14.1$
+\end_inset
+
+ denoted as HOD9 (right) with respect to 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5$
+\end_inset
+
+ denoted as HOD1.
+ While the cross correlation coefficient between HOD1 and HOD3 is xxx, the
+ cross correlation is xxx between HOD1 and HOD9.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are three possible sources for the biases and the scatter in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measurements : the initial conditions (no biases, but scatter), the matter
+ and the actual galaxy population.
+ For any samples we consider, the first two are common; however, the last
+ one (i.e., galaxy bias) is not.
+ Knowing that the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values between two samples are correlated for low biased samples, as shown
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scatter_prerecon"
+
+\end_inset
+
+, we investigate how biases and scatter are reduced by computing the differences
+ in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values, which will tell us the additional biases and scatter induced by
+ galaxy bias.
+ To test this, we take the sample with 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5$
+\end_inset
+
+ as a reference (denoted its 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value as 
+\begin_inset Formula $\alpha_{ref}$
+\end_inset
+
+) and measure the differences in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values with the other samples.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:diffalpha_prerecon"
+
+\end_inset
+
+ shows the differences in shift 
+\begin_inset Formula $\alpha_{HOD}-\alpha_{ref}$
+\end_inset
+
+ for various HOD models corresponding to different biases.
+ As expected from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scatter_prerecon"
+
+\end_inset
+
+, the scatter is reduced from xx% to xx% for the samples with 
+\begin_inset Formula $b<xxx$
+\end_inset
+
+.
+ On the other hand, for high biases samples, the biases are reduced by 
+\begin_inset Formula $0.3\%$
+\end_inset
+
+ while the scatters are almost the same.
+ [what can I say more?]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alphaDiff_bias_pre_r.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:diffalpha_prerecon"
+
+\end_inset
+
+The differences in shift 
+\begin_inset Formula $\alpha_{HOD}-\alpha_{ref}$
+\end_inset
+
+ for various HOD models corresponding to different biases.
+ We use the sample with 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+ as a reference.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Affects of Biased Tracers in Real-Space after Reconstruction 
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:real-postrecon"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similar to the previous section, we investigate the effect of galaxy bias
+ on the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measurements for the samples with reconstruction using the method described
+ in Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:fit_isotropic"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The left panel of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:alpha_postrecon"
+
+\end_inset
+
+ shows the measured shifts in the BAO scale as a function of galaxy bias,
+ while the right panel of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:alpha_postrecon"
+
+\end_inset
+
+ shows the differences in shift 
+\begin_inset Formula $\alpha_{HOD}-\alpha_{ref}$
+\end_inset
+
+.
+ For most of samples except the ones with 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=13.5$
+\end_inset
+
+ and 
+\begin_inset Formula $13.9$
+\end_inset
+
+, the reconstruction method removes the shift and reduces the scatter on
+ the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measurements.
+ Here, we use the samples generated from the regular HOD method and the
+ high biased objects tend to have large sample variances.
+ 
+\end_layout
+
+\begin_layout Standard
+*investigate the cause for HOD8: what is the possible cause of this? under
+ what condition this will happen?
+\end_layout
+
+\begin_layout Standard
+* is the scatter improved by taking the differences? -> make the figure
+ more consistent
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_priorB_sum4.pdf
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alphaDiff_bias_post_r.pdf
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:alpha_postrecon"
+
+\end_inset
+
+[the current figures are still regular HOD] Left: Shift in the BAO scale
+ for the weighted samples after reconstruction as a function of galaxy bias.
+ Note that 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+ implies no shift in the BAO scale.
+ Right: The differences in shift 
+\begin_inset Formula $\alpha_{HOD}-\alpha_{ref}$
+\end_inset
+
+ for various HOD models corresponding to different biases.
+ We use the sample with 
+\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=12.5$
+\end_inset
+
+ as a reference.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scatter_postrecon"
+
+\end_inset
+
+ compares the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values before and after reconstruction.
+\end_layout
+
+\begin_layout Standard
+* quantitatively evaluate the scatter...
+\end_layout
+
+\begin_layout Standard
+*also compare the correlation between different samples after reconstruction?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_beforeAfter_hod1to5.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_beforeAfter_hod6to9.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:scatter_postrecon"
+
+\end_inset
+
+Comparison of the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values before and after reconstruction.
+ The left panel shows the result for the samples with 
+\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5\sim13.3$
+\end_inset
+
+, while the right panel shows the results with 
+\begin_inset Formula $\log_{10}M_{{\rm cut}}=13.5\sim14.1$
+\end_inset
+
+.
+ The scatter for the high biased samples is larger than the one for the
+ low biased samples [quantitatively how different?].
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Things to study
+\end_layout
+
+\begin_layout Standard
+*Fisher Matrix
+\end_layout
+
+\begin_layout Standard
+*shot noise
+\end_layout
+
+\begin_layout Standard
+*correlation length
+\end_layout
+
+\begin_layout Standard
+* Using the density fields in HOD1 to do shifting
+\end_layout
+
+\begin_layout Section
+Results for Anisotropic BAO: Redshift-Space
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\end_body
+\end_document
