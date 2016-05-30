@@ -1427,7 +1427,7 @@ key "1987MNRAS.227....1K"
 
 \begin_layout Itemize
 Smooth 
-\begin_inset Formula $\delta_{Kaiser}$
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
 \end_inset
 
  to filter out high 
@@ -10549,7 +10549,7 @@ Correlation between the redshift that the subhalos are accreted
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -10609,7 +10609,7 @@ Small-scale clusterings in real and redshift spaces
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
