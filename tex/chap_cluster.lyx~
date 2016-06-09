@@ -253,7 +253,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
@@ -311,164 +311,107 @@ Introduction
 
 \begin_layout Standard
 Galaxy clusters are the most massive objects in the Universe, which provides
- extremely dense environments to galaxies and subhalos in those clusters.
- Under such environments, galaxy evolution is strongly affected by a strong
- tidal field such as ram-pressure stripping, 
-\color red
-galaxy harrasment
-\color inherit
-, and tidal compression.
- Among all those mechanisms, ram-pressure stripping is considered the most
- efficient mechanism under the massive cluster environments, because the
- ram-pressure stripping becomes efficient when the galaxies move relatively
- fast [cite???].
+ extremely dense environments to galaxies and subhalos orbiting inside of
+ the clusters.
+ Under such environments, galaxy evolution is strongly affected by the tidal
+ field such as ram-pressure stripping.
  The ram-pressure stripping removes gas from the galaxies, quenches their
  star-formation, and is considered to transform their morphologies (from
  spiral to disk) and colors (from blue to red).
  Observational evidences show that many spiral galaxies in the clusters
- have truncated gas and deficient in HI gas [cite:xxx].
+ have truncated gas distribution and deficient in HI gas [cite:xxx].
  A similar phenomenon is expected for subhalos in the clusters.
- It is theoretically predicted that the strong tidal field strips the dark
- matters from the subhalos and trucates their radius.
+ In simulations, tidal forces cause mass stripping, tidal heating, and disruptio
+n of subhalos inside the host halos.
+ Tidal stripping also truncates their radius.
  Through the lensing studies, the truncation of the subhalos are observationally
  confirmed; Ref.
  Natarajan [xxx] shows a mass distribution for the galaxies inside the clusters
- is tidally tructaed compared to the similar field galaxies.
- In addition to the truncation radius, Ref.xxx [Subaru] shows that the subhalo
- masses and mass-to-light ratios depend on the distance from the cluster
- center such that those properties decrease toward the cluster center.
+ is tidally truncated compared to the similar field galaxies.
+ Besides the truncation radius, simulations show that the subhalos which
+ are close to the cluster core lose more than 70% of their initial mass
+ after accretion, while the subhalos at the edge of the cluster lose about
+ 30% of their initial mass [cite:xxx (Daisuke)].
+ This is consistent with the observational study using the lensing that
+ the subhalo masses and mass-to-light ratios depend on the distance from
+ the cluster center and decrease toward the center [Ref:xxx (Subaru)].
 \end_layout
 
 \begin_layout Standard
 Even though the strong tidal field is important for galaxy evolution as
- well as halo formation in the clusters, the studies using simulations show
- that the way tidal field acts on galaxies is different from the way it
- acts on halos; the tidal field primarily strips the outer material from
- the halos.
- Since galaxies tend to exist at the center of the halos, the galaxies may
- be less affected by the tidal field.
+ well as (sub)halo formation in the clusters, the studies using simulations
+ show that the way tidal field acts on galaxies is different from the way
+ it acts on subhalos; the tidal field primarily strips the outer material
+ from the halos, and galaxies are less affected because they are located
+ in the center of the subhalos.
+ -> abundance matching/age-matching
 \end_layout
 
 \begin_layout Standard
-[Tidal stripping in cluster environments - what is expected theoretically
- and what is seen observationally.
- 
+[Need to introduce the effect of assembly bias and its role in where galaxies
+ end up radially in the cluster ]
 \end_layout
 
 \begin_layout Standard
-** Tidal stripping of cluster galaxies a la Jeff Kenney 
+Halo assembly bias is a phenomenon that the clustering of halos exhibits
+ a dependence on additional properties beyond their mass.
+ In terms of the peak-background split theorem, the peaks of the same height
+ in the initial density fluctuation collapse into the halos of the same
+ mass; those peaks can be in different environments (i.e., having different
+ peak curvature) and therefore have different assembly histories and clustering.
+ This environmental difference results in the difference in the structural
+ properties/internal structures of halos [cite:xxx].
+ This also affects the radial distribution of subhalos; subhalos which are
+ accreted earlier tend to be more centrally concentrated, and those subhalos
+ also experience more mass loss due to tidal field [cite:xxx].
+ We revisits the manifestation of assembly history on the internal structure
+ of the clusters, using the tidal mass loss as an indicator of assembly
+ time.
 \end_layout
 
 \begin_layout Standard
-** Tidal stripping of cluster galaxies from lensing studies (PN 2009, comparison
- with simulations with Springel -- 2 papers) 
-\end_layout
-
-\begin_layout Standard
-Need to introduce the effect of assembly bias and its role in where galaxies
- end up radially in the cluster 
-\end_layout
-
-\begin_layout Standard
-Compare simulations with observations of samples and go beyond individual
- objects
-\end_layout
-
-\begin_layout Standard
-Summary previous work
-\end_layout
-
-\begin_layout Standard
-Paraphrase More et al.
+[Compare simulations with observations of samples and go beyond individual
+ objects; Summary previous work; Paraphrase More et al.
  papers and their results]
 \end_layout
 
 \begin_layout Standard
-Clusters of galaxies are the most massive gravitationally bound objects
- in the Universe, which provide extreme environments for galaxies orbiting
- inside of the clusters.
- Tidal forces are stronger in cluster environments, due to a denser environmnt
- than galaxy groups.
- Tidal stripping is an important physical process for halo formation as
- well as galaxy formation.
- In simulations, tidal forces cause mass stripping, tidal heating, and disruptio
-n of subhalos inside the host halos of the clusters.
- 
+
+\color red
+Detecting the assembly bias observationally has been challenging due to
+ uncertainties in the correspondence between halo and galaxy properties.
+ Recently, Ref.xxx [Miyatake] presented the detection of the assembly bias
+ on cluster scales using redMapper clusters, but the size of the effect
+ is much larger than the theoretically predicted signal (quantitative number?).
 \end_layout
 
 \begin_layout Standard
-Subhalos which are accreted ealier experience more tidal stripping and therefore
- lose more masses.
- Numerous studies [cite:xxx] show that those subhalos tend to have a more
- centrally concentrated radial distribution than the subhalos accreted later.
- 
-\end_layout
 
-\begin_layout Standard
-*mention the difference between the effect of tidal stripping for subhalos
- and galaxies that tidal stripping tend to remove the outer material which
- is less gravitationally bound and the effect of tidal stripping for galaxies
- must be less [citation:xxx]
-\end_layout
-
-\begin_layout Standard
-In observations, one of the evidences of the tidal stripping is the existence
- of cD galaxies which have grown massively by accreting material from the
- surrounding satellite galaxies.
-\end_layout
-
-\begin_layout Standard
-*ram pressure stripping
-\end_layout
-
-\begin_layout Standard
-*lensing
-\end_layout
-
-\begin_layout Standard
-There have been numerous studies about the halo-galaxy connection.
-\end_layout
-
-\begin_layout Standard
-*abundance matching/age matching
-\end_layout
-
-\begin_layout Standard
-*those methods preserve assembly bias 
-\end_layout
-
-\begin_layout Standard
-*tension between observations and simulations: Miyatake et al.
- and More et al.
-\end_layout
-
-\begin_layout Standard
-*problems/challenges: correspondence between types of galaxies and subhalos
- is not clear, mass resolution and halo definition of halos
-\end_layout
-
-\begin_layout Standard
-*splashback radius: simulations/observations
-\end_layout
-
-\begin_layout Standard
-*about my work: splashback halos will affect to the clustering
-\end_layout
-
-\begin_layout Standard
-*what I do here: the effect of assembly history on internal structure of
- clusters including ejected halos
-\end_layout
-
-\begin_layout Standard
-Because subhalos which lost more masses due to tidal stripping are the ones
- accreted earlier, they tend to exist closer to the center of the clusters
- (vdB: Since subhaloes that were accreted earlier have experienced more
- tidal stripping, subh aloes that have lost a larger fraction of their mass
- at infall are on more bound orbits.).
- [want to say: tidal stripping is secondary effect/probe for assembly history/ag
-e of subhalos->but tidal stripping gives a physical effect to subhalos and
- possibly provide observables...even though age is not...]
+\color red
+The same group also measure the splashb
+\color inherit
+ack radius for the same samples and show the correlation between assembly
+ bias and splashback radius.
+ Splashback radius is a physical boundary for dark matter halos associated
+ with the density caustics, which corresponds to the radius of the first
+ turn-around for the accreted dark matter particles.
+ While the virial radius depends only on its halo mass, the splashback radius
+ depends on the accretion rate besides the mass; the larger accretion rate
+ corresponds to the smaller splashback radius.
+ Using the splashback radius as the radius of the halos may change the classific
+ation of halos into host/sub-halos.
+ Some of the host halos around more massive halos can be possibly considered
+ as subhalos.
+ The most possible candidates for such host halos are ejected halos, which
+ are identified as host halos at present time but were subhalos in the past.
+ Those ejected halos tend to exist around more massive halos.
+ Ref.
+ xxx[Wetzel] shows that the ejected halos more likely to host satellite
+ galaxies.
+ Treating ejected halos as host halos or subhalos changes the clustering
+ signal on small scales.
+ In this study, we also compare the clustering of subhalos on small scales
+ with and without the ejected halos.
 \end_layout
 
 \begin_layout Section
@@ -805,7 +748,7 @@ The subhalo property
 \end_inset
 
 .
- One of the motivation we want to know the correlation between 
+ One of the motivations that we want to know the correlation between 
 \begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
 \end_inset
 
@@ -867,7 +810,7 @@ reference "fig:correlation_z"
 \begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
- is xxx, while it is xxx for the case of 
+ is 0.651, while it is 0.403 for the case of 
 \begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
 \end_inset
 
@@ -891,39 +834,14 @@ reference "fig:correlation_z"
 \begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
 \end_inset
 
- is 
-\color red
-still steeper (or same
-\color inherit
-) than the slope for 
+ is steeper than the slope for 
 \begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
 \end_inset
 
- with scatter of xxx.
- Those results are consistent with the results in Ref.
+ (the slope for mass is -0.3035, while the slope for Vmax is -2.006...but this
+ is mostly due to the subhalos whose Vmax change is drastic).
+ Those results are not consistent with the results in Ref.
  xxx [vdB, Figure 5].
- This is because 
-\begin_inset Formula $V_{{\rm max}}\propto M_{{\rm vir}}^{1/3}$
-\end_inset
-
-.
- By converting the change in 
-\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
-\end_inset
-
- to scale with 
-\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
-\end_inset
-
-, the results for 
-\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
-\end_inset
-
- and 
-\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
-\end_inset
-
- are consistent each other.
  
 \color red
 This actually throws some doubt on the picture that tidal stripping removes
@@ -1002,141 +920,6 @@ Correlation between the redshift that the subhalos are accreted
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_MtoV_correlation.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Correlation between the change in the maximum circular velocity and subhalo
- masses at 
-\begin_inset Formula $z=0.3$
-\end_inset
-
-.
- The figure indicates that 
-\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
-\end_inset
-
- and 
-\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
-\end_inset
-
- are tightly correlated (
-\color red
-any quantitative way to evaluate this?
-\color inherit
-), but the subhalos tend to lose more mass than the change in their potential
- depths.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-*compute cross correlation coefficients: find a slope from medians ->for
- figure 2...convert m/m_acc into v/v_acc
-\end_layout
-
-\begin_layout Standard
-* m/m_acc and v/v_acc, r/R_vir as a function of z_acc for halos whose m_acc/M0>1
-0^-1 and the rest.
-\end_layout
-
-\begin_layout Standard
-*for different m_acc/M0, the scatter between m/m_acc and z_acc
-\end_layout
-
-\begin_layout Standard
-*also show the correlation between
-\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
-\end_inset
-
- and 
-\begin_inset Formula $M_{{\rm acc,sub}}/M_{{\rm host}}$
-\end_inset
-
- and investigate the effect of dynamical friction
-\end_layout
-
-\begin_layout Standard
--> 
-\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
-\end_inset
-
- and 
-\begin_inset Formula $z_{{\rm acc}}$
-\end_inset
-
- for massive subhalos.
-\end_layout
-
-\begin_layout Standard
-*in vdB, 
-\begin_inset Formula $M_{{\rm acc,sub}}/M_{{\rm host}}=-0.136(1.644)$
-\end_inset
-
- while 
-\begin_inset Formula $V_{{\rm acc,sub}}/V_{{\rm host}}=-0.211(1.169)$
-\end_inset
-
-.
- 
-\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}=0.397(0.609)$
-\end_inset
-
- while
-\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}=0.235(0.904)$
-\end_inset
-
-.
- What is the implication of this result?
-\end_layout
-
-\begin_layout Standard
-(If I make some plots regarding dynamical friction...) What is not clear from
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:correlation_z"
-
-\end_inset
-
- is the effect of dynamical friction.
- Dynamical friction is xxx.
- Dynamical friction is only effective for massive subhalos whose 
-\begin_inset Formula $M_{{\rm acc,sub}}/M_{{\rm host}}>10^{-1}$
-\end_inset
-
- where 
-\begin_inset Formula $M_{{\rm host}}$
-\end_inset
-
- is the virial mass of the host halos.
 \end_layout
 
 \begin_layout Subsection
@@ -1256,7 +1039,7 @@ inside-out assembly of halos
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1317,11 +1100,6 @@ Radial distribution of subhalos as a function of
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-*plot the scatter between z_acc and r/Rvir as a function of m/m_acc and
- m_acc/M0.
 \end_layout
 
 \begin_layout Standard
@@ -1410,7 +1188,7 @@ reference "fig:radial_real"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1710,21 +1488,51 @@ reference "fig:auto-sub_real"
 \end_layout
 
 \begin_layout Subsection
-Checking the effect of ejected halos
+Correlation between z_acc and mass loss
 \end_layout
 
-\begin_layout Subsection
-M/L ratio comparison in simulations: using filed galaxies (host halos ~
- 10^12 -> need to use other catalogs for host halos) and subhalos (~10^12)
- in clusters
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/scatter_z_massLoss.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/hist_z_acc_M14_3.pdf
+	width 50text%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Compute the correlation for DR7 using age matching
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+scatter plot (change the fitted line to medians)/histogram
 \end_layout
 
-\begin_layout Subsection
-Comparison with redMapper clusters
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1735,15 +1543,128 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_photo_Mi_gr.pdf
-	width 45text%
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_z_acc3.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+radial distribution...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(coeficcient is 0.651242852997 -1.01174490138(slope for mvir/macc) coeficcient
+ is 0.651246857459 -3.03524921726 (for m^1/3) coeficcient is 0.402890900112
+ -2.00551882194 (for Vmax)
+\end_layout
+
+\begin_layout Subsection
+Mass Dependence of Segregation
+\end_layout
+
+\begin_layout Standard
+In this section, we investigate the mass dependence of segregation by comparing
+ the radial distribution of subhalos in the host halos with different masses.
+ To do that, we first select host halos based on their halo masses such
+ that their halo masses in samples are from 
+\begin_inset Formula $10^{13}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+ to 
+\begin_inset Formula $10^{13.5}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+, from 
+\begin_inset Formula $10^{13.5}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+ to 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+, and greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ Then, for each sample, we split their corresponding subhalos based on the
+ accretion redshift 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ (and 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+).
+ Using those subsamples, we compute the radial distance normalized by their
+ virial radius.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:radial_massDependence"
+
+\end_inset
+
+ shows histograms of the radial distribution for early and late accreted
+ subhalos split at 
+\begin_inset Formula $z_{{\rm acc}}=0.5$
+\end_inset
+
+.
+ The solid lines are for the subhalos in the host halos whose masses are
+ greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+, while circles and dashed lines correspond to the host halos whose masses
+ are 
+\begin_inset Formula $M_{{\rm vir}}=[10^{13.5}h^{-1}{\rm M_{\odot}},10^{14}h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm vir}}=[10^{13}h^{-1}{\rm M_{\odot}},10^{13.5}h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ respectively.
+ The figure indicates that there is no mass dependence on segregation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_z_acc_massDependence.pdf
+	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_spec_Mi_gr.pdf
-	width 45text%
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_massDepend.pdf
+	width 50text%
 
 \end_inset
 
@@ -1756,30 +1677,227 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:redmapper_color_mag"
+name "fig:radial_massDependence"
 
 \end_inset
 
-Color-magnitude diagram for the member galaxies in redMapper which only
- have photometric redshifts (left) and the ones which have spectroscopic
- redshifts (right).
- The red dashed lines are the cut to split galaxies into old and young galaxies.
- For the galaxies which only have photometric redshifts, the red dashed
- line is fitted to medians in distribution of colors computed for small
- magnitude bins.
- The cyan dashed line in the left panel is the medians computed for each
- magnitude bin.
- For the galaxies which have spectroscopic redshifts, there is a clear green
- valley and the red dahsed line corresponds to 
-\begin_inset Formula $g-r$
+Left: Radial distribution of subhalos as a function of the accretion redshifts
+ 
+\begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
- having 1.3.
- (
-\color red
-Not sure whether this is a reasonable way to split galaxies...
-\color inherit
-) 
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ The solid lines are for the subhalos in the host halos whose masses are
+ greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+, while circles and dashed lines correspond to the host halos whose masses
+ are 
+\begin_inset Formula $M_{{\rm vir}}=[10^{13.5}h^{-1}{\rm M_{\odot}},10^{14}h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm vir}}=[10^{13}h^{-1}{\rm M_{\odot}},10^{13.5}h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ respectively.
+ The blue lines correspond to the subhalos which are accreted after 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+, and the green lines are for the ones which are accreted before 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Effects of Assembly Bias on Segregation
+\end_layout
+
+\begin_layout Standard
+In this section, we investigate whether the assembly history of the host
+ halos affects the subhalo mass functions and spatial distribution of the
+ subhalos.
+ To test this, we first select cluster-sized halos (i.e., 
+\begin_inset Formula $M_{{\rm vir}}>10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+) and split them based on their concentration.
+ We use the median concentration-mass relation 
+\begin_inset Formula $\bar{c}(M_{{\rm vir}})$
+\end_inset
+
+ shown in Ref.xxx (Dutton_macciio14): 
+\begin_inset Formula 
+\begin{equation}
+{\rm log}_{10}\bar{c}=-0.097{\rm log_{10}M_{vir}}+2.148.\label{eq:concen}
+\end{equation}
+
+\end_inset
+
+For every halo in the Bolshoi catalogs, we use its tabulated 
+\begin_inset Formula $M_{{\rm vir}}$
+\end_inset
+
+ to compute 
+\begin_inset Formula $\bar{c}(M_{{\rm vir}}),$
+\end_inset
+
+ and then use the values 
+\begin_inset Formula $\bar{c}$
+\end_inset
+
+ to compare with the measured concentration for every halo.
+ We will henceforth refer to halos with 
+\begin_inset Formula $c<\bar{c}(M_{{\rm vir}})$
+\end_inset
+
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+low-concentration halos
+\begin_inset Quotes erd
+\end_inset
+
+, and halos with 
+\begin_inset Formula $c>\bar{c}(M_{{\rm vir}})$
+\end_inset
+
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+high-concentration halos
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:subhaloMassFn"
+
+\end_inset
+
+ shows unevolved and evolved subhalo mass functions for high/low-concentration
+ host halos.
+ Both subhalo mass functions indicate that the subhalo mass functions for
+ high-concentration halos have fewer subhalos for 
+\begin_inset Formula $m_{{\rm acc}}/M_{{\rm vir}}>10^{-1.5}$
+\end_inset
+
+ where 
+\begin_inset Formula $m_{{\rm acc}}$
+\end_inset
+
+ is the subhalo mass at accretion and 
+\begin_inset Formula $M_{{\rm vir}}$
+\end_inset
+
+ is the host halo mass at present.
+\end_layout
+
+\begin_layout Standard
+For the same samples of halos, we split subhalos based on 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ and compare their radial distributions as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:radialDist_concen"
+
+\end_inset
+
+.
+ While the subhalos which are accreted after 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+ (or the subhalos which have not lost much mass) do not exhibit any difference
+ in the spatial distribution for the high/low-concentration host halos,
+ the subhalos which are accreted before 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+ have similar inner distribution but diffrent outer distributions.
+ The subhalos in the high concentration host halos show steeper decrease
+ as the distance gets closer to the virial radius.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/subhalo_massFunction_M14_Macc11.5_unevolved.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/subhalo_massFunction_M14_Macc11.5_evolved.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:subhaloMassFn"
+
+\end_inset
+
+Unevolved subhalo mass functions (left) and evolved subhalo mass functions
+ (right) at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ We use the host halos whose masses are greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm Mpc}$
+\end_inset
+
+ and split them based on their concentrations.
+ The blue lines are the subhalos whose host halos have high concentration,
+ while the green lines are for low concentration.
+ (Remake the figure without plotting the circles+ I should choose host halos
+ with more mass range)
 \end_layout
 
 \end_inset
@@ -1794,21 +1912,22 @@ Not sure whether this is a reasonable way to split galaxies...
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_photo_R.pdf
-	width 45text%
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_concen_z_acc.pdf
+	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/redMapper_member_spec_R.pdf
-	width 45text%
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_concen.pdf
+	width 50text%
 
 \end_inset
 
@@ -1819,23 +1938,48 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Projected radial distribution of red and blue galaxies split in the way
- shown in Fig.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:radialDist_concen"
+
+\end_inset
+
+Radial distribution of subhalos as a function of the accretion redshifts
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:redmapper_color_mag"
-
+\begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
- for galaxies which only have photometric redshifts (left) and the galaxies
- which have spectroscopic redshifts.
- The figures show little differences between old and young galaxies.
- (
-\color red
-change the legends in the figures
-\color inherit
-)
+ (left) and as a function of 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+, where the host halos are split based on their concentrations.
+ The solid lines are for the subhalos whose host halos have high concentration,
+ while dashed lines correspond to the low-concentration host halos.
+ All the host halos used here are greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ Different colors correspond to different accretion redshifts.
+ While the subhalos which are accreted after 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+ (or the subhalos which have not lost much mass) do not exhibit any difference
+ in the spatial distribution for the high/low-concentration host halos,
+ the subhalos which are accreted before 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+ have similar inner distribution but diffrent outer distributions.
+ The subhalos in the high concentration host halos show steeper decrease
+ as the distance gets closer to the virial radius (how can I describe this
+ more clearly?) 
 \end_layout
 
 \end_inset
@@ -1843,13 +1987,13 @@ change the legends in the figures
 
 \end_layout
 
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Standard
-*Make one more plot R/R_lambda...
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1861,6 +2005,40 @@ Future lensing surveys from EUCLID, WFIRST will uncover coarse data (not
  strong lensing features) but will derive cluster ensemble properties from
  weak shear (in fact detection will be driven by shear) -- these kinds of
  diagnostics can help us understand internal structure of clusters.
+\end_layout
+
+\begin_layout Standard
+(something I may use) 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_z_acc3.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+radial distribution...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
