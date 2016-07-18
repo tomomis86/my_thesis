@@ -571,11 +571,7 @@ ROCKSTAR
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-The halo mass and velocity functions start to show incompleteness at 
+ The halo mass and velocity functions start to show incompleteness at 
 \begin_inset Formula $10^{10.4}h^{-1}M_{\odot}$
 \end_inset
 
@@ -594,51 +590,14 @@ The halo mass and velocity functions start to show incompleteness at
 .
 \end_layout
 
-\begin_layout Standard
-In addition to the standard classification of halos into host halos (not
- within the virial radius of a more massive halo) and subhalos (within the
- virial radius of a more massive halo), we further classify host halos into
- ejected and non-ejected halos.
- Ejected halos, also referred to as 
-\begin_inset Quotes eld
-\end_inset
-
-backsplash
-\begin_inset Quotes erd
-\end_inset
-
- halos, are host halos whose main progenitor was classified, at some point
- in its merger tree history, as a subhalo.
- As we discuss below, these ejected halos have very different clustering
- properties compared to their non-ejected counterparts.
- The ejected fraction for the Bolshoi simulation is 
-\begin_inset Formula $\sim15.8\%$
-\end_inset
-
- at 
-\begin_inset Formula $10^{11}h^{-1}M_{\odot}$
-\end_inset
-
-, and drops to 
-\begin_inset Formula $\sim6.3\%$
-\end_inset
-
- at 
-\begin_inset Formula $10^{13}h^{-1}M_{\odot}$
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Section
 Results
 \end_layout
 
 \begin_layout Standard
 In this section, we present our primary results from the simulations to
- see the segregation of the subhalos due to tidal stripping and dynamical
- friction.
+ see the segregation of the subhalos, particularly the accretion redshift
+ and xxx.
  We begin in Sec.
  
 \begin_inset CommandInset ref

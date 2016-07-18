@@ -596,8 +596,8 @@ Results
 
 \begin_layout Standard
 In this section, we present our primary results from the simulations to
- see the segregation of the subhalos, particularly the accretion redshift
- and xxx.
+ see the segregation of the subhalos primarily using the accretion redshift
+ and .
  We begin in Sec.
  
 \begin_inset CommandInset ref
@@ -1304,7 +1304,7 @@ reference "fig:auto_sub-redshift"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1384,7 +1384,7 @@ Left: Auto correlation functions of subhalos in real-space as a function
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1498,7 +1498,7 @@ scatter plot (change the fitted line to medians)/histogram
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1874,7 +1874,7 @@ Unevolved subhalo mass functions (left) and evolved subhalo mass functions
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics

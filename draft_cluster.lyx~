@@ -253,7 +253,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 11
 \spacing single
 \use_hyperref false
 \papersize default
@@ -298,29 +298,329 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-*What is segregation?: Previous studies -> Frank showed that the most relevant
- quantity for the segregation is the accretion redshift; Adhikari et al.
- 2016
+Segregation of subhalos is a phenomenon where subhalos with particular propertie
+s (such as mass at accretion) exhibit different radial profiles in their
+ host halos.
+ For example, subhalos with larger maximum circular velocity (i.e., having
+ deeper potential depth) tend to be closer to the center of their host halos
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wu_etal2013"
+
+\end_inset
+
+, while more massive subhalos are less centrally concentrated 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "angulo_09,contini_11,de_lucia_04,reed05"
+
+\end_inset
+
+.
+ In terms of dynamical friction, more massive subhalos (or the ones with
+ larger maximum circular velocities) are expected to be closer to the center,
+ they will also experience more tidal mass loss due to strong tidal field
+ at the center.
+ It is hard to decouple those two competing effects.
+ There are several studies showing that subhalos selected based on their
+ masses at accretion and at present show different radial distributions;
+ subhalos selected by their masses at accretion show more centrally concentrated
+ radial profiles than the ones selected by their present-day masses (e.g.,
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nagai05"
+
+\end_inset
+
+).
+ This implies that segregation is sensitive to the selection of the subhalos
+ and their chosen properties.
+ Ref.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vdBosch16"
+
+\end_inset
+
+ investigated the segregation of dark matter subhalos in great details using
+ Spearman rank-order correlations to quantitatively evaluate the correlation
+ between 12 different subhalo properties and segregation indicators (such
+ as orbital energy and halo-centric radius).
+ Ref.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vdBosch16"
+
+\end_inset
+
+ found that accretion redshifts, which are the redshifts that subhalos are
+ accreted by their host halos, is one of the major segregation property;
+ subhalos accreted earlier tend to have more centrally concentrated radial
+ distributions than the ones accreted later.
+ 
 \end_layout
 
 \begin_layout Standard
-* We investigate the mass dependence of segregation and its observational
- signature
+It is crucial to understand how a particular choice of subhalos affects
+ to small-scale clusterings; different radial profiles will change 1-halo
+ terms in correlation functions as well as 
+\color red
+small-scale redshift-space distortions (i.e., the size of Finger-of-God effect
+ may be different for different subhalos), which can affect to a measurement
+ of the growth rate on small scales
+\color inherit
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hearin15"
+
+\end_inset
+
+.
+ In this chapter, we first investigate whether segregation of subhalos on
+ radial profiles depends on their host halo masses.
+ Also, we compute its observational signature using two-point correlation
+ functions.
+ Understanding segregation of the subhalos and comparing that to observed
+ signatures in segregation of galaxies will provide the clues for the connection
+ between halos and galaxies.
+ 
 \end_layout
 
 \begin_layout Standard
-*Assembly History affects to clusterings as well as internal structure:
- Miyatake et al.
- 2015 (detection of assembly bias) & More et al.
- 2016 (subhalo distribution with concentration)
+The assembly history is also essential to clustering of host halos known
+ as an assembly bias, which is a phenomenon that the clustering of halos
+ exhibits a dependence on additional properties beyond their mass 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao_etal05,wechsler06,gao_white07,li_etal08,hahn_etal09"
+
+\end_inset
+
+.
+ In terms of the peak-background split, the peaks of the same height in
+ the initial density fluctuation collapse into the halos of the same mass;
+ those peaks can be in different environments (i.e., some peaks are in over-dense
+ regions while the others are in under-dense regions) and therefore have
+ different assembly histories and clustering.
+ This environmental differences results in the differences in the structural
+ properties/internal structure of halos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bullock01,wechsler02,hahn_etal07b,faltenbacher_white10"
+
+\end_inset
+
+.
+ We revisit the manifestation of assembly history on the internal structure
+ of the host halos regarding to segregation.
+ In particular, we explore whether segregation of the subhalos in their
+ radial distributions shows some dependence on internal properties of host
+ halos such as concentration, which has strong correlation with their assembly
+ history.
 \end_layout
 
 \begin_layout Standard
--> Does assembly history matter for segregation?
+The outline of this paper is as follows.
+ Sec.
+\begin_inset space ~
+\end_inset
+
+2 summarizes the simulations we use in this work.
+ Sec.
+\begin_inset space ~
+\end_inset
+
+3 presents our primary results - mass dependence of segregation on radial
+ profiles, its observational signature, and effects of assembly bias on
+ segregation.
+ We conclude in Sec.
+\begin_inset space ~
+\end_inset
+
+4.
 \end_layout
 
 \begin_layout Section
 Simulations
+\end_layout
+
+\begin_layout Standard
+We use the Bolshoi simulation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bolshoi_11"
+
+\end_inset
+
+ which was run with the Adaptive Refinement Tree Code 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kravtsov_etal97,gottloeber_klypin08"
+
+\end_inset
+
+ assuming a flat 
+\begin_inset Formula $\Lambda{\rm CDM}$
+\end_inset
+
+ model with cosmological parameters 
+\begin_inset Formula $\Omega_{m}=0.27$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{\Lambda}=0.73$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{b}=0.0469$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma_{8}=0.82$
+\end_inset
+
+, 
+\begin_inset Formula $n=0.95$
+\end_inset
+
+, 
+\begin_inset Formula $h=0.70$
+\end_inset
+
+.
+ The Bolshoi simulation used 
+\begin_inset Formula $2048^{3}$
+\end_inset
+
+ particles in a 
+\begin_inset Formula $250h^{-1}{\rm Mpc}$
+\end_inset
+
+ box with a force resolution of 
+\begin_inset Formula $1h^{-1}{\rm kpc}$
+\end_inset
+
+, giving a particle mass of 
+\begin_inset Formula $1.35\times10^{8}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
+ Dark matter halos and subhalos are identified using the 
+\family typewriter
+ROCKSTAR
+\family default
+ phase-space, temporal halo finder 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rockstar"
+
+\end_inset
+
+ and merger trees are constructed using the 
+\family typewriter
+CONSISTENT TREES 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rockstar_trees"
+
+\end_inset
+
+
+\family default
+  procedures
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The catalogues used in this paper are publicly available at 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://hipacc.ucsc.edu/Bolshoi/MergerTrees.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ The results we consider in Sec.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:correlation_fn"
+
+\end_inset
+
+ use the output of the simulation at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In what follows, we use the virial masses and maximum circular velocities
+ (tagged 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+mvir
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+vmax
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+) directly from the halo catalogues.
+ The 
+\family typewriter
+ROCKSTAR
+\family default
+ halo finder computes halo masses based on spherical overdensities using
+ a threshold of 
+\begin_inset Formula $\Delta_{{\rm h}}=360$
+\end_inset
+
+.
+ The halo mass and velocity functions start to show incompleteness at 
+\begin_inset Formula $10^{10.4}h^{-1}M_{\odot}$
+\end_inset
+
+ (
+\begin_inset Formula $\sim200$
+\end_inset
+
+ particles) for the Bolshoi simulation.
+ Below those masses, the halo mass distributions show unphysical drop-offs
+ indicating incomplete mass resolution.
+ Therefore, we only select subhalos whose masses at accretion are greater
+ than 
+\begin_inset Formula $10^{10.4}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -333,9 +633,8 @@ Mass Dependence of Segregation
 
 \begin_layout Standard
 In this section, we investigate the mass dependence of segregation by comparing
- the radial distribution of subhalos in the host halos with different masses.
- To do that, we first select host halos based on their halo masses such
- that their halo masses in samples are from 
+ the radial distribution of subhalos with different host halo masses.
+ We select host halos in three mass bins: 
 \begin_inset Formula $10^{13}h^{-1}{\rm M_{\odot}}$
 \end_inset
 
@@ -343,7 +642,7 @@ In this section, we investigate the mass dependence of segregation by comparing
 \begin_inset Formula $10^{13.5}h^{-1}{\rm M_{\odot}}$
 \end_inset
 
-, from 
+, 
 \begin_inset Formula $10^{13.5}h^{-1}{\rm M_{\odot}}$
 \end_inset
 
@@ -361,11 +660,56 @@ In this section, we investigate the mass dependence of segregation by comparing
 \begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
- (and 
-\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+: 
+\begin_inset Formula $<0.1$
 \end_inset
 
-).
+, 
+\begin_inset Formula $0.1-0.25$
+\end_inset
+
+, 
+\begin_inset Formula $0.25-0.5$
+\end_inset
+
+, 
+\begin_inset Formula $>0.5$
+\end_inset
+
+.
+ We chose 
+\begin_inset Formula $z_{{\rm acc}}=0.1$
+\end_inset
+
+, 
+\begin_inset Formula $0.25$
+\end_inset
+
+, and 
+\begin_inset Formula $0.5$
+\end_inset
+
+ to split samples, because the subhalos with 
+\begin_inset Formula $z_{{\rm acc}}=0.1$
+\end_inset
+
+ reach their first peri-center at 
+\begin_inset Formula $z=0$
+\end_inset
+
+, while subhalos with 
+\begin_inset Formula $z_{{\rm acc}}=0.25$
+\end_inset
+
+ move to their first apo-centric passage according to Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vdBosch16"
+
+\end_inset
+
+ (See Fig.7).
  Using those subsamples, we compute the radial distances normalized by their
  virial radius.
  Fig.
@@ -376,9 +720,9 @@ reference "fig:radial_massDependence"
 
 \end_inset
 
- shows histograms of the radial distribution for early and late accreted
- subhalos split at 
-\begin_inset Formula $z_{{\rm acc}}=0.5$
+ shows present radial profiles of subhalos as a function of the accretion
+ redshift 
+\begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
 .
@@ -397,7 +741,75 @@ reference "fig:radial_massDependence"
 \end_inset
 
  respectively.
- The figure indicates that there is no mass dependence on segregation.
+ For the samples with the same accretion redshifts 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+, the radial profiles of the subhalos with different host halo masses do
+ not exhibit any significant differences, which implies that segregation
+ of subhalos is independent of host halo mass.
+ Radial profiles with different accretion redshifts 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ tell us how subhalos move inside their host halos after accretion; most
+ of subhalos accreted after 
+\begin_inset Formula $z=0.1$
+\end_inset
+
+ are still close to the virial radius of their host halos, while the ones
+ accreted around 
+\begin_inset Formula $z\in[0.1,0.25]$
+\end_inset
+
+ move towards center.
+ After going through their first peri-center, the subhalos move back to
+ their apo-centric passage, and this is why the subhalos accreted around
+ 
+\begin_inset Formula $z\in[0.1,0.25]$
+\end_inset
+
+ show more centrally concentrated radial profiles than the ones accreted
+ around 
+\begin_inset Formula $z\in[0.25,0.5]$
+\end_inset
+
+.
+ The subhalos which are accreted earlier (i.e., 
+\begin_inset Formula $z_{{\rm acc}}>0.5$
+\end_inset
+
+) are closer to the center due to the inside-out assembly of dark matter
+ halos (i.e., the virial radius of their host halos were smaller when those
+ subhalos were accreted).
+ This result is consistent with Ref.
+ xxx (vdB; Fig.
+ 7).
+\end_layout
+
+\begin_layout Standard
+*According to vdB, if I split the subhalos with 
+\begin_inset Formula $z_{{\rm acc}}>0.5$
+\end_inset
+
+ into subsamples with narrow accretion redshift bins, they should exhibit
+ mass-dependence on their radial profiles.
+\end_layout
+
+\begin_layout Standard
+*repeat the same thing using the first 
+\begin_inset Formula $z_{acc}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+*compare dynamical/orbital time to lookback time for these halos?
+\end_layout
+
+\begin_layout Standard
+*Make a plot which draws the motion of subhalos more clearly...
 \end_layout
 
 \begin_layout Standard
@@ -409,14 +821,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_z_acc_massDependence.pdf
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_massDepend.pdf
+	filename plots_Cluster/radialDist_z_acc_massDependence2.pdf
 	width 50text%
 
 \end_inset
@@ -434,8 +839,7 @@ name "fig:radial_massDependence"
 
 \end_inset
 
-Left: Radial distribution of subhalos as a function of the accretion redshifts
- 
+Radial profiles of subhalos as a function of the accretion redshifts 
 \begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
@@ -460,14 +864,43 @@ Left: Radial distribution of subhalos as a function of the accretion redshifts
 
  respectively.
  The blue lines correspond to the subhalos which are accreted after 
-\begin_inset Formula $z=0.5$
+\begin_inset Formula $z=0.1$
 \end_inset
 
-, and the green lines are for the ones which are accreted before 
-\begin_inset Formula $z=0.5$
+, the green lines are for the ones which are accreted around 
+\begin_inset Formula $z_{{\rm acc}}=[0.1,0.25]$
+\end_inset
+
+, the red lines are the ones accreted around 
+\begin_inset Formula $z_{{\rm acc}}=[0.25,0.5]$
+\end_inset
+
+, and the cyan lines are the ones accreted before 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $z_{{\rm acc}}=0.5$
 \end_inset
 
 .
+ According to Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vdBosch16"
+
+\end_inset
+
+, the subhalos accreted at 
+\begin_inset Formula $z_{{\rm acc}}=0.1$
+\end_inset
+
+ reach their first peri-center and the ones accreted at 
+\begin_inset Formula $z_{{\rm acc}}=0.25$
+\end_inset
+
+ are at their first peri-centric passage at present.
 \end_layout
 
 \end_inset
@@ -493,15 +926,17 @@ Correlation between
 \end_layout
 
 \begin_layout Standard
-Tidal stripping is a phenomenon that the subhalos experience mass loss due
- to tidal forces of their host halos.
- As a general trend, subhalos which are accreted earlier experience more
- mass loss due to tidal stripping.
-\end_layout
+In this section, we investigate the correlation between the accretion redshift
+ 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
 
-\begin_layout Standard
-The retaining mass 
+ and the retaining mass and maximum circular velocity 
 \begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
 \end_inset
 
 , where 
@@ -509,11 +944,37 @@ The retaining mass
 \end_inset
 
  and 
+\begin_inset Formula $V_{{\rm max,sub}}$
+\end_inset
+
+ are the subhalo mass/maximum circular velocity at present (in this case,
+ 
+\begin_inset Formula $z=0$
+\end_inset
+
+) and 
 \begin_inset Formula $m_{{\rm acc}}$
 \end_inset
 
- are the subhalo masses at present time and at accretion, indicates the
- amount of mass loss after subhalos are accreted by their host halos.
+ and 
+\begin_inset Formula $V_{{\rm acc,sub}}$
+\end_inset
+
+ are the subhalo mass/maximum circular velocity at accretion.
+ The retaining mass 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ indicates the amount of mass loss after subhalos are accreted by their
+ host halos, and it is tightly correlated with the accretion redshift 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ due to tidal stripping.
+ Tidal stripping is a phenomenon that the subhalos experience mass loss
+ due to tidal forces of their host halos.
+ As a general trend, subhalos which are accreted earlier experience more
+ mass loss because they stay in their host halos longer.
  The question is how well this property 
 \begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
 \end_inset
@@ -603,34 +1064,21 @@ reference "fig:correlation"
 \begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
 \end_inset
 
- is steeper than the slope for 
+ is almost the same as the slope for 
 \begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
 \end_inset
 
- (the slope for mass is -0.3035, while the slope for Vmax is -2.006...but this
- is mostly due to the subhalos whose Vmax change is drastic).
- Those results are not consistent with the results in Ref.
- xxx [vdB, Figure 5].
+ for the subhalos with 
+\begin_inset Formula $z_{{\rm acc}}<0.6$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-
-\color red
-This actually throws some doubt on the picture that tidal stripping removes
- the mass of the subhalos from their outer regions and therefore the change
- in 
-\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
-\end_inset
-
- is smaller.
- (This statement is not made in any references for subhalos...Read vdB's potential
- depth paper and Arthur's paper to confirm the picture, at least this says
- that tidal stripping strip the matter not only from outer regions...)
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -664,7 +1112,8 @@ name "fig:correlation"
 
 \end_inset
 
-Left: correlation between the accretion redshift 
+(swap the x and y axis...)Left: correlation between the accretion redshift
+ 
 \begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
@@ -703,7 +1152,19 @@ Left: correlation between the accretion redshift
 \begin_inset Formula $z_{{\rm acc}}<0.6$
 \end_inset
 
- and deviate due to the large scatter.
+ and deviate after that due to the large scatter in the 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+(or 
+\begin_inset Formula $V_{{\rm max,sub}}/V_{{\rm acc,sub}}$
+\end_inset
+
+)-
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ relation.
 \end_layout
 
 \end_inset
@@ -717,7 +1178,59 @@ Left: correlation between the accretion redshift
 \end_layout
 
 \begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hist_correlation"
+
+\end_inset
+
+ shows the distribution of 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ (split into 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}>10^{-0.25}$
+\end_inset
+
+, 
+\begin_inset Formula $=[10^{-0.5},10^{-0.25}]$
+\end_inset
+
+, and 
+\begin_inset Formula $<10^{-0.5}$
+\end_inset
+
+).
+ While the range of 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ for each retaining mass bin is wide, each distribution shows the clear
+ trend that subhalos with 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}=[10^{-0.5},10^{-0.25}]$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}<10^{-0.5}$
+\end_inset
+
+ show clear peaks in the 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ distributions.
+ The median values for each subsample are xxx.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -736,13 +1249,39 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Histograms of the accretion redshifts split into three different retaining
- mass bins at 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hist_correlation"
+
+\end_inset
+
+(compute medians) Histograms of the accretion redshifts as a function of
+ the retaining mass at 
 \begin_inset Formula $z=0$
 \end_inset
 
 .
+ Even though the scatter in the accretion redshift 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ is large in Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:correlation"
+
+\end_inset
+
+, when the subhalos are split based on the retaining mass 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+, the distributions of 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ exhibit clear trend/correlation.
 \end_layout
 
 \end_inset
@@ -760,7 +1299,155 @@ Histograms of the accretion redshifts split into three different retaining
 \end_layout
 
 \begin_layout Standard
+Since 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ are tightly correlated (though with the large scatter), the question is
+ whether the radial profiles of the subhalos show any extra dependence on
+ 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ if two samples have the same 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ dependence.
+ To check this, we first compute the median 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{m_{{\rm vir}}/m_{{\rm acc}}}(z_{{\rm acc}})$
+\end_inset
+
+ ,by applying the least-square fit.
+ Then, we refer the subhalos with 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}>\overline{m_{{\rm vir}}/m_{{\rm acc}}}(z_{{\rm acc}})$
+\end_inset
+
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+large-
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ subhalos
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\color red
+currently labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+small
+\begin_inset Quotes erd
+\end_inset
+
+...
+\color inherit
+), and the subhalos with 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}<\overline{m_{{\rm vir}}/m_{{\rm acc}}}(z_{{\rm acc}})$
+\end_inset
+
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+small-
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ subhalos
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\color red
+currently labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+large
+\begin_inset Quotes erd
+\end_inset
+
+...
+\color inherit
+b/c I was thinking about the amount of mass loss...).
+ This means that a subhalo's small- or large-
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ designation refers to whether its measured 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ value in the simulation is above- or below-average for its accretion redshift.
+ Therefore, the two subsamples have almost identical distributions of redshift
+ and richness by construction.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:radial_zacc_mass"
+
+\end_inset
+
+ shows the radial profiles of the subhalos split into small/large-
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ subhalos as a function of the accretion redshift.
+ The solid lines are for large-
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ subhalos, while the dashed lines are for small-
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ subhalos.
+ The figure shows that the position and mass loss are tightly correlated
+ for the subhalos accreted after 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+; subhalos which lost more masses are closer to the center (i.e., they are
+ exposed to stronger tidal field).
+ On the other hand, subhalos accreted before 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+ show almost no correlation between their radial profiles and mass losses.
+ This is because those subhalos are accreted early enough that their distributio
+n is already virialized (
+\color red
+change the phrase
+\color inherit
+).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -779,17 +1466,122 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-(change labels) Radial distribution of subhalos as a function of the accretion
- redshifts 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:radial_zacc_mass"
+
+\end_inset
+
+(change labels & split subhalos at 
+\begin_inset Formula $z_{{\rm acc}}=0.1,0.25,0.5$
+\end_inset
+
+?; add one more plot to show how I cut the samples) Radial profiles of subhalos
+ as a function of the accretion redshift 
 \begin_inset Formula $z_{{\rm acc}}$
 \end_inset
 
- and the rataining mass 
+ and the retaining mass 
 \begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
 \end_inset
 
  at 
 \begin_inset Formula $z=0$
+\end_inset
+
+.
+ We split the samples such that the samples which have the same cut in the
+ accretion redshift have the same dependence on the accretion redshift.
+ The detail about how we split the sample is in the text.
+ For the subhalos accreted after 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+, the position and mass loss are tightly correlated such that subhalos which
+ lost more mass are closer to the center.
+ On the other hand, subhalos accreted before 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+ show no correlation between their radial profiles and mass losses.
+ This is because those subhalos are accreted early enough that their distributio
+n is already virialized (change the phrase).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots_Cluster/radialDist_z_acc_massDependence.pdf
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots_Cluster/radialDist_massDepend.pdf
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+(haven't decided to use those plots) Radial profiles of subhalos as a function
+ of the accretion redshifts 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+ (left) and the retaining mass 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ The solid lines are for the subhalos in the host halos whose masses are
+ greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+, while circles and dashed lines correspond to the host halos whose masses
+ are 
+\begin_inset Formula $M_{{\rm vir}}=[10^{13.5}h^{-1}{\rm M_{\odot}},10^{14}h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{{\rm vir}}=[10^{13}h^{-1}{\rm M_{\odot}},10^{13.5}h^{-1}{\rm M_{\odot}}]$
+\end_inset
+
+ respectively.
+ The blue lines correspond to the subhalos which are accreted after 
+\begin_inset Formula $z=0.5$
+\end_inset
+
+, and the green lines are for the ones which are accreted before 
+\begin_inset Formula $z=0.5$
 \end_inset
 
 .
@@ -806,8 +1598,257 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Observational Signature: correlation functions in redshift-space & projected
- ones...
+Observational Signature: small-scale clusterings in real and redshift spaces
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:correlation_fn"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(regenerate plot to change the labels; decide which plots to use; compute
+ 
+\begin_inset Formula $w_{p}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+In this section, we investigate how segregation on radial profiles appear
+ in observational signature using two-point correlation functions.
+ We first select host halos whose masses are greater than 
+\begin_inset Formula $10^{14}h^{-1}{\rm M_{\odot}}$
+\end_inset
+
+, and then subsample the subhalos based on 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+.
+ In all that follows, we will use 
+\begin_inset Formula $\xi_{sub,sub}$
+\end_inset
+
+ to denote the auto-correlation of the subhalos, 
+\begin_inset Formula $\xi_{sub,host}$
+\end_inset
+
+ for the cross-correlation functions between the subhalos and their host
+ halos, and 
+\begin_inset Formula $\xi_{mm}$
+\end_inset
+
+ for the matter auto-correlation.
+ The advantage of using the correlation functions is that it does not require
+ to define the virial radius of the host halos 
+\begin_inset Formula $R_{{\rm vir}}$
+\end_inset
+
+.
+ The disadvantage is that the effect on the radial distribution will be
+ somewhat smeared out by not scaling with respect to the virial radius of
+ the host halos.
+\end_layout
+
+\begin_layout Standard
+The left panel of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:auto-sub_real"
+
+\end_inset
+
+ shows the auto-correlation functions of the subhalos split by 
+\begin_inset Formula $m_{{\rm vir}}/m_{{\rm acc}}$
+\end_inset
+
+ in real-space, and the right panel shows the ratio of the auto-correlation
+ functions between the subhalos and matter.
+ As expected, the clustering signal of those subhalos show different scale-depen
+dence; the subhalos which lose more masses (i.e., accreted earlier) tend to
+ cluster at the center, while the subhalos which are accreted later cluster
+ more strongly at 
+\begin_inset Formula $r>1h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Next, we compute the correlation functions in redshift-space.
+ The left panel of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:auto_sub-redshift"
+
+\end_inset
+
+ shows the monopole term of the subhalo auto-correlation functions, while
+ the right panel shows the quadrupole terms.
+ For the monopole terms, the segregation signal is completely smeared out
+ and the correlation functions for each sample is almost indistinguishable;
+ however, the quadrupole term shows different scale-dependence for each
+ sample more clearly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots_Cluster/Bolshoi_M14_Mvir2acc_xir_auto.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_ratio_xir_auto.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_xir_cross.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_ratio_xir_cross.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:auto-sub_real"
+
+\end_inset
+
+Left: Auto correlation functions of subhalos in real-space as a function
+ of the change in subhalos masses 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ Right: The ratio of auto correlation functions between subhalos and DM
+ particles in real-space at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The figures indicate that subhalos which lose more masses tend to be more
+ centrally concentrated.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_xis_auto.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/Bolshoi_M14_Mvir2acc_xis_quad.pdf
+	lyxscale 70
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:auto_sub-redshift"
+
+\end_inset
+
+Monopole (left) and Quadrupole (right) term of auto correlation functions
+ of subhalos in redshift-space as a function of the change in subhalos masses
+ 
+\begin_inset Formula $M_{{\rm vir,sub}}/M_{{\rm acc,sub}}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.3$
+\end_inset
+
+.
+ The mass dependence appeared in the real-space correlation functions in
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:auto-sub_real"
+
+\end_inset
+
+ is smeared out due to random motions of subhalos in the clusters.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -887,6 +1928,9 @@ reference "fig:subhaloMassFn"
 
  shows unevolved and evolved subhalo mass functions for high/low-concentration
  host halos.
+ Note that the unevolved subhalo mass function implies that we use the subhalo
+ mass at accretion, while we use the subhalo mass at present time for the
+ evolved subhalo mass function.
  Both subhalo mass functions indicate that the subhalo mass functions for
  high-concentration halos have fewer subhalos for 
 \begin_inset Formula $m_{{\rm acc}}/M_{{\rm vir}}>10^{-1.5}$
@@ -923,13 +1967,21 @@ reference "fig:radialDist_concen"
 
  (or the subhalos which have not lost much mass) do not exhibit any difference
  in the spatial distribution for the high/low-concentration host halos,
- the subhalos which are accreted before 
+ the subhalos which are accreted earlier than 
 \begin_inset Formula $z=0.5$
 \end_inset
 
- have similar inner distribution but diffrent outer distributions.
+ have similar inner distribution but different outer distributions.
  The subhalos in the high concentration host halos show steeper decrease
  as the distance gets closer to the virial radius.
+ If the distribution of the early-accreted subhalos is virialized (how could
+ I phrase this correctly?), it makes sense that there are more subhalos
+ at outer radius in the low-concentration host halos, because they follow
+ more like the NFW profile (
+\color red
+need to explain about NFW profile
+\color inherit
+).
 \end_layout
 
 \begin_layout Standard
@@ -942,6 +1994,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/subhalo_massFunction_M14_Macc11.5_unevolved.pdf
+	lyxscale 70
 	width 50text%
 
 \end_inset
@@ -949,6 +2002,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/subhalo_massFunction_M14_Macc11.5_evolved.pdf
+	lyxscale 70
 	width 50text%
 
 \end_inset
@@ -980,7 +2034,7 @@ Unevolved subhalo mass functions (left) and evolved subhalo mass functions
  The blue lines are the subhalos whose host halos have high concentration,
  while the green lines are for low concentration.
  (Remake the figure without plotting the circles+ I should choose host halos
- with more mass range)
+ with more mass range; also should I use MD instead of Bolshoi?)
 \end_layout
 
 \end_inset
@@ -1010,6 +2064,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/radialDist_concen.pdf
+	lyxscale 70
 	width 50text%
 
 \end_inset
@@ -1059,7 +2114,7 @@ Radial distribution of subhalos as a function of the accretion redshifts
 \begin_inset Formula $z=0.5$
 \end_inset
 
- have similar inner distribution but diffrent outer distributions.
+ have similar inner distribution but different outer distributions.
  The subhalos in the high concentration host halos show steeper decrease
  as the distance gets closer to the virial radius (how can I describe this
  more clearly?) 
@@ -1080,8 +2135,34 @@ Discussions/Future Works
 \end_layout
 
 \begin_layout Standard
-Using the age-matching method to measure an observational segregation due
- to the accretion redshift
+There are some possible mechanisms for segregation of subhalos; inside-out
+ formation and dynamical friction (
+\color red
+should I add pre-infall properties here?
+\color inherit
+), which affects the radial distribution of subhalos in opposite ways.
+ More massive subhalos tend to be more centrally concentrated due to dynamical
+ friction, while massive halos assemble later and the subhalos accreted
+ later tend to be located at a larger halo-centric radius.
+ So far, the effect of dynamical friction has been predicted from simulations
+ and confirmed by observations; what more and adhikari did.
+ They use abundance matching technique/splashback radius.
+\end_layout
+
+\begin_layout Standard
+-> Using the age-matching method to measure an observational segregation
+ due to the accretion redshift
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "tex/VmaxMvir"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

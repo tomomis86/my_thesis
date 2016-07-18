@@ -471,12 +471,17 @@ In this work, we investigate how galaxy bias affects on the shift of the
 \begin_inset Formula $z=0.15$
 \end_inset
 
- where the non-linear effects are more significant in galaxy samples.
- 
+ (where the non-linear effects are more significant in galaxy samples) with
+ a larger volume of simulations (
 \color red
-The simulation we use has more volume and higher resolution
+put quantitative number:xxx
 \color inherit
-.
+) as well as a higher resolution (
+\color red
+xxx
+\color inherit
+).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -517,6 +522,16 @@ key "1988csup.book.....H"
 \end_inset
 
  subcycles.
+ The choice of time steps is determined after several convergence tests
+ such that the simulation reproduces an accurate halo mass functions as
+ well as clusterings at the level of xxx% compared to full N-body simulations.
+ Ref.
+ X shows the details of those convergence tests; for example, the number
+ of time steps is somewhat insensitive to reproduce the clustering of halos
+ in real-space, but it is not in redshift-space.
+ For the case of xxx time steps, the clustering in real-space agrees with
+ the result from full N-body simulations up to xxxMpc/h, while the agreement
+ in redshift-space is up to xxxMpc/h.
  The simulation assumes a 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -574,19 +589,19 @@ CDM cosmology with
 \end_inset
 
  volumes into 
-\begin_inset Formula $4\times64=256$
+\begin_inset Formula $4\times16=64$
 \end_inset
 
- subvolumes to estimate the covariance matrix for galaxy correlation functions.
+ subvolumes (
+\begin_inset Formula $4(h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+ each) to estimate the covariance matrix for galaxy correlation functions.
+ 
 \end_layout
 
 \begin_layout Standard
 [check force resolution and the meaning of the number of time steps]
-\end_layout
-
-\begin_layout Standard
-[cite my paper and briefly explain what these simulations were: convergence
- tests]
 \end_layout
 
 \begin_layout Subsection
@@ -855,7 +870,7 @@ The reason we only vary the parameter
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1423,22 +1438,11 @@ shifted
  density field.
  The derivation of the above estimator is following:
 \begin_inset Formula 
-\[
-\xi(r)=<(\delta_{d}-\delta_{s})(\delta_{d}-\delta_{s})>=<\delta_{d}\delta_{d}>-2<\delta_{d}\delta_{s}>+<\delta_{s}\delta_{s}>=\frac{DD-2DR+RR}{RR}-2\frac{DS-DR-SR+RR}{RR}+\frac{SS-2SR+RR}{RR}=\frac{DD-2DS+SS}{RR}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
 \begin{eqnarray*}
-\begin{array}{cc}
-\\
-\\
-\end{array}\\
+\xi(r) & = & <(\delta_{d}-\delta_{s})(\delta_{d}-\delta_{s})>\\
+ & = & <\delta_{d}\delta_{d}>-2<\delta_{d}\delta_{s}>+<\delta_{s}\delta_{s}>\\
+ & = & \frac{DD-2DR+RR}{RR}-2\frac{DS-DR-SR+RR}{RR}+\frac{SS-2SR+RR}{RR}\\
+ & = & \frac{DD-2DS+SS}{RR}.
 \end{eqnarray*}
 
 \end_inset
@@ -1551,11 +1555,11 @@ key "1998ApJ...496..605E"
  is a nonlinear parameter that accounts for the broadening of the BAO peak
  due to nonlinear evolution.
  We set 
-\begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $\Sigma=7h^{-1}{\rm Mpc}$
 \end_inset
 
  for pre-reconstruction and 
-\begin_inset Formula $\Sigma=2.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $\Sigma=0h{\rm Mpc}$
 \end_inset
 
  for post-reconstruction, and we will discuss the reason for those choices
@@ -1785,16 +1789,6 @@ name "sub:weightHOD"
 \end_layout
 
 \begin_layout Standard
-[ask about eq.
- 7 in Noh et al...
- how 
-\begin_inset Formula $\Sigma^{2}$
-\end_inset
-
- is related to the smoothing scales...]
-\end_layout
-
-\begin_layout Standard
 In this section, we compare the 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -1807,12 +1801,7 @@ weighted
 \begin_inset Quotes erd
 \end_inset
 
- HOD methods.
- The reason that they have different 
-\begin_inset Formula $\alpha$
-\end_inset
-
- values is due to shot noise
+ HOD methods to show how the shot noise affects the measurements.
 \end_layout
 
 \begin_layout Standard
@@ -1851,7 +1840,7 @@ weighted
 \end_inset
 
  values for the 64 samples denoted as 
-\begin_inset Formula $\alpha_{weight}$
+\begin_inset Formula $\alpha_{{\rm weighted}}$
 \end_inset
 
 .
@@ -1878,7 +1867,7 @@ weighted
 \end_inset
 
  values between 
-\begin_inset Formula $\alpha_{weight}$
+\begin_inset Formula $\alpha_{{\rm weighted}}$
 \end_inset
 
  and 
@@ -1887,7 +1876,7 @@ weighted
 
 .
  For both cases, the mean of the difference 
-\begin_inset Formula $<\alpha_{HOD}-\alpha_{weight}>$
+\begin_inset Formula $<\alpha_{HOD}-\alpha_{{\rm weighted}}>$
 \end_inset
 
  is 
@@ -1915,12 +1904,6 @@ weighted
 
 \begin_layout Standard
 *implication/interpretation?
-\end_layout
-
-\begin_layout Standard
-*convergence limit-> check correlation between average over-densities and
- alpha values & convergence with averaging out the samples by checking std
- by varying the number of averaging out...
 \end_layout
 
 \begin_layout Standard
@@ -1959,8 +1942,12 @@ name "fig:variation_hod"
 
 \end_inset
 
-Distribution of the values 
-\begin_inset Formula $\alpha_{HOD}-\alpha_{weighted}$
+(
+\color red
+regenerate the figure with new data points
+\color inherit
+)Distribution of the values 
+\begin_inset Formula $\alpha_{HOD}-\alpha_{{\rm weighted}}$
 \end_inset
 
  for the case of 
@@ -2007,11 +1994,21 @@ name "sub:smoothing"
 \end_layout
 
 \begin_layout Standard
+[ask about eq.
+ 7 in Noh et al...
+ how 
+\begin_inset Formula $\Sigma^{2}$
+\end_inset
+
+ is related to the smoothing scales...]
+\end_layout
+
+\begin_layout Standard
 In this section, we discuss how the smoothing parameter 
 \begin_inset Formula $\Sigma$
 \end_inset
 
- in the template correlation function affects to the measurement of 
+ in the template correlation function affects the measurement of 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -2026,7 +2023,11 @@ In this section, we discuss how the smoothing parameter
 \end_inset
 
 .
- For each sample, we change the value of 
+ For each set of samples (
+\begin_inset Formula $4(h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+ each and 64 samples in total), we change the value of 
 \begin_inset Formula $\Sigma$
 \end_inset
 
@@ -2050,38 +2051,33 @@ reference "fig:sigma_prerecon"
 \begin_inset Formula $\alpha$
 \end_inset
 
- as a function of various values for the smoothing parameter in real-space
- before reconstruction and the corresponding 
+ and the corresponding 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- values.
+ values as a function of various values for the smoothing parameter in real-spac
+e before reconstruction.
  While decreasing the smoothing scale makes the shift of the BAO peak smaller
  monotonically, the 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
  values indicate that 
-\begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $\Sigma=7h^{-1}{\rm Mpc}$
 \end_inset
 
  gives the smallest value and therefore the best fit.
- We repeat the same thing for the case of post-reconstruction, as shown
- in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:sigma_post"
-
-\end_inset
-
-.
- After reconstruction, the smoothing scale which gives the smallest 
+ We repeat the same exercises for different HOD samples (i.e., different galaxy
+ biases) and for the case of post-reconstruction.
+ For the case of samples with various HOD parameters, we did not see any
+ bias-dependence on the smoothing scales.
+ For the case of post-reconstruction, the smoothing scale which gives the
+ smallest 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
  value is 
-\begin_inset Formula $\Sigma=2.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $\Sigma=0h{\rm Mpc}$
 \end_inset
 
 , which is much smaller than what we expected.
@@ -2089,7 +2085,9 @@ reference "fig:sigma_post"
 \color red
 explain what we expected and why it's a reasonable thing to expect
 \color inherit
-] While the smoothing scale 
+] 
+\color black
+While the smoothing scale 
 \begin_inset Formula $\Sigma$
 \end_inset
 
@@ -2102,11 +2100,25 @@ explain what we expected and why it's a reasonable thing to expect
 \end_inset
 
  value does not show significant changes for the case of post-reconstruction.
- [
-\color red
-possible reasons?
+ 
 \color inherit
-]
+[
+\color red
+possible reasons? and also is this a correct statement to make?
+\color inherit
+if so, put more quantitative values.]
+\end_layout
+
+\begin_layout Standard
+*Also, mention somehwere about the results when I vary 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ and the best fit value of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2119,6 +2131,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_sigma_hod1_pre_r.pdf
+	lyxscale 60
 	width 45text%
 
 \end_inset
@@ -2126,6 +2139,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/chiSquare_sigma_hod1_pre_r.pdf
+	lyxscale 60
 	width 45text%
 
 \end_inset
@@ -2143,7 +2157,7 @@ name "fig:sigma_prerecon"
 
 \end_inset
 
-
+(regenerate the plot) 
 \begin_inset Formula $<\alpha-1>$
 \end_inset
 
@@ -2175,98 +2189,7 @@ name "fig:sigma_prerecon"
 \end_inset
 
  gets smaller, the best fit is when 
-\begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_sigma_hod1_post_r.pdf
-	width 45text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/chiSquare_sigma_hod1_post_r.pdf
-	width 45col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:sigma_post"
-
-\end_inset
-
-
-\begin_inset Formula $<\alpha-1>$
-\end_inset
-
- (left) and 
-\begin_inset Formula $<\chi^{2}>$
-\end_inset
-
- (right) as a function of smoothing scale 
-\begin_inset Formula $\Sigma$
-\end_inset
-
-.
- In order to measure the 
-\begin_inset Formula $\alpha$
-\end_inset
-
- value, we use the sample with 
-\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
-\end_inset
-
- after reconstruction.
- We computed the mean and error of the mean from 64 samples in total.
- The value of 
-\begin_inset Formula $\alpha$
-\end_inset
-
- is not sensitive to the smoothing scale, in particular for small 
-\begin_inset Formula $\Sigma$
-\end_inset
-
-; however, using a larger smoothing scale (
-\begin_inset Formula $\Sigma=x$
-\end_inset
-
- is expected from linear PT) makes the value of 
-\begin_inset Formula $\alpha$
-\end_inset
-
- larger and can possibly mislead the conclusion.
- The best fit is when 
-\begin_inset Formula $\Sigma=2.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $\Sigma=7.h{\rm Mpc}$
 \end_inset
 
 .
@@ -2295,6 +2218,11 @@ name "sub:real-prerecon"
 \end_layout
 
 \begin_layout Standard
+*give a table of HOD pareameters and bias values (compare pre/post-reconstructio
+n)
+\end_layout
+
+\begin_layout Standard
 In this section, we investigate the effect of galaxy bias on the measurement
  of the BAO peak for the samples without reconstruction in real-space.
  We use the method described in Sec.
@@ -2308,8 +2236,8 @@ reference "sub:fit_isotropic"
  to measure the shift of the BAO peak.
  It is crucial to understand how much shift is caused by galaxy bias, because
  the shift due to the deviation from the fiducial cosmology and the shift
- due to galaxy bias are indistinguishable and it can be a systematic bias
- in the cosmological measurement.
+ due to galaxy bias is indistinguishable and can be a systematic bias in
+ cosmological measurements.
 \end_layout
 
 \begin_layout Standard
@@ -2397,7 +2325,7 @@ key "2009PhRvD..80f3508P"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2425,7 +2353,7 @@ Shift in the BAO scale for the weighted samples as a function of galaxy
 \begin_inset Formula $\alpha=1$
 \end_inset
 
- implies no shift in the BAO scale.
+ (dashed line) implies no shift in the BAO scale.
  [add some implications] 
 \end_layout
 
@@ -2486,7 +2414,11 @@ reference "fig:scatter_prerecon"
 \begin_inset Formula $\alpha$
 \end_inset
 
- value measured from each sample.
+ value measured from each sample (
+\begin_inset Formula $4(h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+ each and 64 samples in total).
  From the figure, we see that there is a correlation between the shifts
  measured for the HOD1 and HOD3 samples and its cross-correlation coefficient
  is xxx.
@@ -2494,24 +2426,8 @@ reference "fig:scatter_prerecon"
 \begin_inset Formula $\alpha$
 \end_inset
 
- values between HOD1 and HOD9 where the cross-correlation coefficient is
- xxx).
- There are two possible sources for this lack of correlation; one is due
- to the large shot noise for the sample of HOD9, and the other is due to
- reconstruction that the number density of galaxies for HOD9 is small and
- it can cause an incomplete estimation of the 
-\begin_inset Quotes eld
-\end_inset
-
-shifted
-\begin_inset Quotes erd
-\end_inset
-
- density field 
-\begin_inset Formula $\delta_{s}$
-\end_inset
-
-.
+ values between HOD1 and HOD9 (where the cross-correlation coefficient is
+ xxx) due to a large shot noise.
 \end_layout
 
 \begin_layout Standard
@@ -2519,9 +2435,7 @@ shifted
 \end_layout
 
 \begin_layout Standard
-*source of lack of correlation: shot noise and also reconstruction (compare
- delta_s between HOD1 and HOD9) -> if possible, remake the same figure with
- the reconstruction using the delta_s computed from HOD1
+*source of lack of correlation: shot noise
 \end_layout
 
 \begin_layout Standard
@@ -2529,7 +2443,7 @@ shifted
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2596,9 +2510,12 @@ There are three possible sources for the biases and the scatter in the
 \begin_inset Formula $\alpha$
 \end_inset
 
- measurements : the initial conditions (no biases, but scatter), the matter
- and the actual galaxy population.
- For any samples we consider, the first two are common; however, the last
+ measurements : the initial conditions (no biases, but scatter),
+\color red
+ the matter and the actual galaxy
+\color inherit
+ population.
+ The first two are common to all the samples we consider; however, the last
  one (i.e., galaxy bias) is not.
  Knowing that the 
 \begin_inset Formula $\alpha$
@@ -2676,7 +2593,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2726,7 +2643,7 @@ The differences in shift
 \end_layout
 
 \begin_layout Subsection
-Affects of Biased Tracers in Real-Space after Reconstruction 
+Effects of Biased Tracers in Real-Space after Reconstruction 
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:real-postrecon"
@@ -2893,7 +2810,7 @@ reference "fig:scatter_postrecon"
 \end_layout
 
 \begin_layout Standard
-* quantitatively evaluate the scatter...
+*quantitatively evaluate the scatter...
 \end_layout
 
 \begin_layout Standard
