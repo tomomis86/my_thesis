@@ -1129,7 +1129,26 @@ status open
 
 
 \begin_inset Graphics
-	filename plots_Cluster/scatter_z_vmax.pdf
+	filename plots_Cluster/scatter_z_vmaxLoss.pdf
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_Cluster/scatter_z_massLoss2.pdf
+	lyxscale 70
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots_Cluster/scatter_z_vmaxLoss2.pdf
 	lyxscale 70
 	width 50text%
 
