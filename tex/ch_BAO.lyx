@@ -400,9 +400,9 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../Dropbox/Tomomi/Prospectus/bao_recon1.png
-	lyxscale 40
-	width 40col%
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/xi_linear.pdf
+	lyxscale 70
+	width 50text%
 
 \end_inset
 
@@ -419,32 +419,13 @@ name "fig:bao_recon1"
 
 \end_inset
 
-The one-dimensional correlation functions for DM with 
-\begin_inset Formula $\Lambda{\rm CDM}$
+The one-dimensional correlation functions of galaxies at 
+\begin_inset Formula $z=0.15$
 \end_inset
 
- model at z=0.0 before (solid) and after reconstruction with 
-\color red
-smoothing scales
-\color inherit
- of 5
-\begin_inset Formula $h^{-1}{\rm Mpc}$
-\end_inset
-
- (dotted) and 10
-\begin_inset Formula $h^{-1}{\rm Mpc}$
-\end_inset
-
- (short dashed).
- The long-dashed line shows the peak in the initial conditions.
- The figure is from 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "2009PhRvD..80l3501N"
-
-\end_inset
-
-.
+ before (solids) and after reconstruction (dashed line).
+ The blue line represents the linear correlation function, while the green
+ line is the non-linear correlation function.
 \end_layout
 
 \end_inset
@@ -862,7 +843,15 @@ The reason we only vary the parameter
 
 \color inherit
  The resulting nine HODs span a range of biases from 1.5 to 3.0 corresponding
- to the number densities from xxx to xxx.
+ to the number densities from 
+\begin_inset Formula $10^{-3}(h{\rm Mpc^{-1}})^{3}$
+\end_inset
+
+ to 
+\begin_inset Formula $4\times10^{-5}(h{\rm Mpc}^{-1})^{3}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1651,6 +1640,44 @@ reference "sub:smoothing"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/xi_template.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The parameter 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -2325,7 +2352,7 @@ key "2009PhRvD..80f3508P"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2443,7 +2470,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2593,7 +2620,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2733,16 +2760,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_priorB_sum4.pdf
-	lyxscale 70
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_weighted.pdf
 	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alphaDiff_bias_post_r.pdf
-	lyxscale 70
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_regular.pdf
 	width 50text%
 
 \end_inset
@@ -2886,7 +2911,54 @@ Comparison of the
 \end_layout
 
 \begin_layout Subsection
+Smoothing Scales and Reconstruction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/mono_hod9_sigma.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Things to study
+\end_layout
+
+\begin_layout Standard
+*mention about that the difference in s-field is nothing
+\end_layout
+
+\begin_layout Standard
+*correlation between smoothing scale and number density -> mention how smoothing
+ scale affects to the shift in alpha and also the shape of dd...
 \end_layout
 
 \begin_layout Standard

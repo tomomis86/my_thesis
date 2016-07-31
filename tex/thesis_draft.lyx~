@@ -306,7 +306,1630 @@ Introduction
 \end_layout
 
 \begin_layout Section
-correlation functions and power spectra
+Brief History of Dark Energy
+\end_layout
+
+\begin_layout Standard
+In the late 1990s, two groups independently discovered cosmic acceleration
+ of the Universe using Type 1a supernovae 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "1998AJ....116.1009R,1999ApJ...517..565P"
+
+\end_inset
+
+.
+ Since cosmic acceleration cannot be explained in terms of usual components
+ of the Universe (matter and radiation) with its flatness, we call this
+ unknown mechanism as dark energy (DE).
+ 
+\end_layout
+
+\begin_layout Standard
+There are many models to explain what DE is and they can be categorized
+ into three types: cosmological constant, dynamical fluids with negative
+ pressures, and modified gravity.
+ 
+\end_layout
+
+\begin_layout Itemize
+Cosmological constant was first proposed by Einstein to make the universe
+ static.
+ He put the cosmological constant 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ into his Einstein's equation:
+\begin_inset Formula 
+\begin{equation}
+R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi GT_{\mu\nu},
+\end{equation}
+
+\end_inset
+
+where he treated 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ as a geometrical component (notations are the same as 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "2004sgig.book.....C"
+
+\end_inset
+
+).
+ Now, we treat 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ as energy, moving 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ to the right-hand side of the above equation, whose density is constant
+ in space and time of the expanding universe.
+ One possible explanation for the existence of 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is a quantum vacuum energy.
+ The problem is that the 
+\begin_inset Quotes eld
+\end_inset
+
+reasonable
+\begin_inset Quotes erd
+\end_inset
+
+ valu
+\color black
+e for the quantum vacuum energy estimated from particle physics, about 
+\begin_inset Formula $10^{110}$
+\end_inset
+
+eV, is about 120 orders of magnitude larger than the observed cosmological
+ constant, 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+eV (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "1989RvMP...61....1W"
+
+\end_inset
+
+
+\color inherit
+).
+\end_layout
+
+\begin_layout Itemize
+Dynamical fluids with negative pressure are energy which is against to gravity
+ (like 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+) and whose density varies with time.
+ In cosmology, the equation of state is often written in a simple linear
+ form:
+\begin_inset Formula 
+\begin{equation}
+p=\omega\epsilon,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ are pressure and energy densities and 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is a dimensionless number.
+ The cosmological constant 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ has 
+\begin_inset Formula $\omega=-1$
+\end_inset
+
+, which is fixed in time, while 
+\begin_inset Formula $\omega$
+\end_inset
+
+ for the dynamical fluids with negative pressures slowly varies with time,
+ 
+\begin_inset Formula $\omega=\omega(z)$
+\end_inset
+
+.
+ Note that the range of 
+\begin_inset Formula $\omega$
+\end_inset
+
+ for any DE models has to satisfy 
+\begin_inset Formula $-1\leq\omega<-\frac{1}{3}$
+\end_inset
+
+ to provide a positive acceleration.
+ One possible way to explain a mechanism of the dynamical fluids is a slow-rolli
+ng scalar field (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "1988PhRvD..37.3406R,1995PhRvL..75.2077F,1997MNRAS.285..793C,1999PhLB..462...41S,2002PhLB..545...17B"
+
+\end_inset
+
+), which is basically the same idea as inflation that the slow-rolling field
+ generates an exponential expansion to the universe, though the magnitudes
+ of the scalar fields for the dynamical fluids and inflations are different.
+ The problem is that the existence of such a scalar field is still unknown.
+\end_layout
+
+\begin_layout Itemize
+The alternative to introducing a new energy component is modifying general
+ relativity (GR) on cosmological scales (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "2002IJMPD..11..483C,2003Natur.422...26C,2000PhLB..485..208D,2003PhLB..575....1C,2007PhRvL..98l1301K"
+
+\end_inset
+
+).
+ The basic idea is that we add extra terms to the Lagrangian for gravity,
+ whose orders are smaller than the original terms in the Lagrangian for
+ GR.
+ Also, some mechanisms are required so that extra terms do not alter gravity
+ on the scale that GR is confirmed to be valid (i.e., screening/chameleon
+ effect; see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "2010AnPhy.325.1479J"
+
+\end_inset
+
+ for more details).
+ One way to test modified gravity is to examine the expansion history and
+ the growth of structure, because modified gravity alter their relations.
+\end_layout
+
+\begin_layout Standard
+There are several observational methods to constrain DE models.
+ One is measuring the expansion rate of the universe by using geometrical
+ probes (i.e., measuring the Hubble parameter 
+\begin_inset Formula $H(z)$
+\end_inset
+
+):
+\begin_inset Formula 
+\begin{equation}
+H(z)\equiv\dot{a}(z)/a(z),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $z$
+\end_inset
+
+ is redshift and 
+\begin_inset Formula $a(z)$
+\end_inset
+
+ is the expansion factor which we can find in the metric of our universe
+ (i.e., the Friedman-Robertson-Walker metric: 
+\begin_inset Formula $ds^{2}=-c^{2}dt^{2}+a^{2}(t)\{dr^{2}/(1-\kappa r^{2})+r^{2}d\theta^{2}+r^{2}\sin^{2}\theta d\phi^{2}\}$
+\end_inset
+
+, where 
+\begin_inset Formula $t$
+\end_inset
+
+ is time and 
+\begin_inset Formula $r,\theta,\phi$
+\end_inset
+
+ are comoving coordinates in three-dimensional space with curvature parameter
+ 
+\begin_inset Formula $\kappa$
+\end_inset
+
+).
+ We can describe the time evolution of the Hubble parameter through the
+ Friedmann equation:
+\begin_inset Formula 
+\begin{equation}
+\frac{H^{2}(z)}{H_{0}^{2}}=\Omega_{m}a^{-3}(z)+\Omega_{\gamma}a^{-4}(z)+\Omega_{\kappa}a^{-2}(z)+\Omega_{\Lambda}\left(\frac{\omega_{\Lambda}(z)}{\omega_{\Lambda}(z=0)}\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Omega_{m}$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega_{\gamma}$
+\end_inset
+
+,
+\begin_inset Formula $\Omega_{\kappa}$
+\end_inset
+
+, and 
+\begin_inset Formula $\Omega_{\Lambda}$
+\end_inset
+
+ correspond to the energy density of matter, radiation, curvature and DE
+ with the factor of 
+\begin_inset Formula $\frac{8\pi G}{3c^{2}H_{0}^{2}}$
+\end_inset
+
+.
+ The left-hand side of the Friedmann equation is responsible for geometry
+ and the right-hand side is the energy contents of the universe.
+ The Einstein's equation yields the Friedmann equation.
+ Currently, the only observational method, which can measure 
+\begin_inset Formula $H(z)$
+\end_inset
+
+ directly, is the Baryon Acoustic Oscillation (BAO) method, and other methods
+ measure 
+\begin_inset Formula $H(z)$
+\end_inset
+
+ indirectly (i.e., Type 1a supernovae and gravitational lensing).
+\end_layout
+
+\begin_layout Standard
+Another way to constrain DE is measuring the growth of structure by using
+ dynamical probes.
+ On large scale, the gravitational evolution of matter follows the linear
+ perturbation theory:
+\begin_inset Formula 
+\begin{equation}
+\ddot{\delta}+2H(t)\dot{\delta}=4\pi G\bar{\rho\delta},\label{eq:linear_perturbation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta\equiv\frac{\rho-\bar{\rho}}{\bar{\rho}}$
+\end_inset
+
+, 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the matter density field and 
+\begin_inset Formula $\bar{\rho}$
+\end_inset
+
+ is its spatial average.
+ For small perturbations, we can decouple spatial and time dependence of
+ over-density such as 
+\begin_inset Formula $\delta(\vec{x},t)=D(t)\delta(\vec{x},t=t_{0})$
+\end_inset
+
+ where 
+\begin_inset Formula $D(t)$
+\end_inset
+
+ is the linear growth function.
+ There is, however, a good approximation in terms of the growth factor 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+f\equiv\frac{d\ln D}{d\ln a}\thickapprox\Omega_{m}^{\gamma},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\gamma=0.55+0.05[1+\omega_{DE}(z=1)]$
+\end_inset
+
+.
+ The value for 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is different for GR and modified gravity, and it is one good way to test
+ modified gravity.
+ We can measure 
+\begin_inset Formula $f$
+\end_inset
+
+ through redshift-space distortions (RSDs) and gravitational lensings.
+\end_layout
+
+\begin_layout Standard
+In the following, I will introduce the statistical probe used in various
+ large-scale structure measurements called correlation functions.
+ Then, I will present the mechanism of BAO and RSDs and their systematic
+ sources.
+ And finally, I will discuss the thesis projects with their goals and motivation
+s.
+\end_layout
+
+\begin_layout Subsection
+Correlation Function/ Power Spectrum
+\end_layout
+
+\begin_layout Standard
+In order to measure the statistical distribution of galaxies, a two-point
+ correlation function, 
+\begin_inset Formula $\xi(r)$
+\end_inset
+
+, is widely used in many large-scale structure measurements.
+ If the primordeal density field is a random Gaussian field predicted by
+ simple inflation models, the statistical properties of the density field
+ are fully characterized by the two-point correlation function or its Fourier
+ transform, a power spectrum 
+\begin_inset Formula $P(k)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In order to compute the correlation function/power spectrum, we first defin
+ the over-density 
+\begin_inset Formula $\delta(\vec{r})/\delta(\vec{k})$
+\end_inset
+
+ such as 
+\begin_inset Formula 
+\[
+\delta(\vec{r})=\frac{\rho(\vec{r})-\bar{\rho}}{\bar{\rho}},
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+\delta(\vec{k})=\int d^{3}\vec{r}e^{-i\vec{k}\cdot\vec{r}}\delta(\vec{r}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\rho(\vec{r})$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{\rho}$
+\end_inset
+
+ are the density field at 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ and the average density field.
+ Note that 
+\begin_inset Formula $<\delta(\vec{r})>=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Using the over-density, the power spectrum is defined by
+\begin_inset Formula 
+\[
+<\delta^{*}(\vec{k})\delta(\vec{k})>=(2\pi)^{3}P(\vec{k})\delta_{D}^{3}(\vec{k}-\vec{k'}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta_{D}^{3}$
+\end_inset
+
+ is a 3D Dirac-delta function.
+ If the density field is isotropic, 
+\begin_inset Formula $P(\vec{k})$
+\end_inset
+
+does not have any angular dependence and can be described as 
+\begin_inset Formula $P(k)$
+\end_inset
+
+ where 
+\begin_inset Formula $k=|\vec{k}|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The correlation function is the Fourier-transform of the power spectrum
+ and is defined by
+\begin_inset Formula 
+\[
+\xi(\vec{r})\equiv<\delta(\vec{r})\delta(\vec{x}+\vec{r})>=\frac{1}{(2\pi)^{3}}\int d^{3}\vec{k}P(\vec{k})e^{-i\vec{k}\cdot\vec{r}}.
+\]
+
+\end_inset
+
+The correlation function measures the excess probability with respect to
+ the random distrbution of points generated by the Poisson process, which
+ can be described as 
+\begin_inset Formula 
+\[
+dP_{12}=\bar{n}^{2}(1+\xi(\vec{r}))dV_{1}dV_{2},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $P_{12}$
+\end_inset
+
+ is a joint probability that two points are in the volumes 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ with the separation 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+, and 
+\begin_inset Formula $\bar{n}$
+\end_inset
+
+ is the average number density of the points.
+\end_layout
+
+\begin_layout Standard
+Since galaxies are discrete objects, the estimator for the correlation function
+ is described as 
+\begin_inset Formula 
+\[
+\hat{\xi}(\vec{r})=\frac{N_{R}(N_{R}-1)}{N_{D}(N_{D}-1)}\frac{DD(\vec{r})}{RR(\vec{r})}-1,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $DD(\vec{r})$
+\end_inset
+
+and 
+\begin_inset Formula $RR(\vec{r})$
+\end_inset
+
+ are the number of pairs for the galaxies and random points with the distance
+ separation 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+.
+ Currently, the most widely used estimator is proposed by Ref.
+ [Landy & Szalay]:
+\begin_inset Formula 
+\[
+\hat{\xi}_{LS}(\vec{r})=\frac{DD(\vec{r})-2DR(\vec{r})+RR(\vec{r})}{RR(\vec{r})},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $DD$
+\end_inset
+
+, 
+\begin_inset Formula $DR$
+\end_inset
+
+, and 
+\begin_inset Formula $RR$
+\end_inset
+
+ are normalized by 
+\begin_inset Formula $N_{D}(N_{D}-1)$
+\end_inset
+
+, 
+\begin_inset Formula $N_{D}N_{R}$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{R}(N_{R}-1)$
+\end_inset
+
+ respectively.
+ The Landy-Szalay estimator has the same mean as the above 
+\begin_inset Formula $\hat{\xi}$
+\end_inset
+
+, while it has a smaller variance.
+\end_layout
+
+\begin_layout Subsection
+BAO
+\end_layout
+
+\begin_layout Standard
+The BAO method utilizes the characteristic scale of the sound horizon at
+ recombination, 
+\begin_inset Formula $r_{s}$
+\end_inset
+
+, as a standard ruler 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "1997PhRvL..79.3806T,1998ApJ...495...29G,1999MNRAS.304...75E"
+
+\end_inset
+
+.
+ Before recombination (
+\begin_inset Formula $z>1100$
+\end_inset
+
+), the universe is hot and dense: Primordeal gas is ionized and baryons
+ are coupled with photons through Thomson scattering.
+ Due to large radiation pressure of the photons, the baryon-photon fluid
+ oscillate as sound waves.
+ After recombination, the photons decouple from the baryons and start free-strea
+ming.
+ On the other hand, the baryon part of the wave is left in a spherical shell
+ (whose radius corresponds to the sound horizon) at recombination, and the
+ evolution of the baryon density field is subject to gravitational instability.
+ During recombination, dark matter has been evolving independently; however,
+ baryons and dark matters are now attracted to the overdensities of their
+ own.
+ This leaves the characteristic peak in the distribution of matters.
+ The BAO method measures the peak imprinted in the density field through
+ the correlation function of galaxies.
+ The characteristic scale of the sound horizon is defined as
+\begin_inset Formula 
+\begin{equation}
+r_{s}=\int_{0}^{t^{*}}\frac{c_{s}}{1+z}dt=\int_{z^{*}}^{\infty}\frac{c_{s}(z)}{H(z)}dz,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $t^{*}$
+\end_inset
+
+ is the time at the end of recombination and 
+\begin_inset Formula $c_{s}$
+\end_inset
+
+ is the speed of the sound wave.
+ 
+\begin_inset Formula $H(z)$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{s}(z)$
+\end_inset
+
+ at 
+\begin_inset Formula $z>z^{*}$
+\end_inset
+
+ are well measured through the matter-to-radiation ratio and the baryon-to-photo
+n ratio respectively (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "2007ApJ...664..660E,2008PhT....61d..44E"
+
+\end_inset
+
+).
+ Both ratios are measured by the acoustic peaks in the CMB anisotropy power
+ spectrum.
+ From CMB measurements, we obtain that 
+\begin_inset Formula $r_{s}\sim150{\rm Mpc}$
+\end_inset
+
+.
+ Due to this large size of the sound horizon, the BAO feature is not affected
+ by non-linear structure formation and galaxy evolution (more details in
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "2012arXiv1201.2434W"
+
+\end_inset
+
+), though it also means that surveys are required to cover a large volume.
+ 
+\end_layout
+
+\begin_layout Standard
+Measuring the BAO peak through the monopole of the correlation function
+ provides the distance probe as a blend of the line-of-sight (LOS) and transvers
+e distance scale 
+\begin_inset Formula $r_{s}/D_{V}(z)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $D_{V}(z)$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+D_{V}(z)=D_{A}^{2/3}(z)\left(\frac{cz}{H(z)}\right)^{1/3},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $D_{A}$
+\end_inset
+
+ is an angular diameter distance and 
+\begin_inset Formula $c$
+\end_inset
+
+ is the speed of light.
+\end_layout
+
+\begin_layout Standard
+After the discovery of dark energy through Type 1a supernovae, there have
+ been many theoretical investigations regarding to the BAO peak as a potential
+ standard ruler [cite:xxx].
+ The first convincing detection of the BAO peak came in 2005 from the Sloane
+ Digital Sky Survey (SDSS) Data Release (DR3) and final 2dFGRS [
+\color red
+check the formal name
+\color inherit
+] samples [cite: Eisenstein 2005 and Cole 2005].
+ Ref.[eisenstein] measured the acoustic peak with 
+\begin_inset Formula $3.4\sigma$
+\end_inset
+
+ significance for Luminous Red Galaxies in 
+\begin_inset Formula $0.26<z<0.47$
+\end_inset
+
+.
+ Combining the 2dFGRS and SDSS, the measurement gave a 
+\begin_inset Formula $2.7\%$
+\end_inset
+
+ measurement of the distance-redshift relation at 
+\begin_inset Formula $z=0.275$
+\end_inset
+
+ (e.g., Percival et al.
+ 2010).
+ The WiggleZ survey provided a 
+\begin_inset Formula $4\%$
+\end_inset
+
+ distance measurement at 
+\begin_inset Formula $z=0.6$
+\end_inset
+
+.
+ The 
+\color red
+6dFGRS
+\color inherit
+ made a 
+\begin_inset Formula $4.5\%$
+\end_inset
+
+ measurement at 
+\begin_inset Formula $z=0.1$
+\end_inset
+
+.
+ All of the above measurements already gave very stringent constraints of
+ cosmological parameters; however, Ref.
+ X proposed a method termed 
+\begin_inset Quotes eld
+\end_inset
+
+reconstruction
+\begin_inset Quotes erd
+\end_inset
+
+ to sharpen the BAO peak by reversing the non-linear evolution of the matter
+ density field.
+ The detail of this method is discussed in Sec.
+ X.
+ Applying the reconstruction technique to the SDSS-II LRG sample provided
+ a 
+\begin_inset Formula $1.9\%$
+\end_inset
+
+ distance measurement at 
+\begin_inset Formula $z=0.35$
+\end_inset
+
+.
+ Since then, Ref.X and X (anderson and alam et al) on the SDSS samples reported
+ 
+\begin_inset Formula $1.7\%$
+\end_inset
+
+ and 
+\begin_inset Formula $1\%$
+\end_inset
+
+ distance measurements at 
+\begin_inset Formula $z=0.57$
+\end_inset
+
+ using the reconstruction technique.
+\end_layout
+
+\begin_layout Subsection
+RSD
+\end_layout
+
+\begin_layout Standard
+RSDs are a systematic anisotropy in galaxy distribution caused by their
+ peculiar velocities.
+ On very large scales, RSDs provide a way to measure the growth rate of
+ structure, which can constrain general relativity (GR)/modified gravity.
+  Since the distance of galaxies along the line-of-sight (hereafter, LOS)
+ direction is measured through redshifts, the peculiar motion of galaxies
+ shift measured locations 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+ (called redshift-space) from actual locations 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ (called real-space) along the LOS direction:
+\begin_inset Formula 
+\begin{equation}
+\vec{s}\equiv\vec{r}+v_{los}/H(z)\hat{r},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $v_{los}$
+\end_inset
+
+ is the LOS component of the peculiar velocities.
+ The effects of RSDs are seen on both small and large scales, and are known
+ as the Finger-of-God effect (hereafter FoG) and the squashing effect.
+ The FoG effect is due to random motions of galaxies in a virialized halo,
+ while the squashing effect is caused by gravitational infall motion of
+ clusters.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:reid_white"
+
+\end_inset
+
+ shows how the FoG and the squashing effects appear on the two-point correlation
+ function.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../Dropbox/Tomomi/Prospectus/reid_white.gif
+	lyxscale 50
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:reid_white"
+
+\end_inset
+
+A contour plot of the two-dimensional correlation function 
+\begin_inset Formula $\xi(Z,R)$
+\end_inset
+
+ in redshift-space, where 
+\begin_inset Formula $Z$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ are separations parallel and perpendicular to the LOS, respectively, Both
+ the FoG effect and the squashing effect are appeared on the plot.
+ The figure is from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "2011MNRAS.417.1913R"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On large scales, linear perturbation theory provides the relation between
+ the over-densities in real-space and redshift-space 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "1987MNRAS.227....1K,1992ApJ...385L...5H"
+
+\end_inset
+
+ through the growth factor 
+\begin_inset Formula $f$
+\end_inset
+
+ in fourier-space:
+\begin_inset Formula 
+\begin{equation}
+\delta_{s}(\vec{k})=(1+f\mu^{2})\delta_{r}(k)\label{eq:Kaiser-1}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta_{s}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{r}$
+\end_inset
+
+ are redshift-space and real-space density contrasts of dark matter (hereafter
+ DM) particles and 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the cosine of the angle between 
+\begin_inset Formula $\vec{k}$
+\end_inset
+
+ and the line of sight.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the linear relation of the over-densities in between real-space and
+ redshift-space, a power spectrum in redshift-space can be described in
+ terms of a real-space power spectrum in linear regime:
+\color black
+
+\begin_inset Formula 
+\begin{equation}
+P_{s}(\vec{k})\equiv<\delta_{s}\delta_{s}>=(1+\mu^{2}f)^{2}P_{r}(k).\label{eq:Kaiser_power-1}
+\end{equation}
+
+\end_inset
+
+Due to an angular dependence of 
+\begin_inset Formula $P_{s}(k,\mu)$
+\end_inset
+
+, we can expand the redshift-space power spectrum by convolving with Legendre
+ polynomials, 
+\begin_inset Formula $L_{l}(\mu)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+P_{s}(k,\mu)=\underset{l}{\sum}P^{(l)}(k)L_{l}(\mu),
+\end{equation}
+
+\end_inset
+
+where
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Formula 
+\begin{equation}
+P_{s}^{(l)}(k)\equiv\frac{2l+1}{2}\int_{-1}^{+1}P_{s}(k,\mu)L_{l}(\mu)d\mu.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To measure 
+\begin_inset Formula $\beta$
+\end_inset
+
+ through the Kaiser approximation, we first take a ratio of quadrupole and
+ monopole moments of a redshift-space power spectrum:
+\begin_inset Formula 
+\begin{equation}
+P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}f+\frac{4}{7}f^{2})/(1+\frac{2}{3}f+\frac{1}{5}f^{2}),
+\end{equation}
+
+\end_inset
+
+and solve the above equation to obtain 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Since linear regime is on very large scales (
+\begin_inset Formula $k\sim0.02h{\rm Mpc}^{-1}$
+\end_inset
+
+), it is an observational challenge to measure the ratio and this is why
+ many studies extend
+\color red
+ 
+\color inherit
+the Kaiser approximation to quasi-linear and non-linear regimes has been
+ done.
+ 
+\end_layout
+
+\begin_layout Standard
+Recent observational analyses for RSDs include 
+\begin_inset Formula $f(z)=0.91\pm0.36$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.8$
+\end_inset
+
+ from VIMOS-VLT Deep Survey (Guzzo et al.
+ 2008), 
+\begin_inset Formula $\sim10\%$
+\end_inset
+
+ constraints on 
+\begin_inset Formula $f\sigma_{8}$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.25$
+\end_inset
+
+ and 
+\begin_inset Formula $z=0.37$
+\end_inset
+
+ from SDSS DR7 (Samuchia 2012) as well as at four redshifts between 
+\begin_inset Formula $z=0.1$
+\end_inset
+
+ and 
+\begin_inset Formula $z=0.9$
+\end_inset
+
+ from WiggleZ (Blake et al.
+ 2011).
+ The 6dFGS made 
+\begin_inset Formula $\sim13\%$
+\end_inset
+
+ constraint at 
+\begin_inset Formula $z=0.067$
+\end_inset
+
+ (Beutler et al.
+ 2012), while SDSS made 
+\begin_inset Formula $\sim8\%$
+\end_inset
+
+ (Reid et al.) and most recently 
+\begin_inset Formula $\sim X\%$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0.57$
+\end_inset
+
+ (Acacia).
+ Currently, the measurement achieving the best precision is 
+\begin_inset Formula $2.5\%$
+\end_inset
+
+ from Ref.
+ X (Reid et al) using velocity biases to vary the strength of velocity field
+ so that the model function can be fitted to smaller scales than other measureme
+nts.
+\end_layout
+
+\begin_layout Subsection
+Challenges in LSS measurements
+\end_layout
+
+\begin_layout Standard
+For future galaxy surveys, the baryon acoustic oscillation (BAO) method
+ and the redshift-space distortion (RSD) method aim to achieve sub-percent
+ to a percent level of precision on cosmological parameters.
+ In order to achieve this, it is crucial to understand the systematics to
+ improve precisions.
+ In the following, we discuss the large-scale systematics due to non-linear
+ evolution of structure as well as potential sources of systematics from
+ small-scale due to unertainty in the halo-galaxy connection.
+\end_layout
+
+\begin_layout Subsubsection
+Systematics on large scales
+\end_layout
+
+\begin_layout Standard
+Systematics in measurements of the large-scale structure mainly come from
+ non-linear evolution of the matter density field, galaxy clustering bias,
+ and redshift-space distortions.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Non-linear evolution of structure
+\series default
+: At low redshifts, the amplitude of the density field exceeds 1 and linear
+ perturbation theory is no longer valid for the modes with 
+\begin_inset Formula $|\delta_{k}|>1$
+\end_inset
+
+.
+ Due to the non-linear evolution of structure, the BAO peak is shifted and
+ broadened, which increases distance errors.
+ Ref.X [Seo et al.] measured the shift of the BAO peak using N-body simulations
+ and detected a 
+\begin_inset Formula $0.3\%$
+\end_inset
+
+ shift with an error of 
+\begin_inset Formula $0.015\%$
+\end_inset
+
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ Due to the breakdown of linear perturbation theory, it also makes difficult
+ to model RSDs on small scales.
+ There have been several studies using higher-order perturbation theory
+ to model the density field on small scales; however, these techniques often
+ require some assumptions or fitting to calibrate free parameters numerically.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Galaxy clustering bias
+\series default
+: Galaxies are a biased tracer of dark matter.
+ On linear regime, the galaxy density field is simply scaled with the matter
+ density field by a constant called a linear bias 
+\begin_inset Formula $b_{{\rm lin}}$
+\end_inset
+
+ such as 
+\begin_inset Formula $\delta_{g}=b_{{\rm lin}}\delta_{m}$
+\end_inset
+
+, where 
+\begin_inset Formula $\delta_{g}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta_{m}$
+\end_inset
+
+ are over-densities of the galaxies and the matters; however, galaxy bias
+ is scale-dependent on quasi-linear and non-linear regimes.
+ Ref.
+ X[Mehta et al.] numerically investigated the effect of non-linear biases
+ on the BAO peak and measured shifts of 
+\begin_inset Formula $0.1\%-0.8\%$
+\end_inset
+
+ corresponding to biases of 
+\begin_inset Formula $1.7-3.3$
+\end_inset
+
+ at 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ The size of the shifts is proportional to the strength of the biases.
+ For RSDs, the scale-dependence of biases complicates detecting the scale-depend
+ence induced by modified gravity, which enhances velocity dispersions up
+ to xx%.
+ Currently, there are no proposed techniques to decouple the effects of
+ galaxy bias and modified gravity on the measurements of RSDs.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Redshift-space distortions
+\series default
+: RSDs broadens the BAO peak and increases the distance errors.
+ For the measurement of the growth rate using RSDs, modeling RSDs on small
+ scales, known as 
+\begin_inset Quotes eld
+\end_inset
+
+finger-of-God
+\begin_inset Quotes erd
+\end_inset
+
+ effect, is challenging but important to increase the accuracy of the measuremen
+t.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Systematics on small scales: the halo-galaxy connection
+\end_layout
+
+\begin_layout Standard
+The halo-galaxy connection (i.e., how galaxies populate dark matter halos)
+ is still an important open question in itself to constrain galaxy formation
+ and evolution as well as to statistically quantify the effect of galaxy
+ formation on the measurements constraining cosmological parameters.
+ Uncertainties and oversimplification of the connection can be a potential
+ source of systematic errors for these measurements.
+\end_layout
+
+\begin_layout Standard
+The Halo Occupation Distribution (HOD) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "berlind02,berlind03"
+
+\end_inset
+
+ is one of the most widely used models of the galaxy-halo connection.
+ The assumption of the model is that halo mass completely determines the
+ galaxy occupation statistics.
+ In order to populate halos with galaxies, the HOD specifies the probability
+ 
+\begin_inset Formula $P(N|M)$
+\end_inset
+
+ that a halo with mass 
+\begin_inset Formula $M$
+\end_inset
+
+ hosts 
+\begin_inset Formula $N$
+\end_inset
+
+ galaxies.
+ The HOD method has been applied extensively to observations in order to
+ study the galaxy-halo connection 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "magliocchetti03,zehavi05a,yang_etal05,zheng07,vdBosch07,zheng09,skibba09,simon_etal09,ross10,zehavi11,leauthaud11b,leauthaud12,geach12,parejko13"
+
+\end_inset
+
+ as well as cosmology 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tinker05,more_etal13,cacciato_etal13,mandelbaum13"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+However, the clustering of halos also exhibits a dependence on additional
+ properties beyond their mass 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao_etal05,wechsler06,gao_white07,li_etal08,hahn_etal09"
+
+\end_inset
+
+, a phenomenon generically referred to as 
+\shape italic
+halo assembly bias
+\shape default
+.
+ This can be traced back to the fact that halos of the same mass in different
+ environments have different assembly histories and cluster differently.
+ There have been some studies showing that the assembly bias can be a significan
+t source of systematic errors in observations [cite: Zentner and hearin].
+ Ref.X [hearin] pointed out that the assembly bias can cause the similar
+ size of the effect on velocity dispersion for cluster-sized halos as predicted
+ by 
+\begin_inset Formula $f(R)$
+\end_inset
+
+ modified gravity models.
+ It is unclear whether the assembly bias affects the BAO measurement, since
+ it uses the characteristic feature at 
+\begin_inset Formula $150{\rm Mpc}$
+\end_inset
+
+, which is a much larger scale than the scale discussed in Ref.
+ X [zentner and hearin].
+ Also, note that it is difficult to detect the halo assembly bias in observation
+al and its detection is still contentious.
+ 
+\end_layout
+
+\begin_layout Subsection
+Projects
+\end_layout
+
+\begin_layout Standard
+Understanding and reducing the systematics due to non-linear evolution of
+ structure is crucial for future galaxy spectroscopic surveys, such as DESI
+ (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "desi"
+
+\end_inset
+
+) and Euclid (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "euclid"
+
+\end_inset
+
+).
+ These future surveys will provide a deeper understanding of dark energy,
+ dark matter, and early universe physics
+\color black
+ through the measurements of large scale structure.
+
+\color inherit
+ In particular, the baryon acoustic oscillation (BAO) method and the redshift-sp
+ace distortion (RSD) method aim to achieve sub-percent precision on cosmological
+ parameters.
+ In order to achieve this, it is crucial to understand the effects of the
+ non-linear velocity field and the halo-galaxy connection (e.g., the effect
+ of halo assembly bias) on the measurements.
+ 
+\end_layout
+
+\begin_layout Standard
+As for my thesis projects, I studied the RSD method in terms of Lagrangian
+ perturbation theory (LPT), cosmological dependence of the BAO peak shift,
+ scale-dependence of halo assembly bias, and efficient construction of mock
+ catalogs for future galaxy surveys.
+ An overall goal of my thesis is to understand the various sources of systematic
+s and their effects on the large-scale structure measurements to achieve
+ a better precision of these measurements.
+\end_layout
+
+\begin_layout Subsubsection
+Effects of cosmological variations and galaxy biases on the BAO
+\end_layout
+
+\begin_layout Standard
+Baryon acoustic oscillations are a signature of the early universe imprinted
+ in the distribution of galaxies and dark matters at the present epoch.
+ I investigate the effect of cosmological variations and galaxy biases on
+ the shift of the BAO peaks, as it is required for future BAO experiments
+ to calibrate the shift at the sub-percent level.
+ Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mehta2011"
+
+\end_inset
+
+ shows that more biased objects shift the BAO peak in specific directions,
+ and these non-linear effects can be removed by the reconstruction method
+ at 
+\begin_inset Formula $\mbox{z=1}$
+\end_inset
+
+.
+ The effects of non-linear evolution, however, become larger at lower redshifts,
+ and it is unclear if reconstruction removes all the non-linearities at
+ lower redshifts for different cosmologies.
+ In order to test the cosmological dependence and galaxy bias, I use several
+ N-body simulations with different cosmologies and measure the peak shift
+ for each simulation before and after reconstruction.
+
+\color black
+ This will reveal how well reconstruction can recover the linear BAO signal
+ at the lower redshifts.
+\end_layout
+
+\begin_layout Subsubsection
+RSD: Measuring the growth rate using LPT 
+\end_layout
+
+\begin_layout Standard
+Redshift-space distortions are a systematic anisotropy in galaxy distribution
+ and are used as a dynamical probe of Cosmic Acceleration.
+ The goal of the RSD method is to measure the growth rate 
+\begin_inset Formula $f=d{\rm ln}D/d{\rm ln}a\approx\Omega_{m}^{\gamma}$
+\end_inset
+
+ to constrain General Relativity/modified gravity.
+ The challenge in RSD is to properly model velocity fields in the non-linear
+ regime, because most perturbation techniques break down in that regime
+ (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2004PhRvD..70h3007S"
+
+\end_inset
+
+).
+ I measured 
+\begin_inset Formula $f$
+\end_inset
+
+ using LPT.
+ The idea originated from the method proposed by Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1994ApJ...421L...1N"
+
+\end_inset
+
+ to recover real-space from redshift-space.
+ While they used a fixed value for 
+\begin_inset Formula $f$
+\end_inset
+
+ to model the velocity field, I treated 
+\begin_inset Formula $f$
+\end_inset
+
+ as a free parameter and varied it to find what 
+\begin_inset Formula $f$
+\end_inset
+
+ value appropriately removes the anisotropy in redshift-space.
+ We evaluated the residual anisotropy with measurements of the quadrupole
+ of the power spectrum.
+ When a proper 
+\begin_inset Formula $f$
+\end_inset
+
+ value removes the anisotropy, the quadrupole term must be zero.
+ While fitting the quadrupole with the Kaiser approximation was accurate
+ to 
+\begin_inset Formula $k_{{\rm max}}$
+\end_inset
+
+ of 
+\begin_inset Formula $0.02h{\rm Mpc}^{-1}$
+\end_inset
+
+, our approach extended this range to 
+\begin_inset Formula $k_{{\rm max}}\approx0.05h{\rm Mpc}^{-1}$
+\end_inset
+
+.
+ This yielded a 
+\begin_inset Formula $1.1\%$
+\end_inset
+
+ measurement of 
+\begin_inset Formula $f$
+\end_inset
+
+, but with a residual bias of 
+\begin_inset Formula $2.4\%$
+\end_inset
+
+ (which arose from inaccuracies in the model).
+\end_layout
+
+\begin_layout Subsubsection
+Scale-dependence of halo assembly bias
+\end_layout
+
+\begin_layout Standard
+The clustering of halos is influenced by halo mass, along with other physical
+ properties, a phenomenon referred to as halo assembly bias (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gao_etal05"
+
+\end_inset
+
+).
+ There have been several studies showing such environmental effects on the
+ linear bias of halos (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dalal_etal08"
+
+\end_inset
+
+).
+ The halo bias on small scales, however, is scale-dependent and has not
+ been investigated.
+ In this project, I performed a first study of the scale-dependence of halo
+ assembly bias using the depth of the gravitational potential well, 
+\begin_inset Formula $V_{{\rm max}}$
+\end_inset
+
+, as the secondary halo property.
+ By measuring halo biases for various halo samples from the Bolshoi and
+ MultiDark simulations, I found that assembly bias in low-mass halos exhibits
+ a pronounced scale-dependent bump at 
+\begin_inset Formula $500h^{-1}{\rm kpc}-5h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+ This feature weakens and eventually vanishes for halos of higher mass.
+ I found that this scale-dependent signature can primarily be attributed
+ to a special subpopulation of 
+\shape italic
+ejected halos
+\shape default
+, defined as present-day host halos that were previously subhalos.
+ A corollary of the results is that galaxy clustering on scales of 
+\begin_inset Formula $r\sim1-2h^{-1}{\rm Mpc}$
+\end_inset
+
+ can be impacted by up to 
+\begin_inset Formula $\sim15\%$
+\end_inset
+
+ by the choice of halo property used in the halo model, even in stellar
+ mass-limited samples (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2015arXiv150906417S"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Exploring new diagnostics for the internal structure of groups/clusters
+\end_layout
+
+\begin_layout Standard
+Segregation of subhalos is a phenomenon where subhalos with particular propertie
+s (such as mass at accretion) exhibit different radial profiles in their
+ host halos.
+ Similarly, galaxies in groups/clusters also exhibit segregation: Early-type
+ galaxies have a more centrally concentrated radial profiles than late-type
+ galaxies.
+ Understanding segregation of the subhalos and comparing that to segregation
+ of galaxies will provide the clues for the connection between halos and
+ galaxies.
+ These are of the main open questions in cosmology--how galaxies populate
+ dark matter halos.
+ It is also crucial to understand how a particular selection of subhalos
+ alters their clustering on small scales, which changes 1-halo terms in
+ correlation functions as well as 
+\color black
+small-scale redshift-space distortions.
+ 
+\end_layout
+
+\begin_layout Standard
+In this study, we investigated environmental effects on segregation of subhalos
+ using the accretion redshift as a key parameter.
+ We first studied whether the segregation of radial profiles show any dependence
+ on the host halo mass.
+ Then, we further explored whether the assembly history of host halos affects
+ the radial distributions.
+ In addition, we also computed two-point correlation functions for samples
+ of subhalos (split by 
+\begin_inset Formula $z_{{\rm acc}}$
+\end_inset
+
+) to examine expected observational signature.
+ We found that segregation of subhalos is independent of their host halo
+ masses and that the subhalos with 
+\begin_inset Formula $z_{{\rm acc}}<0.5$
+\end_inset
+
+ exhibit almost a 
+\begin_inset Formula $50\%$
+\end_inset
+
+ larger pair-wise velocity dispersion with their host halos than the ones
+ with 
+\begin_inset Formula $z_{{\rm acc}}>0.5$
+\end_inset
+
+, which is a much larger difference than predictions by modified gravity
+ or assembly bias.
+\end_layout
+
+\begin_layout Subsubsection
+Efficient Construction of Mock Catalogs for Baryon Acoustic Oscillation
+ Surveys
+\end_layout
+
+\begin_layout Standard
+
+\color black
+Due to the large volume covered by future galaxy surveys, it is computationally
+ challenging to run N-body simulations to generate mocks and therefore crucial
+ to allow the use of simulations which require less computational time.
+ 
+\color inherit
+I used the outputs of the N-body codes with a reduced number of time steps.
+ The goal was to find the minimum number of time steps required to reproduce
+ the large-scale structure and the gross properties of dark matter halos
+ with high accuracy.
+ In order to test this, I compared halo mass functions and halo properties
+ (i.e., position, velocity, and clustering) in each simulation to the ones
+ in the full N-body simulations.
+ Through this study, we found that we can successfully reduce the simulation
+ run times by a factor of four.
+ After the fiducial choice of time steps, we build galaxy light cones by
+ linearly interpolating the simulation outputs at every 
+\begin_inset Formula $\Delta z=0.05$
+\end_inset
+
+.
+ This project provided me with a solid understanding and skills in building
+ mock catalogs for observations (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2015arXiv151006665S"
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Chapter
@@ -1427,7 +3050,7 @@ key "1987MNRAS.227....1K"
 
 \begin_layout Itemize
 Smooth 
-\begin_inset Formula $\delta_{Kaiser}$
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
 \end_inset
 
  to filter out high 
@@ -10549,7 +12172,7 @@ Correlation between the redshift that the subhalos are accreted
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -10609,7 +12232,7 @@ Small-scale clusterings in real and redshift spaces
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
