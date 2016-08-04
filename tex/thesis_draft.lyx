@@ -326,9 +326,9 @@ key "1998AJ....116.1009R,1999ApJ...517..565P"
 \end_layout
 
 \begin_layout Standard
-There are many models to explain what DE is and they can be categorized
- into three types: cosmological constant, dynamical fluids with negative
- pressures, and modified gravity.
+There are many models of DE and these models can be categorized into three
+ types: cosmological constant, dynamical fluids with negative pressures,
+ and modified gravity.
  
 \end_layout
 
@@ -359,16 +359,16 @@ key "2004sgig.book.....C"
 \end_inset
 
 ).
- Now, we treat 
+ By moving 
 \begin_inset Formula $\Lambda$
 \end_inset
 
- as energy, moving 
+ to the right-hand side of the above equation, 
 \begin_inset Formula $\Lambda$
 \end_inset
 
- to the right-hand side of the above equation, whose density is constant
- in space and time of the expanding universe.
+ can be treated as an energy component whose density is constant in the
+ expanding Universe.
  One possible explanation for the existence of 
 \begin_inset Formula $\Lambda$
 \end_inset
@@ -384,16 +384,16 @@ reasonable
 
  valu
 \color black
-e for the quantum vacuum energy estimated from particle physics, about 
-\begin_inset Formula $10^{110}$
+e for the quantum vacuum energy estimated from particle physics (
+\begin_inset Formula $\sim10^{110}$
 \end_inset
 
-eV, is about 120 orders of magnitude larger than the observed cosmological
- constant, 
-\begin_inset Formula $10^{-3}$
+eV) is about 120 orders of magnitude larger than the observed cosmological
+ constant (
+\begin_inset Formula $\sim10^{-3}$
 \end_inset
 
-eV (
+eV) (
 \begin_inset CommandInset citation
 LatexCommand citep
 key "1989RvMP...61....1W"
@@ -446,8 +446,7 @@ where
 \begin_inset Formula $\omega$
 \end_inset
 
- for the dynamical fluids with negative pressures slowly varies with time,
- 
+ for the dynamical fluids slowly varies with time, 
 \begin_inset Formula $\omega=\omega(z)$
 \end_inset
 
@@ -470,7 +469,7 @@ key "1988PhRvD..37.3406R,1995PhRvL..75.2077F,1997MNRAS.285..793C,1999PhLB..462..
 \end_inset
 
 ), which is basically the same idea as inflation that the slow-rolling field
- generates an exponential expansion to the universe, though the magnitudes
+ generates an exponential expansion of the universe, though the magnitudes
  of the scalar fields for the dynamical fluids and inflations are different.
  The problem is that the existence of such a scalar field is still unknown.
 \end_layout
@@ -488,9 +487,9 @@ key "2002IJMPD..11..483C,2003Natur.422...26C,2000PhLB..485..208D,2003PhLB..575..
  The basic idea is that we add extra terms to the Lagrangian for gravity,
  whose orders are smaller than the original terms in the Lagrangian for
  GR.
- Also, some mechanisms are required so that extra terms do not alter gravity
- on the scale that GR is confirmed to be valid (i.e., screening/chameleon
- effect; see 
+ In order to keep GR valid on the scale already tested experimentally/observatio
+nally, these models require screening mechanisms/chameleon effects (see
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "2010AnPhy.325.1479J"
@@ -498,8 +497,8 @@ key "2010AnPhy.325.1479J"
 \end_inset
 
  for more details).
- One way to test modified gravity is to examine the expansion history and
- the growth of structure, because modified gravity alter their relations.
+ One way to test modified gravity is to examine the expansion history as
+ well as the growth of structure.
 \end_layout
 
 \begin_layout Standard
@@ -577,7 +576,7 @@ where
 .
  The left-hand side of the Friedmann equation is responsible for geometry
  and the right-hand side is the energy contents of the universe.
- The Einstein's equation yields the Friedmann equation.
+ Note that the Friedmann equation is derived from the Einstein's equation.
  Currently, the only observational method, which can measure 
 \begin_inset Formula $H(z)$
 \end_inset
@@ -658,8 +657,8 @@ where
 \begin_layout Standard
 In the following, I will introduce the statistical probe used in various
  large-scale structure measurements called correlation functions.
- Then, I will present the mechanism of BAO and RSDs and their systematic
- sources.
+ Then, I will present the mechanism of BAO and RSDs and the sources of systemati
+cs on these measurements.
  And finally, I will discuss the thesis projects with their goals and motivation
 s.
 \end_layout
@@ -675,7 +674,7 @@ In order to measure the statistical distribution of galaxies, a two-point
 \end_inset
 
 , is widely used in many large-scale structure measurements.
- If the primordeal density field is a random Gaussian field predicted by
+ If the primordial density field is a random Gaussian field predicted by
  simple inflation models, the statistical properties of the density field
  are fully characterized by the two-point correlation function or its Fourier
  transform, a power spectrum 
@@ -687,7 +686,7 @@ In order to measure the statistical distribution of galaxies, a two-point
 \end_layout
 
 \begin_layout Standard
-In order to compute the correlation function/power spectrum, we first defin
+In order to compute the correlation function/power spectrum, we first define
  the over-density 
 \begin_inset Formula $\delta(\vec{r})/\delta(\vec{k})$
 \end_inset
@@ -746,7 +745,7 @@ where
 \begin_inset Formula $P(\vec{k})$
 \end_inset
 
-does not have any angular dependence and can be described as 
+ does not have any angular dependence and can be described as 
 \begin_inset Formula $P(k)$
 \end_inset
 
@@ -768,7 +767,7 @@ The correlation function is the Fourier-transform of the power spectrum
 \end_inset
 
 The correlation function measures the excess probability with respect to
- the random distrbution of points generated by the Poisson process, which
+ the random distribution of points generated by the Poisson process, which
  can be described as 
 \begin_inset Formula 
 \[
@@ -887,10 +886,10 @@ key "1997PhRvL..79.3806T,1998ApJ...495...29G,1999MNRAS.304...75E"
 \begin_inset Formula $z>1100$
 \end_inset
 
-), the universe is hot and dense: Primordeal gas is ionized and baryons
+), the universe is hot and dense: Primordial gas is ionized and baryons
  are coupled with photons through Thomson scattering.
  Due to large radiation pressure of the photons, the baryon-photon fluid
- oscillate as sound waves.
+ oscillates as sound waves.
  After recombination, the photons decouple from the baryons and start free-strea
 ming.
  On the other hand, the baryon part of the wave is left in a spherical shell
@@ -940,16 +939,16 @@ key "2007ApJ...664..660E,2008PhT....61d..44E"
 \end_inset
 
 ).
- Both ratios are measured by the acoustic peaks in the CMB anisotropy power
- spectrum.
+ Both ratios are well measured by the acoustic peaks in the CMB anisotropy
+ power spectrum.
  From CMB measurements, we obtain that 
 \begin_inset Formula $r_{s}\sim150{\rm Mpc}$
 \end_inset
 
 .
- Due to this large size of the sound horizon, the BAO feature is not affected
- by non-linear structure formation and galaxy evolution (more details in
- 
+ Due to this large size of the sound horizon, the BAO feature is not severely
+ affected by non-linear structure formation and galaxy evolution (more details
+ in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "2012arXiv1201.2434W"
@@ -1066,8 +1065,8 @@ reconstruction
 \end_inset
 
 .
- Since then, Ref.X and X (anderson and alam et al) on the SDSS samples reported
- 
+ Since then, Ref.X and X (anderson and alam et al) using the SDSS samples
+ reported 
 \begin_inset Formula $1.7\%$
 \end_inset
 
@@ -1194,18 +1193,19 @@ key "2011MNRAS.417.1913R"
 
 \begin_layout Standard
 On large scales, linear perturbation theory provides the relation between
- the over-densities in real-space and redshift-space 
+ the over-densities in real-space and redshift-space through the growth
+ factor 
+\begin_inset Formula $f$
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "1987MNRAS.227....1K,1992ApJ...385L...5H"
 
 \end_inset
 
- through the growth factor 
-\begin_inset Formula $f$
-\end_inset
-
- in fourier-space:
+ :
 \begin_inset Formula 
 \[
 \delta_{s}(\vec{k})=(1+f\mu^{2})\delta_{r}(k)
@@ -1232,17 +1232,20 @@ where
 
  and the line of sight.
  
+\color black
+The above equation is often called the Kaiser approximation.
+ 
 \end_layout
 
 \begin_layout Standard
-Using the linear relation of the over-densities in between real-space and
- redshift-space, a power spectrum in redshift-space can be described in
- terms of a real-space power spectrum in linear regime:
+Using the linear relation of the over-densities in real-space and redshift-space
+, a power spectrum in redshift-space can be described in terms of a real-space
+ power spectrum:
 \color black
 
 \begin_inset Formula 
 \[
-P_{s}(\vec{k})\equiv<\delta_{s}\delta_{s}>=(1+\mu^{2}f)^{2}P_{r}(k).
+P_{s}(\vec{k})\equiv<\delta_{s}(\vec{k})\delta_{s}(\vec{k})>=(1+\mu^{2}f)^{2}P_{r}(k).
 \]
 
 \end_inset
@@ -1295,7 +1298,7 @@ P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}f+\frac{4}{7}f^{2})/(1+\frac{2}{3}f+\frac{1}
 \end_inset
 
 and solve the above equation to obtain 
-\begin_inset Formula $\beta$
+\begin_inset Formula $f$
 \end_inset
 
 .
@@ -1303,13 +1306,7 @@ and solve the above equation to obtain
 \begin_inset Formula $k\sim0.02h{\rm Mpc}^{-1}$
 \end_inset
 
-), it is an observational challenge to measure the ratio and this is why
- many studies extend
-\color red
- 
-\color inherit
-the Kaiser approximation to quasi-linear and non-linear regimes has been
- done.
+), it is an observational challenge to measure the ratio.
  
 \end_layout
 
@@ -1376,9 +1373,9 @@ Recent observational analyses for RSDs include
 \end_inset
 
  from Ref.
- X (Reid et al) using velocity biases to vary the strength of velocity field
- so that the model function can be fitted to smaller scales than other measureme
-nts.
+ X (Reid et al) using velocity biases as free parameters to vary the strength
+ of velocity field so that the model function can be fitted to smaller scales
+ than other measurements.
 \end_layout
 
 \begin_layout Subsection
@@ -1393,7 +1390,7 @@ For future galaxy surveys, the baryon acoustic oscillation (BAO) method
  improve precisions.
  In the following, we discuss the large-scale systematics due to non-linear
  evolution of structure as well as potential sources of systematics from
- small-scale due to unertainty in the halo-galaxy connection.
+ small-scale due to uncertainty in the halo-galaxy connection.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1402,8 +1399,8 @@ Systematics on large scales
 
 \begin_layout Standard
 Systematics in measurements of the large-scale structure mainly come from
- non-linear evolution of the matter density field, galaxy clustering bias,
- and redshift-space distortions.
+ non-linear evolution of the density field, galaxy clustering bias and redshift-
+space distortions.
  
 \end_layout
 
@@ -1412,14 +1409,18 @@ Systematics in measurements of the large-scale structure mainly come from
 \series bold
 Non-linear evolution of structure
 \series default
-: At low redshifts, the amplitude of the density field exceeds 1 and linear
- perturbation theory is no longer valid for the modes with 
-\begin_inset Formula $|\delta_{k}|>1$
-\end_inset
+: At low redshifts, the amplitude of the density field exceeds one and linear
+ perturbation theory is no longer valid.
+ Non-linear evolution is difficult to model analytically, and there have
+ been many studies using higher-order terms in perturbation theory, renormalizat
+ion, and effective theoretical approaches [cite:xxx].
+ However, these approaches always require numerical calibrations.
+ 
+\end_layout
 
-.
- Due to the non-linear evolution of structure, the BAO peak is shifted and
- broadened, which increases distance errors.
+\begin_layout Standard
+The effect of the non-linear evolution on BAO is a shift and broadening
+ of the BAO peak, which increases distance errors.
  Ref.X [Seo et al.] measured the shift of the BAO peak using N-body simulations
  and detected a 
 \begin_inset Formula $0.3\%$
@@ -1434,11 +1435,12 @@ Non-linear evolution of structure
 \end_inset
 
 .
- Due to the breakdown of linear perturbation theory, it also makes difficult
- to model RSDs on small scales.
- There have been several studies using higher-order perturbation theory
- to model the density field on small scales; however, these techniques often
- require some assumptions or fitting to calibrate free parameters numerically.
+ For the RSD measurement, modeling redshift-space power spectra on quasi-linear
+ and non-linear regimes is a way to reduce an error of the measurements.
+ This is because going to a smaller-scale means using more number of modes
+ for the measurement.
+ However, it is difficult to model the redshift-space power spectra on small
+ scales due to the above reason.
 \end_layout
 
 \begin_layout Standard
@@ -1448,11 +1450,11 @@ Galaxy clustering bias
 \series default
 : Galaxies are a biased tracer of dark matter.
  On linear regime, the galaxy density field is simply scaled with the matter
- density field by a constant called a linear bias 
+ density field by a constant 
 \begin_inset Formula $b_{{\rm lin}}$
 \end_inset
 
- such as 
+ called a linear bias: 
 \begin_inset Formula $\delta_{g}=b_{{\rm lin}}\delta_{m}$
 \end_inset
 
@@ -1464,11 +1466,16 @@ Galaxy clustering bias
 \begin_inset Formula $\delta_{m}$
 \end_inset
 
- are over-densities of the galaxies and the matters; however, galaxy bias
- is scale-dependent on quasi-linear and non-linear regimes.
+ are over-densities of the galaxies and the matters.
+ For the BAO measurement, the galaxy bias amplifies the shift and broadening
+ of the BAO peak.
  Ref.
- X[Mehta et al.] numerically investigated the effect of non-linear biases
- on the BAO peak and measured shifts of 
+ X and X [Padmanabhan & Sherwin] identified that these effects are due to
+ the second-order term in Lagrangian perturbation theory and the term is
+ scaled with galaxy bias.
+ Ref.
+ X[Mehta et al.] numerically investigated the effect of galaxy biases on
+ the BAO peak and measured shifts of 
 \begin_inset Formula $0.1\%-0.8\%$
 \end_inset
 
@@ -1481,10 +1488,14 @@ Galaxy clustering bias
 \end_inset
 
 .
- The size of the shifts is proportional to the strength of the biases.
- For RSDs, the scale-dependence of biases complicates detecting the scale-depend
-ence induced by modified gravity, which enhances velocity dispersions up
- to xx%.
+ 
+\end_layout
+
+\begin_layout Standard
+Beyond linear regime, galaxy bias is scale-dependent.
+ For RSDs, the scale-dependence of the biases complicates detecting the
+ scale-dependence induced by modified gravity, which enhances velocity dispersio
+ns up to xx%.
  Currently, there are no proposed techniques to decouple the effects of
  galaxy bias and modified gravity on the measurements of RSDs.
 \end_layout
@@ -1494,18 +1505,14 @@ ence induced by modified gravity, which enhances velocity dispersions up
 \series bold
 Redshift-space distortions
 \series default
-: RSDs broadens the BAO peak and increases the distance errors.
- For the measurement of the growth rate using RSDs, modeling RSDs on small
- scales, known as 
-\begin_inset Quotes eld
+\color red
+: RSDs can be used to measure the growth rate 
+\begin_inset Formula $f$
 \end_inset
 
-finger-of-God
-\begin_inset Quotes erd
-\end_inset
-
- effect, is challenging but important to increase the accuracy of the measuremen
-t.
+ on linear regime, but also are sources of systematics for various measurements.
+ For BAO, RSDs broadens and shifts the BAO peak further and increases the
+ distance errors.
  
 \end_layout
 
@@ -1514,11 +1521,10 @@ Systematics on small scales: the halo-galaxy connection
 \end_layout
 
 \begin_layout Standard
-The halo-galaxy connection (i.e., how galaxies populate dark matter halos)
- is still an important open question in itself to constrain galaxy formation
- and evolution as well as to statistically quantify the effect of galaxy
- formation on the measurements constraining cosmological parameters.
- Uncertainties and oversimplification of the connection can be a potential
+The halo-galaxy connection is still an important open question in itself
+ to constrain galaxy formation and evolution as well as to statistically
+ quantify the effect of galaxy formation on cosmological measurements.
+ Uncertainties and oversimplification of this connection can be a potential
  source of systematic errors for these measurements.
 \end_layout
 
@@ -1530,7 +1536,7 @@ key "berlind02,berlind03"
 
 \end_inset
 
- is one of the most widely used models of the galaxy-halo connection.
+ is one of the most widely used models to populate halos with galaxies.
  The assumption of the model is that halo mass completely determines the
  galaxy occupation statistics.
  In order to populate halos with galaxies, the HOD specifies the probability
@@ -1591,15 +1597,8 @@ t source of systematic errors in observations [cite: Zentner and hearin].
 \end_inset
 
  modified gravity models.
- It is unclear whether the assembly bias affects the BAO measurement, since
- it uses the characteristic feature at 
-\begin_inset Formula $150{\rm Mpc}$
-\end_inset
-
-, which is a much larger scale than the scale discussed in Ref.
- X [zentner and hearin].
- Also, note that it is difficult to detect the halo assembly bias in observation
-al and its detection is still contentious.
+ Note that it is difficult to detect the halo assembly bias in observational
+ and its detection is still contentious.
  
 \end_layout
 
@@ -1941,18 +1940,52 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+Measurements of high redshift supernovae revealed that the expansion of
+ the Universe is accelerated.
+ Since then, there have been many measurements regarding to cosmic acceleration
+ including the cosmic microwave background, the Hubble constant and the
+ baryon acoustic oscillations (BAO).
+ To explain the mechanism of the cosmic acceleration, one of the possible
+ origin of cosmic acceleration is to modify General Relativity on cosmological
+ scales.
+ This modification alters the relation between expansion history of the
+ Universe and the growth of matter clustering.
+ To test General Relativity, it is crucial to measure the dynamical effects
+ of cosmic acceleration.
+\end_layout
+
+\begin_layout Standard
 Redshift-space distortions (hereafter RSDs) are a systematic anisotropy
- in galaxy distribution and are used as a dynamical probe of Cosmic Acceleration.
+ in observed galaxy clustering and are used as a dynamical probe of cosmic
+ acceleration.
  By the cosmological principle, the distribution of galaxies is statistically
  isotropic (on large scales).
  The positions of galaxies are, however, measured through redshifts, which
- generates anisotropy in observed galaxy distributions due to line-of-sight
- (hereafter, LOS) peculiar velocities of galaxies.
- The effects of RSDs are seen on both small and large scales, and are known
- as the Finger-of-God effect (hereafter FoG) and the squashing effect.
- The FoG effect is due to random motions of galaxies in a virialized halo,
- while the squashing effect is caused by gravitational infall motion of
- clusters.
+ generates anisotropy in observed galaxy distributions due to their peculiar
+ velocities along the line-of-sight (LOS).
+ The effect of RSDs on large scales is known as the squashing effect caused
+ by gravitational infall motion of clusters.
+ On the other hand, RSDs on small scales are due to random motions of galaxies
+ in a virialized halo, known as he Finger-of-God effect (hereafter FoG)
+ effect.
+ Note that this split of the effect of RSD on scales is conceptual (i.e.,
+ no clear boundary on 
+\begin_inset Quotes eld
+\end_inset
+
+large
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+small
+\begin_inset Quotes erd
+\end_inset
+
+ scales).
 \end_layout
 
 \begin_layout Standard
@@ -1972,11 +2005,8 @@ key "1992ApJ...385L...5H"
 
  in configuration-space) using linear perturbation theory and called the
  Kaiser approximation.
- It provides a way to measure the growth rate 
-\begin_inset Formula $f\approx\Omega_{m}^{\gamma}$
-\end_inset
-
- to test the model of gravity as well as the expansion history of the Universe.
+ It provides a way to measure the growth rate to test the model of gravity
+ as well as the expansion history of the Universe.
  The challenge in the measurement of the growth rate is that the Kaiser
  approximation is valid only on very large scales and therefore suffers
  from sample variance.
@@ -2005,7 +2035,7 @@ key "1999MNRAS.310.1137H,2006MNRAS.368...85T,2007MNRAS.374..477T"
 
 \end_inset
 
-), and extending the model of RSDs to higher-order terms(
+), and extending the model of RSDs to higher-order terms (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "2004PhRvD..70h3007S,2008Natur.451..541G,2010PhRvD..82f3522T,2011JCAP...11..039S,2011MNRAS.410.2081J,2011PhRvD..84d3526N,2012JCAP...02..010O"
@@ -2016,79 +2046,55 @@ key "2004PhRvD..70h3007S,2008Natur.451..541G,2010PhRvD..82f3522T,2011JCAP...11..
 \end_layout
 
 \begin_layout Standard
-On the other hand, there have been many studies attempting to recover real-space
- density field or primordial density fluctuation from the redshift-space
- density field (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "1989ApJ...344L..53P,1991ApJ...379....6N,1993ApJ...405L..47G,1994ApJ...421L...1N,1997MNRAS.285..793C,1998ApJ...508..440N,1999ApJ...515..471N,2012arXiv1203.5785T"
-
+A parallel research effort to reduce the systematic errors on the BAO is
+ called 
+\begin_inset Quotes eld
 \end_inset
 
-).
+reconstruction
+\begin_inset Quotes erd
+\end_inset
 
-\color black
+: Non-linear evolution of structure broadens the BAO peak and increases
+ the errors on the distance-redshift measurements.
  Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "1994ApJ...421L...1N"
+key "eisenstein2007"
 
 \end_inset
 
- proposed a way to recover real-space density from redshift-space density
- through Lagrangian perturbation theory (LPT).
- They estimated peculiar velocity fields of particles and shifted back the
- particles in redshift-space by their velocities to reconstruct a real-space
- density field.
-
-\color blue
+ showed that Zel'dovich approximation can be used to reverse the non-linear
+ evolution of structure and to sharpen the peak of the baryon acoustic oscillati
+on.
+ As a part of the process, the reconstruction method requires to recover
+ the real-space density field of galaxies from redshift-space using the
+ first-order Lagrangian pertubation theory (LPT) (originally proposed by
+ Ref.
  
-\color inherit
-In this project, we measured 
-\begin_inset Formula $f$
-\end_inset
-
- using LPT by reconstructing the density field in real-space from the one
- in redshift-space.
- While 
 \color black
-Ref.
- 
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "1994ApJ...421L...1N"
 
 \end_inset
 
- 
-\color inherit
-used a fixed value for 
-\begin_inset Formula $f$
-\end_inset
 
- to model the velocity field, we treated 
-\begin_inset Formula $f$
-\end_inset
-
- as a free parameter and varied it to find what 
-\begin_inset Formula $f$
-\end_inset
-
- value appropriately removes the anisotropy in redshift-space.
- he motivation behind the project is that LPT can model the non-linear density
- field on smaller scales compared to Eulerian perturbation theory (EPT)
- (
-\color red
-citation
 \color inherit
 ).
- So, using LPT gives us the advantage that the method is possible valid
- on smaller scales and can utilize mode number of modes to measure 
-\begin_inset Formula $f$
-\end_inset
-
-.
+ In the first-order prturbation theory, the velocity field is simply computed
+ from the density field and the growth rate of structure.
+ Using their method to reconstruct the real-space density field, we construct
+ a template of the large-scale velocity fields to determine what amplitude
+ (i.e., the growth rate) isotropizes the redshift-space density field and
+ compare that amplitude to the predicted value of the growth rate.
+ The motivation behind the project is that the Zel'dovich approximation
+ works on smaller scales than the Eulerian perturbation theory, and hence
+ measuring the growth rate using LPT can possibly reduce the errors on the
+ RSD measurement.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2110,11 +2116,8 @@ reference "sec:Reconstructing_field"
 
 \end_inset
 
- and describe how this method enables us to measure 
-\begin_inset Formula $\beta$
-\end_inset
-
- for the case of DM particles and DM halos in Section 
+ and describe how this method enables us to measure the growth rate for
+ the case of DM particles and DM halos in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:measure_f"
@@ -2129,11 +2132,75 @@ reference "sec:discussion_rsd"
 
 \end_inset
 
-, we discuss the implication of these results for measurements of 
-\begin_inset Formula $\beta$
+, we discuss the implication of these results for measurements of the growth
+ rate and reconstruction of real-space density.
+\end_layout
+
+\begin_layout Section
+Simulations
+\end_layout
+
+\begin_layout Standard
+We use two different set of simulations for DM and halos.
+ For DM, the simulation using TreePM assumes a 
+\begin_inset Formula $\Lambda$
 \end_inset
 
- and reconstruction of real-space density.
+CDM cosmology with 
+\begin_inset Formula $\Omega_{m}=0.25$
+\end_inset
+
+ and 
+\begin_inset Formula $\Omega_{\Lambda}=0.75$
+\end_inset
+
+ with 
+\begin_inset Formula $\sim10^{7}$
+\end_inset
+
+ particles in a 
+\begin_inset Formula $2h^{-1}{\rm Gpc}$
+\end_inset
+
+ box.
+ We have 10 realizations fo the simulation at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and 
+\begin_inset Formula $z=1$
+\end_inset
+
+.
+ For halos, the simulation assumes a 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+CDM cosmology with 
+\begin_inset Formula $\Omega_{m}=0.23$
+\end_inset
+
+ and 
+\begin_inset Formula $\Omega_{\Lambda}=0.77$
+\end_inset
+
+ in a 
+\begin_inset Formula $1.5h^{-1}{\rm Gpc}$
+\end_inset
+
+ box.
+ Halos are identified by using the Friend-of-Friend algorithm
+\color black
+ with a linking length of 
+\begin_inset Formula $0.168$
+\end_inset
+
+.
+ The samples only contain halos with mass greater than 
+\begin_inset Formula $10^{13}M_{\odot}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -2273,8 +2340,8 @@ Conservation of mass provides
 \begin_inset Formula 
 \begin{eqnarray*}
 \rho_{s}(\vec{s}) & = & \rho_{r}(\vec{r})\left|\frac{d^{3}r}{d^{3}s}\right|\\
- & = & \rho_{r}(\vec{r})(1+\frac{u_{z}}{z})^{-2}(1+\frac{du_{z}}{dz})^{-1}\\
- & \simeq & \rho_{r}(\vec{r})(1-\frac{du_{z}}{dz})
+ & = & \rho_{r}(\vec{r})(1+\frac{v_{z}}{z})^{-2}(1+\frac{dv_{z}}{dz})^{-1}\\
+ & \simeq & \rho_{r}(\vec{r})(1-\frac{dv_{z}}{dz})
 \end{eqnarray*}
 
 \end_inset
@@ -2285,24 +2352,23 @@ Conservation of mass provides
 \begin_layout Standard
 Note that going from the second to the last step is a valid approximation
  in the limit that 
-\begin_inset Formula $u_{z}/z$
+\begin_inset Formula $v_{z}/z$
 \end_inset
 
- is small, which holds in linear approximation.
- Now, take Fourier transformation of the last equation.
- The last term of the above equation becomes
+ is small, which holds in the linear approximation.
+ Taking the Fourier transform of the last equation, we get 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left(\frac{du_{z}}{dz}\right)_{fourier}=\mu^{2}\theta(k)
+\widetilde{\left(\frac{dv_{z}}{dz}\right)}=\mu^{2}\theta(k)
 \]
 
 \end_inset
 
 where 
-\begin_inset Formula $\theta(k)\equiv(\nabla\cdot\vec{u})_{fourier}$
+\begin_inset Formula $\theta(k)\equiv\widetilde{(\nabla\cdot\vec{v})}$
 \end_inset
 
  and 
@@ -2316,10 +2382,18 @@ where
 \end_inset
 
 , which gives 
-\begin_inset Formula $(\frac{\partial}{\partial z})^{2}\nabla^{-2})_{fourier}=(k_{z}/k)^{2}=\mu^{2}$
+\begin_inset Formula $\widetilde{(\frac{\partial}{\partial z})^{2}\nabla^{-2})}=(k_{z}/k)^{2}=\mu^{2}$
 \end_inset
 
-.
+, where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the cosine of the angle between 
+\begin_inset Formula $\vec{k}$
+\end_inset
+
+ and the line-of-sight direction.
  Then, the first order terms for the density field in redshift-space are
  described in terms of the density field in real-space 
 \begin_inset Formula $\delta_{r}$
@@ -2348,16 +2422,28 @@ In linear perturbation theory, we can relate a density field and a velocity
  field such as 
 \begin_inset Formula 
 \begin{equation}
-\theta(\vec{k})=-f\delta_{matter}(\vec{k})\label{eq:vel-den}
+\theta(\vec{k})=-f\delta_{m}(\vec{k})\label{eq:vel-den}
 \end{equation}
 
 \end_inset
 
 where 
+\begin_inset Formula $\delta_{m}$
+\end_inset
+
+ is the matter over-density and 
 \begin_inset Formula $f\equiv d{\rm ln}D/d{\rm ln}a\approx\Omega_{m}^{\gamma}$
 \end_inset
 
- (Peebles 1980).
+ (
+\color red
+Peebles 1980 & Carroll and so on
+\color inherit
+) and 
+\begin_inset Formula $D$
+\end_inset
+
+ is the linear growth function.
  Therefore, in the linear regime, we can relate redshift-space and real-space
  such that
 \end_layout
@@ -2384,7 +2470,7 @@ The power spectrum in redshift-space can be related to the power spectrum
 
 \begin_inset Formula 
 \begin{equation}
-P_{s}(\vec{k})\equiv<\delta_{s}^{*}\delta_{s}>=(1+\mu^{2}f)^{2}P_{r}(k),\label{eq:Kaiser_power}
+P_{s}(\vec{k})\equiv<\delta_{s}^{*}(\vec{k})\delta_{s}(\vec{k})>=(1+\mu^{2}f)^{2}P_{r}(k),\label{eq:Kaiser_power}
 \end{equation}
 
 \end_inset
@@ -2408,7 +2494,7 @@ reference "eq:Kaiser_power"
 \end_inset
 
  is valid for matter power spectra.
- Since a redshift-space density field has an angular dependence, we can
+ Since a redshift-space power spectrum has an angular dependence, we can
  expand the power spectrum by convolving with Legendre polynomials, 
 \begin_inset Formula $L_{l}(\mu)$
 \end_inset
@@ -2416,7 +2502,7 @@ reference "eq:Kaiser_power"
 :
 \begin_inset Formula 
 \begin{equation}
-P_{s}(k,\mu)=\underset{l}{\sum}P^{(l)}(k)L_{l}(\mu),
+P_{s}(k,\mu)=\underset{l}{\sum}P_{s}^{(l)}(k)L_{l}(\mu),
 \end{equation}
 
 \end_inset
@@ -2442,8 +2528,8 @@ In order to measure
 \begin_inset Formula $f$
 \end_inset
 
- through the Kaiser approximation, we first take a ratio of quadrupole and
- monopole moments of a redshift-space power spectrum:
+ through the Kaiser approximation, we first take the ratio of the quadrupole
+ and monopole moments of the redshift-space power spectrum:
 \begin_inset Formula 
 \begin{equation}
 P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}f+\frac{4}{7}f^{2})/(1+\frac{2}{3}f+\frac{1}{5}f^{2}),\label{eq:kaiser_ratio}
@@ -2456,6 +2542,20 @@ and measure the ratio to obtain the value for
 \end_inset
 
 .
+ As an alternative way to measure 
+\begin_inset Formula $f$
+\end_inset
+
+, it is also possible to use the full 2D power spectrum in redshift-space
+ 
+\begin_inset Formula $P_{s}(k,\mu)$
+\end_inset
+
+ (e.g., 
+\color red
+Jennings et al.
+\color inherit
+).
 \end_layout
 
 \begin_layout Standard
@@ -2481,89 +2581,40 @@ reference "fig:Kaiser"
 \end_inset
 
 .
- The detail of the samples used to compute the power spectra is in Sec.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Reconstructing_field"
-
-\end_inset
-
-.
  The result tells us that the Kaiser approximation is valid only on 
 \begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
 \end_inset
 
 .
- From Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Kaiser"
-
+ Using the ratios at 
+\begin_inset Formula $k\leqq0.02h{\rm Mpc^{-1}}$
 \end_inset
 
-, measured 
+, both measured 
 \begin_inset Formula $f$
 \end_inset
 
-s are 
-\begin_inset Formula $f=0.417$
+ values are underestimated to the expected 
+\begin_inset Formula $f$
 \end_inset
 
- with the error of the mean of 0.01 at 
-\begin_inset Formula $z=0$
-\end_inset
-
- and 
-\begin_inset Formula $f=0.765$
-\end_inset
-
- with the error of the mean of 0.01 at 
-\begin_inset Formula $z=1$
+ values of the simulations by 
+\begin_inset Formula $\sim10\%$
 \end_inset
 
 .
- In order to measure the value of 
-\begin_inset Formula $f$
-\end_inset
-
-, we used the ratios on the range of 
-\begin_inset Formula $k\in[0.01,0.02][h{\rm Mpc^{-1}]}$
+ The main cause of this underestimation is due to the the deviations from
+ the Kaiser approximation at 
+\begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
 \end_inset
 
 .
- Both measured 
-\begin_inset Formula $f$
-\end_inset
+\end_layout
 
- values are underestimated compared to expected 
-\begin_inset Formula $f$
-\end_inset
+\begin_layout Standard
 
- values from the cosmology used in the simulations, which are 
-\begin_inset Formula $f$
-\end_inset
-
-=0.466 and 
-\begin_inset Formula $f$
-\end_inset
-
-=0.84 at 
-\begin_inset Formula $z=0$
-\end_inset
-
- and 
-\begin_inset Formula $z=1$
-\end_inset
-
- respectively.
- The main cause of this underestimation is due to the fact that the ratio
- of non-linear matter power spectrum already deviates from the Kaiser approximat
-ion at 
-\begin_inset Formula $k=0.02h{\rm Mpc^{-1}}$
-\end_inset
-
-.
+\color red
+*discuss about the scale-dependence of RSDs
 \end_layout
 
 \begin_layout Standard
@@ -2625,18 +2676,25 @@ Now, we repeat the same exercise for DM halos whose masses are greater than
 \end_inset
 
 .
- DM halos and galaxies are biased tracer of DM particles, which means that
- the density for those biased tracers are defined as 
-\begin_inset Formula $\delta_{halo/gal}=b\delta_{DM}$
+ DM halos and galaxies are a biased tracer of the underlying DM density
+ field.
+ On large scales, the linear relation 
+\begin_inset Formula $\delta_{h}=b_{{\rm lin}}\delta_{m}$
 \end_inset
 
- where 
-\begin_inset Formula $b$
+ holds, where 
+\begin_inset Formula $\delta_{h}$
 \end_inset
 
- is a bias parameter.
- On large scales, this bias parameter is scale-independent and therefore
- can be treated as the constant parameter.
+ and 
+\begin_inset Formula $\delta_{m}$
+\end_inset
+
+ are over-densities of the halos and matter and 
+\begin_inset Formula $b_{{\rm lin}}$
+\end_inset
+
+ is the linear bias of the halos.
  Measuring the Kaiser approximation through such biased tracers, the ratio
  in Eq.
  
@@ -2655,23 +2713,12 @@ P_{s}^{(2)}/P_{s}^{(0)}=(\frac{4}{3}\beta+\frac{4}{7}\beta^{2})/(1+\frac{2}{3}\b
 \end_inset
 
 where we define 
-\begin_inset Formula $\beta=f/b$
+\begin_inset Formula $\beta=f/b_{{\rm lin}}$
 \end_inset
 
 .
  This comes from 
-\begin_inset Formula $\delta_{s}^{(hao/gal)}(\vec{k})=(b+f\mu^{2})\delta_{r}^{(DM)}(\vec{k})=b(1+\frac{f}{b}\mu^{2})\delta_{r}^{(DM)}=(1+\beta\mu^{2})\delta_{r}^{(halo/gal)}$
-\end_inset
-
-.
- Note that the bias parameter is scale-dependent on small scales, and therefore
- it adds one more complication in the measurement of the value of 
-\begin_inset Formula $f$
-\end_inset
-
- and constraining GR/modified gravity, which often uses the scale-dependence
- of 
-\begin_inset Formula $f$
+\begin_inset Formula $\delta_{h,s}(\vec{k})=(b_{{\rm lin}}+f\mu^{2})\delta_{m,s}(\vec{k})=b_{{\rm lin}}(1+\frac{f}{b_{{\rm lin}}}\mu^{2})\delta_{m,r}=(1+\beta\mu^{2})\delta_{h,r}$
 \end_inset
 
 .
@@ -2699,22 +2746,8 @@ reference "fig:Kaiser-halo"
 \end_inset
 
 .
- The wiggle appearing in those ratios on a very sma
+
 \color black
-ll 
-\begin_inset Formula $k$
-\end_inset
-
- is due to the limited size of the simulation box.
- Because of that, measured 
-\begin_inset Formula $\beta$
-\end_inset
-
- values are sensitive to the change of the range in 
-\begin_inset Formula $k$
-\end_inset
-
-.
  Using 
 \begin_inset Formula $k<k_{{\rm max}}\approx0.05h{\rm Mpc^{-1}}$
 \end_inset
@@ -2739,10 +2772,16 @@ ll
 \end_layout
 
 \begin_layout Standard
+
+\color red
+*talks about how I measured bias...
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2803,7 +2842,7 @@ Ratios of monopole and quadrupole moments of redshift-space matter power
 \end_layout
 
 \begin_layout Subsection
-EPT/LPT: The Kaiser Approximation in LPT
+The Kaiser Approximation in LPT
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:LPT"
@@ -2811,6 +2850,12 @@ name "sub:LPT"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+*add introduction/transition material: explain where I am going with this
 \end_layout
 
 \begin_layout Standard
@@ -2992,6 +3037,12 @@ XXX
  
 \end_layout
 
+\begin_layout Standard
+
+\color red
+*explain with more sentences: go through for readers
+\end_layout
+
 \begin_layout Subsection
 
 \size normal
@@ -3009,127 +3060,42 @@ name "sub:Algorithm"
 In this section, we present the algorithm to reconstruct the real-space
  density field from redshift-space through shifting the particle positions
  back by the distance due to their velocities.
- This reconstruction naturally provides a description in terms of LPT.
- The motivation behind of this method is that LPT takes care of higher-order
- terms as shown in the previous section, and therefore the reconstruction
- can remove anisotropy in redshift-space beyond the regime the Kaiser approximat
-ion is valid.
+ This method can be directly described in terms of LPT.
+ 
+\color red
+The motivation behind of this method is that the first-order LPT works on
+ smaller scales than the EPT does.
+ and therefore the reconstruction can remove anisotropy in redshift-space
+ beyond the regime the Kaiser approximation is valid.
 \end_layout
 
 \begin_layout Standard
 In order to reconstruct real-space density, we need to remove anisotropy
- generated by LOS components of peculiar velocities.
- So, the crucial step in our reconstruction method is that particles in
- redshift-space are shifted back by their peculiar velocities calculated
- from linear perturbation theory.
+ of the redshift-space density field generated by LOS components of peculiar
+ velocities.
+ We do so by estimating the peculiar velocities of galaxies using the observed
+ density field and linear perturbation theory.
  The procedure for this calculation is as follows:
 \end_layout
 
-\begin_layout Itemize
-Take a redshift-space density field and divide it by 
-\begin_inset Formula $(1+f\mu^{2})$
+\begin_layout Enumerate
+Define the redshift-space density field 
+\begin_inset Formula $\delta_{s}(\vec{r})$
 \end_inset
 
- (
+ using the CIC assignment 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "1987MNRAS.227....1K"
+key "1981csup.book.....H"
 
 \end_inset
 
-) to obtain real-space density approximated from linear perturbation:
-\begin_inset Formula 
-\begin{equation}
-\delta_{{\rm Kaiser}}(\vec{k})=\frac{\delta_{s}}{1+f\mu^{2}}.\label{eq:Kaiser2}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Smooth 
-\begin_inset Formula $\delta_{{\rm Kaiser}}$
-\end_inset
-
- to filter out high 
-\begin_inset Formula $k$
-\end_inset
-
- modes with a Gaussian smoothing of scale 
-\begin_inset Formula $R$
-\end_inset
-
-, 
-\begin_inset Formula $S(k)$
-\end_inset
-
-, to eliminate the effect of small-scale, non-linear structure of the density
- field:
-\begin_inset Formula 
-\[
-S(k)={\rm e}^{-(kR)^{2}/2}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Compute the velocity field from linear perturbation theory:
-\begin_inset Formula 
-\begin{equation}
-\nabla\cdot\vec{v}_{{\rm lin}}=-f\delta_{{\rm Kaiser}}(\vec{x)}\Longleftrightarrow\vec{v}_{{\rm lin}}(\vec{k})=\frac{i\vec{k}f}{k^{2}}\delta_{{\rm Kaiser}}(\vec{k}).\label{eq:linear_velocity}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Shift the particles in redshift-space by 
-\begin_inset Formula $-\vec{v}_{{\rm lin}}/H_{0}$
-\end_inset
-
- and compute the 
-\begin_inset Quotes eld
-\end_inset
-
-reconstructed
-\begin_inset Quotes erd
-\end_inset
-
- density field, 
-\begin_inset Formula $\delta_{{\rm recon}}$
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{equation}
-\delta_{{\rm recon}}(\vec{k})=\int d^{3}q{\rm e}^{-i\vec{k}\cdot\vec{q}}({\rm e}^{-i\vec{k}\cdot\vec{\Psi s}(\vec{q})+ik_{z}v_{z,{\rm lin}}/H_{o}}-1)\label{eq:recon_LPT1}
-\end{equation}
-
-\end_inset
-
-where
-\begin_inset Formula $\vec{\Psi}_{s}(\vec{q})=\vec{\Psi}(\vec{q})+\frac{v_{z,{\rm NL}}}{H_{o}}\hat{z}$
-\end_inset
-
- from Eq.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:redshift_in_fourier"
-
+ and then Fourier-transform 
+\begin_inset Formula $\delta_{s}(\vec{r})$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Note that we take advantage of periodicity of the simulations to perform
+ Note that we take advantage of periodicity of the simulations to perform
  all of these steps using fast Fourier transforms.
 \begin_inset Foot
 status collapsed
@@ -3150,50 +3116,74 @@ key "2012arXiv1202.0090P"
 
 \end_inset
 
- We define the density field through the CIC assignment 
+
+\end_layout
+
+\begin_layout Enumerate
+Take the redshift-space density field 
+\begin_inset Formula $\delta_{s}(\vec{k})$
+\end_inset
+
+ and divide it by 
+\begin_inset Formula $(1+f\mu^{2})$
+\end_inset
+
+ (
 \begin_inset CommandInset citation
 LatexCommand cite
-key "1981csup.book.....H"
+key "1987MNRAS.227....1K"
 
 \end_inset
 
- and allocate the linear velocities to particles through the inverse CIC
- assignment.
- 
+) to obtain a first approximation to the real-space density field:
+\begin_inset Formula 
+\begin{equation}
+\delta_{{\rm Kaiser}}(\vec{k})=\frac{\delta_{s}(\vec{k})}{1+f\mu^{2}}.\label{eq:Kaiser2}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-In order to measure 
-\begin_inset Formula $f$
+\begin_layout Enumerate
+Smooth 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
 \end_inset
 
-, we treat 
-\begin_inset Formula $f$
+ to filter out high 
+\begin_inset Formula $k$
 \end_inset
 
- as a free parameter.
- Since there is no anisotropy in real-space, the quadrupole moment of the
- power spectrum in real-space must be zero.
- Using the quadrupole moments measure the residual anisotropy, we test what
- value of 
-\begin_inset Formula $f$
+ modes with a Gaussian smoothing of scale 
+\begin_inset Formula $R$
 \end_inset
 
- properly removes the anisotropy from the redshift-space density field.
- 
-\color black
-The assumption here is that the 
-\begin_inset Formula $f$
+, 
+\begin_inset Formula $S(k)$
 \end_inset
 
- value which removes anisotropy is the 
-\begin_inset Formula $f$
+, to eliminate the effect of small-scale, non-linear structure of the density
+ field:
+\begin_inset Formula 
+\[
+\delta_{k}(\vec{k})=\delta_{{\rm Kaiser}}(\vec{k})S(\vec{k})=\delta_{{\rm Kaise}r}(\vec{k})e^{-k^{2}R^{2}/2}.
+\]
+
 \end_inset
 
- value from the cosmology measured.
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Compute the velocity field from linear perturbation theory:
+\begin_inset Formula 
+\begin{equation}
+\nabla\cdot\vec{v}_{{\rm lin}}=-f\delta_{k}(\vec{x)}\Longleftrightarrow\vec{v}_{{\rm lin}}(\vec{k})=\frac{i\vec{k}f}{k^{2}}\delta_{k}(\vec{k})S(\vec{k}).\label{eq:linear_velocity}
+\end{equation}
+
+\end_inset
+
 Note that we are not exactly computing linear velocity, because we use the
  non-linear density field smoothed by the Gaussian filter as well as the
  redshift-space density field divided by the Kaiser approximation (hereafter,
@@ -3209,64 +3199,72 @@ reference "eq:Kaiser2"
  
 \end_layout
 
-\begin_layout Standard
-We described the reconstructed density in terms of LPT (Eq.
+\begin_layout Enumerate
+Allocate the linear velocities to particles through the trilinear interpolation
+ (i.e., inverse CIC).
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:recon_LPT1"
-
-\end_inset
-
-):
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Shift the particles in redshift-space by 
+\begin_inset Formula $-\vec{v}_{{\rm lin}}/H_{0}$
+\end_inset
+
+ and compute the 
+\begin_inset Quotes eld
+\end_inset
+
+reconstructed
+\begin_inset Quotes erd
+\end_inset
+
+ density field, 
+\begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
+:
 \begin_inset Formula 
-\begin{equation}
-\delta_{{\rm recon}}(\vec{k})=\int d^{3}q{\rm e}^{-i\vec{k}\cdot\vec{q}}\{\exp(-i\vec{k}\cdot\vec{\Psi}(\vec{q})+ik_{z}v_{z,{\rm NL}}/H_{0}+ik_{z}v_{z,{\rm lin}}/H_{0})-1\},
-\end{equation}
+\begin{eqnarray}
+\delta_{{\rm recon}}(\vec{k}) & = & \int d^{3}q{\rm e}^{-i\vec{k}\cdot\vec{q}}({\rm e}^{-i\vec{k}\cdot\vec{\Psi}_{s}(\vec{q})+ik_{z}v_{z,{\rm lin}}/H_{o}}-1)\label{eq:recon_LPT1}\\
+ & = & \int d^{3}q{\rm e}^{-i\vec{k}\cdot\vec{q}}\{\exp(-i\vec{k}\cdot\vec{\Psi}(\vec{q})+ik_{z}v_{z,{\rm NL}}/H_{0}+ik_{z}v_{z,{\rm lin}}/H_{0})-1\}\\
+ & \approx & \delta_{r}(\vec{k})+\mu^{2}\theta_{{\rm NL}}(\vec{k})-\mu^{2}\theta_{{\rm lin}}(\vec{k}).
+\end{eqnarray}
 
 \end_inset
 
-where 
-\begin_inset Formula $v_{z,{\rm NL}}$
+where
+\begin_inset Formula $\vec{\Psi}_{s}(\vec{q})=\vec{\Psi}(\vec{q})+\frac{v_{z,{\rm NL}}}{H_{o}}\hat{z}$
 \end_inset
 
- is a velocity of particles and 
-\begin_inset Formula $v_{z,{\rm lin}}$
-\end_inset
+ from Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:redshift_in_fourier"
 
- is the linear velocity estimated from the Kaiser density.
- If 
-\begin_inset Formula $v_{z,{\rm NL}}=v_{z,{\rm lin}}$
-\end_inset
-
-, we have 
-\begin_inset Formula $\delta_{{\rm recon}}(\vec{k})=\delta_{r}(\vec{k})$
 \end_inset
 
 .
+ The last approximation only holds on linear regime.
+ 
 \end_layout
 
 \begin_layout Standard
-On very large scales where the Kaiser approximation is valid, the reconstructed
- density can be approximated as
-\begin_inset Formula 
-\begin{eqnarray*}
-\delta_{{\rm recon}} & = & \int d^{3}\vec{q}{\rm e}^{-i\vec{k}\cdot\vec{q}}\{\exp(-i\vec{k}\cdot\vec{\Psi}-ik_{z}v_{z,{\rm NL}}/H_{0}+ik_{z}v_{z,{\rm lin}}/H_{0})-1\}\\
- & = & \int d^{3}\vec{q}{\rm e}^{-i\vec{k}\cdot\vec{q}}\{\exp(-i\vec{k}\cdot\vec{\Psi})-1\}+\int d^{3}\vec{q}{\rm e}^{-i\vec{k}\cdot\vec{q}-i\vec{k}\cdot\vec{\Psi}}(-ik_{z}v_{z,{\rm NL}}/H_{0}+ik_{z}v_{z,{\rm lin}}/H_{0})+\cdots\\
- & \approx & \delta_{r}(\vec{k})+\mu^{2}\theta_{{\rm NL}}(\vec{k})-\mu^{2}\theta_{{\rm lin}}(\vec{k}).
-\end{eqnarray*}
-
+The amplitude of the velocity field determined above depends on 
+\begin_inset Formula $f$
 \end_inset
 
-Note that if 
-\begin_inset Formula $\theta_{{\rm NL}}\approx\theta_{{\rm lin}}$
+, which is unknown.
+ We use the fact that the real-space power spectrum is isotropic.
+ Our estimate of 
+\begin_inset Formula $f$
 \end_inset
 
-, then we obtain 
-\begin_inset Formula $\delta_{{\rm recon}}\approx\delta_{r}$
+ is the value that isotropizes the 
+\begin_inset Quotes eld
+\end_inset
+
+reconstructed correlation function
+\begin_inset Quotes erd
 \end_inset
 
 .
@@ -3287,35 +3285,6 @@ name "sec:Reconstructing_field"
 In this section, we examine how well the reconstruction technique can recover
  the velocity fields and the real-space density fields as well as aggregate
  statistics such as power spectra.
- We run a set of comparisons with the 10 boxes each with 10732952 particles
- in a cubical box whose side length is 2000 
-\begin_inset Formula $h^{-1}{\rm Mpc}$
-\end_inset
-
-.
- All of the simulations are randomly selected subsamples of a full simulation
- of 
-\begin_inset Formula $1024^{3}$
-\end_inset
-
- particles.
- The simulations assume a 
-\begin_inset Formula $\Lambda$
-\end_inset
-
-CDM cosmology with 
-\begin_inset Formula $\Omega_{m,0}=0.25$
-\end_inset
-
-, 
-\begin_inset Formula $\Omega_{\Lambda,0}=0.75$
-\end_inset
-
- and 
-\begin_inset Formula $\gamma$
-\end_inset
-
-=0.55.
  The non-linear velocity fields and the real-space density fields from the
  simulations are the baseline against to the velocity/density fields reconstruct
 ed from the redshift-space density fields.
@@ -3334,7 +3303,13 @@ Estimating velocity fields
 In this section, we present how well linear perturbation theory can estimate
  the velocity fields.
  To do that, we first compute velocity fields using the volume-weighted
- method, which defines velocities by dividing momentum by mass on each grid.
+ method: Distribute velocities of particles onto grids using CIC assignment,
+ and then normalize the field defined by the density field [cite: 
+\color red
+jennings et al.
+ 2012
+\color inherit
+].
  Note that the volume-weighted velocities are sensitive to grid sizes, because
  large number of grids make a majority of grids empty and therefore the
  velocities on those grids are zero even though the velocity field is not.
@@ -3342,7 +3317,11 @@ In this section, we present how well linear perturbation theory can estimate
 \begin_inset Formula $128^{3}$
 \end_inset
 
- grids here.
+ grids (about 
+\begin_inset Formula $\sim15.6h^{-1}{\rm Mpc}$
+\end_inset
+
+ spacing) here.
  
 \end_layout
 
@@ -3566,11 +3545,7 @@ reference "tab:dm_den_grid128"
 \end_inset
 
 .
- (
-\color red
-talk about the slope...
-\color inherit
-) We also compared the scatter between 
+ We also compared the scatter between 
 \begin_inset Formula $\delta_{{\rm Kaiser}}$
 \end_inset
 
@@ -3598,10 +3573,26 @@ reference "tab:dm_den_grid128"
 \end_layout
 
 \begin_layout Standard
+
+\color red
+*What do we conclude from all of this? What should the reader take away?
+\end_layout
+
+\begin_layout Standard
+-> Talk about in the order of Kaiser -> reconstruction and then improvements...
+\end_layout
+
+\begin_layout Standard
+
+\color red
+*Also, check the mean value for delta_recon at z=1...
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide true
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3658,7 +3649,7 @@ name "fig:Scatter-dm-z0"
 \begin_inset Float table
 wide true
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4066,10 +4057,10 @@ reference "fig:recon-mono"
 \begin_layout Standard
 
 \color black
-Figure 
+The right panel of Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Cross-dm"
+reference "fig:recon-mono"
 
 \end_inset
 
@@ -4121,7 +4112,7 @@ where
 \begin_inset Formula $\delta_{{\rm Kaiser}}$
 \end_inset
 
-, which is consistent with Figure 
+, which is consistent with the left panel of Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:recon-mono"
@@ -4133,13 +4124,6 @@ reference "fig:recon-mono"
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:recon-mono"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Cross-dm"
 
 \end_inset
 
@@ -4156,11 +4140,19 @@ reference "fig:Cross-dm"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../plots_RSD/recon_dm_real.pdf
+	lyxscale 90
+	width 60col%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../plots_RSD/Cross_dm.pdf
 	lyxscale 90
 	width 60col%
 
@@ -4173,10 +4165,16 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:recon-mono"
+
+\end_inset
+
 
 \color black
-Solid lines represent real-space density power spectrum (blue) and redshift-spac
-e power spectrum (green) at 
+Right: Solid lines represent real-space density power spectrum (blue) and
+ redshift-space power spectrum (green) at 
 \begin_inset Formula $z=0$
 \end_inset
 
@@ -4199,60 +4197,12 @@ e power spectrum (green) at
 , while the Kaiser approximation deviates from the redshift-space power
  spectrum on larger scales.
  Error bars are calculated from the error of the mean over ten simulations.
+ Left: 
 \color inherit
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:recon-mono"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../plots_RSD/Cross_dm.pdf
-	lyxscale 60
-	width 60col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
 Cross correlation coefficients between real-space and the Kaiser densities
  (dashed lines) and reconstructed densities (solid lines) at z=0.0.
  The reconstructed densities are correlated with real-space densities better
  than with the Kaiser densities.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Cross-dm"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4284,7 +4234,7 @@ reference "sec:Reconstructing_field"
 
 \end_inset
 
-, we demonstrate that reconstruction can recover real-space density from
+, we demonstrated that reconstruction can recover real-space density from
  redshift-space on large scales.
  In this section, we treat 
 \begin_inset Formula $f$
@@ -4357,7 +4307,7 @@ reference "sub:Algorithm"
  of those quadrupole moments with respect to zero:
 \begin_inset Formula 
 \[
-\chi^{2}=\sum_{j=1}^{M}\frac{\sum_{i=1}^{N}(P_{{\rm recon,i}}^{(2)}(k_{j}))^{2}}{\sigma(k_{j})^{2}},
+\chi^{2}=\sum_{i=1}^{N}\frac{\sum_{j=1}^{M}(P_{{\rm recon,i}}^{(2)}(k_{j}))^{2}}{\sigma(k_{j})^{2}},
 \]
 
 \end_inset
@@ -4367,7 +4317,17 @@ where
 \end_inset
 
 .
- This will allow us to find the correct 
+ 
+\end_layout
+
+\begin_layout Standard
+
+\color red
+*explain what i is...
+\end_layout
+
+\begin_layout Standard
+This will allow us to find the correct 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -4392,7 +4352,11 @@ We computed the quadrupole moments for the reconstructed density fields
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- values at 
+ values on 
+\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+ at 
 \begin_inset Formula $z=0$
 \end_inset
 
@@ -4405,7 +4369,7 @@ reference "fig:recon-ratio-quad-1"
 
  .
  The smoothing scales used here is 
-\begin_inset Formula $10h{\rm Mpc^{-1}}$
+\begin_inset Formula $10h^{-1}{\rm Mpc}$
 \end_inset
 
 .
@@ -4493,19 +4457,19 @@ reference "fig:recon-ratio-quad-1"
 placement t
 wide true
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../plots_RSD/Recon_dm_quadr_z0.0.pdf
-	width 60text%
+	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_RSD/Chisq_Az9_dm_z0_kcut0.05.pdf
-	width 60text%
+	width 50text%
 
 \end_inset
 
@@ -4519,12 +4483,17 @@ Left: Quadrupole moments of the reconstructed-density power spectra divided
 \end_inset
 
 .
- The dotted line is the real-space quadrupole moment.
- Solid lines show the reconstructed densities with 
+ The dashed line is the real-space quadrupole moment.
+ Solid lines show the reconstructed power spectra with various 
 \begin_inset Formula $\beta$
 \end_inset
 
- as shown in the legend.
+ values as shown in the legend.
+ The 
+\begin_inset Formula $\beta$
+\end_inset
+
+ value expected from the simulations is 0.466.
  The reconstructed power spectrum with correct 
 \begin_inset Formula $f$
 \end_inset
@@ -4541,7 +4510,7 @@ Left: Quadrupole moments of the reconstructed-density power spectra divided
 .
  Error bars are calculated from the error of the mean over ten simulations.
  
-\color red
+\color black
 Right: 
 \begin_inset Formula $\chi^{2}$
 \end_inset
@@ -4570,9 +4539,9 @@ Right:
 \end_inset
 
  has 5 degrees of freedom.
-
-\color inherit
  
+\color inherit
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:recon-ratio-quad-1"
@@ -4625,13 +4594,13 @@ reference "fig:power-smoothing1"
 \begin_inset Formula $20h^{-1}{\rm Mpc}$
 \end_inset
 
-, the effect of RSDs on small scales remain and the anisotropy is not completely
- removed even on large scales.
- This is because large smoothing scales kill the high-
+, the effects of RSDs on small scales remain and the anisotropy is not completel
+y removed even on large scales.
+ This is because large smoothing scales erase even the low-
 \begin_inset Formula $k$
 \end_inset
 
- modes and therefore cannot model small scale velocities.
+ power.
  On the other hand, for the case of smoothing scales of 
 \begin_inset Formula $5h^{-1}{\rm Mpc}$
 \end_inset
@@ -4656,8 +4625,13 @@ reference "fig:power-smoothing1"
 
 ) in the measurement.
  Due to the sensitivity of the reconstruction on smoothing scales, we conclude
- that the deviation of the reconstructed quadrupoles on small scales is
- mainly due to the choice of smoothing scales.
+ that the deviation of the reconstructed quadrupoles around 
+\begin_inset Formula $k\sim0.1h{\rm Mpc^{-1}}$
+\end_inset
+
+ is mainly 
+\color red
+due to the residual anisotropy that we could not remove.
  
 \end_layout
 
@@ -4729,47 +4703,7 @@ We now consider possible observational consequences of the reconstruction
  method by applying to DM halos.
 
 \color black
- Rather than attempting to reconstruct galaxy models, we concentrate on
- mass limited samples of halos.
- Note that none of the crucial aspects are lost with this simplification.
- We used 10 simulations with XXX particles in a box with 
-\begin_inset Formula $L_{box}=1500h^{-1}{\rm Mpc}$
-\end_inset
-
-.
- 
-\color inherit
-The simulations for DM halos are of a 
-\begin_inset Formula $\Lambda CDM$
-\end_inset
-
- cosmology with 
-\begin_inset Formula $\Omega_{m}=0.23$
-\end_inset
-
- , 
-\begin_inset Formula $\Omega_{\Lambda}=0.77$
-\end_inset
-
-, and 
-\begin_inset Formula $\gamma=0.55$
-\end_inset
-
-.
- Halos are identified by using the Friend-of-Friend algorithm
-\color black
- with a linking length of XXX.
- The samples only contain halos with mass greater than 
-\begin_inset Formula $10^{13}M_{\odot}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\color black
-We go through the same procedure as in Sec.
+ We go through the same procedure as in Sec.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4779,7 +4713,7 @@ reference "sub:recon_dm"
 
 .
  The only difference is that now we measure the value of 
-\begin_inset Formula $\beta$
+\begin_inset Formula $\beta\equiv f/b_{{\rm lin}}$
 \end_inset
 
 .
@@ -4809,19 +4743,14 @@ reference "fig:halo-bias"
 
  shows the halo bias measured by taking the ratio with the real-space halo
  power spectrum as well as the reconstructed halo power spectrum.
- The reason we also show the result using the reconstructed power spectrum
- is because we cannot use the real-space power spectrum in real observations.
- People often use the angular correlation functions 
-\begin_inset Formula $\omega_{p}(r_{p})$
-\end_inset
-
- to measure the bias; however, the angular correlation function introduces
- a systematic bias in the measurement (
+ 
 \color red
-cite: white et al.
+We measure the linear bias using the reconstructed power spectrum is to
+ possibly apply this technique to observations (i.e., in observations, we
+ do not have the real-space power spectrum).
+ 
 \color black
-).
- The figure tells us that we can measure the bias using the reconstructed
+The figure tells us that we can measure the bias using the reconstructed
  power spectrum.
 
 \color inherit
@@ -4844,7 +4773,11 @@ cite: white et al.
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- values as shown in Figure 
+ values computed on 
+\begin_inset Formula $k<0.05h{\rm Mpc^{-1}}$
+\end_inset
+
+ as shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Chisq-halo"
@@ -4932,6 +4865,7 @@ Since the halo bias is
 \end_inset
 
 .
+ Analogous to the DM case, we compare the power spectrum quadrupole to zero;
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4943,31 +4877,14 @@ reference "fig:Chisq-halo"
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- values measured through the quadrupole moments as a function of 
+ values as a function of 
 \begin_inset Formula $\beta$
-\end_inset
-
- at 
-\begin_inset Formula $z=0$
 \end_inset
 
 .
- 
+ The best fit values are
 \color inherit
-We use 
-\begin_inset Formula $10h^{-1}{\rm Mpc}$
-\end_inset
-
- as a smoothing scale for the reconstruction method.
- Through the 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- analysis, the best fit 
-\begin_inset Formula $\beta$
-\end_inset
-
-s are 
+ 
 \begin_inset Formula $0.32$
 \end_inset
 
@@ -4984,12 +4901,20 @@ s are
 \end_inset
 
  respectively.
- Those values are larger than the expected values, which is an opposite
- trend compared to the case of DM particles (
+ These values are larger than the expected values, opposite to the case
+ of the DM.
+ 
 \color red
-want to re-do the analysis
-\color inherit
-).
+Since we see the same trend in the measurements of 
+\begin_inset Formula $f$
+\end_inset
+
+/
+\begin_inset Formula $\beta$
+\end_inset
+
+ using the Kaiser approximation, the reason for under/over-estimation is
+ due to noise/simulations...
 \end_layout
 
 \begin_layout Standard
@@ -5015,11 +4940,10 @@ reference "fig:recon-ratio-halo"
 
 .
  We successfully recovers the real-space power spectrum up to 
-\begin_inset Formula $k<0.04h{\rm Mpc}^{-1}$
+\begin_inset Formula $k<0.05h{\rm Mpc}^{-1}$
 \end_inset
 
-, but the amplitude of the monopole terms is slightly smaller than the one
- for the real-space power spectrum.
+.
 \end_layout
 
 \begin_layout Standard
@@ -5070,6 +4994,11 @@ status open
 \end_inset
 
  value is 0.32.
+ The expected 
+\begin_inset Formula $\beta$
+\end_inset
+
+ value from the simulations is 0.291.
  
 \color inherit
 
@@ -5096,7 +5025,7 @@ name "fig:Chisq-halo"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -12428,7 +12357,7 @@ Future lensing surveys from EUCLID, WFIRST will uncover coarse data (not
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "VmaxMvir,RSD,bigsims"
+bibfiles "VmaxMvir,RSD,bigsims,research_statement"
 options "JHEP"
 
 \end_inset

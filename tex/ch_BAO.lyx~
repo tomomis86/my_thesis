@@ -351,7 +351,7 @@ While the primordial density fluctuation is linear and well understood,
 \begin_layout Standard
 
 \color black
-In order to reduce the systematic errors on the masurements, Ref.
+In order to reduce the systematic errors on the measurements, Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -609,7 +609,7 @@ hich assumes that the number of galaxies in a halo correlates with its halo
  case) provides probabilities for two types of galaxies: central and satellite
  galaxies.
  Central galaxies are the ones which exist at the center of the halo and
- often the most brigtest galaxies in its halo, while satellite galaxies
+ often the most brightest galaxies in its halo, while satellite galaxies
  are the ones which exists around the central galaxies.
  A halo hosts a central galaxy with probability 
 \begin_inset Formula $\langle N_{cen}(M)\rangle$
@@ -859,7 +859,7 @@ The reason we only vary the parameter
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -985,8 +985,8 @@ Reconstruction
 \begin_layout Standard
 The reconstruction method, originally proposed by Ref.xxx, partially removes
  the non-linear effect and sharpens the BAO peak.
- In this section, we briefly describe the steps and thier interpretation
- using Lagrangian pertubation theory (LPT).
+ In this section, we briefly describe the steps and their interpretation
+ using Lagrangian perturbation theory (LPT).
 \end_layout
 
 \begin_layout Standard
@@ -1127,7 +1127,7 @@ The reconstructed density field is obtained by
 .
  Note that we cannot use the linear density field to compute Zel'dovich
  displacement field.
- To estimate it, we simply smoothing the non-linear densty field to suppress
+ To estimate it, we simply smoothing the non-linear density field to suppress
  the high-
 \begin_inset Formula $k$
 \end_inset
@@ -1449,21 +1449,7 @@ In order to fit the BAO peak, we construct models of correlation functions
  For the case of isotropic BAO measurements (i.e., spherically-averaged clustering
  statistics), we use the monopole term of the correlation functions and
  measure how much the BAO peak is shifted with respect to fiducial cosmology.
- For the case of anisotropic measurements, we utilize the Alcock-Pezinski
- efect, which distort the BAO peak measured through the Hubble distance
- and the angular diameter distance differently and generates anisotropy
- when the true cosmology is different from the fiducial cosmology.
-\end_layout
-
-\begin_layout Subsubsection
-Isotropic BAO measurements 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:fit_isotropic"
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1640,6 +1626,44 @@ reference "sub:smoothing"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/xi_template.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different components of a template correlation function.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The parameter 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -1703,23 +1727,8 @@ hift relation.
  ]
 \end_layout
 
-\begin_layout Subsubsection
-Anisotropic 
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:fit_anisotropic"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-*talk about AP effect
-\end_layout
-
 \begin_layout Section
-Results for Isotropic BAO: Real-Space
+Results for Isotropic BAO
 \end_layout
 
 \begin_layout Standard
@@ -1900,7 +1909,7 @@ weighted
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2099,7 +2108,7 @@ if so, put more quantitative values.]
 \end_layout
 
 \begin_layout Standard
-*Also, mention somehwere about the results when I vary 
+*Also, mention somewhere about the results when I vary 
 \begin_inset Formula $\Sigma$
 \end_inset
 
@@ -2115,7 +2124,7 @@ if so, put more quantitative values.]
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2207,8 +2216,8 @@ name "sub:real-prerecon"
 \end_layout
 
 \begin_layout Standard
-*give a table of HOD pareameters and bias values (compare pre/post-reconstructio
-n)
+*give a table of HOD parameters and bias values (compare pre/post-reconstruction
+)
 \end_layout
 
 \begin_layout Standard
@@ -2432,7 +2441,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2582,7 +2591,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2623,6 +2632,117 @@ The differences in shift
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Smoothing Scales and Reconstruction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Downloads/various_recon_xi0.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Downloads/various_recon.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Left: Reconstructed correlation functions for the samples with 
+\begin_inset Formula $M_{{\rm cut}}=14.1$
+\end_inset
+
+ (labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+hod9
+\begin_inset Quotes erd
+\end_inset
+
+).
+ The solid line is the correlation function reconstructed from the same
+ density field with the smoothing scale of 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+, while the dashed line is the one using the sample with 
+\begin_inset Formula $M_{{\rm cut}}=12.5$
+\end_inset
+
+ for reconstruction.
+ Right: the dd-term of the reconstructed correlation functions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/mono_hod9_sigma.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Reconstructed power spectra for the samples with 
+\begin_inset Formula $M_{{\rm cut}}=14.1$
+\end_inset
+
+ with the smoothing scale of 
+\begin_inset Formula $10h^{-1}{\rm Mpc}$
+\end_inset
+
+ (blue) and 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ (green).
+ The solid lines are the full power spectra, while the dashed lines are
+ the dd-term of the power spectra.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2722,16 +2842,14 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_priorB_sum4.pdf
-	lyxscale 70
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_weighted.pdf
 	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alphaDiff_bias_post_r.pdf
-	lyxscale 70
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_regular.pdf
 	width 50text%
 
 \end_inset
@@ -2749,23 +2867,14 @@ name "fig:alpha_postrecon"
 
 \end_inset
 
-[the current figures are still regular HOD] Left: Shift in the BAO scale
- for the weighted samples after reconstruction as a function of galaxy bias.
+ Shift in the BAO scale for the weighted samples (left) and regular HOD
+ samples (right) after reconstruction as a function of galaxy bias.
  Note that 
 \begin_inset Formula $\alpha=1$
 \end_inset
 
  implies no shift in the BAO scale.
- Right: The differences in shift 
-\begin_inset Formula $\alpha_{HOD}-\alpha_{ref}$
-\end_inset
-
- for various HOD models corresponding to different biases.
- We use the sample with 
-\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=12.5$
-\end_inset
-
- as a reference.
+ 
 \end_layout
 
 \end_inset
@@ -2888,10 +2997,6 @@ Things to study
 \end_layout
 
 \begin_layout Standard
-*Fisher Matrix
-\end_layout
-
-\begin_layout Standard
 *shot noise
 \end_layout
 
@@ -2901,10 +3006,6 @@ Things to study
 
 \begin_layout Standard
 * Using the density fields in HOD1 to do shifting
-\end_layout
-
-\begin_layout Section
-Results for Anisotropic BAO: Redshift-Space
 \end_layout
 
 \begin_layout Section
