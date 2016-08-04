@@ -2216,8 +2216,8 @@ name "sec:Background"
 
 \begin_layout Standard
 In this section, we present the Kaiser approximation, the relation between
- EPT and LPT, and the algorithm to reconstruct the real-space density field
- from the redshift-space density field.
+ Eulerian perturbation theory (EPT) and LPT, and the algorithm to reconstruct
+ the real-space density field using the redshift-space density field.
  We begin Sec.
  
 \begin_inset CommandInset ref
@@ -2435,10 +2435,13 @@ where
 \begin_inset Formula $f\equiv d{\rm ln}D/d{\rm ln}a\approx\Omega_{m}^{\gamma}$
 \end_inset
 
- (
-\color red
-Peebles 1980 & Carroll and so on
-\color inherit
+ (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2003MNRAS.346..573L,carroll92,2001MNRAS.322..419H"
+
+\end_inset
+
 ) and 
 \begin_inset Formula $D$
 \end_inset
@@ -2552,9 +2555,12 @@ and measure the ratio to obtain the value for
 \end_inset
 
  (e.g., 
-\color red
-Jennings et al.
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2016MNRAS.457.1076J"
+
+\end_inset
+
 ).
 \end_layout
 
@@ -2586,7 +2592,7 @@ reference "fig:Kaiser"
 \end_inset
 
 .
- Using the ratios at 
+ Using the ratios on 
 \begin_inset Formula $k\leqq0.02h{\rm Mpc^{-1}}$
 \end_inset
 
@@ -2594,7 +2600,7 @@ reference "fig:Kaiser"
 \begin_inset Formula $f$
 \end_inset
 
- values are underestimated to the expected 
+ values are smaller than the expected 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2603,18 +2609,13 @@ reference "fig:Kaiser"
 \end_inset
 
 .
- The main cause of this underestimation is due to the the deviations from
- the Kaiser approximation at 
+ The main cause of this underestimation is due to the scale-dependence of
+ RSDs, which makes the ratio to deviate from the Kaiser approximation on
+ 
 \begin_inset Formula $k<0.02h{\rm Mpc^{-1}}$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-
-\color red
-*discuss about the scale-dependence of RSDs
 \end_layout
 
 \begin_layout Standard
@@ -2756,25 +2757,33 @@ reference "fig:Kaiser-halo"
 \begin_inset Formula $\beta$
 \end_inset
 
- values are 
-\begin_inset Formula $\beta$
+ values are larger than the expected value by 
+\begin_inset Formula $\sim10\%$
 \end_inset
 
- = 0.316 with the error of the mean of 0.02 at 
+ at 
 \begin_inset Formula $z=0$
 \end_inset
 
- and 0.285 with the error of the mean of 0.02 at 
+ and 
+\begin_inset Formula $\sim30\%$
+\end_inset
+
+ at 
 \begin_inset Formula $z=1$
 \end_inset
 
 .
-\end_layout
+ To compute the expected value of 
+\begin_inset Formula $\beta$
+\end_inset
 
-\begin_layout Standard
+, we measure 
+\begin_inset Formula $b_{{\rm lin}}$
+\end_inset
 
-\color red
-*talks about how I measured bias...
+ using the ratio of the real-space power spectra of halos and matter.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2853,9 +2862,9 @@ name "sub:LPT"
 \end_layout
 
 \begin_layout Standard
-
-\color red
-*add introduction/transition material: explain where I am going with this
+In this section, we show the connection between between EPT and LPT in the
+ linear regimes and demonstrate why the first-order LPT can model the redshift-s
+pace density field on smaller scales than EPT.
 \end_layout
 
 \begin_layout Standard
@@ -3026,21 +3035,27 @@ reference "eq:Kaiser_den"
 \end_inset
 
  , we obtain the Kaiser approximation (i.e., the first order EPT).
- The reason the first-order LPT works better than EPT is because LPT naturally
- takes care of higher-order terms, which is consistent with the fact that
- the Zeldovich approximation works better than the first-order EPT (e.g.,
  
 \color red
-XXX
-\color inherit
-).
- 
-\end_layout
+The reason the first-order LPT works better than EPT is the following: In
+ linear regimes, both EPT and LPT give the same predictions for the redshift-spa
+ce density field, because contribution from the higher-order terms of the
+ Taylor-expanded 
+\begin_inset Formula $e^{-i\vec{k}\cdot(v_{z}/H_{0}\hat{z})}$
+\end_inset
 
-\begin_layout Standard
+ are too small.
+ However, it is no longer the case beyond the linear regime.
+ The reason the first-order EPT and LPT behave differently on quasi-linear
+ regimes (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1993ApJ...405L..47G"
 
-\color red
-*explain with more sentences: go through for readers
+\end_inset
+
+) is due to these higher-order terms, which partically contribute to the
+ second-order perturbative terms.
 \end_layout
 
 \begin_layout Subsection
@@ -3058,15 +3073,8 @@ name "sub:Algorithm"
 
 \begin_layout Standard
 In this section, we present the algorithm to reconstruct the real-space
- density field from redshift-space through shifting the particle positions
- back by the distance due to their velocities.
- This method can be directly described in terms of LPT.
+ density field from redshift-space.
  
-\color red
-The motivation behind of this method is that the first-order LPT works on
- smaller scales than the EPT does.
- and therefore the reconstruction can remove anisotropy in redshift-space
- beyond the regime the Kaiser approximation is valid.
 \end_layout
 
 \begin_layout Standard
@@ -3288,11 +3296,11 @@ In this section, we examine how well the reconstruction technique can recover
  The non-linear velocity fields and the real-space density fields from the
  simulations are the baseline against to the velocity/density fields reconstruct
 ed from the redshift-space density fields.
- Note that we use the growth rate 
+ Note that we use the expected value of 
 \begin_inset Formula $f$
 \end_inset
 
- computed from the cosmology used in the simulations.
+ from the simulations.
 \end_layout
 
 \begin_layout Subsection
@@ -3304,12 +3312,14 @@ In this section, we present how well linear perturbation theory can estimate
  the velocity fields.
  To do that, we first compute velocity fields using the volume-weighted
  method: Distribute velocities of particles onto grids using CIC assignment,
- and then normalize the field defined by the density field [cite: 
-\color red
-jennings et al.
- 2012
-\color inherit
-].
+ and then normalize the field defined by the density field (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jennings2012"
+
+\end_inset
+
+).
  Note that the volume-weighted velocities are sensitive to grid sizes, because
  large number of grids make a majority of grids empty and therefore the
  velocities on those grids are zero even though the velocity field is not.
@@ -3406,12 +3416,11 @@ reference "fig:vel_diff"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename ../plots_RSD/histogram_lin_veldiff_sm0_z0.pdf
-	lyxscale 50
 	width 50col%
 
 \end_inset
@@ -3449,8 +3458,6 @@ Comparison of the LOS velocities
 \end_inset
 
 .
- The difference between the linear velocities estimated from two different
- density fields is XXX.
  Note that the linear velocities are reassigned to particles through the
  inverse CIC assignment with smoothing of 10
 \begin_inset Formula $h^{-1}{\rm Mpc}$
@@ -3480,7 +3487,23 @@ We next test how well the reconstruction method can recover the real-space
 \end_inset
 
 .
- We first compute the reconstructed density field from Eq.
+ We first compute the Kaiser density field 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+ and the reconstructed density field 
+\begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
+ from Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Kaiser2"
+
+\end_inset
+
+ and Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3517,27 +3540,9 @@ reference "fig:Scatter-dm-z0"
 \end_inset
 
  grids.
- The scatter between 
-\begin_inset Formula $\delta_{{\rm recon}}$
-\end_inset
-
- and 
-\begin_inset Formula $\delta_{r}$
-\end_inset
-
- is reduced to 
-\begin_inset Formula $26.9\%$
-\end_inset
-
- compared to the scatter between 
-\begin_inset Formula $\delta_{s}$
-\end_inset
-
- and 
-\begin_inset Formula $\delta_{r}$
-\end_inset
-
- as shown in Table 
+ Then, we compare these density fields to the real-space density field by
+ taking the differences and computing the mean and the standard deviations.
+ The result is in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:dm_den_grid128"
@@ -3545,47 +3550,26 @@ reference "tab:dm_den_grid128"
 \end_inset
 
 .
- We also compared the scatter between 
-\begin_inset Formula $\delta_{{\rm Kaiser}}$
-\end_inset
-
- and 
-\begin_inset Formula $\delta_{r}$
-\end_inset
-
- in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:dm_den_grid128"
-
-\end_inset
-
-.
- Even for the case of 
-\begin_inset Formula $\delta_{{\rm Kaiser}}$
-\end_inset
-
-, the scatter is reduced to 
+ The scatter is reduced to 
 \begin_inset Formula $69.2\%$
 \end_inset
 
+ for the case of 
+\begin_inset Formula $\delta_{{\rm Kaiser}}$
+\end_inset
+
+ compared to the redshift-space density field, while the scatter is reduced
+ to 
+\begin_inset Formula $26.9\%$
+\end_inset
+
+ for the case of 
+\begin_inset Formula $\delta_{{\rm recon}}$
+\end_inset
+
 .
-\end_layout
-
-\begin_layout Standard
-
-\color red
-*What do we conclude from all of this? What should the reader take away?
-\end_layout
-
-\begin_layout Standard
--> Talk about in the order of Kaiser -> reconstruction and then improvements...
-\end_layout
-
-\begin_layout Standard
-
-\color red
-*Also, check the mean value for delta_recon at z=1...
+ By using the reconstruction method, recovering the real-space density field
+ is greatly improved.
 \end_layout
 
 \begin_layout Standard
@@ -3620,7 +3604,11 @@ name "fig:Scatter-dm-z0"
 
 \end_inset
 
- Densities in real-space for DM particles at z=0.0 vs.
+ Densities in real-space for DM particles at 
+\begin_inset Formula $z=0.0$
+\end_inset
+
+ vs.
  redshift-space density (left) and the reconstructed density (right).
 
 \color black
@@ -3943,7 +3931,7 @@ z=1.0
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $2.64\times10^{-5}$
+\begin_inset Formula $-4.35\times10^{-9}$
 \end_inset
 
 
@@ -3985,7 +3973,7 @@ Mean and standard deviation of density differences between redshift-space/
 \end_inset
 
 , using 
-\begin_inset Formula $N_{grid}=128^{3}$
+\begin_inset Formula $N_{{\rm grid}}=128^{3}$
 \end_inset
 
 .
@@ -4146,7 +4134,7 @@ status open
 \begin_inset Graphics
 	filename ../plots_RSD/recon_dm_real.pdf
 	lyxscale 90
-	width 60col%
+	width 50col%
 
 \end_inset
 
@@ -4154,7 +4142,7 @@ status open
 \begin_inset Graphics
 	filename ../plots_RSD/Cross_dm.pdf
 	lyxscale 90
-	width 60col%
+	width 50col%
 
 \end_inset
 
@@ -4313,6 +4301,22 @@ reference "sub:Algorithm"
 \end_inset
 
 where 
+\begin_inset Formula $i$
+\end_inset
+
+ goes from 1 to the number of the realizations 
+\begin_inset Formula $N$
+\end_inset
+
+, 
+\begin_inset Formula $j$
+\end_inset
+
+ goes from 1 to the number of bins 
+\begin_inset Formula $M$
+\end_inset
+
+, and 
 \begin_inset Formula $\sigma^{2}\equiv\sum_{i=1}^{N}\{(P_{{\rm recon,i}}^{(2)})^{2}/N-(\bar{P}_{{\rm recon}}^{(2)})^{2}\}$
 \end_inset
 
