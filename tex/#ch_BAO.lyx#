@@ -3705,7 +3705,7 @@ Comparison of the
 .
  The scatter for the high biased samples is larger than the one for the
  low biased samples.
- 
+ 21.2% (hod9) -> 44.4% by using hod1
 \end_layout
 
 \end_inset
@@ -5600,127 +5600,6 @@ reference "eq:shifted_field"
 \end_layout
 
 \begin_layout Subsubsection
-Using two different samples for Reconstruction
-\end_layout
-
-\begin_layout Standard
-For the case of using hod1 to estimate the shifted field for the reconstruction
- of hod9, <alpha-1>=-0.159+/-0.115 (2.5Mpc/h) and -0.116+/-0.116 (3.4Mpc/h), while
- the regular reconstruction for hod9 gives <alpha-1>=-0.171+/-0.137.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hod9_xi0_recon_switch.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Left: Reconstructed correlation functions for the samples with 
-\begin_inset Formula $M_{{\rm cut}}=14.1$
-\end_inset
-
- (labeled as 
-\begin_inset Quotes eld
-\end_inset
-
-hod9
-\begin_inset Quotes erd
-\end_inset
-
-).
- The solid line is the correlation function reconstructed from the same
- density field with the smoothing scale of 
-\begin_inset Formula $30h^{-1}{\rm Mpc}$
-\end_inset
-
-, while the dashed line is the one using the sample with 
-\begin_inset Formula $M_{{\rm cut}}=12.5$
-\end_inset
-
- for reconstruction.
- Right: the dd-term of the reconstructed correlation functions.
- 21.2% (hod9) -> 44.4% by using hod1 (the scatter in alpha)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hist_x_on_hod9.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_xi0_sigmas.pdf
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_dd_sigmas.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-mean (hod1 with 10Mpc/h)0.0007+/-2.74 (hod1 with 30Mpc/h)0.0013+/-1.51: split
- into high/low-density region?; alpha -> -0.176+/-0.115 (10Mpc/h) 0.336+/-0.115(30Mp
-c/h)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
 Using different biases
 \end_layout
 
@@ -5787,6 +5666,127 @@ status collapsed
 
 \begin_layout Plain Layout
 hod9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Using two different samples for Reconstruction
+\end_layout
+
+\begin_layout Standard
+For the case of using hod1 to estimate the shifted field for the reconstruction
+ of hod9, <alpha-1>=-0.159+/-0.115 (2.5Mpc/h) and -0.116+/-0.116 (3.4Mpc/h), while
+ the regular reconstruction for hod9 gives <alpha-1>=-0.171+/-0.137.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Downloads/hod9_xi0_recon_switch.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Left: Reconstructed correlation functions for the samples with 
+\begin_inset Formula $M_{{\rm cut}}=14.1$
+\end_inset
+
+ (labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+hod9
+\begin_inset Quotes erd
+\end_inset
+
+).
+ The solid line is the correlation function reconstructed from the same
+ density field with the smoothing scale of 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+, while the dashed line is the one using the sample with 
+\begin_inset Formula $M_{{\rm cut}}=12.5$
+\end_inset
+
+ for reconstruction.
+ Right: the dd-term of the reconstructed correlation functions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Downloads/hist_x_on_hod9.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_xi0_sigmas.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_dd_sigmas.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+mean (hod1 with 10Mpc/h)0.0007+/-2.74 (hod1 with 30Mpc/h)0.0013+/-1.51: split
+ into high/low-density region?; alpha -> -0.176+/-0.115 (10Mpc/h) 0.336+/-0.115(30Mp
+c/h)
 \end_layout
 
 \end_inset
