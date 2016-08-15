@@ -351,7 +351,7 @@ key "2009PhRvD..80f3508P"
 \end_inset
 
  show that the shift on the acoustic scale is expected to be a less than
- one percent, even wih a presence of galaxy bias using perturbation theory.
+ one percent, even with a presence of galaxy bias using perturbation theory.
  For the case of DM, Ref.
  
 \begin_inset CommandInset citation
@@ -599,7 +599,7 @@ key "1988csup.book.....H"
  The choice of time steps is determined after several convergence tests
  such that the simulation reproduces an accurate halo mass functions as
  well as clusterings compared full N-body simulations.
- Quantitaitvely, the simulations recover the halo masses to 98% fidelity
+ Quantitatively, the simulations recover the halo masses to 98% fidelity
  and better than 
 \begin_inset Formula $1\%$
 \end_inset
@@ -1713,8 +1713,8 @@ key "1998ApJ...496..605E"
 \begin_inset Formula $\Sigma$
 \end_inset
 
- is a nonlinear parameter that accounts for the broadening of the BAO peak
- due to nonlinear evolution.
+ is a non-linear parameter that accounts for the broadening of the BAO peak
+ due to non-linear evolution.
  We set 
 \begin_inset Formula $\Sigma=7.5h^{-1}{\rm Mpc}$
 \end_inset
@@ -1753,7 +1753,7 @@ reference "tab:hod"
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- fitting to detemine the non-linear parameter.
+ fitting to determine the non-linear parameter.
  We consider the measured correlation function from 
 \begin_inset Formula $60h^{-1}{\rm Mpc}$
 \end_inset
@@ -1934,10 +1934,6 @@ name "sec:isotropic"
 \end_layout
 
 \begin_layout Standard
-*about alpha and its implication
-\end_layout
-
-\begin_layout Standard
 In this section, we show the results of the isotropic BAO analysis with
  and without reconstruction using the method discussed in Sec.
  
@@ -2000,20 +1996,6 @@ reference "sub:weightHOD"
 \end_inset
 
 .
- In Sec.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:smoothing"
-
-\end_inset
-
-, we show how the smoothing scale of the template function affects the measured
- 
-\begin_inset Formula $\alpha$
-\end_inset
-
- values.
  In the next two sections, we show the effect of galaxy bias on the BAO
  measurements without and with reconstruction.
  In the last section, we discuss the effects of various steps on the robustness
@@ -3023,32 +3005,42 @@ key "2011ApJ...734...94M"
 
 \end_inset
 
-, although note that the absolute values of the shifts differ since Ref.
+.
+ The absolute values of shifts for our samples are larger than the shifts
+ measured in Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "2011ApJ...734...94M"
+key "mehta2011"
 
-\end_inset
-
- considers samples at 
-\begin_inset Formula $z=1$
-\end_inset
-
-, while the results here are at 
-\begin_inset Formula $z=0.15$
 \end_inset
 
 .
- We also find that our results are roughly consistent with expectations
- from perturbation theory 
+ This is because we use the samples at a lower redshift.
+ In fact, the size of the increase in shifts is roughly consistent with
+ the expectations from perturbation theory 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "2008PhRvD..77b3533C,2009PhRvD..80f3508P,2012PhRvD..85j3523S"
 
 \end_inset
 
-, although we find a weaker mass dependence than what was predicted in Ref.
+.
+ The 
+\begin_inset Formula $\alpha-1$
+\end_inset
+
+ value is proportional to 
+\begin_inset Formula $D^{2}(z)$
+\end_inset
+
+, where 
+\begin_inset Formula $D(z)$
+\end_inset
+
+ is the linear growth rate.
+ However, we find that the bias dependence of our samples is weaker than
+ what was predicted in Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3057,6 +3049,11 @@ key "2009PhRvD..80f3508P"
 \end_inset
 
 .
+ [
+\color red
+possible reason for this?
+\color inherit
+]
 \end_layout
 
 \begin_layout Standard
@@ -3182,7 +3179,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3364,7 +3361,7 @@ reference "fig:scatter_prerecon"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3548,13 +3545,13 @@ reference "tab:alphas"
  The figure shows a weak dependence on galaxy bias that the shifts for the
  higher-biased objects become more negative.
  If the shifts for the high-biased objects are non-zero but positive, it
- is possible that the reconstruction method ccannot model the bulk flow
- well enough to remove the effect of the non-linear evolution on the acoustic
+ is possible that the reconstruction method cannot model the bulk flow well
+ enough to remove the effect of the non-linear evolution on the acoustic
  scale.
  However, we get an opposite result.
  It is possible that the cause of over-shifting is due to the noise and
  the lack of enough number of samples.
- Another important change after reconstruction is that the scattes in the
+ Another important change after reconstruction is that the scatter in the
  
 \begin_inset Formula $\alpha$
 \end_inset
@@ -3578,7 +3575,10 @@ key "mehta2011"
 \end_layout
 
 \begin_layout Standard
-[test the negative alpha is due to lack of the number of samples using bootstrap...
+[
+\color red
+test the negative alpha is due to lack of the number of samples using bootstrap...
+\color inherit
 ]
 \end_layout
 
@@ -3587,7 +3587,7 @@ key "mehta2011"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3651,6 +3651,40 @@ reference "fig:scatter_postrecon"
 \end_inset
 
 .
+ For the case of the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples, the improvement after reconstruction is clear that the scatter
+ in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values is significantly reduced and the slope measured between the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values before and after reconstruction is 0.2.
+ On the other hand, the slope for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples is 0.5 and the reconstruction does not reduce the number of outliers.
+ The value of the slope can tell us the robustness of the reconstruction
+ method on these samples.
+ The slope closer to zero implies that the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values are properly shifted back to one.
+\end_layout
+
+\begin_layout Standard
+[
+\color red
+what can I say more?
+\color inherit
+Also, what is a better way to quantify the robustness of the reconstruction?]
 \end_layout
 
 \begin_layout Standard
@@ -3702,6 +3736,15 @@ Comparison of the
 \end_inset
 
  samples (right).
+ The slope for the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ sample is 0.2, while it is 0.5 for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ sample.
 \end_layout
 
 \end_inset
@@ -4894,6 +4937,87 @@ on?
 \end_layout
 
 \begin_layout Standard
+As a demonstration, Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi0_hod1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi0_hod9"
+
+\end_inset
+
+ plot the correlation functions and the corresponding 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ distributions before and after reconstruction using the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ The volume of the sample used here is 
+\begin_inset Formula $64(h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+.
+ For both cases, the peaks are clearly sharpened after reconstruction.
+ However, the chi-square minimum is increased, especially for the case of
+ the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ sample.
+ This is because the template function used to measure the BAO peak is not
+ as sharp as the reconstructed peak, which can be fixed by using a different
+ template function.
+ The reason the minimum chi-square value for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ sample is better than the one for the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ sample is because a less sharpened peak fits better by the template function.
+ Another important change after reconstruction is that the chi-square distributi
+on after reconstruction is sharpened, which implies that the scatter in
+ the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values is reduced.
+ 
+\end_layout
+
+\begin_layout Standard
+[
+\color red
+remake the chi-square figure with the same scaling...
+
+\color inherit
+ & change the sample and the smoothing scales...]
+\end_layout
+
+\begin_layout Standard
+[
+\color red
+chi-square distribution for pre-recon is wider...what does this mean? (but
+ minimum is smaller...
+\color inherit
+]
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -4967,11 +5091,12 @@ Comparison of the
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /Users/old_ts485/Downloads/hod1_full.pdf
+	lyxscale 80
 	width 50text%
 
 \end_inset
@@ -4979,6 +5104,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename /Users/old_ts485/Downloads/hod1_full_chi.pdf
+	lyxscale 80
 	width 50text%
 
 \end_inset
@@ -4990,7 +5116,34 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-hod1
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi0_hod1"
+
+\end_inset
+
+Left: The unreconstructed (blue) and reconstructed (red) correlation functions
+ computed from the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ sample.
+ The error bars are the standard deviation of the four HACC simulations.
+ Note that we use the samples with the volume of 
+\begin_inset Formula $64(h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+.
+ The solid lines are the best fit model to these data.
+ Right: The 
+\begin_inset Formula $\Delta\chi^{2}$
+\end_inset
+
+ surface as a function of 
+\begin_inset Formula $\alpha-1[\%]$
+\end_inset
+
+ before (blue dashed) and after (red solid) reconstruction.
 \end_layout
 
 \end_inset
@@ -5013,6 +5166,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /Users/old_ts485/Downloads/hod9_full.pdf
+	lyxscale 80
 	width 50text%
 
 \end_inset
@@ -5020,6 +5174,7 @@ status open
 
 \begin_inset Graphics
 	filename /Users/old_ts485/Downloads/hod9_full_chi.pdf
+	lyxscale 80
 	width 50text%
 
 \end_inset
@@ -5031,7 +5186,34 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-hod9
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi0_hod9"
+
+\end_inset
+
+Left: The unreconstructed (blue) and reconstructed (red) correlation functions
+ computed from the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ sample.
+ The error bars are the standard deviation of the four HACC simulations.
+ Note that we use the samples with the volume of 
+\begin_inset Formula $64(h^{-1}{\rm Gpc})^{3}$
+\end_inset
+
+.
+ The solid lines are the best fit model to these data.
+ Right: The 
+\begin_inset Formula $\Delta\chi^{2}$
+\end_inset
+
+ surface as a function of 
+\begin_inset Formula $\alpha-1[\%]$
+\end_inset
+
+ before (blue dashed) and after (red solid) reconstruction.
 \end_layout
 
 \end_inset
@@ -5171,7 +5353,7 @@ In addition to degrading the robustness of the reconstruction, we find that
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -5354,7 +5536,7 @@ The effect of the smoothing scales of the reconstruction on the BAO measurements
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5500,9 +5682,13 @@ reference "fig:hod9_smooth"
 \end_layout
 
 \begin_layout Standard
-[should I mention that the reason we did not see difference on the alpha
+[
+\color red
+should I mention that the reason we did not see difference on the alpha
  values may be partly because the hod9 samples have large scatters and noise
- is large.]
+ is large.
+\color inherit
+]
 \end_layout
 
 \begin_layout Standard
@@ -5595,14 +5781,108 @@ reference "eq:shifted_field"
 
 \end_layout
 
-\begin_layout Subsubsection
-Using two different samples for Reconstruction
-\end_layout
-
 \begin_layout Standard
-For the case of using hod1 to estimate the shifted field for the reconstruction
- of hod9, <alpha-1>=-0.159+/-0.115 (2.5Mpc/h) and -0.116+/-0.116 (3.4Mpc/h), while
- the regular reconstruction for hod9 gives <alpha-1>=-0.171+/-0.137.
+In order to quantify the effect of galaxy bias on the estimation of the
+ shifted field, we use the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples to estimate the shifted field, 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+, to do the reconstruction for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ Since the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples have smaller galaxy biases, the distribution of the galaxies in
+ the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples is a better representation of the underlying DM density field.
+ For reconstruction, we use the smoothing scale of 
+\begin_inset Formula $\Sigma=10h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:recon_hod1to9"
+
+\end_inset
+
+ shows the reconstructed correlation functions using the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples to estimate 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+.
+ The BAO peak is more sharpened when 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+ is computed from the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples.
+ Note that this sharpening is not due to using different smoothing scales.
+ As shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hod9_smooth"
+
+\end_inset
+
+, using smaller smoothing scale for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples does not improve the sharpening.
+ In addition to the improvement in the shape of the BAO peak, the measured
+ 
+\begin_inset Formula $\alpha-1$
+\end_inset
+
+ values are improved from 
+\begin_inset Formula $(-0.341\pm0.125)\%$
+\end_inset
+
+ to 
+\begin_inset Formula $(-0.116\pm0.116)\%$
+\end_inset
+
+ by using the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples.
+ This implies that the systematic bias is reduced from 
+\begin_inset Formula $3\sigma$
+\end_inset
+
+-deviation to 
+\begin_inset Formula $1\sigma$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5626,6 +5906,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:recon_hod1to9"
+
+\end_inset
+
 Left: Reconstructed correlation functions for the samples with 
 \begin_inset Formula $M_{{\rm cut}}=14.1$
 \end_inset
@@ -5650,7 +5936,7 @@ hod9
 
  for reconstruction.
  Right: the dd-term of the reconstructed correlation functions.
- 21.2% (hod9) -> 44.4% by using hod1 (the scatter in alpha)
+ 
 \end_layout
 
 \end_inset
@@ -5661,6 +5947,147 @@ hod9
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In addition to compute the reconstructed correlation functions using different
+ 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ fields, we compare these fields by projecting onto the galaxies in the
+ 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ We first compute the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ fields from the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ Then, we shift the positions of the galaxies in the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples using these estimated fields respectively.
+ We take the differences in the positions of the corresponding galaxies.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pos_hod1to9"
+
+\end_inset
+
+ shows the differences in the shifted positions using the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ There are two causes for having different 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ fields.
+ One is due to different galaxy biases, and the other is due to different
+ smoothing scales.
+ To know how much differences are introduced by these causes, we compute
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ field from the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples using two different smoothing scales, 
+\begin_inset Formula $10h^{-1}{\rm Mpc}$
+\end_inset
+
+ and 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+.
+ Note that we use the 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale to compute 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+ from the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ The standard deviations in the differences are 
+\begin_inset Formula $\sim1.5h^{-1}{\rm Mpc}$
+\end_inset
+
+ for the case of the 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale and 
+\begin_inset Formula $\sim2.7h^{-1}{\rm Mpc}$
+\end_inset
+
+ for the case of the 
+\begin_inset Formula $10h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale.
+ For the case of the 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale, the differences are mainly due to the large noise of the
+ 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ On the other hand, some differences come from including more modes to estimate
+ 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+ for the case of the 
+\begin_inset Formula $10h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale.
 \end_layout
 
 \begin_layout Standard
@@ -5681,26 +6108,15 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_xi0_sigmas.pdf
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_dd_sigmas.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pos_hod1to9"
+
+\end_inset
+
 mean (hod1 with 10Mpc/h)0.0007+/-2.74 (hod1 with 30Mpc/h)0.0013+/-1.51: split
  into high/low-density region?; alpha -> -0.176+/-0.115 (10Mpc/h) 0.336+/-0.115(30Mp
 c/h)
@@ -5716,45 +6132,11 @@ c/h)
 
 \end_layout
 
-\begin_layout Subsubsection
-Using different biases
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_xi0.pdf
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_ss.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-hod1:+/- 10% and 40%
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_layout Section
+Discussion 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Discussion"
 
 \end_inset
 
@@ -5762,41 +6144,202 @@ hod1:+/- 10% and 40%
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
+In this study, we present the effects of galaxy bias on the BAO measurements
+ using high-resolution N-body simulations with the volume of 
+\begin_inset Formula $256(h^{-1}{\rm Gpc})^{3}$
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod9_bias_xi0.pdf
-	width 50text%
+ at 
+\begin_inset Formula $z=0.15$
+\end_inset
+
+, which is a lower redshift than the redshift tested in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mehta2011"
 
 \end_inset
 
+.
+ We use the HOD method to simulate various galaxy populations.
+ We also explore the robustness of the reconstruction methods by varying
+ the smoothing scales as well as by estimating the 
+\begin_inset Quotes eld
+\end_inset
 
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ fields using different samples.
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-hod9
+\begin_layout Standard
+We conclude this chapter with the following summary of our findings.
 \end_layout
+
+\begin_layout Enumerate
+We find that the effect of shot noise is particularly large on high-biased
+ objects, and therefore decide to use the samples generated from the 
+\begin_inset Quotes eld
+\end_inset
+
+weighted
+\begin_inset Quotes erd
+\end_inset
+
+ HOD method, which removes the variance on the shift of the BAO peak due
+ to randomly subsampling halos.
+\end_layout
+
+\begin_layout Enumerate
+For the case of pre-reconstruction, we detect the shift in the BAO scale
+ (
+\begin_inset Formula $\sim3\sigma$
+\end_inset
+
+ for most samples), which is consistent with the expectations from perturbation
+ theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2008PhRvD..77b3533C,2009PhRvD..80f3508P,2012PhRvD..85j3523S"
 
 \end_inset
 
+.
+ The shift is consistent with being constant for biases 
+\begin_inset Formula $<$
+\end_inset
 
-\end_layout
+ 2.0 and only increases for extremely large biases, as is seen in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mehta2011"
 
 \end_inset
 
+.
+ However, we do not find the strong bias dependence predicted in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2009PhRvD..80f3508P"
 
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For the case of post-reconstruction, the reconstruction method corrects
+ the shift of the BAO peak to almost zero within 
+\begin_inset Formula $1\sigma$
+\end_inset
+
+-deviation for most samples and reduces the scatter in the measured 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values by a factor of 
+\begin_inset Formula $1.5-2$
+\end_inset
+
+.
+ However, the reconstruction over-shifts the peak positions for the case
+ of high-biased objects (
+\begin_inset Formula $b>2.5$
+\end_inset
+
+), and the reduction of the scatter is not as effective as for the low-biased
+ samples.
+\end_layout
+
+\begin_layout Enumerate
+Using the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples to estimate the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ field for the reconstruction to the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples, the shift and the scatter of the BAO peak are significantly improved.
+ We find that the reconstruction corrects the shift to almost zero within
+ 
+\begin_inset Formula $1\sigma$
+\end_inset
+
+, which is an improvement from 
+\begin_inset Formula $3\sigma$
+\end_inset
+
+ deviations.
+ This implies that having large noise in the samples can induce over-shifting
+ when the reconstruction method is applied.
+\end_layout
+
+\begin_layout Enumerate
+We find that using a larger smoothing scale increases the scatters in the
+ measured 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values, but does not affect the peak position unless it is too extreme.
+\end_layout
+
+\begin_layout Standard
+As a possible direction for future work, we can investigate the effects
+ of galaxy bias on the BAO scale in redshift-space.
+ For the case of redshift-space, we can utilize the anisotropy due to the
+ Alcock-Pezinski effect to fully constrain 
+\begin_inset Formula $D_{A}(z)$
+\end_inset
+
+ as well as 
+\begin_inset Formula $H(z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+*using different cosmology and redshift
+\end_layout
+
+\begin_layout Standard
+*using different satellite fraction; give weights similar to abundance matching
+\end_layout
+
+\begin_layout Standard
+*using the samples at different redshift to do reconstruction
+\end_layout
+
+\begin_layout Standard
+*using higher-order term to quantitatively evaluate the reconstruction method
+\end_layout
+
+\begin_layout Section
+Appendix
 \end_layout
 
 \begin_layout Subsection
 Things to study
+\end_layout
+
+\begin_layout Standard
+*Fisher matrix analysis for future...
 \end_layout
 
 \begin_layout Standard
@@ -5814,10 +6357,6 @@ Things to study
 
 \begin_layout Standard
 *correlation length
-\end_layout
-
-\begin_layout Standard
-* Using the density fields in HOD1 to do shifting
 \end_layout
 
 \begin_layout Standard
@@ -5854,19 +6393,12 @@ Things to study
 [ask about how to estimate the scatter from the size of the shot noise]
 \end_layout
 
-\begin_layout Section
-Discussion 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Discussion"
-
-\end_inset
-
-
+\begin_layout Standard
+[lookbacktime/ redshift and the corresponding physical time]
 \end_layout
 
-\begin_layout Section
-Appendix
+\begin_layout Standard
+[unit of pc/solar masses]
 \end_layout
 
 \begin_layout Subsection
@@ -6138,6 +6670,85 @@ xxx
 \end_layout
 
 \begin_layout Subsection
+Using different biases
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_xi0.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_ss.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+hod1:+/- 10% and 40%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod9_bias_xi0.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+hod9
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Various Plots
 \end_layout
 
@@ -6249,6 +6860,47 @@ post-reconstruction with the fixed smoothing scale of
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_xi0_sigmas.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1to9_dd_sigmas.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+hod1->hod9
 \end_layout
 
 \end_inset
