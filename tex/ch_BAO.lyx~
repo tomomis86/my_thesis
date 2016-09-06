@@ -350,8 +350,8 @@ key "2009PhRvD..80f3508P"
 
 \end_inset
 
- show that the shift on the acoustic scale is expected to be a less than
- one percent, even with a presence of galaxy bias using perturbation theory.
+ show that the shift on the acoustic scale is expected to be less than one
+ percent, even with a presence of galaxy bias using perturbation theory.
  For the case of DM, Ref.
  
 \begin_inset CommandInset citation
@@ -518,8 +518,9 @@ reference "sec:method"
 
 \end_inset
 
-, we describe the simulations, the Halo Occupations Distributions, the reconstru
-ction technique, and the fitting method.
+, we describe the simulations, and three methods we evaluated for their
+ ability to correct for the non-linear effects: a method using Halo Occupations
+ Distributions, the re-construction technique, and the fitting method.
  In Sec.
  
 \begin_inset CommandInset ref
@@ -596,9 +597,14 @@ key "1988csup.book.....H"
 \end_inset
 
  subcycles.
+ Note that one long time step corresponds to 
+\begin_inset Formula $\Delta a\sim0.003$
+\end_inset
+
+.
  The choice of time steps is determined after several convergence tests
  such that the simulation reproduces an accurate halo mass functions as
- well as clusterings compared full N-body simulations.
+ well as the clustering compared to full N-body simulations.
  Quantitatively, the simulations recover the halo masses to 98% fidelity
  and better than 
 \begin_inset Formula $1\%$
@@ -669,29 +675,21 @@ CDM cosmology with
 \end_inset
 
 .
- All of the results we consider here are at 
+ All of the results we consider are at 
 \begin_inset Formula $z=0.15$
 \end_inset
 
 .
- We have four realizations of the simulation and subdivide each of our 
-\begin_inset Formula $4\times(4h^{-1}{\rm Gpc})^{3}$
+ We have four realizations of the simulation, each with volume of 
+\begin_inset Formula $64(h^{-1}{\rm Gpc})^{3}$
 \end_inset
 
- volumes into 
-\begin_inset Formula $4\times16=64$
-\end_inset
-
- subvolumes (
+, and subdivide each of our realizations into 16 subvolumes of 
 \begin_inset Formula $4(h^{-1}{\rm Gpc})^{3}$
 \end_inset
 
- each) to estimate the covariance matrix for galaxy correlation functions.
- 
-\end_layout
-
-\begin_layout Standard
-[the meaning of the number of time steps]
+ each, yielding 64 samples with which to estimate the covariance matrix
+ for galaxy correlation functions.
 \end_layout
 
 \begin_layout Subsection
@@ -708,7 +706,7 @@ name "sub:hod"
 \begin_layout Standard
 
 \color black
-In order to test how galaxy biases affect to the BAO measurement, we generate
+In order to test how galaxy biases affect the BAO measurement, we generate
  galaxy mock catalogs with various galaxy biases.
  
 \end_layout
@@ -926,7 +924,8 @@ key "2014MNRAS.444..476R"
 
 \end_inset
 
-); however, we expect that the velocities only affect on scales smaller
+).
+ However, we expect that these velocities will only affect at scales smaller
  than 
 \begin_inset Formula $30h^{-1}{\rm Mpc}$
 \end_inset
@@ -1124,10 +1123,6 @@ weighted
  HOD samples for the rest of analysis.
 \end_layout
 
-\begin_layout Standard
-[mention about the shot noise for the weighted case]
-\end_layout
-
 \begin_layout Subsection
 Reconstruction
 \begin_inset CommandInset label
@@ -1289,7 +1284,7 @@ The reconstructed density field is obtained by
 \end_inset
 
 .
- Note that we cannot use the linear density field to compute Zel'dovich
+ Note that we cannot use the linear density field to compute the Zel'dovich
  displacement field.
  To estimate it, we simply smoothing the non-linear density field to suppress
  the high-
@@ -1312,7 +1307,7 @@ Smooth the real-space density field
 \begin_inset Formula $k$
 \end_inset
 
- modes with a Gaussian smoothing of scale 
+ modes with a Gaussian smoothing kernel of scale 
 \begin_inset Formula $R$
 \end_inset
 
@@ -1411,7 +1406,7 @@ key "1987MNRAS.227....1K"
 ) to obtain real-space density approximated from linear perturbation:
 \begin_inset Formula 
 \[
-\delta_{{\rm Kaiser}}(\vec{k})=\frac{\delta_{s}}{1+\beta\mu},
+\delta_{{\rm Kaiser}}(\vec{k})=\frac{\delta_{s}}{1+\beta\mu^{2}},
 \]
 
 \end_inset
@@ -1440,24 +1435,8 @@ Smooth
 \begin_inset Formula $k$
 \end_inset
 
- modes with a Gaussian smoothing of scale 
-\begin_inset Formula $R$
-\end_inset
-
-, 
-\begin_inset Formula $S(k)$
-\end_inset
-
-, to eliminate the effect of small-scale, non-linear structure of the density
- field:
-\begin_inset Formula 
-\[
-S(k)={\rm e}^{-(kR)^{2}/2}.
-\]
-
-\end_inset
-
-
+ modes with a Gaussian smoothing kernel like that used to smooth the real
+ space density field.
 \end_layout
 
 \begin_layout Itemize
@@ -1544,7 +1523,7 @@ where
 \end_inset
 
 .
- For randomly distributed particles, we use about ten times of the number
+ For randomly distributed particles, we choose about ten times of the number
  of galaxies.We bin our correlation functions in 
 \begin_inset Formula $4h^{-1}{\rm Mpc}$
 \end_inset
@@ -1672,11 +1651,11 @@ where
 \begin_inset Formula $A_{0,1,2}$
 \end_inset
 
- 
-\color red
-remove broadband mismatches in our templates
+
+\color black
+ remove broadband mismatches in our templates
 \color inherit
- (not sure what it means...).
+.
  The template correlation function 
 \begin_inset Formula $\xi_{t}(r)$
 \end_inset
@@ -1744,11 +1723,11 @@ reference "tab:hod"
 \begin_inset Formula $\xi_{{\rm HOD}}$
 \end_inset
 
- is a correlation function which 
+ is a correlation function to which 
 \begin_inset Formula $\xi_{{\rm fit}}$
 \end_inset
 
- is fitted to.
+ is fitted.
  Note that we also used the least 
 \begin_inset Formula $\chi^{2}$
 \end_inset
@@ -1780,7 +1759,7 @@ reference "tab:hod"
 \begin_inset Formula $B$
 \end_inset
 
- with a Gaussian prior to avoid the negative values for the bias parameter.
+ with a Gaussian prior to avoid negative values for the bias parameter.
  We give a Gaussian prior on bias parameter 
 \begin_inset Formula $B$
 \end_inset
@@ -2065,7 +2044,7 @@ bias
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Sigma_{{\rm recon}}[h^{-1}{\rm Mpc}]$
+\begin_inset Formula $R[h^{-1}{\rm Mpc}]$
 \end_inset
 
 
@@ -2077,7 +2056,7 @@ bias
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Sigma_{{\rm temp}}[h^{-1}{\rm Mpc}]$
+\begin_inset Formula $\Sigma[h^{-1}{\rm Mpc}]$
 \end_inset
 
 
@@ -2130,7 +2109,7 @@ HOD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $10h^{-1}{\rm Mpc}$
+\begin_inset Formula $10$
 \end_inset
 
 
@@ -2142,7 +2121,7 @@ HOD1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $2.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $2.5$
 \end_inset
 
 
@@ -2195,7 +2174,7 @@ HOD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $15h^{-1}{\rm Mpc}$
+\begin_inset Formula $15$
 \end_inset
 
 
@@ -2207,7 +2186,7 @@ HOD2
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3.3h^{-1}{\rm Mpc}$
+\begin_inset Formula $3.3$
 \end_inset
 
 
@@ -2260,7 +2239,7 @@ HOD3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $15h^{-1}{\rm Mpc}$
+\begin_inset Formula $15$
 \end_inset
 
 
@@ -2272,7 +2251,7 @@ HOD3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3.3h^{-1}{\rm Mpc}$
+\begin_inset Formula $3.3$
 \end_inset
 
 
@@ -2325,7 +2304,7 @@ HOD4
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $15h^{-1}{\rm Mpc}$
+\begin_inset Formula $15$
 \end_inset
 
 
@@ -2337,7 +2316,7 @@ HOD4
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3.3h^{-1}{\rm Mpc}$
+\begin_inset Formula $3.3$
 \end_inset
 
 
@@ -2390,7 +2369,7 @@ HOD5
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $15h^{-1}{\rm Mpc}$
+\begin_inset Formula $15$
 \end_inset
 
 
@@ -2402,7 +2381,7 @@ HOD5
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3.1h^{-1}{\rm Mpc}$
+\begin_inset Formula $3.1$
 \end_inset
 
 
@@ -2455,7 +2434,7 @@ HOD6
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $20h^{-1}{\rm Mpc}$
+\begin_inset Formula $20$
 \end_inset
 
 
@@ -2467,7 +2446,7 @@ HOD6
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $4.1h^{-1}{\rm Mpc}$
+\begin_inset Formula $4.1$
 \end_inset
 
 
@@ -2520,7 +2499,7 @@ HOD7
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $20h^{-1}{\rm Mpc}$
+\begin_inset Formula $20$
 \end_inset
 
 
@@ -2532,7 +2511,7 @@ HOD7
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $4.8h^{-1}{\rm Mpc}$
+\begin_inset Formula $4.8$
 \end_inset
 
 
@@ -2585,7 +2564,7 @@ HOD8
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $25h^{-1}{\rm Mpc}$
+\begin_inset Formula $25$
 \end_inset
 
 
@@ -2597,7 +2576,7 @@ HOD8
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $4.9h^{-1}{\rm Mpc}$
+\begin_inset Formula $4.9$
 \end_inset
 
 
@@ -2650,7 +2629,7 @@ HOD9
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\begin_inset Formula $30$
 \end_inset
 
 
@@ -2662,7 +2641,7 @@ HOD9
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $5.5h^{-1}{\rm Mpc}$
+\begin_inset Formula $5.5$
 \end_inset
 
 
@@ -2764,25 +2743,29 @@ weighted
 \end_inset
 
  values for the 64 samples denoted as 
-\begin_inset Formula $\alpha_{{\rm weighted}}$
+\begin_inset Formula $\alpha_{w}$
 \end_inset
 
 .
  For the regular HOD samples, we generate three different realizations (in
- total of 192 samples) for 
-\begin_inset Formula ${\rm log_{10}}M_{{\rm cut}}=12.5$
+ total of 192 samples) with 
+\begin_inset Formula ${\rm log_{10}M_{{\rm cut}}=12.5}$
 \end_inset
 
- and five realizations (in total of 320 samples) for 
+ (labeled as the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples) and five realizations (in total of 320 samples) with 
 \begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=14.1$
 \end_inset
 
-, and measure the 
-\begin_inset Formula $\alpha$
+ (labeled as the 
+\begin_inset Formula $HOD9$
 \end_inset
 
- values denoted as 
-\begin_inset Formula $\alpha_{HOD}$
+ samples), and measure the shifts denoted as 
+\begin_inset Formula $\alpha$
 \end_inset
 
 .
@@ -2790,17 +2773,17 @@ weighted
 \begin_inset Formula $\alpha$
 \end_inset
 
- values between 
-\begin_inset Formula $\alpha_{{\rm weighted}}$
+ values between the regular and 
+\begin_inset Quotes eld
 \end_inset
 
- and 
-\begin_inset Formula $\alpha_{HOD}$
+weighted
+\begin_inset Quotes erd
 \end_inset
 
-.
+ HOD samples.
  For both cases, the mean of the difference 
-\begin_inset Formula $<\alpha_{HOD}-\alpha_{{\rm weighted}}>$
+\begin_inset Formula $<\alpha-\alpha_{w}>$
 \end_inset
 
  is 
@@ -2808,11 +2791,11 @@ weighted
 \end_inset
 
 .
- The error of the mean for the case of 
-\begin_inset Formula $\log_{10}M_{{\rm cut}}=12.5$
+ The error of the mean for the case of the 
+\begin_inset Formula $HOD1$
 \end_inset
 
- is 
+ samples is 
 \begin_inset Formula $0.45\%$
 \end_inset
 
@@ -2820,11 +2803,11 @@ weighted
 \begin_inset Formula $2.44\%$
 \end_inset
 
- for the case of 
-\begin_inset Formula ${\rm log}_{10}M_{{\rm cut}}=14.1$
+ for the case of the 
+\begin_inset Formula $HOD9$
 \end_inset
 
-.
+ samples.
  With relatively small number of realizations, the mean alpha values, 
 \begin_inset Formula $<\alpha-1>$
 \end_inset
@@ -2837,9 +2820,16 @@ weighted
 \begin_inset Formula $1\%$
 \end_inset
 
- for the case of HOD9, although we expect the value of alpha to converge
- to 
-\begin_inset Formula $\alpha_{weight}$
+ for the case of 
+\begin_inset Formula $HOD9$
+\end_inset
+
+, although we expect the value of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ to converge to 
+\begin_inset Formula $\alpha_{w}$
 \end_inset
 
  with a larger number of realizations.
@@ -2882,11 +2872,7 @@ name "fig:variation_hod"
 
 \end_inset
 
-(
-\color red
-regenerate the figure with new data points
-\color inherit
- and without normalization)Distribution of the values 
+Distribution of the values 
 \begin_inset Formula $\alpha_{HOD}-\alpha_{{\rm weighted}}$
 \end_inset
 
@@ -3039,8 +3025,8 @@ key "2008PhRvD..77b3533C,2009PhRvD..80f3508P,2012PhRvD..85j3523S"
 \end_inset
 
  is the linear growth rate.
- However, we find that the bias dependence of our samples is weaker thanwhat
- was predicted in Ref.
+ However, we find that the bias dependence of our samples is weaker than
+ what was predicted in Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3049,11 +3035,27 @@ key "2009PhRvD..80f3508P"
 \end_inset
 
 .
- [
-\color red
-possible reason for this?
-\color inherit
-]
+
+\color black
+ Note that we use different HOD models than the one used in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2009PhRvD..80f3508P"
+
+\end_inset
+
+, which give different higher-order biases in perturbation theory.
+ Since the shift of the BAO peak is due to higher-order terms (e.g., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2012PhRvD..85j3523S,2009PhRvD..80f3508P"
+
+\end_inset
+
+), the reason we see the weaker dependence on biases is possibly due to
+ different HOD models.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3061,7 +3063,7 @@ possible reason for this?
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3246,7 +3248,8 @@ There are three possible sources for the biases and the scatter in the
 \begin_inset Formula $\alpha$
 \end_inset
 
- measurements : the initial conditions (no biases, but scatter),
+ measurements.
+ The initial conditions (no biases, but scatter),
 \color red
  
 \color black
@@ -3424,12 +3427,12 @@ name "sub:real-postrecon"
 \begin_layout Standard
 Similar to the previous section, we investigate the effect of galaxy bias
  on the acoustic scale for 
-\color red
+\color black
 the samples applied the reconstruction method
 \color inherit
 .
  To apply the reconstruction method, we use different smoothing scales 
-\begin_inset Formula $\Sigma_{{\rm recon}}$
+\begin_inset Formula $R$
 \end_inset
 
  for different galaxy samples, as shown in Table 
@@ -3456,7 +3459,7 @@ reference "tab:hod"
 
  includes the modes which are noise-dominated.
  For fitting, we use different non-linear parameters (denoted as 
-\begin_inset Formula $\Sigma_{{\rm temp}}$
+\begin_inset Formula $\Sigma$
 \end_inset
 
  in Table 
@@ -3486,7 +3489,7 @@ reference "sub:fitting"
 
 .
  To do that, we treat the non-linear parameter, 
-\begin_inset Formula $\Sigma_{{\rm temp}}$
+\begin_inset Formula $\Sigma_{{\rm }}$
 \end_inset
 
 , as a free parameter.
@@ -3550,7 +3553,7 @@ reference "tab:alphas"
  scale.
  However, we get an opposite result.
  It is possible that the cause of over-shifting is due to the noise and
- the lack of enough number of samples.
+ the lack of a large enough number of samples.
  Another important change after reconstruction is that the scatter in the
  
 \begin_inset Formula $\alpha$
@@ -3575,23 +3578,15 @@ key "mehta2011"
 \end_layout
 
 \begin_layout Standard
-[
-\color red
-test the negative alpha is due to lack of the number of samples using bootstrap...
-\color inherit
-]
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/alpha_bias_post_r_weight_sigma.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_weight_sigma.pdf
 	width 50text%
 
 \end_inset
@@ -3620,6 +3615,103 @@ name "fig:alpha_postrecon"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+We further explore the cause of the over-shifting for the case of the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ We find that the median value of the shift, 
+\begin_inset Formula $\widetilde{(\alpha-1)}$
+\end_inset
+
+, for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples is 
+\begin_inset Formula $-0.151\%$
+\end_inset
+
+, which is 
+\begin_inset Formula $1\sigma$
+\end_inset
+
+ away from zero.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hist_hod9"
+
+\end_inset
+
+ shows the distribution of the shifts for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples and also shows that there are some outliers.
+ This makes the mean 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ value smaller than its median value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hist_hod9_alpha_post_r.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hist_hod9"
+
+\end_inset
+
+Distribution of the shift values 
+\begin_inset Formula $\alpha-1$
+\end_inset
+
+ for the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3660,31 +3752,26 @@ reference "fig:scatter_postrecon"
 \begin_inset Formula $\alpha$
 \end_inset
 
- values is significantly reduced and the slope measured between the 
+ values is significantly reduced.
+ 
+\color black
+The improvement in the reduction of the scatter is almost a factor of 2.
+ 
+\color inherit
+On the other hand, the scatter in the 
 \begin_inset Formula $\alpha$
 \end_inset
 
- values before and after reconstruction is 0.2.
- On the other hand, the slope for the 
+ values for the 
 \begin_inset Formula $HOD9$
 \end_inset
 
- samples is 0.5 and the reconstruction does not reduce the number of outliers.
- The value of the slope can tell us the robustness of the reconstruction
- method on these samples.
- The slope closer to zero implies that the 
-\begin_inset Formula $\alpha$
+ samples is reduced by 
+\begin_inset Formula $25\%$
 \end_inset
 
- values are properly shifted back to one.
-\end_layout
-
-\begin_layout Standard
-[
-\color red
-what can I say more?
-\color inherit
-Also, what is a better way to quantify the robustness of the reconstruction?]
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3736,15 +3823,22 @@ Comparison of the
 \end_inset
 
  samples (right).
- The slope for the 
+ 
+\color black
+While the scatter in the 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values for the 
 \begin_inset Formula $HOD1$
 \end_inset
 
- sample is 0.2, while it is 0.5 for the 
+ samples is significantly reduced after reconstruction, the scatter remains
+ about the same for the case of the 
 \begin_inset Formula $HOD9$
 \end_inset
 
- sample.
+ samples.
 \end_layout
 
 \end_inset
@@ -3761,12 +3855,13 @@ Comparison of the
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="5">
+<lyxtabular version="3" rows="10" columns="6">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -3811,6 +3906,18 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Formula $<\alpha_{{\rm post}}-1>[\%]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\widetilde{(\alpha_{{\rm post}}-1)}[\%]$
 \end_inset
 
 
@@ -3871,6 +3978,15 @@ status collapsed
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.050
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -3917,6 +4033,15 @@ status collapsed
 
 \begin_layout Plain Layout
 0.031
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.050
 \end_layout
 
 \end_inset
@@ -3971,6 +4096,15 @@ status collapsed
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.050
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -4017,6 +4151,15 @@ status collapsed
 
 \begin_layout Plain Layout
 0.063
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.050
 \end_layout
 
 \end_inset
@@ -4071,6 +4214,15 @@ status collapsed
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.151
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -4117,6 +4269,15 @@ status collapsed
 
 \begin_layout Plain Layout
 -0.031
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.151
 \end_layout
 
 \end_inset
@@ -4171,6 +4332,15 @@ status collapsed
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.151
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -4221,6 +4391,15 @@ status collapsed
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.151
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -4267,6 +4446,15 @@ status collapsed
 
 \begin_layout Plain Layout
 -0.341
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.151
 \end_layout
 
 \end_inset
@@ -4897,7 +5085,7 @@ reference "fig:scatter_prerecon"
 \begin_inset Formula $HOD3$
 \end_inset
 
- samples is 0.719 decreased by 
+ samples is 0.719, which is decreased by 
 \begin_inset Formula $\sim20\%$
 \end_inset
 
@@ -4925,15 +5113,6 @@ reference "fig:scatter_prerecon"
 \end_inset
 
  sample.
-\end_layout
-
-\begin_layout Standard
-[
-\color red
-can I say more about the fact that correlation becomes weaker after reconstructi
-on?
-\color inherit
-]
 \end_layout
 
 \begin_layout Standard
@@ -5000,29 +5179,11 @@ on after reconstruction is sharpened, which implies that the scatter in
 \end_layout
 
 \begin_layout Standard
-[
-\color red
-remake the chi-square figure with the same scaling...
-
-\color inherit
- & change the sample and the smoothing scales...]
-\end_layout
-
-\begin_layout Standard
-[
-\color red
-chi-square distribution for pre-recon is wider...what does this mean? (but
- minimum is smaller...
-\color inherit
-]
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5070,10 +5231,24 @@ Comparison of the
 \end_inset
 
  sample.
- The cross correlation coefficient between HOD1 and HOD3 is 0.719, while
- the cross correlation is 0.091 between HOD1 and HOD9.
- Note that the cross-correlation coefficient between hod1->hod9 & hod1 is
- 0.213 and hod1->hod9 & hod9 is 0.567.
+ The cross correlation coefficient between 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD3$
+\end_inset
+
+ is 0.719, while the cross correlation is 0.091 between 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_inset
@@ -5095,7 +5270,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hod1_full.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_full.pdf
 	lyxscale 80
 	width 50text%
 
@@ -5103,7 +5278,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hod1_full_chi.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_full_chi.pdf
 	lyxscale 80
 	width 50text%
 
@@ -5128,7 +5303,7 @@ Left: The unreconstructed (blue) and reconstructed (red) correlation functions
 \end_inset
 
  sample.
- The error bars are the standard deviaton of the four HACC simulations.
+ The error bars are the standard deviation of the four HACC simulations.
  Note that we use the samples with the volume of 
 \begin_inset Formula $64(h^{-1}{\rm Gpc})^{3}$
 \end_inset
@@ -5139,7 +5314,7 @@ Left: The unreconstructed (blue) and reconstructed (red) correlation functions
 \begin_inset Formula $\Delta\chi^{2}$
 \end_inset
 
- surface as a function of 
+ curve as a function of 
 \begin_inset Formula $\alpha-1[\%]$
 \end_inset
 
@@ -5165,7 +5340,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hod9_full.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod9_full.pdf
 	lyxscale 80
 	width 50text%
 
@@ -5173,7 +5348,7 @@ status open
 
 
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hod9_full_chi.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod9_full_chi.pdf
 	lyxscale 80
 	width 50text%
 
@@ -5198,7 +5373,7 @@ Left: The unreconstructed (blue) and reconstructed (red) correlation functions
 \end_inset
 
  sample.
- The error bars are the standard deviaton of the four HACC simulations.
+ The error bars are the standard deviation of the four HACC simulations.
  Note that we use the samples with the volume of 
 \begin_inset Formula $64(h^{-1}{\rm Gpc})^{3}$
 \end_inset
@@ -5209,7 +5384,7 @@ Left: The unreconstructed (blue) and reconstructed (red) correlation functions
 \begin_inset Formula $\Delta\chi^{2}$
 \end_inset
 
- surface as a function of 
+ curve as a function of 
 \begin_inset Formula $\alpha-1[\%]$
 \end_inset
 
@@ -5321,32 +5496,36 @@ reference "tab:hod1_smooth"
 \begin_inset Formula $\alpha$
 \end_inset
 
- values becomes larger and also the mean shift on the acoustic scale becomes
- negative.
- 
-\color red
-The trend we see for the scatter is consistent with Ref.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "padmanabhan2012"
-
-\end_inset
-
-, but we see an opposite trend comparing to Ref.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "padmanabhan2012"
-
-\end_inset
-
- for the average shift.
- 
+ values becomes large
 \color black
-In addition to degrading the robustness of the reconstruction, we find that
- the reconstructed correlation function is slightly distorted on small scales
- by the increase of the smoothing scales.
+r.
+ This is because the correlation in the measured shifts for these samples
+ becomes smaller.
+ Quantitatively, the cross-correlation coefficients for the samples with
+ 
+\begin_inset Formula $R=20h^{-1}{\rm Mpc}$
+\end_inset
+
+ and 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ with respect to the ones with 
+\begin_inset Formula $R=10h^{-1}{\rm Mpc}$
+\end_inset
+
+ are 
+\begin_inset Formula $0.71$
+\end_inset
+
+ and 
+\begin_inset Formula $0.53$
+\end_inset
+
+ respectively.
+ In addition to degrading the robustness of the reconstruction, we find
+ that the reconstructed correlation function is slightly distorted on small
+ scales by the increase of the smoothing scales.
 \end_layout
 
 \begin_layout Standard
@@ -5367,7 +5546,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Sigma$
+\begin_inset Formula $R$
 \end_inset
 
 
@@ -5519,6 +5698,7 @@ The effect of the smoothing scales of the reconstruction on the BAO measurements
 \end_inset
 
  sample.
+ 
 \end_layout
 
 \end_inset
@@ -5540,7 +5720,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hod1_xi0_recon_sigmas.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_xi0_recon_sigmas.pdf
 	width 50text%
 
 \end_inset
@@ -5558,15 +5738,21 @@ name "fig:hod1_smooth"
 
 \end_inset
 
-[
-\color red
-add pre-recon correlation functions
-\color inherit
-]The reconstructed correlation functions using the 
+The reconstructed correlation functions using the 
 \begin_inset Formula $HOD1$
 \end_inset
 
  sample with various smoothing scales.
+ Note that the green line (which shows the correlation function with the
+ 
+\begin_inset Formula $20h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale) is almost identical to the one with the 
+\begin_inset Formula $30h^{-1}{\rm Mpc}$
+\end_inset
+
+ smoothing scale (red).
 \end_layout
 
 \end_inset
@@ -5679,16 +5865,6 @@ reference "fig:hod9_smooth"
  smoothing scale.
  This indicates that the distortion of the correlation functions on small
  scales has little impact on the measurement of the BAO peak.
-\end_layout
-
-\begin_layout Standard
-[
-\color red
-should I mention that the reason we did not see difference on the alpha
- values may be partly because the hod9 samples have large scatters and noise
- is large.
-\color inherit
-]
 \end_layout
 
 \begin_layout Standard
@@ -5874,14 +6050,14 @@ reference "fig:hod9_smooth"
 
  samples.
  This implies that the systematic bias is reduced from 
-\begin_inset Formula $3\sigma$
+\begin_inset Formula $\sim3\sigma$
 \end_inset
 
--deviation to 
+ deviation to about a 
 \begin_inset Formula $1\sigma$
 \end_inset
 
-.
+ deviation.
  
 \end_layout
 
@@ -5912,35 +6088,449 @@ name "fig:recon_hod1to9"
 
 \end_inset
 
-Left: Reconstructed correlation functions for the samples with 
-\begin_inset Formula $M_{{\rm cut}}=14.1$
+Reconstructed correlation functions for the 
+\begin_inset Formula $HOD9$
 \end_inset
 
- (labeled as 
+ samples.
+ The blue line shows the correlation function using the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples to estimate the 
 \begin_inset Quotes eld
 \end_inset
 
-hod9
+shifted
 \begin_inset Quotes erd
 \end_inset
 
-).
- The solid line is the correlation function reconstructed from the same
- density field with the smoothing scale of 
-\begin_inset Formula $30h^{-1}{\rm Mpc}$
+ field, while the green line shows the correlation function using the 
+\begin_inset Formula $HOD1$
 \end_inset
 
-, while the dashed line is the one using the sample with 
-\begin_inset Formula $M_{{\rm cut}}=12.5$
-\end_inset
-
- for reconstruction.
- Right: the dd-term of the reconstructed correlation functions.
- 
+ samples.
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overline{b}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $<\alpha-1>$
+\end_inset
+
+[%]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma_{\alpha}$
+\end_inset
+
+[%]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.57
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.69
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.07
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.83
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.09
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $HOD9$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -6016,8 +6606,8 @@ shifted
  fields.
  One is due to different galaxy biases, and the other is due to different
  smoothing scales.
- To know how much differences are introduced by these causes, we compute
- the 
+ To know how much difference is introduced by these causes, we compute the
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6063,7 +6653,7 @@ shifted
 \begin_inset Formula $\sim2.7h^{-1}{\rm Mpc}$
 \end_inset
 
- for the case od the 
+ for the case of the 
 \begin_inset Formula $10h^{-1}{\rm Mpc}$
 \end_inset
 
@@ -6078,8 +6668,8 @@ shifted
 \end_inset
 
  samples.
- On the other hand, some differences come from including more modes to estimate
- 
+ On the other hand, some of the difference comes from including more modes
+ to estimate 
 \begin_inset Formula $\vec{s}$
 \end_inset
 
@@ -6088,6 +6678,7 @@ shifted
 \end_inset
 
  smoothing scale.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6099,7 +6690,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/old_ts485/Downloads/hist_x_on_hod9.pdf
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hist_x_on_hod9.pdf
 	width 50text%
 
 \end_inset
@@ -6117,9 +6708,39 @@ name "fig:pos_hod1to9"
 
 \end_inset
 
-mean (hod1 with 10Mpc/h)0.0007+/-2.74 (hod1 with 30Mpc/h)0.0013+/-1.51: split
- into high/low-density region?; alpha -> -0.176+/-0.115 (10Mpc/h) 0.336+/-0.115(30Mp
-c/h)
+Comparison of the shifted positions of the galaxies in the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples.
+ We estimate the 
+\begin_inset Quotes eld
+\end_inset
+
+shifted
+\begin_inset Quotes erd
+\end_inset
+
+ field using the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples and shift the positions of galaxies accordingly.
+ Then, we compare the differences in the positions of the corresponding
+ galaxies.
+ Different colors correspond to the smoothing scale used to the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ samples to estimate 
+\begin_inset Formula $\vec{s}$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -6130,6 +6751,146 @@ c/h)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+As a final test, we compute cross-correlation functions between the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples to see the change in the measured 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ values.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cross"
+
+\end_inset
+
+ shows the measured shifts of the BAO peak as a function of galaxy bias
+ before and after reconstruction.
+ The 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ measured from the cross correlation functions are plotted in red.
+ 
+\color black
+The cross-correlation functions after reconstruction corrects the shift
+ of the BAO peak properly even when cross-correlating with the 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples which are over-shifted due to noise.
+ This implies that we can use the low number density samples to measure
+ the BAO peak by cross-correlating with the high number density samples.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_pre_r_weighted2.pdf
+	lyxscale 80
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_weighted2.pdf
+	lyxscale 80
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cross"
+
+\end_inset
+
+Left: Shift in the BAO scale for the cross correlation functions between
+ the 
+\begin_inset Formula $HOD1$
+\end_inset
+
+ and 
+\begin_inset Formula $HOD9$
+\end_inset
+
+ samples (red points) before reconstruction as a function of galaxy bias.
+ Right: Similar to the left figure but after reconstructions.
+ The blue points are from the HOD samples listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:hod"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Future surveys will provide a deeper understanding of dark energy, dark
+ matter, and early universe physics through the measurements of large scale
+ structure.
+ In particular, the baryon acoustic oscillation (BAO) method and the redshift-sp
+ace distortion (RSD) method aim to achieve sub-percent precision on cosmological
+ parameters.
+ Understanding and reducing the systematics caused by the non-linear evolution
+ of gravitational structures and galaxy formation and evolution is crucial
+ for future galaxy spectroscopic surveys.
+ Over the course of this thesis, I develop the tools necessary to understand
+ and quantify these systematic effects, and present a series of applications
+ relevant to future surveys.
+ 
+\end_layout
+
+\begin_layout Standard
+I first constructed mock catalogs using the N-body simulations with a reduced
+ number of time steps for future galaxy surveys.
+ Then, I investigated the effects of galaxy bias on the BAO peak and the
+ robustness of the reconstruction method, which is a standard technique
+ used in the BAO measurements to reduce the error.
+ We tested whether the reconstruction method could be applicable to the
+ RSD method to test gravity models.
+ In addition to these studies on large scales, I also explored how assembly
+ history of dark matter halos affects its internal structure and clustering
+ on small scales, including a first measurement of the scale dependence
+ of this effect.
+ These effects of the assembly history on small scales can be a potential
+ source of systematics for future galaxy surveys.
 \end_layout
 
 \begin_layout Section
@@ -6301,8 +7062,8 @@ We find that using a larger smoothing scale increases the scatters in the
 \begin_layout Standard
 As a possible direction for future work, we can investigate the effects
  of galaxy bias on the BAO scale in redshift-space.
- For the case of redsfhit-space, we can utilize the anisotropy due to the
- Alcock-Pezinski effect to fully constrain 
+ For the case of redshift-space, we can utilize the anisotropy due to the
+ Alcock-Paczynski effect to fully constrain 
 \begin_inset Formula $D_{A}(z)$
 \end_inset
 
@@ -6311,7 +7072,11 @@ As a possible direction for future work, we can investigate the effects
 \end_inset
 
 .
- 
+ In addition to extending this work to redshift-space, we can explore how
+ the reconstruction method affects higher-order terms in perturbation theory.
+ In particular, we can utilize the second-order term, which is responsible
+ for the shift and the broadening of the BAO peak, to quantify the robustness
+ of the reconstruction method.
 \end_layout
 
 \begin_layout Standard
@@ -6336,6 +7101,10 @@ Appendix
 
 \begin_layout Subsection
 Things to study
+\end_layout
+
+\begin_layout Standard
+[mention about the shot noise for the weighted case]
 \end_layout
 
 \begin_layout Standard
@@ -6626,128 +7395,6 @@ Cross-Correlation
 * How can this be useful?
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Downloads/alpha_bias_pre_r_weighted2.pdf
-	lyxscale 80
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Downloads/alpha_bias_post_r_weighted2.pdf
-	lyxscale 80
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-xxx
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Using different biases
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_xi0.pdf
-	width 50text%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_ss.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-hod1:+/- 10% and 40%
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod9_bias_xi0.pdf
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-hod9
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Various Plots
 \end_layout
@@ -6841,10 +7488,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
 	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/alpha_bias_post_r_weighted.pdf
 	width 50text%
@@ -6864,10 +7507,6 @@ post-reconstruction with the fixed smoothing scale of
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -6908,7 +7547,116 @@ hod1->hod9
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Using different biases (do I want to include this?)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/varying_bias.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+the reason why changing bias does not affect the robustness of the reconstructio
+n: looks like using higher bias can improve the reconstruction?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_xi0.pdf
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod1_bias_ss.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+hod1:+/- 10% and 40%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/old_ts485/Desktop/my_thesis/plots_BAO/hod9_bias_xi0.pdf
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+hod9
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

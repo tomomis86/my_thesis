@@ -305,6 +305,26 @@ Tomomi Sunayama
 Introduction
 \end_layout
 
+\begin_layout Standard
+This thesis addresses a key challenge in observational cosmology today --
+ understanding and quantifying the astrophysical systematics that can bias
+ the interpretation of cosmological measurements.
+ This introductory chapter both introduces key concepts and techniques used
+ in later chapters and also provides the necessary context.
+ hrough my Ph.D., I explore various systematics on large scales as well as
+ on small scales in order to use galaxy clustering as cosmological probes
+ and to improve the precision on the measurement of large scale structure.
+ In this chapter, I lay down the contexts of the projects considered in
+ the thesis.
+ I first present a brief historical background regarding to dark energy/cosmic
+ acceleration.
+ In the following, I will introduce the statistical probe used in various
+ large-scale structure measurements called correlation functions.
+ Then, I will present the mechanism of BAO and RSDs and the sources of systemati
+cs on these measurements.
+ And finally, I conclude by outlining thesis projects.
+\end_layout
+
 \begin_layout Section
 Brief History of Dark Energy
 \end_layout
@@ -489,20 +509,21 @@ key "2002IJMPD..11..483C,2003Natur.422...26C,2000PhLB..485..208D,2003PhLB..575..
 
 ).
  The basic idea is that we add extra terms to the Lagrangian for gravity,
- whose orders are smaller than the original terms in the Lagrangian for
- GR.
- In order to keep GR valid on the scale already tested experimentally/observatio
-nally, these models require screening mechanisms/chameleon effects (see
- 
+ whose size of the effect is smaller than the original terms in the Lagrangian
+ for GR.
+ GR is well tested and verified on the scale of the solar system.
+ Therefore, these models require screening mechanisms/chameleon effects
+ (see 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "2010AnPhy.325.1479J"
 
 \end_inset
 
- for more details).
- One way to test modified gravity is to examine the expansion history as
- well as the growth of structure.
+ for more details) to prevent the enhancement of gravity in regions of high-dens
+ity.
+ Besides the expansion history, modified gravity affects the structure formation
+ and can be examined through the growth of structure.
 \end_layout
 
 \begin_layout Standard
@@ -551,7 +572,7 @@ where
  Friedmann equation:
 \begin_inset Formula 
 \begin{equation}
-\frac{H^{2}(z)}{H_{0}^{2}}=\Omega_{m}a^{-3}(z)+\Omega_{\gamma}a^{-4}(z)+\Omega_{\kappa}a^{-2}(z)+\Omega_{\Lambda}\left(\frac{\omega_{\Lambda}(z)}{\omega_{\Lambda}(z=0)}\right),
+\frac{H^{2}(z)}{H_{0}^{2}}=\Omega_{m}a^{-3}(z)+\Omega_{\gamma}a^{-4}(z)+\Omega_{\kappa}a^{-2}(z)+\Omega_{\Lambda}a^{-3(1+w)},
 \end{equation}
 
 \end_inset
@@ -673,15 +694,6 @@ We can measure
 \end_inset
 
  through redshift-space distortions (RSDs) and gravitational lensing.
-\end_layout
-
-\begin_layout Standard
-In the following, I will introduce the statistical probe used in various
- large-scale structure measurements called correlation functions.
- Then, I will present the mechanism of BAO and RSDs and the sources of systemati
-cs on these measurements.
- And finally, I will discuss the goals and motivations of the projects in
- this thesis.
 \end_layout
 
 \begin_layout Subsection
@@ -952,10 +964,10 @@ ming.
  This leaves the characteristic peak in the distribution of matter.
  The BAO method measures the peak imprinted in the density field through
  the correlation function of galaxies.
- The characteristic scale of the sound horizon is defined as
+ The characteristic scale of the sound horizon is defined 
 \begin_inset Formula 
 \begin{equation}
-r_{s}=\int_{0}^{t^{*}}\frac{c_{s}}{1+z}dt=\int_{z^{*}}^{\infty}\frac{c_{s}(z)}{H(z)}dz,
+r_{s}=\int_{0}^{t^{*}}c_{s}(1+z)dt=\int_{z^{*}}^{\infty}\frac{c_{s}(z)}{H(z)}dz,
 \end{equation}
 
 \end_inset
@@ -12964,12 +12976,6 @@ Left: Histograms of
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\color red
-*compare dynamical/orbital time to lookback time for these halos?
 \end_layout
 
 \begin_layout Subsection
